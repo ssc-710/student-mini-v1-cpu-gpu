@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_gpu_protocol_rtl.py",
+    "--vectors",
+    "grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl",
+    "build",
+    "--boundary",
+    "build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary",
+    "--functional",
+    "build/student-mini/gpu-fault/c6f5e417caf1bfd81395e21cc7597a2c515a64f81a793054a305385215f511ab"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-349219",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "created_at": "2026-10-09T18:38:18.484019+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 827428864,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 116432453\nuser_usec 88056425\nsystem_usec 28376028\nnice_usec 0\nnr_periods 3521\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 352.0858757069982
+}

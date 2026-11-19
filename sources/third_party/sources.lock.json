@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-01",
+  "sources": [
+    {
+      "name": "ibex",
+      "url": "https://github.com/lowRISC/ibex.git",
+      "commit": "90331a69edd7151413c335a7f4b3e950baa07c19",
+      "license": "Apache-2.0",
+      "required_for": "final-integration"
+    },
+    {
+      "name": "openroad-flow-scripts",
+      "url": "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git",
+      "commit": "aabf2a397059704f68ddafe7e2c8bd1a0e7c65f5",
+      "license": "BSD-3-Clause",
+      "required_for": "ppa"
+    },
+    {
+      "name": "sby",
+      "url": "https://github.com/YosysHQ/sby.git",
+      "commit": "b1a1e98cba941ec8433f8dc27f416cd7bb7f14be",
+      "license": "ISC",
+      "required_for": "formal"
+    },
+    {
+      "name": "openram",
+      "url": "https://github.com/VLSIDA/OpenRAM.git",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "required_for": "teacher-sram-generation"
+    },
+    {
+      "name": "verilator",
+      "url": "https://github.com/verilator/verilator.git",
+      "commit": "51cdf52d0f3a3e59b51fd87762646a851e9f4aff",
+      "version": "v5.040",
+      "license": "LGPL-3.0-only OR Artistic-2.0",
+      "required_for": "promotion-regression"
+    },
+    {
+      "name": "deepseek-v3.2-exp",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp.git",
+      "commit": "87e509a2e5a100d221c97df52c6e8be7835f0057",
+      "license": "MIT",
+      "required_for": "architecture-reference",
+      "fetch": false
+    },
+    {
+      "name": "flashmla",
+      "url": "https://github.com/deepseek-ai/FlashMLA.git",
+      "commit": "ba89a3466e9470ad08ab39738d4e7bb66989e1e7",
+      "license": "MIT",
+      "required_for": "kernel-reference",
+      "fetch": false
+    },
+    {
+      "name": "vortex",
+      "url": "https://github.com/vortexgpgpu/vortex.git",
+      "commit": "b8c5a24336026d9d029a67197160eee6b017f262",
+      "license": "Apache-2.0",
+      "required_for": "virtual-gpu-simx-rtlsim",
+      "fetch": false
+    },
+    {
+      "name": "vortex-toolchain-prebuilt",
+      "url": "https://github.com/vortexgpgpu/vortex-toolchain-prebuilt.git",
+      "commit": "d0e3fed1dbc4bbc882ea7d453d339b8dde874c13",
+      "version": "v3.0.1",
+      "license": "NOASSERTION",
+      "required_for": "virtual-gpu-toolchain",
+      "fetch": false
+    },
+    {
+      "name": "llvm-vortex",
+      "url": "https://github.com/vortexgpgpu/llvm.git",
+      "commit": "4c836512a60c0b965bb298104e084cd0f07ca962",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "required_for": "virtual-gpu-spirv-toolchain",
+      "fetch": false
+    },
+    {
+      "name": "pocl-vortex",
+      "url": "https://github.com/vortexgpgpu/pocl.git",
+      "commit": "3d02254121390f63f83ccbd707a97d26498a227f",
+      "license": "MIT",
+      "required_for": "virtual-gpu-opencl-backend",
+      "fetch": false
+    },
+    {
+      "name": "chipstar-vortex",
+      "url": "https://github.com/vortexgpgpu/chipStar.git",
+      "commit": "3929f054ecc1c3d70dfc45648c5046cd28f37df9",
+      "license": "MIT",
+      "required_for": "virtual-gpu-cuda-hip-frontend",
+      "fetch": false
+    }
+  ],
+  "patches": [
+    {
+      "path": "third_party/patches/openroad-drt-batch-size.patch",
+      "applies_to": "openroad-flow-scripts/tools/OpenROAD",
+      "sha256": "fdf12c5c744d5671c60d3b088e8fe4a36f864e635e9f25ddbbb369d8440a1ac6",
+      "purpose": "optional STUDENT_MINI_DRT_BATCH_SIZE detailed-router worker batch (memory; default behaviour unchanged)"
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "schema": "student-mini-process-graph-v1",
+  "course": "cpu-accelerator",
+  "description": "Declarative production-process graph of the student-mini-v1 CPU + 专用加速器 course package. Rendered by scripts/student_mini_release_report.py (framework: scripts/student_mini_process_graph.py). Every number on the panorama is a template variable bound to package data (SPEC.json, data/, physical/, power/, evidence-index.json), to the resource-guard records in grading/evidence/student-mini-v1/environment (guard patterns) or to run directories in the repository (repo: bindings). Authored prose cites build/student-mini/explore/NOTES.md bullets (notes: search strings) so it can be reviewed against the source.",
+  "title": "{release_id} · {course} 课程包 · 生产流程全景",
+  "subtitle": "按工业 IP 团队的顺序：技术栈 → 冻结规格 → baseline → 物理实现 → 门级功耗 → NanoChat → 受限资源验证 → 打包。点击方块看详情，“后退”回全景。",
+  "lanes": [
+    {"id": "A", "label": "门 / 共享", "height": 72},
+    {"id": "cpu", "label": "CPU · VexRiscv", "height": 168},
+    {"id": "accelerator", "label": "专用加速器", "height": 145}
+  ],
+  "packaging_runs": "build/student-mini/release-cpu-accelerator/*/package-report.json",
+  "modules": [
+    {
+      "id": "stack", "n": 1, "title": "技术栈与工具锁定", "short": "技术栈", "w": 1.0, "layout": "stack",
+      "desc": "在开工前把全部工具、PDK、补丁和资源护栏固定下来：每个二进制、流程文件和 PDK 文件都按 SHA-256 绑定到使用它的证据运行；验收只认 2 vCPU / 8 GiB cgroup 护栏下的运行。",
+      "children": [
+        {
+          "id": "stack.host", "title": "主机与环境资格", "h": 1,
+          "kpi": [{"t": "{cpu}", "v": {"cpu": "spec:host.cpu.Model name"}}, {"t": "{n} 逻辑核 · {os}", "v": {"n": "spec:host.logical_cpus", "os": "spec:host.os"}}],
+          "desc": "记录开发机（WSL2）与学生目标机的差异，并在隔离环境里重跑教师/学生入口与回归测试。学生目标：x86-64、16 GB、无独显；验收在 2 vCPU / 8 GiB 限制内进行（task.md §4）。",
+          "inputs": ["task.md §4 学生机器", "scripts/collect_student_mini_environment.py"],
+          "outputs": ["SPEC.json host", "环境资格 guard 记录"],
+          "guard": ["teacher-*.json", "litex-isolated-environment-*.json", "full-linux-*.json", "student-doctor-*.json"],
+          "views": [{"type": "json", "title": "SPEC.json host", "src": "spec:host"}]
+        },
+        {
+          "id": "stack.guard", "title": "资源护栏 cgroup 2 vCPU / 8 GiB", "h": 1,
+          "kpi": [{"t": "全部历史受限记录 {n} 条", "v": {"n": "calc:env_records_total"}}, {"t": "本包引用 {m} 条", "v": {"m": "resources:#len"}}],
+          "desc": "scripts/student_mini_resource_guard.py 以 root 在 WSL 中为每个任务建立 cgroup（cpu 2、memory.max 8 GiB、swap 0），记录峰值内存、memory.events、耗时与退出码。只有这些记录算验收证据；探索运行不在护栏内（NOTES 开头）。护栏本身修过一次绑核缺陷：所有并发任务曾被绑到 CPU 0/1。",
+          "notes": ["Only guarded runs (scripts/student_mini_resource_guard.py", "Guard bug fixed"],
+          "inputs": ["scripts/student_mini_resource_guard.py"],
+          "outputs": ["grading/evidence/student-mini-v1/environment/*.json（每任务一条）"],
+          "guard": ["cgroup-probe-*.json", "cpu-cgroup-qualified-*.json"]
+        },
+        {
+          "id": "stack.eda", "title": "EDA / 仿真工具锁定", "h": 1,
+          "kpi": [{"t": "{m}/{n} 个二进制 SHA 与记录一致", "v": {"m": "calc:tools_match", "n": "spec:tools.binaries#len"}}, {"t": "Yosys 0.69 · Verilator 5.040 · Icarus 14"}],
+          "desc": "Yosys、OpenROAD、Verilator、Icarus、gcc 等二进制在打包时重新测 SHA-256 并与证据运行绑定的值比对；Python 依赖由 requirements-lock.txt 锁定（numpy 版本差异在 SPEC tools.notes 中如实披露）。",
+          "views": [{"type": "tools"}, {"type": "json", "title": "SPEC.json tools.notes", "src": "spec:tools.notes"}]
+        },
+        {
+          "id": "stack.openroad", "title": "OpenROAD + DRT 批量补丁", "h": 1.15, "kind": "step",
+          "kpi": [{"t": "OpenROAD 90e29809 + patch"}, {"t": "DRT 峰值内存约减半（batch 64）"}],
+          "desc": "根因分析发现详细布线一次保留整批 1024 个 worker，峰值内存与线程数无关。third_party/patches/openroad-drt-batch-size.patch 增加环境变量 STUDENT_MINI_DRT_BATCH_SIZE（默认行为不变），编译出 openroad-drtbatch；受限运行取 64。天线轮次另用 jemalloc（glibc 8.44 GB 超限，jemalloc 7.30 GB）。",
+          "notes": ["DRT MEMORY ROOT CAUSE", "ALLOCATOR (incremental antenna round 3"],
+          "inputs": ["OpenROAD 源码 90e29809", "third_party/patches/openroad-drt-batch-size.patch"],
+          "outputs": ["/home/soclab/.local/bin/openroad-drtbatch", "libjemalloc 绑定（antenna_round.tcl）"],
+          "views": [{"type": "json", "title": "SPEC.json tools.provenance", "src": "spec:tools.provenance"}]
+        },
+        {
+          "id": "stack.pdk", "title": "PDK sky130hd + ORFS 流程文件", "h": 1,
+          "kpi": [{"t": "{n} 个流程/PDK 文件 SHA 绑定", "v": {"n": "spec:tools.flow_and_pdk_files#len"}}, {"t": "ORFS aabf2a39 · 10 ns 时钟"}],
+          "desc": "ORFS 与 sky130hd 平台文件（Makefile、config.mk、liberty、LEF 等）同样按 SHA 绑定到使用它们的物理与功耗运行；版本锁见 third_party/sources.lock.json。",
+          "views": [{"type": "flow_files"}, {"type": "json", "title": "SPEC.json tools.sources_lock", "src": "spec:tools.sources_lock"}]
+        },
+        {
+          "id": "stack.audit", "title": "源码与归档审计", "h": 1,
+          "kpi": [{"t": "{n} 次审计 · {hold} 次 HOLD 后重做", "v": {"n": "calc:guard_count:stack.audit", "hold": "calc:guard_hold:stack.audit"}}],
+          "desc": "逐一审计 OpenROAD 源码导出与安装、ORFS 实际执行的源码、OSS CAD Suite 官方归档、ortools 与系统 ELF 运行库；首轮多项 HOLD（字段为空、未声明路径），修正审计脚本后重做通过。",
+          "guard": ["openroad-source-*.json", "orfs-*-audit-*.json", "oss-official-archive-*.json", "ortools-runtime-*.json", "system-elf-runtime-*.json"]
+        }
+      ]
+    },
+    {
+      "id": "spec", "n": 2, "title": "冻结规格与 golden", "short": "冻结规格", "w": 0.98, "layout": "stack",
+      "desc": "先冻结硬件规格、数值合同、全部展开 case、seed 与 golden，设备只拿输入、不能读 golden（task.md §2–§3）。之后所有平台用完全相同的输入文件。",
+      "children": [
+        {
+          "id": "spec.hw", "title": "SPEC 冻结：硬件与时钟", "h": 1,
+          "kpi": [{"t": "{core} {isa} · 加速器串行", "v": {"core": "spec:hardware.cpu.core", "isa": "spec:hardware.cpu.isa"}}, {"t": "SKY130HD · 10 ns / 100 MHz"}],
+          "desc": "CPU 沿用 VexRiscv RV32IM 4 KiB cache profile；加速器串行执行 P1/P2/P3 且不启用晋升优化；注意力/MoE 维度按最小可展示规格冻结。时钟不降频换 PASS。",
+          "views": [{"type": "json", "title": "SPEC.json hardware", "src": "spec:hardware"}, {"type": "json", "title": "SPEC.json resources", "src": "spec:resources"}]
+        },
+        {
+          "id": "spec.numeric", "title": "数值合同", "h": 1,
+          "kpi": [{"t": "INT8 → INT32 · BF16-RNE"}, {"t": "硬件判据 {tol}", "v": {"tol": "spec:numeric.hardware_tolerance"}}],
+          "desc": "INT8 输入/权重、INT32 点积、score delta Q5.11、exp Q1.15、INT8 重量化 RNE 后饱和、输出 BF16-RNE；bit-exact golden 是硬件正确性的主判据，FP32 语义误差单独报告。",
+          "views": [{"type": "json", "title": "SPEC.json numeric", "src": "spec:numeric"}]
+        },
+        {
+          "id": "spec.cases", "title": "用例矩阵 × seed 1–10", "h": 1,
+          "kpi": [{"t": "P1 {a} · P2 {b} · P3 {c} 个展开 case", "v": {"a": "calc:cases:cpu:p1", "b": "calc:cases:cpu:p2", "c": "calc:cases:cpu:p3"}}, {"t": "× {s} seed = {r} 条/平台", "v": {"s": "spec:seeds#len", "r": "golden:record_count"}}],
+          "desc": "每个算子 12 个专属 case 加公共边界 case（极值、scale 边界、RNE、无效 scale、DMA 错误、背压、输出保持、运行中复位），全部展开为独立 ID；每个 case 执行 seed 1–10。",
+          "views": [{"type": "case_matrix"}]
+        },
+        {
+          "id": "spec.golden", "title": "golden 冻结（运行前）", "h": 1,
+          "kpi": [{"t": "{n} 条 · input SHA {sha}", "v": {"n": "golden:record_count", "sha": "golden:input_sha256#short"}}, {"t": "PRNG LCG32 · 设备不读 golden"}],
+          "desc": "scripts/generate_student_mini_vectors.py 由冻结 SPEC 生成输入与 golden（rtl_oracle bit-exact 参考），manifest 记录生成脚本与 SPEC 的 SHA；包内 data/golden/vectors.jsonl 是比对基准。",
+          "files": ["data/golden/vectors.jsonl", "data/golden/manifest.json"],
+          "views": [{"type": "json", "title": "data/golden/manifest.json（cases 除外）", "src": "golden:", "omit": ["cases"]}]
+        },
+        {
+          "id": "spec.layout", "title": "内存布局", "h": 0.85,
+          "kpi": [{"t": "LiteX SoC · 128-bit DMA · 256 MiB"}],
+          "desc": "CPU 与加速器平台的内存布局逐项转录自源文件（每个值都带出处），源文件打包在 sources/ 下。",
+          "views": [{"type": "json", "title": "SPEC.json memory_layout", "src": "spec:memory_layout"}]
+        },
+        {
+          "id": "spec.nano", "title": "极小 NanoChat 规格", "h": 0.85,
+          "kpi": [{"t": "{l} 层 · hidden {h} · 专家 {e}+共享 {s}", "v": {"l": "spec:nano.layers", "h": "spec:nano.hidden", "e": "spec:nano.experts", "s": "spec:nano.shared_experts"}}],
+          "desc": "1 层、hidden 16、2 路由专家激活 1 个、1 个共享专家、字符词表 256、context 32、最多生成 12 token；四类限定问题，禁止查表答案；“今天天气怎么样？”只进测试集。",
+          "views": [{"type": "json", "title": "SPEC.json nano", "src": "spec:nano"}]
+        },
+        {
+          "id": "spec.layers", "title": "四层候选结构（只保留结构）", "h": 0.85,
+          "kpi": [{"t": "{n} 个候选 · NOT_RUN · 无 PROMOTE", "v": {"n": "candidates:candidates#len"}}],
+          "desc": "runtime / algorithm / microarchitecture / physical 四层候选结构按 baseline 保留，不运行晋升、不声称性能改善（task.md §1）。",
+          "files": ["data/candidates.json"],
+          "views": [{"type": "candidates"}]
+        }
+      ]
+    },
+    {
+      "id": "base", "n": 3, "title": "Baseline 执行比对", "short": "Baseline", "w": 1.2, "layout": "lanes",
+      "desc": "两平台用相同输入执行全部 case × seed，输出完整张量；装配器逐元素复验 golden 位模式、状态、选择与原语，并从证据中逐条确认 golden 规定的期望事件。",
+      "children": [
+        {
+          "id": "base.gate", "title": "验收门：bit-exact + 期望事件", "lane": "A", "kind": "gate",
+          "status": {"gates": ["cpu-records", "accelerator-records"]},
+          "kpi": [{"t": "CPU {a}/1000 · 加速器 {b}/1000", "v": {"a": "calc:records_pass:cpu", "b": "calc:records_pass:accelerator"}}],
+          "desc": "scripts/student_mini_release_records.py 独立复验每条记录（golden bits、状态、选择、原语），scripts/student_mini_release_events.py 从原始测试台行、协议运行与 witness 中确认期望事件；任一 seed 失败则 case 失败，平均值不能抵消。",
+          "views": [{"type": "baselines"}, {"type": "records_index"}]
+        },
+        {
+          "id": "base.cpu.soc", "title": "CPU SoC 构建与存储映射", "lane": "cpu", "h": 1.15,
+          "kpi": [{"t": "LiteX + VexRiscv · 12 SRAM + 25 ROM bank"}, {"t": "{n} 次受限运行 · {hold} HOLD", "v": {"n": "calc:guard_count:base.cpu.soc", "hold": "calc:guard_hold:base.cpu.soc"}}],
+          "desc": "从 LiteX SoC 导出可综合边界，把存储映射到 OpenRAM 宏与 ROM，并用整机重放、形式化与差分测试逐项证明映射不改变行为（SRAM 保持、字节使能、复位、UART 交织等）。为 Nano 会话改写 BIOS（运行时 prompt 长度，v2）后重新生成。",
+          "notes": ["CPU Nano blocked", "v2 CPU firmware"],
+          "guard": ["combined-cpu-*.json", "cpu-boundary-*.json", "cpu-reset-boundary-*.json", "cpu-synthesis-*.json", "cpu-mapping-*.json", "cpu-sram-*.json", "cpu-mapped-memory-*.json", "cpu-memory-enable-*.json", "cpu-replay-*.json", "cpu-uart-*.json", "cpu-independent-memory-*.json", "cpu-wishbone-formal-*.json", "cpu-inflight-reset-*.json", "cpu-warm-reset-*.json", "cpu-quiescent-*.log", "selected-mapped-cpu-replay-*.json", "cpu-selected-recovery-*.json", "combined-cpu-*.log"],
+          "views": [{"type": "json", "title": "SPEC.json hardware.cpu", "src": "spec:hardware.cpu"}]
+        },
+        {
+          "id": "base.cpu.records", "title": "1000 条记录 · VexRiscv RTL", "lane": "cpu", "h": 1,
+          "status": {"gates": ["cpu-records"]},
+          "kpi": [{"t": "PASS {a}/1000 · {c} case", "v": {"a": "calc:records_pass:cpu", "c": "calc:cases_total:cpu"}}],
+          "desc": "最终映射（12 SRAM + 25 ROM bank，v2 边界）上执行 1000 条记录，导出完整结果数组与 cycles/instructions/DMA/cache 计数；结果 grading/evidence/student-mini-v1/results/1d1ff3dd…。",
+          "notes": ["Release inputs (verified 2026-10-11)"],
+          "guard": ["cpu-rombanks-results-*.json"],
+          "files": ["data/records/cpu.jsonl", "data/arrays/cpu.npz", "data/summary/cases.csv"],
+          "views": [{"type": "records", "platform": "cpu"}]
+        },
+        {
+          "id": "base.cpu.protocol", "title": "协议 MINI-31/32/33", "lane": "cpu", "h": 0.85,
+          "kpi": [{"t": "背压 · 输出保持 · 运行中复位"}, {"t": "{n} 次运行（含试跑）", "v": {"n": "calc:guard_count:base.cpu.protocol"}}],
+          "desc": "在 CPU die 端口上做协议测试：UART 结果流 valid/ready 随机停顿（MINI-31）、逐字节保持（MINI-32）、记录执行到 2000 周期时拉 asic_reset_i 再重启执行（MINI-33）；90/90 PASS（NOTES）。",
+          "notes": ["CPU protocol (scripts/run_student_mini_cpu_protocol.py)"],
+          "guard": ["cpu-protocol-*.json", "cpu-protocol-*.log"],
+          "views": [{"type": "json", "title": "SPEC.json protocol_interfaces.cpu", "src": "spec:protocol_interfaces.cpu"}]
+        },
+        {
+          "id": "base.acc.rtl", "title": "P1/P2/P3 RTL 记录（cocotb）", "lane": "accelerator", "h": 1.1,
+          "status": {"gates": ["accelerator-records"]},
+          "kpi": [{"t": "PASS {a}/1000 · {c} case", "v": {"a": "calc:records_pass:accelerator", "c": "calc:cases_total:accelerator"}}, {"t": "{n} 次受限运行", "v": {"n": "calc:guard_count:base.acc.rtl"}}],
+          "desc": "cocotb 测试台在加速器端口上执行每条记录，含 DMA 端口随机 ready 撤销、响应保持与运行中复位；P1/P3 为最终 RTL 新结果，P2 结果沿用（RTL 未变）。",
+          "notes": ["Accelerator fresh RTL"],
+          "guard": ["accelerator-p*-rtl-final-*.json", "p1-rtl-*.json", "p2-rtl-*.json", "p3-rtl-*.json", "student-p*-*.json", "native-dma-full-contract-*.json"],
+          "files": ["data/records/accelerator.jsonl", "data/arrays/accelerator.npz"],
+          "views": [{"type": "records", "platform": "accelerator"}, {"type": "json", "title": "SPEC.json protocol_interfaces.accelerator", "src": "spec:protocol_interfaces.accelerator"}]
+        },
+        {
+          "id": "base.acc.witness", "title": "原语 witness 与到达顺序", "lane": "accelerator", "h": 0.9, "kind": "step",
+          "kpi": [{"t": "原始 HOLD {n} 条 → 复验 PASS", "v": {"n": "calc:raw_hold_records"}}],
+          "desc": "固定功能加速器没有执行原语（MINI-19..24）的指令路径，原始结果为 HOLD；装配器附加组件级 RTL witness（numeric-path-witnesses/de0dc89a）后逐条复验。P2-MINI-08 的乱序 witness 运行存在但未被装配器附加，状态来自 bit-exact 复验加冻结期望事件（见披露）。",
+          "guard": ["numeric-path-witnesses-*.json", "primitive-witnesses-*.json", "p2-serial-order-*.json"],
+          "views": [{"type": "disclosures", "kind": "accelerator-raw-hold"}]
+        }
+      ]
+    },
+    {
+      "id": "phys", "n": 4, "title": "物理实现 · SKY130HD · 10 ns", "short": "物理实现", "w": 2.34, "layout": "lanes",
+      "cols": {"cpu": [0.5, 0.5], "accelerator": [0.5, 0.5]},
+      "desc": "四份唯一实现：CPU（顶层 + 25 个硬化 ROM bank）与加速器 P1/P2/P3。每份都做真实综合、布图（宏放置）、PDN、布局、CTS、全局/详细布线、天线修复、签核与宏 pin / 电源网格审计；全部在 2 vCPU / 8 GiB 下完成，这是整个包最耗时的环节。",
+      "children": [
+        {
+          "id": "phys.gate", "title": "签核门：WNS≥0 · hold≥0 · DRC 0 · 天线 0 · 宏 pin / PDN", "lane": "A", "kind": "gate",
+          "status": {"gates": ["cpu-physical", "accelerator-p1-physical", "accelerator-p2-physical", "accelerator-p3-physical", "physical-power-files"]},
+          "kpi": [{"t": "CPU WNS {w} ns · P1 {a} · P2 {b} · P3 {c} ns", "v": {"w": "physical:cpu.route.metrics.wns_ns#ns", "a": "physical:accelerator-p1.route.metrics.wns_ns#ns", "b": "physical:accelerator-p2.route.metrics.wns_ns#ns", "c": "physical:accelerator-p3.route.metrics.wns_ns#ns"}}],
+          "desc": "装配器对每份实现检查：CPU 为 PLATFORM_PHYSICAL_ROUTE_STAGE_PASS（含 25 个 ROM bank 各自 ROM_BANK_PHYSICAL_STAGE_PASS）；加速器为 profile.json physical_evidence_complete、setup/hold WNS≥0、DRC/天线为 0；并要求每份实现打包最终 DEF、网表、SPEF、SDC 与功耗证据。",
+          "views": [{"type": "physical_table"}]
+        },
+        {
+          "id": "phys.cpu.explore", "title": "CPU 布图探索与旧结构尝试", "lane": "cpu", "col": 0, "h": 1.05,
+          "kpi": [{"t": "10-08 受限尝试 {n} 次 · PASS {p}", "v": {"n": "calc:guard_count:phys.cpu.explore", "p": "calc:guard_pass:phys.cpu.explore"}}, {"t": "29 宏 GRT 不收敛 → ROM 是根因"}],
+          "desc": "最初 29 个 OpenRAM 32x1024 宏的 6x5 网格全局布线不收敛（overflow ~140k）。10-08 在护栏内依次尝试 ROM 切分、tag 寄存器化、DFI 输出切分、读缓冲、驱动 ECO、通道加宽、CTS 变体等，均以 HOLD 结束；护栏外又探索了宏合并（29→12）与 A/B/B25/B15/W42/X1/X3/x2–x4 等布局。最终定位根因：ROM 逻辑锥占 59% 单元、21 m HPWL 中的 15 m，决定改为 25 个硬化 ROM bank。",
+          "notes": ["29 OpenRAM 32x1024 macros", "Explore placement: A (4x3 grid)", "CPU ROM is the root cause", "CPU: B/B25/B15/W42 all congested", "CPU top x3 (bottom SRAM row"],
+          "guard": ["cpu-pdn-*.json", "cpu-rom-cut-*.json", "cpu-tag-*.json", "cpu-rom-request-*.json", "selected-request-cpu-placement-*.json", "selected-cpu-bank-placement-*.json", "cpu-single-read-buffer-*.json", "cpu-read-buffer-route-*.json", "cpu-dfi-*.json", "cpu-multiplier-drive-*.json", "cpu-two-gate-*.json", "cpu-three-gate-*.json", "cpu-drive-*.json", "cpu-congestion-geometry-*.json", "cpu-channel*.json", "cpu-cts-*.json", "cpu-single-buffer-route-*.json", "cpu-placement-*.log", "cpu-channel-rom-drive-*.log", "selected-eco-cpu-*.log"]
+        },
+        {
+          "id": "phys.cpu.variants", "title": "结构变体 → 整机功能重放", "lane": "cpu", "col": 0, "h": 0.85,
+          "kpi": [{"t": "宏合并 / ROM block / 25 bank / v2 ROM"}, {"t": "{n} 次整机重放", "v": {"n": "calc:guard_count:phys.cpu.variants"}}],
+          "desc": "每次物理结构改动都要先重建 SoC 边界并整机重放 1000 条记录的执行，证明功能不变，才能进入布局布线：宏合并（packed，664 s）、ROM block、25 个 ROM bank、v2 固件 ROM 内容。",
+          "notes": ["Packed CPU full replay PASS under guard", "ROM-banks boundary cpu-rom-banks-boundary"],
+          "guard": ["cpu-packed-replay-*.json", "cpu-romblock-replay-*.json", "cpu-rombanks-replay-*.json", "cpu-rom-v2-replay-*.json"]
+        },
+        {
+          "id": "phys.cpu.rombank", "name": "25 个 ROM bank 硬化分块", "title": "ROM bank ×25 硬化", "lane": "cpu", "col": 0, "h": 1.25,
+          "status": {"src": "physical:cpu.route.rom_banks_passed", "equals": 25},
+          "kpi": [{"t": "{p}/25 PASS · WNS ≥ {w} ns", "v": {"p": "physical:cpu.route.rom_banks_passed", "w": "physical:cpu.route.rom_banks#min:wns_ns#ns"}}],
+          "desc": "每个 512x32 ROM bank 作为硬化分块独立布局布线并逐块验收（DRC/天线 0、PDN 连通、I/O 预算 10 ns），生成 LEF/LIB 抽象供顶层集成。共三版：v1 启动参数错误立即失败；v2 布通，但 met5 电源引脚被顶层够不到；v3 改为 met4 电源网格与布线（rom_bank_pdn.tcl）后 25/25 通过。",
+          "notes": ["ROM bank PnR: density 0.3 converges", "ROM banks v3 (met4 PDN/routing) running", "ROM banks v3: banks 0-4, 6 HOLD"],
+          "guard": ["cpu-rom-bank-*-physical-*.json", "cpu-rom-bank-*-physical-*.log", "aborted/cpu-rom-bank-*.json"],
+          "chip_cols": 3,
+          "chips": [
+            {"id": "phys.cpu.rombank.v1", "name": "ROM bank 第一版", "title": "v1×{n}", "v": {"n": "calc:guard_count:phys.cpu.rombank.v1"}, "guard": ["cpu-rom-bank-??-physical-20261009*.json", "cpu-rom-bank-??-physical-20261009*.log"], "desc": "2026-10-09 第一版：25 个任务启动即失败（退出码 2，--boundary 参数缺失），部分 r2 重试在 ORFS 中失败（仅日志）。"},
+            {"id": "phys.cpu.rombank.v2", "name": "ROM bank 第二版（v2 固件）", "title": "v2×{n}", "v": {"n": "calc:guard_count:phys.cpu.rombank.v2"}, "guard": ["cpu-rom-bank-??-v2-*.json", "cpu-rom-bank-??-v2-*.log", "aborted/cpu-rom-bank-??-v2-*.json"], "desc": "v2 固件 ROM 内容，density 0.3 收敛（DRT 7.3k→0，约 13 轮），5 路并行；输入变化导致的 HOLD 用 --resume 续跑。CPU 最终运行 #2 证明其 met5 电源引脚在满层 OBS 之下顶层够不到（PSM-0069）。", "notes": ["ROM banks: all 25 ROM_BANK_PHYSICAL_STAGE_PASS"]},
+            {"id": "phys.cpu.rombank.v3", "name": "ROM bank 第三版（met4 PDN）", "title": "v3×{n}", "v": {"n": "calc:guard_count:phys.cpu.rombank.v3"}, "status": {"src": "physical:cpu.route.rom_banks_passed", "equals": 25}, "guard": ["cpu-rom-bank-??-v3-*.json"], "desc": "met1 followpin + met4 电源条、信号只布到 met4、引脚在 met4；runner 拒绝任何含 met5 的抽象。0–4、6、13–17 号因运行中 runner 被修改而 HOLD（输入变化），全部编辑完成后 --resume 通过。", "views": [{"type": "rom_banks"}]}
+          ],
+          "views": [{"type": "rom_banks"}],
+          "evidence": ["physical/cpu/rom-bank-"]
+        },
+        {
+          "id": "phys.cpu.top", "name": "CPU 顶层 ORFS 流程（37 宏 + 25 个 bank 抽象）", "title": "CPU 顶层 ORFS 流程", "lane": "cpu", "col": 1, "h": 1,
+          "status": {"gates": ["cpu-physical"]},
+          "kpi": [{"t": "WNS {w} · hold {h} ns · DRC {d} · 天线 {a}", "v": {"w": "physical:cpu.route.metrics.wns_ns#ns", "h": "physical:cpu.route.metrics.hold_wns_ns#ns", "d": "physical:cpu.route.metrics.drc", "a": "physical:cpu.route.metrics.antenna_nets"}}],
+          "desc": "scripts/run_student_mini_platform_physical.py 在护栏内跑完整 ORFS 流程（2 线程，openroad-drtbatch，DRT batch 64）。为避免 ORFS 在同一进程里第二次详细布线导致内存不回收，路由阶段跳过 post-DRT 天线修复，再以独立 jemalloc 进程逐轮修复天线（每轮 DRC 必须为 0 才接受），最后 finish 与宏 pin / PDN 审计。下面的阶段耗时来自最终版图运行 0642d6fc 的 completion.json。",
+          "notes": ["ROOT CAUSE of CPU OOM", "IMPLEMENTED (not yet run): scripts/run_student_mini_platform_physical.py"],
+          "chip_cols": 2,
+          "chips": [
+            {"id": "phys.cpu.top.synth", "name": "综合（Yosys）", "title": "综合 {s}", "v": {"s": "pkg:physical/cpu/top/reaudit-of/completion.json|stage_seconds.1_2_yosys#dur"}, "desc": "Yosys 综合映射后的 VexRiscv SoC（12 个 OpenRAM 宏 + 25 个 ROM bank 黑盒抽象）。"},
+            {"id": "phys.cpu.top.fp", "name": "布图与宏放置", "title": "布图 {s}", "v": {"s": "calc:stage_sum:pkg:physical/cpu/top/reaudit-of/completion.json:2_1_floorplan,2_2_floorplan_macro,2_3_floorplan_tapcell"}, "desc": "37 个宏的放置脚本（config/macro-placement.tcl）；底行 SRAM 上移到 469.76，消除边缘 GCell 拥塞（x2→x3）。", "notes": ["CPU top x2: PDN/CTS pass"], "evidence": ["physical/cpu/top/config/"]},
+            {"id": "phys.cpu.top.pdn", "name": "PDN 与宏供电预检", "title": "PDN {c}/{t}", "v": {"c": "pkg:physical/cpu/top/reaudit-of/completion.json|macro_pdn_preflight.connected", "t": "calc:macro_supply_total"}, "desc": "布图阶段即检查每个宏的 VDD/VSS 引脚连到电源网格（macro_pdn_check.tcl）——这是运行 #2 在 6_report 才暴露 PSM-0069 后加入的前置检查。"},
+            {"id": "phys.cpu.top.place", "name": "布局（GP / resize / DP）", "title": "布局 {s}", "v": {"s": "calc:stage_sum:pkg:physical/cpu/top/reaudit-of/completion.json:3_3_place_gp,3_4_place_resized,3_5_place_dp"}, "desc": "全局布局、resize 与详细布局。"},
+            {"id": "phys.cpu.top.cts", "name": "时钟树综合", "title": "CTS {s}", "v": {"s": "pkg:physical/cpu/top/reaudit-of/completion.json|stage_seconds.4_1_cts#dur"}, "desc": "时钟树综合。"},
+            {"id": "phys.cpu.top.grt", "name": "全局布线", "title": "GRT {s}", "v": {"s": "pkg:physical/cpu/top/reaudit-of/completion.json|stage_seconds.5_1_grt#dur"}, "desc": "全局布线（overflow 0）。"},
+            {"id": "phys.cpu.top.drt", "name": "详细布线", "title": "DRT {s}", "v": {"s": "pkg:physical/cpu/top/reaudit-of/completion.json|stage_seconds.5_2_route#dur"}, "desc": "openroad-drtbatch、STUDENT_MINI_DRT_BATCH_SIZE=64、2 线程；SKIP_ANTENNA_REPAIR_POST_DRT=1。", "evidence": ["physical/cpu/top/logs/5_2_route", "physical/cpu/top/logs/make.log"]},
+            {"id": "phys.cpu.top.ant", "name": "天线修复轮次", "title": "天线×{n} {a}→0", "v": {"n": "pkg:physical/cpu/top/reaudit-of/completion.json|antenna_rounds#len", "a": "pkg:physical/cpu/top/reaudit-of/completion.json|antenna_rounds.0.antenna_nets_before"}, "desc": "每轮在新的 jemalloc 进程中 repair_antennas + 增量详细布线，DRC 不为 0 的轮次不接受（第 2 轮默认模式留下 1 个 DRC，改用 jumper 模式重做）。", "views": [{"type": "antenna", "src": "pkg:physical/cpu/top/reaudit-of/completion.json|antenna_rounds"}], "evidence": ["physical/cpu/top/logs/antenna", "physical/cpu/top/logs/drt_antennas", "physical/cpu/top/logs/5_route_drc"]},
+            {"id": "phys.cpu.top.finish", "name": "收尾与报告", "title": "收尾 {s}", "v": {"s": "calc:stage_sum:pkg:physical/cpu/top/reaudit-of/completion.json:5_3_fillcell,6_report"}, "desc": "填充单元、最终报告与 6_final.def/.v/.spef/.sdc。", "evidence": ["physical/cpu/top/6_final", "physical/cpu/top/logs/6_"]},
+            {"id": "phys.cpu.top.audit", "name": "宏 pin / PDN 审计与复核", "title": "审计 {r}/{c}", "v": {"r": "physical:cpu.route.macro_audit.pins_reached_by_route", "c": "physical:cpu.route.macro_audit.connected_signal_pins"}, "status": {"gates": ["cpu-physical"]}, "desc": "几何判据：同网导线/通孔在同层与宏引脚形状重叠才算接入；无负载输出引脚（tag-SRAM dout1[22..31]）单列为 floating_output_pins。原审计用实例级首选接入点（对宏恒为空）误判 2154 个引脚无接入，复核运行 595e9b6a 只重做审计与签核。", "notes": ["CPU final #4 (0642d6fc) finished", "runner --reaudit <work>"], "views": [{"type": "json", "title": "macro_audit（复核 595e9b6a）", "src": "physical:cpu.route.macro_audit"}, {"type": "json", "title": "macro_audit（原运行 0642d6fc，HOLD）", "src": "pkg:physical/cpu/top/reaudit-of/completion.json|macro_audit"}], "evidence": ["physical/cpu/top/logs/audit", "physical/cpu/top/logs/reaudit-of/"]}
+          ],
+          "attempts": [
+            {"label": "最终运行 #1", "guard": "cpu-final-physical-20261009.json", "work": "build/student-mini/platform-physical/a61f325de24a261f491c761c018513b964421f4e18f65358a4c7f2d519cbb713", "result": "detailed_route 中 OOM（oom_kill），第二次详细布线与天线修复在同一 ORFS 进程中内存不回收", "notes": ["CPU FINAL PHYSICAL #1 (guarded"]},
+            {"label": "最终运行 #2", "guard": "cpu-final-physical-20261010.json", "work": "build/student-mini/platform-physical/a4adc80dcb6277887e2f60a17106cfa3a4579868f33606f3f47113a1b3e9845c", "result": "布线 DRC 0、天线 379→0，但 6_report 报 PSM-0069：25 个 ROM bank VDD 未接入 → ROM bank v3 重硬化", "notes": ["CPU FINAL #2 (platform-physical/a4adc80d"]},
+            {"label": "最终运行 #3", "guard": "cpu-final-physical-20261010-r3.log", "work": "build/student-mini/platform-physical/2650ab75792e3de6c77c57dcd4e54c1f31ca2b250983f95909644699f9cefb8a", "result": "宏 PDN 预检 74/74；卡在天线第 2 轮时因 D: 盘满需 WSL 关机压缩而中止，无 guard 记录与 completion", "notes": ["CPU final #3 (platform-physical/2650ab75", "2026-10-11 D: fixed"]},
+            {"label": "最终运行 #4", "guard": "cpu-final-physical-20261011-r4.json", "work": "build/student-mini/platform-physical/0642d6fc7ec71d7db9435f32aff16d372b2ab37c3f535b8fa33974d7d3a1439a", "result": "版图收敛（WNS +0.065、hold +0.325、DRC 0、天线 0、PDN PASS），但宏 pin 审计判据错误 → HOLD；峰值触顶 8 GiB（无 OOM）", "notes": ["CPU final #4 (0642d6fc) finished"]},
+            {"label": "复核 尝试 1", "guard": "cpu-final-physical-20261012-r4-reaudit-attempt1-pinaudit-crash.json", "result": "审计脚本崩溃（临时 Tech() 在 readDb 前被释放）", "notes": ["runner --reaudit <work>"]},
+            {"label": "复核 尝试 2", "guard": "cpu-final-physical-20261012-r4-reaudit.json", "work": "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db", "result": "只重做审计与签核，所有非审计输入 SHA 不变 → PLATFORM_PHYSICAL_ROUTE_STAGE_PASS（打包采用）"}
+          ],
+          "views": [{"type": "physical", "impl": "cpu"}, {"type": "stages", "src": "pkg:physical/cpu/top/reaudit-of/completion.json|stage_seconds", "elapsed": "pkg:physical/cpu/top/reaudit-of/completion.json|elapsed_seconds"}, {"type": "antenna", "src": "pkg:physical/cpu/top/reaudit-of/completion.json|antenna_rounds"}, {"type": "antenna", "title": "运行 #2 的天线轮次（a4adc80d，未打包，读自仓库）", "src": "repo:build/student-mini/platform-physical/a4adc80dcb6277887e2f60a17106cfa3a4579868f33606f3f47113a1b3e9845c/completion.json|antenna_rounds"}],
+          "evidence": ["physical/cpu/top/"]
+        },
+        {
+          "id": "phys.acc.p1", "title": "加速器 P1 物理包", "lane": "accelerator", "col": 0, "h": 1,
+          "status": {"gates": ["accelerator-p1-physical"]},
+          "kpi": [{"t": "WNS {w} · hold {h} ns · {n} 次运行", "v": {"w": "physical:accelerator-p1.route.metrics.wns_ns#ns", "h": "physical:accelerator-p1.route.metrics.hold_wns_ns#ns", "n": "calc:guard_count:phys.acc.p1"}}],
+          "desc": "P1（稀疏注意力）无宏。布线经历多次超时/队列重试与额外天线修复轮次后签核；profile.json 绑定 RTL 源、PDK 几何与最终视图的 SHA。",
+          "guard": ["p1-physical-cgroup-*.json", "p1-queued-place-*.json", "p1-route-*.json", "p1-signoff-*.json", "p1-registered-signoff-*.json", "p1-strict-signoff-*.log", "p1-antenna-*.json", "p1-additional-antenna-*.json", "p1-final-route-*.json"],
+          "views": [{"type": "physical", "impl": "accelerator-p1"}],
+          "evidence": ["physical/accelerator-p1/"]
+        },
+        {
+          "id": "phys.acc.p2", "title": "加速器 P2 物理包", "lane": "accelerator", "col": 0, "h": 1,
+          "status": {"gates": ["accelerator-p2-physical"]},
+          "kpi": [{"t": "WNS {w} · hold {h} ns · {n} 次运行", "v": {"w": "physical:accelerator-p2.route.metrics.wns_ns#ns", "h": "physical:accelerator-p2.route.metrics.hold_wns_ns#ns", "n": "calc:guard_count:phys.acc.p2"}}],
+          "desc": "P2（分块归并注意力，context 32）。",
+          "guard": ["p2-queued-place-*.json", "p2-route-*.json", "p2-signoff-*.json"],
+          "views": [{"type": "physical", "impl": "accelerator-p2"}],
+          "evidence": ["physical/accelerator-p2/"]
+        },
+        {
+          "id": "phys.acc.p3", "title": "加速器 P3 物理包", "lane": "accelerator", "col": 0, "h": 1,
+          "status": {"gates": ["accelerator-p3-physical"]},
+          "kpi": [{"t": "WNS {w} · hold {h} ns · {n} 次运行", "v": {"w": "physical:accelerator-p3.route.metrics.wns_ns#ns", "h": "physical:accelerator-p3.route.metrics.hold_wns_ns#ns", "n": "calc:guard_count:phys.acc.p3"}}],
+          "desc": "P3（MoE 专家）。综合/布局/布线在选择逻辑修复（select-fix）后重跑。",
+          "guard": ["p3-physical-cgroup-*.json", "p3-route-cgroup-*.json", "p3-synth-*.json", "p3-place-*.json", "p3-route-*.json", "p3-signoff-*.json"],
+          "views": [{"type": "physical", "impl": "accelerator-p3"}],
+          "evidence": ["physical/accelerator-p3/"]
+        },
+        {
+          "id": "phys.acc.bundle", "title": "PDK 几何审计 + 物理包组装", "lane": "accelerator", "col": 1, "h": 1,
+          "kpi": [{"t": "{n} 次运行 · {hold} HOLD", "v": {"n": "calc:guard_count:phys.acc.bundle", "hold": "calc:guard_hold:phys.acc.bundle"}}, {"t": "三个 profile.json · 无宏"}],
+          "desc": "把历史布线结果与新绑定的 PDK 几何、时序/功耗重放连接起来（proof_semantics），审计 DEF RC 与链接设计；包组装多次 HOLD（DEF RC、链接设计、超时）后改为轻量组装与独立校验。注意：加速器签核阶段与 P1/P2 包组装没有可匹配的受限记录（见披露）。",
+          "guard": ["p*-pdk-*.json", "p*-physical-bundle-*.json", "p1-bundle-*.json", "p3-bundle-*.json", "p3-lightweight-bundle-*.json", "p3-independent-bundle-*.json"],
+          "views": [{"type": "json", "title": "P1 profile.json（摘要）", "src": "pkg:physical/accelerator-p1/profile.json", "omit": ["rtl_sources", "loads", "package_files", "artifacts", "external_tool_binary_sha256"]}, {"type": "disclosures", "kind": "note", "match": "Resource guard records listed"}]
+        }
+      ]
+    },
+    {
+      "id": "power", "n": 5, "title": "门级活动与功耗", "short": "门级功耗", "w": 1.18, "layout": "lanes",
+      "desc": "功耗必须来自该网表的实际活动：用 RTL 执行同一负载的端口轨迹驱动布线后的门级网表，逐周期比对输出，再把翻转活动作为 SAIF/VCD 标注到 OpenROAD，按 SPEF 计算 tt 25°C 1.8 V 功耗；每个算子覆盖 seed 1–10。",
+      "children": [
+        {
+          "id": "power.gate", "title": "功耗门：每实现 × 算子 × seed 1–10", "lane": "A", "kind": "gate",
+          "status": {"gates": ["cpu-power", "accelerator-p1-power", "accelerator-p2-power", "accelerator-p3-power"]},
+          "kpi": [{"t": "CPU {a} 条 · 加速器 {b}+{c}+{d} 条", "v": {"a": "physical:cpu.power.records#len", "b": "physical:accelerator-p1.power.records#len", "c": "physical:accelerator-p2.power.records#len", "d": "physical:accelerator-p3.power.records#len"}}],
+          "desc": "CPU 须 30 条（3 算子 × 10 seed）且 CPU_GATE_POWER_STAGE_PASS；每个加速器须 10 个负载。功耗边界：SKY130HD 核心功耗，不含板级、主机或外部 DRAM。",
+          "files": ["data/summary/power_per_seed.csv"],
+          "views": [{"type": "power", "impl": "cpu"}, {"type": "power", "impl": "accelerator-p1"}, {"type": "power", "impl": "accelerator-p2"}, {"type": "power", "impl": "accelerator-p3"}]
+        },
+        {
+          "id": "power.cpu.trace", "title": "RTL 端口轨迹", "lane": "cpu", "h": 0.8,
+          "kpi": [{"t": "逐周期端口值 · 671 个窗口"}],
+          "desc": "scripts/run_student_mini_cpu_activity_trace.py 记录 RTL 执行的逐周期端口轨迹；窗口由流量计数器 release/capture CSR 写确定（窗口 0 为固件 DMA 探测，记录 i 为窗口 i+1）。",
+          "notes": ["CPU traces: scripts/run_student_mini_cpu_activity_trace.py", "CPU power windows: window 0"],
+          "guard": ["cpu-activity-trace-*.json"]
+        },
+        {
+          "id": "power.cpu.gatesim", "title": "门级重放 gatesim", "lane": "cpu", "h": 1.1,
+          "status": {"src": "pkg:power/cpu/completion.json|replay.mismatched_cycles", "equals": 0},
+          "kpi": [{"t": "{c} 周期 · 不一致 {m}", "v": {"c": "pkg:power/cpu/completion.json|replay.checked_cycles#int", "m": "pkg:power/cpu/completion.json|replay.mismatched_cycles"}}, {"t": "第 {n} 次运行通过", "v": {"n": "calc:attempts:power.cpu.gatesim"}}],
+          "desc": "Verilator 在 8 GiB 内编不动门级网表，因此自研零延迟两态事件驱动引擎 tools/gatesim（Liberty 函数、ff/latch/ICG、OpenRAM 宏原生建模），与 Verilator SAIF 在 ROM bank 上交叉验证（4.30 vs 4.31 mW）。比较从第 1 周期开始（第 0 周期在首个上升沿之前，寄存器为上电未定义值）；功耗窗口比固件周期计数多固定 95 个插桩周期，作为字段保留。",
+          "notes": ["Verilator cannot compile the GPU gate netlist", "CPU gate power attempt 2", "CPU power attempt 3", "CPU gate power PASS"],
+          "attempts": [
+            {"label": "尝试 1", "guard": "cpu-gate-power-20261012-attempt1-config-path.json", "result": "复核运行的 config.mk 需经 reaudit_of 解析，路径失败"},
+            {"label": "尝试 2", "guard": "cpu-gate-power-20261012-attempt2-cycle0-powerup.json", "result": "45,460,515 周期中第 0 周期 1 位不一致（上电未定义状态）→ 比较从第 1 周期开始"},
+            {"label": "尝试 3", "guard": "cpu-gate-power-20261012-attempt3-window-offset.json", "result": "0 不一致，但窗口长度与固件周期数相差恒定 95 周期 → 检查改为允许一个 [0,128] 内的恒定偏移并记录"},
+            {"label": "尝试 4", "guard": "cpu-gate-power-20261012.json", "work": "build/student-mini/cpu-gate-power/fc65c450176f0f01eb8dfeffeb9662b10fe67592ba8c18065cb59452fec64f39", "result": "CPU_GATE_POWER_STAGE_PASS（打包采用）"}
+          ],
+          "views": [{"type": "json", "title": "power/cpu/completion.json replay", "src": "pkg:power/cpu/completion.json|replay"}, {"type": "json", "title": "power/cpu/completion.json macro_power", "src": "pkg:power/cpu/completion.json|macro_power"}],
+          "evidence": ["power/cpu/completion.json", "power/cpu/inputs.json", "power/cpu/compile.log"]
+        },
+        {
+          "id": "power.cpu.report", "title": "SAIF → report_power", "lane": "cpu", "h": 1,
+          "status": {"gates": ["cpu-power"]},
+          "kpi": [{"t": "P1 {a} · P2 {b} · P3 {c} mW", "v": {"a": "physical:cpu.power.summary.p1.mean_total_mw#f1", "b": "physical:cpu.power.summary.p2.mean_total_mw#f1", "c": "physical:cpu.power.summary.p3.mean_total_mw#f1"}}, {"t": "标注率 ≥ {p}%", "v": {"p": "physical:cpu.power.summary.p1.min_annotation_percent#f1"}}],
+          "desc": "每个窗口的引脚活动写成 SAIF，在 OpenROAD 中用最终 SDC 与 SPEF（顶层 + 25 个 bank）标注并 report_power。OpenRAM 宏 liberty 的 internal_power 数据无效，宏访问能量被排除并以访问次数单独报告。",
+          "views": [{"type": "power", "impl": "cpu"}],
+          "evidence": ["power/cpu/"]
+        },
+        {
+          "id": "power.acc.vcd", "title": "门级仿真 VCD（Icarus）", "lane": "accelerator", "h": 1,
+          "kpi": [{"t": "{n} 个 VCD · {b} 未打包", "v": {"n": "calc:omitted_files", "b": "calc:omitted_bytes#bytes"}}, {"t": "SHA 仍绑定在 profile.json"}],
+          "desc": "每个加速器对 10 个 seed 的命令做门级仿真（Icarus），得到 VCD 活动；为满足 1 GiB ZIP 限制，30 个 activity.vcd.gz 未打包，其 SHA-256 保留在 profile.json 与 evidence-index.json omitted 中。",
+          "guard": ["p3-activity-*.json"],
+          "views": [{"type": "omitted"}]
+        },
+        {
+          "id": "power.acc.report", "title": "report_power 逐 seed", "lane": "accelerator", "h": 1,
+          "status": {"gates": ["accelerator-p1-power", "accelerator-p2-power", "accelerator-p3-power"]},
+          "kpi": [{"t": "P1 {a} · P2 {b} · P3 {c} mW", "v": {"a": "calc:power_mean:accelerator-p1#f1", "b": "calc:power_mean:accelerator-p2#f1", "c": "calc:power_mean:accelerator-p3#f1"}}],
+          "desc": "按源码绑定的功耗重放（sourcebound power）把 VCD 标注到最终网表与 SPEF，逐 seed 报告总/动态/漏电功耗、能量、窗口与标注率。",
+          "guard": ["p1-power-*.json", "p2-sourcebound-power-*.json", "p3-sourcebound-power-*.json", "p3-power-*.json"],
+          "views": [{"type": "power", "impl": "accelerator-p1"}, {"type": "power", "impl": "accelerator-p2"}, {"type": "power", "impl": "accelerator-p3"}],
+          "evidence": ["power/accelerator-p"]
+        }
+      ]
+    },
+    {
+      "id": "nano", "n": 6, "title": "NanoChat 模型", "short": "NanoChat", "w": 1.3, "layout": "lanes",
+      "cols": {"A": [0.56, 0.44]},
+      "desc": "新训练的独立小模型（CPU 训练、seed 1），导出 INT8 PTQ checkpoint；两平台对同一份 12 个冻结测试问题做真正的逐 token 推理，token 序列必须与 PTQ 参考完全一致。",
+      "children": [
+        {
+          "id": "nano.train", "name": "训练 → PTQ 导出 → 选择", "title": "训练→PTQ 导出", "lane": "A", "col": 0,
+          "kpi": [{"t": "{p} 参数 · {b} B", "v": {"p": "model_card:parameters.total#int", "b": "model_card:deployment.export.bytes#int"}}],
+          "desc": "在 CPU 上训练 FP32 模型并 PTQ 导出（QAT 结果保留但未部署）；参数数量与各类权重大小从导出文件统计（model-card.json）。",
+          "guard": ["native-training-*.json", "nano-exact-selection-*.json", "nano-quality-*.json", "native-quality-*.json", "native-nano-*.log"],
+          "files": ["data/nano/model-card.json"],
+          "views": [{"type": "model_card"}]
+        },
+        {
+          "id": "nano.gate", "name": "验收门：12/12 token 一致", "title": "门 token 一致", "lane": "A", "col": 1, "kind": "gate",
+          "status": {"gates": ["cpu-nano", "accelerator-nano"]},
+          "kpi": [{"t": "{a}/12 · {b}/12", "v": {"a": "calc:nano_pass:cpu", "b": "calc:nano_pass:accelerator"}}],
+          "desc": "每个平台 12 个问题全部 PASS 且只用一个部署（同一 checkpoint）才通过。",
+          "files": ["data/nano/sessions.json"],
+          "views": [{"type": "nano", "platform": "cpu"}, {"type": "nano", "platform": "accelerator"}]
+        },
+        {
+          "id": "nano.cpu", "title": "CPU 会话 · VexRiscv RTL", "lane": "cpu", "h": 1,
+          "status": {"gates": ["cpu-nano"]},
+          "kpi": [{"t": "{a}/12 PASS · 后端 vexriscv-rtl", "v": {"a": "calc:nano_pass:cpu"}}, {"t": "{n} 次受限运行", "v": {"n": "calc:guard_count:nano.cpu"}}],
+          "desc": "整个模型在 VexRiscv RTL 上运行。最初固件把 prompt 长度写死在头文件宏里，ROM 只放得下天气一题 → 改写 BIOS 为运行时 prompt 长度（v2），连带 ROM 内容、ROM bank 与顶层重做；最终 12/12 会话通过（guard PASS 10,255 s）。",
+          "notes": ["CPU Nano blocked", "CPU Nano FINAL"],
+          "guard": ["cpu-nano-sessions-*.json", "native-cpu-session-*.json", "selected-cpu-session-join-*.json", "cpu-selected-eco-session-*.json"],
+          "views": [{"type": "nano", "platform": "cpu"}]
+        },
+        {
+          "id": "nano.acc", "title": "加速器会话 · 算子 RTL", "lane": "accelerator", "h": 1,
+          "status": {"gates": ["accelerator-nano"]},
+          "kpi": [{"t": "{a}/12 PASS · verilator-rtl", "v": {"a": "calc:nano_pass:accelerator"}}, {"t": "残差模型 host-native-c（披露）"}],
+          "desc": "P1/P2/P3 算子在加速器 RTL（Verilator）上执行；嵌入、norm、残差加、lm_head 与 token 选择由主机 C 代码计算（会话字段 residual_model_backend）。",
+          "guard": ["native-accelerator-session-*.json", "selected-native-accelerator-*.json", "selected-accelerator-session-join-*.json", "nano-test-sessions-gpu-accelerator-*.json"],
+          "views": [{"type": "nano", "platform": "accelerator"}, {"type": "disclosures", "kind": "note", "match": "Accelerator NanoChat sessions"}]
+        }
+      ]
+    },
+    {
+      "id": "res", "n": 7, "title": "受限资源验证", "short": "资源验证", "w": 0.95, "layout": "stack",
+      "desc": "task.md §4：在 2 vCPU、8 GiB 任务内存限制下执行验收，记录峰值内存、临时磁盘和耗时；软件依赖与重建空间单独测量。资源门要求包内列出的每条护栏记录都是 PASS。",
+      "children": [
+        {
+          "id": "res.records", "title": "本包引用的护栏记录", "h": 1.1,
+          "kpi": [{"t": "{n} 条 · PASS {p} · HOLD {h}", "v": {"n": "resources:#len", "p": "resources:#count:status=PASS", "h": "resources:#count:status=HOLD"}}],
+          "desc": "data/resources 中的记录是输出目录属于被打包证据目录（或其续跑/复核来源）的受限运行，以及按 SHA 匹配的加速器功耗/PDK 审计/P3 包运行。",
+          "files": ["data/resources/resources.json"],
+          "views": [{"type": "resources"}]
+        },
+        {
+          "id": "res.peak", "title": "峰值内存", "h": 1,
+          "kpi": [{"t": "最高 {m} · 上限 8 GiB", "v": {"m": "resources:#max:memory_peak_bytes#gib"}}, {"t": "触顶 {k} 条（memory.max 回收，无 OOM）", "v": {"k": "calc:peak_at_cap"}}],
+          "desc": "CPU 最终运行 #4 峰值等于 8 GiB 上限（memory.max 事件 45,343 次回收，无 OOM）；ROM bank 与功耗运行远低于上限。",
+          "views": [{"type": "resources", "sort": "peak"}]
+        },
+        {
+          "id": "res.disk", "title": "软件依赖与磁盘实测", "h": 1,
+          "kpi": [{"t": "软件依赖 {d}", "v": {"d": "measure:dependencies.total_bytes#bytes"}}, {"t": "证据运行目录 {r}", "v": {"r": "measure:runs.total_bytes#bytes"}}],
+          "desc": "用 du 测量已安装工具树、APT 包、OpenROAD 重建空间、ORFS、PDK 与 Python 环境，以及每个证据运行的目录占用；不把“包里不含软件”写成“安装不占空间”。",
+          "files": ["data/resources/resource-measurements.json"],
+          "views": [{"type": "measurements"}]
+        },
+        {
+          "id": "res.uncovered", "title": "无护栏记录的步骤", "h": 0.9, "kind": "info",
+          "kpi": [{"t": "加速器活动 / 签核 / P1·P2 组装"}],
+          "desc": "没有找到输出为加速器门级活动目录、加速器签核阶段或 P1/P2 包组装的护栏记录，这些步骤在本包中没有 2 vCPU / 8 GiB 记录（计划披露）。",
+          "views": [{"type": "disclosures", "kind": "note", "match": "Resource guard records listed"}]
+        },
+        {
+          "id": "res.gate", "title": "资源门 NOT MET", "h": 1, "kind": "hold",
+          "status": {"gates": ["resource-limits"]},
+          "kpi": [{"t": "{h} 条 HOLD 记录 → 门未通过", "v": {"h": "resources:#count:status=HOLD"}}],
+          "desc": "包内列出的记录中有 HOLD：CPU 运行 #4 的审计 HOLD；ROM bank v3 中 11 条因运行中 runner 被修改（bank input changed）而 HOLD、随后被 --resume 续跑的原始记录；以及加速器 Nano 会话批次与 P1/P2 布线重试的中间记录。资源门要求全部 PASS，因此保持 NOT MET；不删除、不改写这些记录。",
+          "views": [{"type": "disclosures", "kind": "resource-record-hold"}]
+        }
+      ]
+    },
+    {
+      "id": "pkg", "n": 8, "title": "白名单打包校验", "short": "打包", "w": 1.04, "layout": "stack",
+      "desc": "按显式计划（白名单）装配：重新复验全部记录、评估全部发布门、打包证据并建 SHA-256 索引、检查尺寸限制、压缩，再从干净目录解压并运行包内校验器。",
+      "children": [
+        {
+          "id": "pkg.plan", "title": "发布计划（白名单）", "h": 0.9,
+          "kpi": [{"t": "{n} 个源文件 · 无安装包/ODB", "v": {"n": "calc:package_sources"}}],
+          "desc": "scripts/build_student_mini_release_plan.py --course cpu-accelerator 列出每个证据输入、源码白名单、物理/功耗文件（不含 ODB）、披露项、工具与主机信息；不复制整个仓库。",
+          "files": ["SPEC.json", "README.md"],
+          "views": [{"type": "json", "title": "SPEC.json course", "src": "spec:course"}]
+        },
+        {
+          "id": "pkg.assemble", "title": "装配复验 + 发布门", "h": 1,
+          "status": {"src": "summary:status", "equals": "COMPLETE"},
+          "kpi": [{"t": "门 {p}/{t} 通过", "v": {"p": "calc:gates_pass", "t": "calc:gates_total"}}, {"t": "{s}", "v": {"s": "summary:status"}}],
+          "desc": "scripts/assemble_student_mini_release.py 只认计划列出的证据，缺什么就报什么，不补造；除一小时门外全部通过才为 COMPLETE。",
+          "views": [{"type": "gates"}, {"type": "baselines"}]
+        },
+        {
+          "id": "pkg.evidence", "title": "证据索引 SHA-256", "h": 1,
+          "kpi": [{"t": "{f} 个文件 · {a} 个别名", "v": {"f": "calc:evidence_files", "a": "calc:evidence_aliases"}}, {"t": "省略 {o} 个（{b}）", "v": {"o": "calc:omitted_files", "b": "calc:omitted_bytes#bytes"}}],
+          "desc": "physical/ 与 power/ 下每个文件记录打包后 SHA-256 与压缩前源字节 SHA-256；内容相同的共享文件只打包一次（别名）。",
+          "files": ["evidence-index.json"],
+          "views": [{"type": "evidence_all"}]
+        },
+        {
+          "id": "pkg.size", "title": "尺寸限制 ZIP ≤ 1 GiB", "h": 1,
+          "kpi": [{"t": "本包文件（渲染时）{b}", "v": {"b": "calc:package_bytes#bytes"}}, {"t": "此前装配 {n} 次", "v": {"n": "calc:packaging_runs"}}],
+          "desc": "解压后 ≤ 3 GiB、ZIP ≤ 1 GiB 是强制门（超限则 REJECTED_PACKAGING）。第一次完整装配含 807 MB 加速器 VCD，ZIP 超过 1 GiB 被拒；改用 --omit-accelerator-activity 后通过。本次 ZIP 大小在报告写入之后才产生，见 package-report.json。",
+          "views": [{"type": "packaging_runs"}, {"type": "package_contents"}]
+        },
+        {
+          "id": "pkg.verify", "title": "干净目录解压校验", "h": 0.9,
+          "kpi": [{"t": "verify_release.py · MANIFEST.sha256"}],
+          "desc": "ZIP 解压到全新空目录，运行包内只依赖标准库的 verify_release.py：清单 SHA、证据索引、功耗记录的网表/SPEF SHA 绑定与记录状态全部复核。",
+          "files": ["verify_release.py", "MANIFEST.sha256"],
+          "views": [{"type": "packaging_runs"}]
+        },
+        {
+          "id": "pkg.hold", "title": "发布状态", "h": 1, "kind": "hold",
+          "status": {"src": "summary:status", "equals": "COMPLETE"},
+          "kpi": [{"t": "{s}", "v": {"s": "summary:status"}}, {"t": "一小时目标 {h} h（未达成）", "v": {"h": "calc:elapsed_h#f1"}}],
+          "desc": "资源门与一小时门未满足，因此不声明完整交付：状态 PARTIAL_NOT_RELEASED，所有 HOLD 与披露项原样列出。",
+          "views": [{"type": "disclosures"}]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {"from": "spec.cases", "to": "base.cpu.records", "type": "data", "label": "冻结输入（同一文件）"},
+    {"from": "spec.cases", "to": "base.acc.rtl", "type": "data", "label": "冻结输入（同一文件）"},
+    {"from": "spec.golden", "to": "base.gate", "type": "gate", "label": "bit-exact 对照"},
+    {"from": "spec.hw", "to": "base.cpu.soc", "type": "data", "label": "硬件规格"},
+    {"from": "spec.nano", "to": "nano.train", "type": "data", "label": "模型规格"},
+    {"from": "spec.layers", "to": "pkg.plan", "type": "data", "label": "candidates.json"},
+    {"from": "base.cpu.records", "to": "base.gate", "type": "gate", "label": "1000 条复验"},
+    {"from": "base.acc.rtl", "to": "base.gate", "type": "gate", "label": "1000 条复验"},
+    {"from": "base.acc.witness", "to": "base.acc.rtl", "type": "data", "label": "witness 附加"},
+    {"from": "base.cpu.soc", "to": "base.cpu.records", "type": "data", "label": "映射后 SoC"},
+    {"from": "base.cpu.soc", "to": "phys.cpu.variants", "type": "data", "label": "SoC 边界网表"},
+    {"from": "phys.cpu.variants", "to": "base.cpu.soc", "type": "loop", "label": "结构改动 → 重建边界并整机重放", "count": {"guard_node": "phys.cpu.variants"}, "unit": "次重放"},
+    {"from": "phys.cpu.explore", "to": "phys.cpu.variants", "type": "data", "label": "根因：ROM 逻辑锥"},
+    {"from": "phys.cpu.variants", "to": "phys.cpu.rombank", "type": "data", "label": "ROM 分 25 bank"},
+    {"from": "phys.cpu.rombank", "to": "phys.cpu.top", "type": "data", "label": "LEF/LIB 抽象 ×25"},
+    {"from": "phys.cpu.top", "to": "phys.cpu.rombank", "type": "loop", "label": "运行 #2 PSM-0069：met5 电源不可达 → v3 重硬化", "count": {"guard_node": "phys.cpu.rombank.v3"}, "unit": "次 v3 运行"},
+    {"from": "phys.cpu.top", "to": "phys.cpu.top", "type": "loop", "label": "最终受限运行 #1–#4 + 复核", "count": {"attempts": "phys.cpu.top"}, "unit": "次尝试"},
+    {"from": "phys.cpu.rombank", "to": "phys.cpu.rombank", "type": "loop", "label": "ROM bank v1 → v2 → v3", "count": {"guard_node": "phys.cpu.rombank"}, "unit": "次 bank 运行"},
+    {"from": "phys.cpu.top", "to": "phys.gate", "type": "gate", "label": "CPU 签核"},
+    {"from": "phys.acc.p1", "to": "phys.gate", "type": "gate", "label": "P1 签核"},
+    {"from": "phys.acc.p2", "to": "phys.gate", "type": "gate"},
+    {"from": "phys.acc.p3", "to": "phys.gate", "type": "gate"},
+    {"from": "phys.acc.p1", "to": "phys.acc.p1", "type": "loop", "label": "P1 布线/天线重试", "count": {"guard_node": "phys.acc.p1"}, "unit": "次运行"},
+    {"from": "phys.acc.p1", "to": "phys.acc.bundle", "type": "data"},
+    {"from": "phys.acc.p2", "to": "phys.acc.bundle", "type": "data"},
+    {"from": "phys.acc.p3", "to": "phys.acc.bundle", "type": "data", "label": "最终视图"},
+    {"from": "phys.acc.bundle", "to": "phys.acc.bundle", "type": "loop", "label": "PDK 审计 / 包组装重做", "count": {"guard_node": "phys.acc.bundle"}, "unit": "次运行"},
+    {"from": "base.acc.rtl", "to": "phys.acc.p2", "type": "data", "label": "RTL"},
+    {"from": "phys.cpu.top", "to": "power.cpu.gatesim", "type": "data", "label": "6_final.v + SPEF（SHA 绑定）"},
+    {"from": "base.cpu.records", "to": "power.cpu.trace", "type": "data", "label": "同一负载的 RTL 执行"},
+    {"from": "power.cpu.trace", "to": "power.cpu.gatesim", "type": "data", "label": "端口轨迹"},
+    {"from": "power.cpu.gatesim", "to": "power.cpu.report", "type": "data", "label": "SAIF"},
+    {"from": "power.cpu.gatesim", "to": "power.cpu.gatesim", "type": "loop", "label": "功耗重放重跑", "count": {"attempts": "power.cpu.gatesim"}, "unit": "次尝试"},
+    {"from": "phys.acc.bundle", "to": "power.acc.vcd", "type": "data", "label": "门级网表"},
+    {"from": "power.acc.vcd", "to": "power.acc.report", "type": "data", "label": "VCD"},
+    {"from": "power.cpu.report", "to": "power.gate", "type": "gate"},
+    {"from": "power.acc.report", "to": "power.gate", "type": "gate"},
+    {"from": "nano.train", "to": "nano.cpu", "type": "data", "label": "ptq.npz"},
+    {"from": "nano.train", "to": "nano.acc", "type": "data", "label": "ptq.npz"},
+    {"from": "nano.cpu", "to": "nano.gate", "type": "gate"},
+    {"from": "nano.acc", "to": "nano.gate", "type": "gate"},
+    {"from": "nano.cpu", "to": "base.cpu.soc", "type": "loop", "label": "prompt 长度写死 → v2 BIOS → ROM/bank/顶层重做", "count": {"guard_node": "nano.cpu"}, "unit": "次会话运行"},
+    {"from": "base.cpu.soc", "to": "nano.cpu", "type": "shared", "label": "同一 VexRiscv SoC"},
+    {"from": "base.acc.rtl", "to": "nano.acc", "type": "shared", "label": "同一加速器 RTL"},
+    {"from": "stack.openroad", "to": "phys.cpu.top", "type": "shared", "label": "openroad-drtbatch · jemalloc"},
+    {"from": "stack.pdk", "to": "phys.cpu.rombank", "type": "shared", "label": "sky130hd"},
+    {"from": "stack.eda", "to": "base.acc.rtl", "type": "shared", "label": "Verilator / Icarus / cocotb"},
+    {"from": "stack.guard", "to": "res.records", "type": "shared", "label": "每个受限任务的 guard 记录"},
+    {"from": "base.gate", "to": "pkg.assemble", "type": "gate"},
+    {"from": "phys.gate", "to": "pkg.assemble", "type": "gate"},
+    {"from": "power.gate", "to": "pkg.assemble", "type": "gate"},
+    {"from": "nano.gate", "to": "pkg.assemble", "type": "gate"},
+    {"from": "res.records", "to": "res.gate", "type": "gate"},
+    {"from": "res.gate", "to": "pkg.hold", "type": "hold", "label": "resource-limits NOT MET"},
+    {"from": "pkg.assemble", "to": "pkg.hold", "type": "hold", "label": "one-hour NOT MET"},
+    {"from": "pkg.plan", "to": "pkg.assemble", "type": "data"},
+    {"from": "pkg.assemble", "to": "pkg.evidence", "type": "data"},
+    {"from": "pkg.evidence", "to": "pkg.size", "type": "data"},
+    {"from": "pkg.size", "to": "pkg.size", "type": "loop", "label": "ZIP 超 1 GiB 被拒 → 省略 VCD 重装", "count": {"packaging_runs": true}, "unit": "次装配"},
+    {"from": "pkg.size", "to": "pkg.verify", "type": "data"}
+  ],
+  "time_sinks": [
+    {"label": "CPU 顶层最终受限运行 #1–#4 + 复核", "node": "phys.cpu.top", "attempts": "phys.cpu.top"},
+    {"label": "CPU 旧结构物理尝试（10-08）", "node": "phys.cpu.explore", "guard_node": "phys.cpu.explore"},
+    {"label": "25 个 ROM bank × 3 版", "node": "phys.cpu.rombank", "guard_node": "phys.cpu.rombank"},
+    {"label": "加速器物理：布线/签核/包组装", "node": "phys.acc.bundle", "guard_nodes": ["phys.acc.p1", "phys.acc.p2", "phys.acc.p3", "phys.acc.bundle"]},
+    {"label": "CPU SoC 构建与映射证明", "node": "base.cpu.soc", "guard_node": "base.cpu.soc"},
+    {"label": "CPU 门级功耗重放 ×4", "node": "power.cpu.gatesim", "attempts": "power.cpu.gatesim"},
+    {"label": "CPU Nano 会话", "node": "nano.cpu", "guard_node": "nano.cpu"}
+  ],
+  "root_causes": [
+    {"node": "phys.cpu.top", "t": "详细布线内存：首次最终运行在 {a} 后 OOM；修复＝DRT 批量补丁 + 天线修复改为独立 jemalloc 进程", "v": {"a": "guard:cpu-final-physical-20261009.json|elapsed_seconds#dur"}},
+    {"node": "phys.cpu.rombank", "t": "宏供电接入：运行 #2 跑了 {a} 才在 6_report 报 25 个 ROM bank VDD 未接入 → 25 个 bank 重新硬化（v3）", "v": {"a": "guard:cpu-final-physical-20261010.json|elapsed_seconds#dur"}},
+    {"node": "phys.cpu.top.ant", "t": "天线修复不收敛：同进程重布线回收不了内存、整网重布会再生违例；改为逐轮新进程 + jumper/diode 模式，最终版图共 {n} 次修复轮（含 1 次 jumper 重做）", "v": {"n": "pkg:physical/cpu/top/reaudit-of/completion.json|antenna_rounds#len"}},
+    {"node": "phys.cpu.top.audit", "t": "审计缺陷：运行 #4 版图已收敛，却因宏 pin 判据错误在 {a} 后 HOLD → 几何审计复核（--reaudit）", "v": {"a": "guard:cpu-final-physical-20261011-r4.json|elapsed_seconds#dur"}},
+    {"node": "phys.cpu.explore", "t": "布图根因定位：29 宏 + ROM 逻辑锥（59% 单元）全局布线不收敛，10-08 护栏内 {n} 次旧结构尝试全部未通过", "v": {"n": "calc:guard_count:phys.cpu.explore"}},
+    {"node": "power.cpu.gatesim", "t": "缺陷导致重跑：功耗重放第 0 周期上电态、窗口 95 周期偏移各浪费一次 ~3 h 运行（共 {n} 次尝试）", "v": {"n": "calc:attempts:power.cpu.gatesim"}}
+  ]
+}

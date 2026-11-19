@@ -1,0 +1,92 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "open-soc-ai-labs-third-party-sources",
+  "packages": [
+    {
+      "name": "ibex",
+      "SPDXID": "SPDXRef-ibex",
+      "downloadLocation": "https://github.com/lowRISC/ibex.git",
+      "versionInfo": "90331a69edd7151413c335a7f4b3e950baa07c19",
+      "licenseConcluded": "Apache-2.0"
+    },
+    {
+      "name": "openroad-flow-scripts",
+      "SPDXID": "SPDXRef-openroad-flow-scripts",
+      "downloadLocation": "https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git",
+      "versionInfo": "aabf2a397059704f68ddafe7e2c8bd1a0e7c65f5",
+      "licenseConcluded": "BSD-3-Clause"
+    },
+    {
+      "name": "sby",
+      "SPDXID": "SPDXRef-sby",
+      "downloadLocation": "https://github.com/YosysHQ/sby.git",
+      "versionInfo": "b1a1e98cba941ec8433f8dc27f416cd7bb7f14be",
+      "licenseConcluded": "ISC"
+    },
+    {
+      "name": "openram",
+      "SPDXID": "SPDXRef-openram",
+      "downloadLocation": "https://github.com/VLSIDA/OpenRAM.git",
+      "versionInfo": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "licenseConcluded": "BSD-3-Clause"
+    },
+    {
+      "name": "verilator",
+      "SPDXID": "SPDXRef-verilator",
+      "downloadLocation": "https://github.com/verilator/verilator.git",
+      "versionInfo": "51cdf52d0f3a3e59b51fd87762646a851e9f4aff",
+      "licenseConcluded": "LGPL-3.0-only OR Artistic-2.0"
+    },
+    {
+      "name": "deepseek-v3.2-exp",
+      "SPDXID": "SPDXRef-deepseek-v3.2-exp",
+      "downloadLocation": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp.git",
+      "versionInfo": "87e509a2e5a100d221c97df52c6e8be7835f0057",
+      "licenseConcluded": "MIT"
+    },
+    {
+      "name": "flashmla",
+      "SPDXID": "SPDXRef-flashmla",
+      "downloadLocation": "https://github.com/deepseek-ai/FlashMLA.git",
+      "versionInfo": "ba89a3466e9470ad08ab39738d4e7bb66989e1e7",
+      "licenseConcluded": "MIT"
+    },
+    {
+      "name": "vortex",
+      "SPDXID": "SPDXRef-vortex",
+      "downloadLocation": "https://github.com/vortexgpgpu/vortex.git",
+      "versionInfo": "b8c5a24336026d9d029a67197160eee6b017f262",
+      "licenseConcluded": "Apache-2.0"
+    },
+    {
+      "name": "vortex-toolchain-prebuilt",
+      "SPDXID": "SPDXRef-vortex-toolchain-prebuilt",
+      "downloadLocation": "https://github.com/vortexgpgpu/vortex-toolchain-prebuilt.git",
+      "versionInfo": "d0e3fed1dbc4bbc882ea7d453d339b8dde874c13",
+      "licenseConcluded": "NOASSERTION"
+    },
+    {
+      "name": "llvm-vortex",
+      "SPDXID": "SPDXRef-llvm-vortex",
+      "downloadLocation": "https://github.com/vortexgpgpu/llvm.git",
+      "versionInfo": "4c836512a60c0b965bb298104e084cd0f07ca962",
+      "licenseConcluded": "Apache-2.0 WITH LLVM-exception"
+    },
+    {
+      "name": "pocl-vortex",
+      "SPDXID": "SPDXRef-pocl-vortex",
+      "downloadLocation": "https://github.com/vortexgpgpu/pocl.git",
+      "versionInfo": "3d02254121390f63f83ccbd707a97d26498a227f",
+      "licenseConcluded": "MIT"
+    },
+    {
+      "name": "chipstar-vortex",
+      "SPDXID": "SPDXRef-chipstar-vortex",
+      "downloadLocation": "https://github.com/vortexgpgpu/chipStar.git",
+      "versionInfo": "3929f054ecc1c3d70dfc45648c5046cd28f37df9",
+      "licenseConcluded": "MIT"
+    }
+  ]
+}

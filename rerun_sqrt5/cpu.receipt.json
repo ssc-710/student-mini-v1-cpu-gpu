@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/mnt/d/sqrt3-rerun/cpu/soc/gateware/obj_dir/Vsim"
+  ],
+  "cwd": "/mnt/d/sqrt3-rerun/cpu/soc/gateware",
+  "started_at_utc": "2026-11-06T14:23:20.128036+00:00",
+  "pid": 383,
+  "exit_code": -15,
+  "elapsed_seconds": 24.946952983000003,
+  "complete": true,
+  "log_sha256": "64181342e5ae703981b83068da8defeafb5f38443d9a574292cae5413b20add8",
+  "binary_sha256": "f480839aea121e30d32a91b9aa7487fec954d1cefb7ef40580178bef40794acf",
+  "generation_begin_seconds": 1.378052568000001,
+  "generation_summary_seconds": 14.757866442999998,
+  "completion_seconds": 24.911344474000003
+}

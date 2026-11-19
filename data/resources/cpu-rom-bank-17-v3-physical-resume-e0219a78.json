@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_rom_bank_physical.py",
+    "--resume",
+    "build/student-mini/rom-bank-physical/e0219a782bc2648da474d5d96a6c57cae57f1a9dec7a11177bf573c9198173a8"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-3203374",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "created_at": "2026-10-11T02:23:05.638846+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 137195520,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 4174416\nuser_usec 3844124\nsystem_usec 330292\nnice_usec 0\nnr_periods 44\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 4.460544377012411
+}

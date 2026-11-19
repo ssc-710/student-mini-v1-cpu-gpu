@@ -1,0 +1,1099 @@
+{
+  "schema_version": 1,
+  "release_id": "student-mini-v1",
+  "kind": "golden-only",
+  "status": "HOLD",
+  "hardware_complete": false,
+  "input_sha256": "ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1",
+  "bindings": {
+    "scripts/generate_student_mini_vectors.py": "29bb66a174b0f0d45e9e1d612cffcd6b0fee377cf71abc086a73c44b27f167d5",
+    "grading/student-mini/spec.json": "67c1bbfb43e90533463130202f30542fe65f0d2505f76f4a980b5bbe6162827b",
+    "shared/python/soc_ai_labs/rtl_oracle.py": "ab727cedad15174a5aa44bed755d15eb191903ae4e06b49993538f399a6ee2a4",
+    "shared/python/soc_ai_labs/numeric.py": "fc53b48a3c00db221d617822694a9210bb17854d71199a669c23668c69570571"
+  },
+  "cases": [
+    {
+      "id": "P1-MINI-01",
+      "operator": "p1",
+      "scenario": "minimum",
+      "shape": {
+        "query": 1,
+        "length": 1,
+        "topk": 1
+      }
+    },
+    {
+      "id": "P1-MINI-02",
+      "operator": "p1",
+      "scenario": "full-page",
+      "shape": {
+        "query": 1,
+        "length": 4,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-03",
+      "operator": "p1",
+      "scenario": "tail-page",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-04",
+      "operator": "p1",
+      "scenario": "causal",
+      "shape": {
+        "query": 2,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-05",
+      "operator": "p1",
+      "scenario": "noncausal",
+      "shape": {
+        "query": 2,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-06",
+      "operator": "p1",
+      "scenario": "score-tie",
+      "shape": {
+        "query": 1,
+        "length": 4,
+        "topk": 1
+      }
+    },
+    {
+      "id": "P1-MINI-07",
+      "operator": "p1",
+      "scenario": "late-maximum",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-08",
+      "operator": "p1",
+      "scenario": "topk-exceeds-length",
+      "shape": {
+        "query": 1,
+        "length": 1,
+        "topk": 4
+      }
+    },
+    {
+      "id": "P1-MINI-09",
+      "operator": "p1",
+      "scenario": "shuffled-pages",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-10",
+      "operator": "p1",
+      "scenario": "poison-padding",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-11",
+      "operator": "p1",
+      "scenario": "random-maximum",
+      "shape": {
+        "query": 2,
+        "length": 8,
+        "topk": 4
+      }
+    },
+    {
+      "id": "P1-MINI-12",
+      "operator": "p1",
+      "scenario": "bad-length",
+      "shape": {
+        "query": 0,
+        "length": 1,
+        "topk": 1
+      }
+    },
+    {
+      "id": "P1-MINI-13",
+      "operator": "p1",
+      "scenario": "all-zero",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-14",
+      "operator": "p1",
+      "scenario": "int8-min",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-15",
+      "operator": "p1",
+      "scenario": "int8-max",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-16",
+      "operator": "p1",
+      "scenario": "alternating",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-17",
+      "operator": "p1",
+      "scenario": "scale-min",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-18",
+      "operator": "p1",
+      "scenario": "scale-max",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-19",
+      "operator": "p1",
+      "scenario": "rne-positive-even",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-20",
+      "operator": "p1",
+      "scenario": "rne-positive-odd",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-21",
+      "operator": "p1",
+      "scenario": "rne-negative-even",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-22",
+      "operator": "p1",
+      "scenario": "rne-negative-odd",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-23",
+      "operator": "p1",
+      "scenario": "saturate-min",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-24",
+      "operator": "p1",
+      "scenario": "saturate-max",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-25",
+      "operator": "p1",
+      "scenario": "scale-zero",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-26",
+      "operator": "p1",
+      "scenario": "scale-negative",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-27",
+      "operator": "p1",
+      "scenario": "scale-nan",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-28",
+      "operator": "p1",
+      "scenario": "scale-positive-inf",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-29",
+      "operator": "p1",
+      "scenario": "scale-negative-inf",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-30",
+      "operator": "p1",
+      "scenario": "dma-error",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-31",
+      "operator": "p1",
+      "scenario": "backpressure",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-32",
+      "operator": "p1",
+      "scenario": "response-hold",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P1-MINI-33",
+      "operator": "p1",
+      "scenario": "reset-recovery",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "topk": 2
+      }
+    },
+    {
+      "id": "P2-MINI-01",
+      "operator": "p2",
+      "scenario": "minimum",
+      "shape": {
+        "query": 1,
+        "length": 1,
+        "splits": 1
+      }
+    },
+    {
+      "id": "P2-MINI-02",
+      "operator": "p2",
+      "scenario": "two-splits",
+      "shape": {
+        "query": 1,
+        "length": 2,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-03",
+      "operator": "p2",
+      "scenario": "full-page",
+      "shape": {
+        "query": 1,
+        "length": 4,
+        "splits": 1
+      }
+    },
+    {
+      "id": "P2-MINI-04",
+      "operator": "p2",
+      "scenario": "unequal-splits",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-05",
+      "operator": "p2",
+      "scenario": "four-splits",
+      "shape": {
+        "query": 1,
+        "length": 8,
+        "splits": 4
+      }
+    },
+    {
+      "id": "P2-MINI-06",
+      "operator": "p2",
+      "scenario": "late-maximum",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-07",
+      "operator": "p2",
+      "scenario": "exp-clamp",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-08",
+      "operator": "p2",
+      "scenario": "arrival-order",
+      "shape": {
+        "query": 1,
+        "length": 8,
+        "splits": 4
+      }
+    },
+    {
+      "id": "P2-MINI-09",
+      "operator": "p2",
+      "scenario": "shuffled-pages",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-10",
+      "operator": "p2",
+      "scenario": "poison-padding",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-11",
+      "operator": "p2",
+      "scenario": "bad-length",
+      "shape": {
+        "query": 1,
+        "length": 0,
+        "splits": 1
+      }
+    },
+    {
+      "id": "P2-MINI-12",
+      "operator": "p2",
+      "scenario": "bad-split",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 3
+      }
+    },
+    {
+      "id": "P2-MINI-13",
+      "operator": "p2",
+      "scenario": "all-zero",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-14",
+      "operator": "p2",
+      "scenario": "int8-min",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-15",
+      "operator": "p2",
+      "scenario": "int8-max",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-16",
+      "operator": "p2",
+      "scenario": "alternating",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-17",
+      "operator": "p2",
+      "scenario": "scale-min",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-18",
+      "operator": "p2",
+      "scenario": "scale-max",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-19",
+      "operator": "p2",
+      "scenario": "rne-positive-even",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-20",
+      "operator": "p2",
+      "scenario": "rne-positive-odd",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-21",
+      "operator": "p2",
+      "scenario": "rne-negative-even",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-22",
+      "operator": "p2",
+      "scenario": "rne-negative-odd",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-23",
+      "operator": "p2",
+      "scenario": "saturate-min",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-24",
+      "operator": "p2",
+      "scenario": "saturate-max",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-25",
+      "operator": "p2",
+      "scenario": "scale-zero",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-26",
+      "operator": "p2",
+      "scenario": "scale-negative",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-27",
+      "operator": "p2",
+      "scenario": "scale-nan",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-28",
+      "operator": "p2",
+      "scenario": "scale-positive-inf",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-29",
+      "operator": "p2",
+      "scenario": "scale-negative-inf",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-30",
+      "operator": "p2",
+      "scenario": "dma-error",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-31",
+      "operator": "p2",
+      "scenario": "backpressure",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-32",
+      "operator": "p2",
+      "scenario": "response-hold",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P2-MINI-33",
+      "operator": "p2",
+      "scenario": "reset-recovery",
+      "shape": {
+        "query": 1,
+        "length": 5,
+        "splits": 2
+      }
+    },
+    {
+      "id": "P3-MINI-01",
+      "operator": "p3",
+      "scenario": "minimum",
+      "shape": {
+        "rows": 1,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-02",
+      "operator": "p3",
+      "scenario": "balanced",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-03",
+      "operator": "p3",
+      "scenario": "single-hot",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-04",
+      "operator": "p3",
+      "scenario": "inactive-expert-poison",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-05",
+      "operator": "p3",
+      "scenario": "route-tie",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-06",
+      "operator": "p3",
+      "scenario": "route-zero",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-07",
+      "operator": "p3",
+      "scenario": "route-one",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-08",
+      "operator": "p3",
+      "scenario": "route-half",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-09",
+      "operator": "p3",
+      "scenario": "row-permutation",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-10",
+      "operator": "p3",
+      "scenario": "cancellation",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-11",
+      "operator": "p3",
+      "scenario": "bad-expert",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-12",
+      "operator": "p3",
+      "scenario": "bad-hidden",
+      "shape": {
+        "rows": 2,
+        "hidden": 0,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-13",
+      "operator": "p3",
+      "scenario": "all-zero",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-14",
+      "operator": "p3",
+      "scenario": "int8-min",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-15",
+      "operator": "p3",
+      "scenario": "int8-max",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-16",
+      "operator": "p3",
+      "scenario": "alternating",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-17",
+      "operator": "p3",
+      "scenario": "scale-min",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-18",
+      "operator": "p3",
+      "scenario": "scale-max",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-19",
+      "operator": "p3",
+      "scenario": "rne-positive-even",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-20",
+      "operator": "p3",
+      "scenario": "rne-positive-odd",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-21",
+      "operator": "p3",
+      "scenario": "rne-negative-even",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-22",
+      "operator": "p3",
+      "scenario": "rne-negative-odd",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-23",
+      "operator": "p3",
+      "scenario": "saturate-min",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-24",
+      "operator": "p3",
+      "scenario": "saturate-max",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-25",
+      "operator": "p3",
+      "scenario": "scale-zero",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-26",
+      "operator": "p3",
+      "scenario": "scale-negative",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-27",
+      "operator": "p3",
+      "scenario": "scale-nan",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-28",
+      "operator": "p3",
+      "scenario": "scale-positive-inf",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-29",
+      "operator": "p3",
+      "scenario": "scale-negative-inf",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-30",
+      "operator": "p3",
+      "scenario": "dma-error",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-31",
+      "operator": "p3",
+      "scenario": "backpressure",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-32",
+      "operator": "p3",
+      "scenario": "response-hold",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P3-MINI-33",
+      "operator": "p3",
+      "scenario": "reset-recovery",
+      "shape": {
+        "rows": 2,
+        "hidden": 16,
+        "intermediate": 16,
+        "experts": 2,
+        "active": 1
+      }
+    },
+    {
+      "id": "P2-MINI-34",
+      "operator": "p2",
+      "scenario": "two-query-maximum",
+      "shape": {
+        "query": 2,
+        "length": 8,
+        "splits": 4
+      }
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "record_count": 1000,
+  "artifacts": {
+    "vectors.jsonl": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974"
+  },
+  "boundary": "Golden is not actual. Error events, primitive witnesses, physical power and source-bound hardware replay remain required."
+}

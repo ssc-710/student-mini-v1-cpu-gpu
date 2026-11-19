@@ -1,0 +1,5 @@
+{
+  "original_sha256": "9df7244eb3077dca32dec59da773c26f8df2efc1824530144435ab6c0098e37f",
+  "candidate_sha256": "59fc769bac378de11c799d0911305e40b85365ae25b8f4d73ec6ce5df9d94646",
+  "change": "P3 four-output blocking plus one-time gate/up scale decode and apply4; general-helper fallback; validation/P1/P2/intermediate scale/primitive unchanged"
+}

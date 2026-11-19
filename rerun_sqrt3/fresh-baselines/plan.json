@@ -1,0 +1,7 @@
+{
+  "gpu": "/mnt/d/\u5927\u5b66/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1",
+  "cpu": "/mnt/d/sqrt3-rerun/baselines-cpu",
+  "golden": "/mnt/d/\u5927\u5b66/codex/student-mini-v1-cpu-gpu/data/golden/vectors.jsonl",
+  "input_sha256": "baafeaeb6b75e03a6df72a6841d043140154d74bfcbede6011eaf69948c83bf6",
+  "scope": "Fresh scalar operator execution; DMA/protocol witnesses separate"
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "host-reference-only-never-target-input",
+  "tokens": [
+    67,
+    73,
+    58,
+    30,
+    68,
+    8,
+    4
+  ],
+  "text": "我是小助手。",
+  "token_sha256": "deb046abde088111505ed9cdd899f02db625cc565f08ecd397a7c1a93afcc7ce",
+  "image_sha256": "4db433925cc2ba45974dbe54b5332d55754b96b2740051b0e9b642685c72dd78",
+  "manifest_sha256": "9697f29c52ae410b65f9657cc12d0e034096bd2aa91b14de238de81f446e3d35"
+}

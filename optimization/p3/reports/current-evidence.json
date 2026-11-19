@@ -1,0 +1,2755 @@
+{
+  "status": "HOLD_PARTIAL_QUALIFICATION",
+  "cpu_same_elf": {
+    "generation_speedup": 1.0604048347410957,
+    "p3_speedup": 1.542798583283956,
+    "summary": {
+      "0": {
+        "cycles": {
+          "median": 11422367,
+          "min": 11422367,
+          "max": 11422367
+        },
+        "p3_cycles": {
+          "median": 1843453,
+          "min": 1843453,
+          "max": 1843453
+        },
+        "process_wall_seconds": {
+          "median": 23.148521423339844,
+          "min": 22.98736071586609,
+          "max": 23.873822450637817
+        }
+      },
+      "1": {
+        "cycles": {
+          "median": 10771704,
+          "min": 10771704,
+          "max": 10771704
+        },
+        "p3_cycles": {
+          "median": 1194876,
+          "min": 1194876,
+          "max": 1194876
+        },
+        "process_wall_seconds": {
+          "median": 22.479653120040894,
+          "min": 22.23972773551941,
+          "max": 22.917158126831055
+        }
+      }
+    },
+    "limitation": "Diagnostic UART mode, not final clean-mode performance. Same core/ELF/ROM, expert executed footprints differ. No physical clock qualification."
+  },
+  "gpu_matched_rtlsim": {
+    "comparison": {
+      "status": "INTEGRATED_GPU_RTLSIM_NATIVE_EXACT_PASS",
+      "simx": {
+        "instructions": 1713555,
+        "cycles": 17188623
+      },
+      "rtlsim": {
+        "instructions": 1713555,
+        "cycles": 17077421
+      },
+      "aggregate_cycle_relative_difference": 0.006469511839313714,
+      "bindings": {
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-algorithm-abs-fix/execute.log": "fecf0079db047c4d8606c53cb64016fd383a6b47e5fa115f166d19ac600d09e0",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-rtl-native-matched-config/execute.log": "d6cdbe226d6e1210b2393c157197879f48163feb7e6ab13c4c8bc28d61d5c189"
+      },
+      "limitation": "One processor RTL native session, not full AFU/platform fault/protocol/all-case coverage or official model_parity gate. Baseline RTL performance NOT_RUN."
+    },
+    "kernel_sync_wall_seconds": 122.359453975,
+    "kernel_sync_wall_tokens_per_second_including_eos": 0.08989906086249352,
+    "qa_compute_readback_wall_seconds": 122.377601101,
+    "process_wall_seconds": 123.45286774099986,
+    "limitation": "Diagnostic simulation wall times, not physical GPU throughput or RTL speedup vs vendor."
+  },
+  "physical": [
+    {
+      "design": "split-reference",
+      "initial_utilization_percent": 40,
+      "wns_ns": -5.84,
+      "clock_target_ns": 10,
+      "stage": "Placement parasitic estimate, ideal clock; not routed or whole core"
+    },
+    {
+      "design": "split-reference",
+      "initial_utilization_percent": 30,
+      "wns_ns": -5.64,
+      "clock_target_ns": 10,
+      "stage": "Placement parasitic estimate, ideal clock; not routed or whole core"
+    },
+    {
+      "design": "limb-candidate",
+      "initial_utilization_percent": 40,
+      "wns_ns": -0.83,
+      "clock_target_ns": 10,
+      "stage": "Placement parasitic estimate, ideal clock; not routed or whole core"
+    },
+    {
+      "design": "limb-candidate",
+      "initial_utilization_percent": 30,
+      "wns_ns": -0.42,
+      "clock_target_ns": 10,
+      "stage": "Placement parasitic estimate, ideal clock; not routed or whole core"
+    },
+    {
+      "design": "actual-vendor-fixed-parameter-elaboration",
+      "initial_utilization_percent": 40,
+      "wns_ns": -3.0,
+      "clock_target_ns": 10,
+      "stage": "Placement parasitic estimate, ideal clock; not routed or whole core"
+    },
+    {
+      "design": "actual-vendor-fixed-parameter-elaboration",
+      "initial_utilization_percent": 30,
+      "wns_ns": -2.87,
+      "clock_target_ns": 10,
+      "stage": "Placement parasitic estimate, ideal clock; not routed or whole core"
+    }
+  ],
+  "limb_routed_local": {
+    "receipt": {
+      "status": "LOCAL_CTS_DETAILED_ROUTE_EXECUTED_NOT_SIGNOFF",
+      "clock_ns": 10,
+      "corner": "SKY130HD TT 1.8V 25C",
+      "allow_screening_cells": false,
+      "records": [
+        {
+          "case": "candidate-u30",
+          "complete": true,
+          "exit_code": 0,
+          "final_drt_violations": 0,
+          "routed_cell_area_um2": 53510.0,
+          "drc_report_present": true,
+          "outputs": {
+            "cts.odb": "4a95e995c39c32f047e8ea37fd16a077546ff572456b41fce594233c9929a924",
+            "cts.def": "082bb2079b81d386c0224570cc15a9138719009e25cbb2b22b5429facfb3f88a",
+            "setup-cts.rpt": "9f243212b02c67235fc0d238867796152535b8a1578d6d1fbd2ef9d42e8d8a24",
+            "hold-cts.rpt": "d8bab57cb981063462b1d47ff099de8755ffaf73ba0a59110d3f35888b2bfc0d",
+            "global-route.odb": "eb00b3e2d321fb18dc1e6e84ba800add9f90c2779cba7d574c128f643f93f898",
+            "setup-global-route.rpt": "71e9a0e6dbdcf470b9c6e84a98a734228ffe6df9c23f4f79af754fb6d89d728f",
+            "hold-global-route.rpt": "70a2c52c8ca0264ad25192f6340e188786b0ab0a60bb7e8f9d2a03be0b27fd50",
+            "wns-global-route.rpt": "75fa5c744f389e2ff672644a475bb44ea0ac3b7b1c13a5b53a6bc1e7e1c8f0f1",
+            "routed.odb": "6f50fb8254b2c3e346391db26bf621cc06341114feab8d054212e931622a9eeb",
+            "routed.def": "e2c2a856b778fb0dba9f61e1bf5ee0294303a012e74ca6ebbf1f2b56c794bdcd",
+            "routed.v": "7efdb130be9fe8149ab451756f5abf81ab2e5cd30713f226184d93212b35212e",
+            "routed.sdc": "f93ab3e61dd63bbd525efd0377b6ea2ff10d90cdc946fbea5cf13fd2d0af4d84"
+          },
+          "wall_seconds": 441.07007108699963
+        }
+      ],
+      "bindings": {
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/physical/gpu-multiplier-placement-hilomap/candidate-u30/placed.odb": "ef852af948cedf8dcda5d17c25051f4ea2d8a1239081ad523c9d63e6822bab1b",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/openroad-2024-12-14/usr/bin/openroad": "93fe61454a52b927602fd6c798c4402214c19e80e7d614636345f0f427ea2f46",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/local_route.tcl": "656121ddaf30d9e0dd507774b0722e724333a2414652a1fb7031643b6a08348c",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/setRC.tcl": "6aeade350bf498177ea61506db8849a064a71848b05c18ad6a6e1fc5d62c962a",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/lef/sky130_fd_sc_hd.tlef": "8e99b4e8b016db0713029ebcae6b2cc2aedd9c2c49682e2f23521dd0b1a2085e",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/lef/sky130_fd_sc_hd_merged.lef": "44180aaa0068b1fcb0789f128b090304c01ad48f511d3f7afa66c90b3e176ec5"
+      },
+      "limitation": "Local multiplier only. Global-route estimated RC timing, not final extracted STA. DRT DRC is not foundry signoff. No activity power, PDN, antenna/LVS/full-chip qualification."
+    },
+    "wns_report": "worst slack 0.37\n",
+    "hold_report": "Startpoint: _13075_ (rising edge-triggered flip-flop clocked by clk)\nEndpoint: _13075_ (rising edge-triggered flip-flop clocked by clk)\nPath Group: clk\nPath Type: min\n\n  Delay    Time   Description\n---------------------------------------------------------\n   0.00    0.00   clock clk (rise edge)\n   0.00    0.00   clock source latency\n   0.00    0.00 ^ clk (in)\n   0.26    0.26 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)\n   0.20    0.46 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_16)\n   0.14    0.60 ^ clkbuf_5_20__f_clk/X (sky130_fd_sc_hd__clkbuf_16)\n   0.00    0.60 ^ _13075_/CLK (sky130_fd_sc_hd__dfxtp_1)\n   0.31    0.91 ^ _13075_/Q (sky130_fd_sc_hd__dfxtp_1)\n   0.11    1.02 ^ _06717_/X (sky130_fd_sc_hd__mux2_1)\n   0.00    1.02 ^ _13075_/D (sky130_fd_sc_hd__dfxtp_1)\n           1.02   data arrival time\n\n   0.00    0.00   clock clk (rise edge)\n   0.00    0.00   clock source latency\n   0.00    0.00 ^ clk (in)\n   0.26    0.26 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)\n   0.20    0.46 ^ clkbuf_4_10_0_clk/X (sky130_fd_sc_hd__clkbuf_16)\n   0.14    0.60 ^ clkbuf_5_20__f_clk/X (sky130_fd_sc_hd__clkbuf_16)\n   0.00    0.60 ^ _13075_/CLK (sky130_fd_sc_hd__dfxtp_1)\n   0.10    0.70   clock uncertainty\n   0.00    0.70   clock reconvergence pessimism\n  -0.03    0.67   library hold time\n           0.67   data required time\n---------------------------------------------------------\n           0.67   data required time\n          -1.02   data arrival time\n---------------------------------------------------------\n           0.34   slack (MET)\n\n\n",
+    "extraction": {
+      "status": "LOCAL_EXTRACTED_STA_ONLY",
+      "exit_code": 0,
+      "bindings": {
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/openroad-2024-12-14/usr/bin/openroad": "93fe61454a52b927602fd6c798c4402214c19e80e7d614636345f0f427ea2f46",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/local_extract.tcl": "cb6f870bb7d44e221bd5cdeb68e4f07cbb0e52df88936c5023daf2229a8d4892",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/setRC.tcl": "6aeade350bf498177ea61506db8849a064a71848b05c18ad6a6e1fc5d62c962a",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/rcx_patterns.rules": "d5bd9b1077ceac9929416abca272a6d52e51cd9a575453a31d129817bb286476",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/physical/gpu-multiplier-route-hilomap/candidate-u30/routed.odb": "6f50fb8254b2c3e346391db26bf621cc06341114feab8d054212e931622a9eeb",
+        "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/physical/gpu-multiplier-route-hilomap/candidate-u30/routed.sdc": "f93ab3e61dd63bbd525efd0377b6ea2ff10d90cdc946fbea5cf13fd2d0af4d84"
+      },
+      "limitation": "Local multiplier with OpenRCX rules, not full-chip/signoff corner coverage, power, antenna, PDN or LVS."
+    },
+    "limitation": "Local TT only; full-chip/signoff PPA remains unqualified."
+  },
+  "gpu_vendor_limb_routed_local": {
+    "status": "LOCAL_VENDOR_LIMB_ROUTED_COMPARISON",
+    "clock_ns": 10,
+    "initial_utilization": 0.3,
+    "corner": "SKY130HD TT 1.8V 25C",
+    "records": {
+      "vendor": {
+        "wns_ns": -1.31,
+        "hold_slack_ns": 0.35,
+        "routed_cell_area_um2": 50518.0,
+        "router_violations": 0
+      },
+      "limb": {
+        "wns_ns": 0.37,
+        "hold_slack_ns": 0.34,
+        "routed_cell_area_um2": 53510.0,
+        "router_violations": 0
+      }
+    },
+    "wns_delta_ns": 1.6800000000000002,
+    "routed_cell_area_ratio": 1.0592264143473613,
+    "bindings": {
+      "physical/gpu-multiplier-route-vendor/receipt.json": "3286d2a531c8f68aee11b29000a193020543c7b539b66894bf53036df884fb66",
+      "physical/gpu-multiplier-extract-vendor-u30/receipt.json": "6541a58d0759123ceecf27c376b1c697b9bcb6ec3dec77a3107bd08a970cb631",
+      "physical/gpu-multiplier-extract-vendor-u30/wns-extracted.rpt": "7ebb53d48f937ad0f5872255f711d1194ded85a91562e4d1b481baa5e151e9c1",
+      "physical/gpu-multiplier-extract-vendor-u30/hold-extracted.rpt": "a6bb7c69a5dcba4f105b9a4f35df6c6b6b6e13a3d827bf355ff1ef04cba8377d",
+      "physical/gpu-multiplier-route-vendor/vendor-u30/routed.sdc": "a73885f575a4835b82ee63c3a1b8ad6524e41ffafde83d6ec6ca809d203c150c",
+      "physical/gpu-multiplier-route-hilomap/receipt.json": "66a7b4d66e98474342dc289d76c2f7f1ff4f64bb1cf389d88935033094dc49d9",
+      "physical/gpu-multiplier-extract-limb-u30-outputbound/receipt.json": "748afee0c9986d94c1336bb780d1ed86d98989212c80f9db675d33b65b5202a7",
+      "physical/gpu-multiplier-extract-limb-u30-outputbound/wns-extracted.rpt": "e4aeb4de98de467daef8c50ecb106a26b0453bddbe03985453e1af61ad256314",
+      "physical/gpu-multiplier-extract-limb-u30-outputbound/hold-extracted.rpt": "d5621c7d2aa995eece79751f3ba0854a3a84922b6c7a3df1e383d3289a85b5d2",
+      "physical/gpu-multiplier-route-hilomap/candidate-u30/routed.sdc": "f93ab3e61dd63bbd525efd0377b6ea2ff10d90cdc946fbea5cf13fd2d0af4d84"
+    },
+    "limitation": "Same target/corner/density/delay budgets, real CTS/route/OpenRCX. Local arithmetic only; IO source slew/load not actual whole-core boundary. No whole-chip Fmax, activity power, antenna, PDN, LVS or corner signoff claim. Same-application RTL cycles were unchanged."
+  },
+  "gpu_vendor_limb_actual_rtl": {
+    "status": "VENDOR_LIMB_SAME_DEVICE_PROGRAM_EXACT_PASS",
+    "records": [
+      {
+        "run": "gpu-vendor-rtl-native-device-bound",
+        "instructions": 1713555,
+        "aggregate_cycles": 17077421,
+        "kernel_sync_wall_seconds": 115.531016881,
+        "process_wall_seconds": 116.775751119,
+        "device_vxbin_sha256": "337ebdcd580c25f96f823eb43dee7f4364cd5c524853478a8af3bd2d05cd1f87"
+      },
+      {
+        "run": "gpu-rtl-native-device-bound",
+        "instructions": 1713555,
+        "aggregate_cycles": 17077421,
+        "kernel_sync_wall_seconds": 120.137465534,
+        "process_wall_seconds": 121.34676369299996,
+        "device_vxbin_sha256": "337ebdcd580c25f96f823eb43dee7f4364cd5c524853478a8af3bd2d05cd1f87"
+      }
+    ],
+    "rtl_cycle_speedup": 1.0,
+    "bindings": {
+      "runs/gpu-vendor-rtl-native-device-bound/execute.log": "2c4e2323858c49654a716cf265d7ead7e47004fa93ff5943bd1064b91686d37a",
+      "runs/gpu-rtl-native-device-bound/execute.log": "21b3176a84662821acf9450edb14e34334d193a4e3e94bc806ecda7dc720321c"
+    },
+    "limitation": "One processor RTL session per variant, not full AFU/fault/protocol. Wall times are simulator implementation cost, not chip performance. No full-chip physical clock qualification."
+  },
+  "gpu_twelve_prompt_regression": {
+    "status": "TWELVE_FRESH_PAIRED_SIMX_TOKEN_HIDDEN_LOGITS_EXACT_PASS",
+    "records": [
+      {
+        "index": 0,
+        "question": "你好呀",
+        "token_ids": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 6688203,
+            "kernel_sync_seconds": 6.827958446,
+            "qa_compute_readback_seconds": 6.845523014,
+            "process_wall_seconds": 7.987802487999943,
+            "tokens_per_kernel_wall_second": 0.5858266466667363
+          },
+          "candidate": {
+            "aggregate_cycles": 6420458,
+            "kernel_sync_seconds": 6.790330125,
+            "qa_compute_readback_seconds": 6.808067614,
+            "process_wall_seconds": 7.918640412999821,
+            "tokens_per_kernel_wall_second": 0.5890729797176099
+          }
+        }
+      },
+      {
+        "index": 1,
+        "question": "早上好",
+        "token_ids": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 6676171,
+            "kernel_sync_seconds": 6.513764108,
+            "qa_compute_readback_seconds": 6.533607521,
+            "process_wall_seconds": 7.598800494999978,
+            "tokens_per_kernel_wall_second": 0.6140842581461196
+          },
+          "candidate": {
+            "aggregate_cycles": 6408354,
+            "kernel_sync_seconds": 6.289710442,
+            "qa_compute_readback_seconds": 6.307390386,
+            "process_wall_seconds": 7.34307537199993,
+            "tokens_per_kernel_wall_second": 0.635959323864849
+          }
+        }
+      },
+      {
+        "index": 2,
+        "question": "嗨",
+        "token_ids": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 5371339,
+            "kernel_sync_seconds": 6.276763908,
+            "qa_compute_readback_seconds": 6.295196518,
+            "process_wall_seconds": 7.445981961000143,
+            "tokens_per_kernel_wall_second": 0.6372710617491653
+          },
+          "candidate": {
+            "aggregate_cycles": 5143152,
+            "kernel_sync_seconds": 6.139406195,
+            "qa_compute_readback_seconds": 6.157711861,
+            "process_wall_seconds": 7.280007997999746,
+            "tokens_per_kernel_wall_second": 0.6515288079908516
+          }
+        }
+      },
+      {
+        "index": 3,
+        "question": "你叫什么",
+        "token_ids": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 10562333,
+            "kernel_sync_seconds": 8.902171833,
+            "qa_compute_readback_seconds": 8.92012676,
+            "process_wall_seconds": 10.06014684899992,
+            "tokens_per_kernel_wall_second": 0.78632497005408
+          },
+          "candidate": {
+            "aggregate_cycles": 10198545,
+            "kernel_sync_seconds": 8.429471197,
+            "qa_compute_readback_seconds": 8.447699463,
+            "process_wall_seconds": 9.584855210000114,
+            "tokens_per_kernel_wall_second": 0.8304198254442413
+          }
+        }
+      },
+      {
+        "index": 4,
+        "question": "你是谁呀",
+        "token_ids": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 10554726,
+            "kernel_sync_seconds": 8.625895336,
+            "qa_compute_readback_seconds": 8.643384375,
+            "process_wall_seconds": 9.690740571999868,
+            "tokens_per_kernel_wall_second": 0.8115099624250762
+          },
+          "candidate": {
+            "aggregate_cycles": 10191084,
+            "kernel_sync_seconds": 7.918853624,
+            "qa_compute_readback_seconds": 7.936831439,
+            "process_wall_seconds": 8.992890674000137,
+            "tokens_per_kernel_wall_second": 0.8839663330541694
+          }
+        }
+      },
+      {
+        "index": 5,
+        "question": "介绍自己",
+        "token_ids": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 10558760,
+            "kernel_sync_seconds": 8.320403003,
+            "qa_compute_readback_seconds": 8.338659925,
+            "process_wall_seconds": 9.413626039000064,
+            "tokens_per_kernel_wall_second": 0.8413054028123499
+          },
+          "candidate": {
+            "aggregate_cycles": 10194898,
+            "kernel_sync_seconds": 8.024131828,
+            "qa_compute_readback_seconds": 8.04189832,
+            "process_wall_seconds": 9.099315363999722,
+            "tokens_per_kernel_wall_second": 0.8723685191180037
+          }
+        }
+      },
+      {
+        "index": 6,
+        "question": "今天天气怎么样？",
+        "token_ids": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 18505314,
+            "kernel_sync_seconds": 12.387740611,
+            "qa_compute_readback_seconds": 12.40489667,
+            "process_wall_seconds": 13.559000103000017,
+            "tokens_per_kernel_wall_second": 0.8879746795983344
+          },
+          "candidate": {
+            "aggregate_cycles": 17996734,
+            "kernel_sync_seconds": 12.053885223,
+            "qa_compute_readback_seconds": 12.073945877,
+            "process_wall_seconds": 13.234275802999946,
+            "tokens_per_kernel_wall_second": 0.9125688354001344
+          }
+        }
+      },
+      {
+        "index": 7,
+        "question": "今天会下雨吗？",
+        "token_ids": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 17630139,
+            "kernel_sync_seconds": 11.682839475,
+            "qa_compute_readback_seconds": 11.700998433,
+            "process_wall_seconds": 12.719159611999657,
+            "tokens_per_kernel_wall_second": 0.9415519252437559
+          },
+          "candidate": {
+            "aggregate_cycles": 17139362,
+            "kernel_sync_seconds": 10.987272267,
+            "qa_compute_readback_seconds": 11.005735812,
+            "process_wall_seconds": 12.101479850000032,
+            "tokens_per_kernel_wall_second": 1.0011584069904436
+          }
+        }
+      },
+      {
+        "index": 8,
+        "question": "现在冷不冷？",
+        "token_ids": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 16813588,
+            "kernel_sync_seconds": 11.951969069,
+            "qa_compute_readback_seconds": 11.969742515,
+            "process_wall_seconds": 13.090605790999689,
+            "tokens_per_kernel_wall_second": 0.9203504407094613
+          },
+          "candidate": {
+            "aggregate_cycles": 16300844,
+            "kernel_sync_seconds": 11.588740487,
+            "qa_compute_readback_seconds": 11.606611719,
+            "process_wall_seconds": 12.725476486999924,
+            "tokens_per_kernel_wall_second": 0.9491971981199823
+          }
+        }
+      },
+      {
+        "index": 9,
+        "question": "一加一等于几？",
+        "token_ids": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 10471553,
+            "kernel_sync_seconds": 8.164710087,
+            "qa_compute_readback_seconds": 8.183081171,
+            "process_wall_seconds": 9.24201099999982,
+            "tokens_per_kernel_wall_second": 0.612391615467289
+          },
+          "candidate": {
+            "aggregate_cycles": 10130303,
+            "kernel_sync_seconds": 8.060392189,
+            "qa_compute_readback_seconds": 8.07905451,
+            "process_wall_seconds": 9.137532463999833,
+            "tokens_per_kernel_wall_second": 0.620317210721271
+          }
+        }
+      },
+      {
+        "index": 10,
+        "question": "1+1是多少？",
+        "token_ids": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 10492169,
+            "kernel_sync_seconds": 8.270616902,
+            "qa_compute_readback_seconds": 8.288695705,
+            "process_wall_seconds": 9.355185290999998,
+            "tokens_per_kernel_wall_second": 0.6045498249097839
+          },
+          "candidate": {
+            "aggregate_cycles": 10150791,
+            "kernel_sync_seconds": 8.313314967,
+            "qa_compute_readback_seconds": 8.330868673,
+            "process_wall_seconds": 9.399237985000127,
+            "tokens_per_kernel_wall_second": 0.6014447930636188
+          }
+        }
+      },
+      {
+        "index": 11,
+        "question": "一加一？",
+        "token_ids": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "aggregate_cycles": 8387011,
+            "kernel_sync_seconds": 7.401261063,
+            "qa_compute_readback_seconds": 7.419636622,
+            "process_wall_seconds": 8.458790012999998,
+            "tokens_per_kernel_wall_second": 0.6755605507547545
+          },
+          "candidate": {
+            "aggregate_cycles": 8078868,
+            "kernel_sync_seconds": 7.201040521,
+            "qa_compute_readback_seconds": 7.218732431,
+            "process_wall_seconds": 8.317507472000216,
+            "tokens_per_kernel_wall_second": 0.6943441000531484
+          }
+        }
+      }
+    ],
+    "bindings": {
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-native-regression-paired-smoke/receipt.json": "a6c016e978917045c0aaee3f439d00fe821c9ead019b6b1d55f8d183df338182",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-native-regression-paired-remaining/receipt.json": "d430de2c2564be568fe438a6c0b756bfcc54da8072960a8338ab92cf95999ae7"
+    },
+    "limitation": "Fresh algorithm semantic regression on fixed SimX only. Diagnostic single-pair timings, not stable performance attribution, hardware RTL/fault/protocol or full-core PPA qualification. Runner improvements after a completed run are not retroactive checks."
+  },
+  "cpu_prompt_regression_audit": {
+    "status": "TWELVE_FRESH_PAIRED_CPU_RTL_EXACT_PASS",
+    "completed": 12,
+    "missing_indices": [],
+    "records": [
+      {
+        "index": 0,
+        "question": "你好呀",
+        "token_ids": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 4887716,
+            "simulation_seconds_at_1MHz": 4.887716,
+            "tokens_per_sim_second_including_eos": 0.8183781545408939,
+            "process_wall_seconds": 9.42933926700016
+          },
+          "algorithm": {
+            "generation_cycles": 4043452,
+            "simulation_seconds_at_1MHz": 4.043452,
+            "tokens_per_sim_second_including_eos": 0.9892537366586768,
+            "process_wall_seconds": 9.096539617999952
+          }
+        }
+      },
+      {
+        "index": 1,
+        "question": "早上好",
+        "token_ids": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 4876836,
+            "simulation_seconds_at_1MHz": 4.876836,
+            "tokens_per_sim_second_including_eos": 0.8202039190983662,
+            "process_wall_seconds": 9.443493601999762
+          },
+          "algorithm": {
+            "generation_cycles": 4033562,
+            "simulation_seconds_at_1MHz": 4.033562,
+            "tokens_per_sim_second_including_eos": 0.9916793147099263,
+            "process_wall_seconds": 9.167138005999732
+          }
+        }
+      },
+      {
+        "index": 2,
+        "question": "嗨",
+        "token_ids": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 3922431,
+            "simulation_seconds_at_1MHz": 3.922431,
+            "tokens_per_sim_second_including_eos": 1.0197757462145287,
+            "process_wall_seconds": 8.638536143000238
+          },
+          "algorithm": {
+            "generation_cycles": 3305742,
+            "simulation_seconds_at_1MHz": 3.305742,
+            "tokens_per_sim_second_including_eos": 1.2100157846559108,
+            "process_wall_seconds": 8.353451873000267
+          }
+        }
+      },
+      {
+        "index": 3,
+        "question": "你叫什么",
+        "token_ids": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 7895967,
+            "simulation_seconds_at_1MHz": 7.895967,
+            "tokens_per_sim_second_including_eos": 0.8865285277914662,
+            "process_wall_seconds": 14.925006172000394
+          },
+          "algorithm": {
+            "generation_cycles": 6512069,
+            "simulation_seconds_at_1MHz": 6.512069,
+            "tokens_per_sim_second_including_eos": 1.0749271852002797,
+            "process_wall_seconds": 14.48709325100026
+          }
+        }
+      },
+      {
+        "index": 4,
+        "question": "你是谁呀",
+        "token_ids": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 7892361,
+            "simulation_seconds_at_1MHz": 7.892361,
+            "tokens_per_sim_second_including_eos": 0.8869335804583698,
+            "process_wall_seconds": 15.431041064000055
+          },
+          "algorithm": {
+            "generation_cycles": 6509880,
+            "simulation_seconds_at_1MHz": 6.50988,
+            "tokens_per_sim_second_including_eos": 1.0752886381930236,
+            "process_wall_seconds": 14.345521264000126
+          }
+        }
+      },
+      {
+        "index": 5,
+        "question": "介绍自己",
+        "token_ids": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 7893378,
+            "simulation_seconds_at_1MHz": 7.893378,
+            "tokens_per_sim_second_including_eos": 0.8868193060056163,
+            "process_wall_seconds": 14.688447700999859
+          },
+          "algorithm": {
+            "generation_cycles": 6511983,
+            "simulation_seconds_at_1MHz": 6.511983,
+            "tokens_per_sim_second_including_eos": 1.0749413811430404,
+            "process_wall_seconds": 14.821473243000582
+          }
+        }
+      },
+      {
+        "index": 6,
+        "question": "今天天气怎么样？",
+        "token_ids": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 14229890,
+            "simulation_seconds_at_1MHz": 14.22989,
+            "tokens_per_sim_second_including_eos": 0.7730207331188084,
+            "process_wall_seconds": 24.385014468999543
+          },
+          "algorithm": {
+            "generation_cycles": 11515903,
+            "simulation_seconds_at_1MHz": 11.515903,
+            "tokens_per_sim_second_including_eos": 0.955200820986422,
+            "process_wall_seconds": 23.462898739000593
+          }
+        }
+      },
+      {
+        "index": 7,
+        "question": "今天会下雨吗？",
+        "token_ids": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 13566375,
+            "simulation_seconds_at_1MHz": 13.566375,
+            "tokens_per_sim_second_including_eos": 0.8108282426219237,
+            "process_wall_seconds": 24.08848984299948
+          },
+          "algorithm": {
+            "generation_cycles": 11016890,
+            "simulation_seconds_at_1MHz": 11.01689,
+            "tokens_per_sim_second_including_eos": 0.9984668994607371,
+            "process_wall_seconds": 22.577941019999344
+          }
+        }
+      },
+      {
+        "index": 8,
+        "question": "现在冷不冷？",
+        "token_ids": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 12892719,
+            "simulation_seconds_at_1MHz": 12.892719,
+            "tokens_per_sim_second_including_eos": 0.8531947372776836,
+            "process_wall_seconds": 23.744339389999368
+          },
+          "algorithm": {
+            "generation_cycles": 10527652,
+            "simulation_seconds_at_1MHz": 10.527652,
+            "tokens_per_sim_second_including_eos": 1.0448673645367457,
+            "process_wall_seconds": 21.842950774998826
+          }
+        }
+      },
+      {
+        "index": 9,
+        "question": "一加一等于几？",
+        "token_ids": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 7693067,
+            "simulation_seconds_at_1MHz": 7.693067,
+            "tokens_per_sim_second_including_eos": 0.6499358448327566,
+            "process_wall_seconds": 13.66323737699895
+          },
+          "algorithm": {
+            "generation_cycles": 6242305,
+            "simulation_seconds_at_1MHz": 6.242305,
+            "tokens_per_sim_second_including_eos": 0.8009861741776475,
+            "process_wall_seconds": 12.031764540999575
+          }
+        }
+      },
+      {
+        "index": 10,
+        "question": "1+1是多少？",
+        "token_ids": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 7684241,
+            "simulation_seconds_at_1MHz": 7.684241,
+            "tokens_per_sim_second_including_eos": 0.6506823510610872,
+            "process_wall_seconds": 13.293352062999475
+          },
+          "algorithm": {
+            "generation_cycles": 6238841,
+            "simulation_seconds_at_1MHz": 6.238841,
+            "tokens_per_sim_second_including_eos": 0.8014309067982338,
+            "process_wall_seconds": 12.519693722000738
+          }
+        }
+      },
+      {
+        "index": 11,
+        "question": "一加一？",
+        "token_ids": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "variants": {
+          "baseline": {
+            "generation_cycles": 6168663,
+            "simulation_seconds_at_1MHz": 6.168663,
+            "tokens_per_sim_second_including_eos": 0.8105484121923989,
+            "process_wall_seconds": 11.75737298399872
+          },
+          "algorithm": {
+            "generation_cycles": 5079936,
+            "simulation_seconds_at_1MHz": 5.079936,
+            "tokens_per_sim_second_including_eos": 0.9842643686849598,
+            "process_wall_seconds": 10.931741700000202
+          }
+        }
+      }
+    ],
+    "bindings": {
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-native-regression-smoke-envfixed/receipt.json": "3afa7e0de1c67c2a2a44fc73b44c1fda40f4b913bfe4d15b3cbc195c666d11d7",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-native-regression-remaining/receipt.json": "e45b78cdc34c0b4d76d3adabe9aebba6bf0219c4eac3a62ab677c29c7529e84b"
+    },
+    "limitation": "Original CPU core, diagnostic UART timings and different ELF layouts; not CSA/physical qualification or pure P3 performance attribution. A partial audit is not a twelve-prompt PASS."
+  },
+  "cpu_current_banked_rom_core_replay": {
+    "status": "PARENT_BOUND_CURRENT_ROM_CORE_REPLAY_AUDIT_PASS",
+    "variants": 2,
+    "token_count": 11,
+    "generation_cycles": 11030645,
+    "replay_cycles": 22527835,
+    "driven_clock": {
+      "period_ticks": 10000,
+      "timeprecision_seconds": 1e-12,
+      "period_ns": 10,
+      "firmware_configured_clock_hz": 1000000,
+      "warning": "Driver clock differs from firmware constant; cycle equality only, not 1MHz driven time."
+    },
+    "bindings": {
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tests/audit_cpu_rom_core_replay.py": "ddc97b347d504dad4c56a8d8c75e20129c5d9cf36482676ad5d6003967a56c90",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-current-rom-core-replay/receipt.json": "f96594029098726000f274e4024119b84f3a062fe1789641c7effe6e145e352a",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-current-rom-core-replay/preparation.json": "9c1ab0ed539598ff7b8f50be9f15eb4290f151137dacd30556b98a18fd7b7058",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-rtl-comparison.json": "21ca9762eb2b42fef192ccc68a7facf85eb74522079a74289d541fda20968d8f",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-rtl-diagnostic.log": "8c6e6e1a9b9c122d8e2f8ec75e4664974706552e9834492907c13f70bc2de719",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-current-rom-core-replay/original-execute.log": "4c4ec9e8e5c0aab2d657cb37e46045e28d48e336375a98cb58f29a5886c37457",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/cpu-current-rom-core-replay/banked-execute.log": "4c4ec9e8e5c0aab2d657cb37e46045e28d48e336375a98cb58f29a5886c37457"
+    },
+    "limitation": "Current CSA root5 RTL only. Does not establish unmapped-address equivalence, general instruction correctness, physical timing or power."
+  },
+  "gpu_processor_fault_seed1": {
+    "status": "SELECTED_P3_PROCESSOR_RTL_FAULT_PASS",
+    "records": [
+      {
+        "case_id": "P3-MINI-01",
+        "seed": 1,
+        "original_ordinal": 660,
+        "process_wall_seconds": 6.328935618999822,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "OK",
+          "primitive": 0,
+          "actual_bits": [
+            48753,
+            48420,
+            15541,
+            16086,
+            15933,
+            48467,
+            48839,
+            48877,
+            15682,
+            48724,
+            48756,
+            15969,
+            15804,
+            15545,
+            48587,
+            16028
+          ],
+          "actual": [
+            -0.2353515625,
+            -0.0400390625,
+            0.0220947265625,
+            0.41796875,
+            0.1845703125,
+            -0.051513671875,
+            -0.388671875,
+            -0.462890625,
+            0.04736328125,
+            -0.20703125,
+            -0.23828125,
+            0.2197265625,
+            0.091796875,
+            0.0225830078125,
+            -0.09912109375,
+            0.3046875
+          ],
+          "selected": []
+        },
+        "comparison": {
+          "expected_status": "OK",
+          "actual_status": "OK",
+          "status_match": true,
+          "golden_bits": [
+            48753,
+            48420,
+            15541,
+            16086,
+            15933,
+            48467,
+            48839,
+            48877,
+            15682,
+            48724,
+            48756,
+            15969,
+            15804,
+            15545,
+            48587,
+            16028
+          ],
+          "actual_bits": [
+            48753,
+            48420,
+            15541,
+            16086,
+            15933,
+            48467,
+            48839,
+            48877,
+            15682,
+            48724,
+            48756,
+            15969,
+            15804,
+            15545,
+            48587,
+            16028
+          ],
+          "golden": [
+            -0.2353515625,
+            -0.0400390625,
+            0.0220947265625,
+            0.41796875,
+            0.1845703125,
+            -0.051513671875,
+            -0.388671875,
+            -0.462890625,
+            0.04736328125,
+            -0.20703125,
+            -0.23828125,
+            0.2197265625,
+            0.091796875,
+            0.0225830078125,
+            -0.09912109375,
+            0.3046875
+          ],
+          "actual": [
+            -0.2353515625,
+            -0.0400390625,
+            0.0220947265625,
+            0.41796875,
+            0.1845703125,
+            -0.051513671875,
+            -0.388671875,
+            -0.462890625,
+            0.04736328125,
+            -0.20703125,
+            -0.23828125,
+            0.2197265625,
+            0.091796875,
+            0.0225830078125,
+            -0.09912109375,
+            0.3046875
+          ],
+          "delta": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absolute_delta": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mismatch_indices": [],
+          "bit_mismatch_count": 0,
+          "max_absolute_delta": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "shape_match": true,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [],
+          "responses": [],
+          "unmapped": [],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/command.txt": "b98a241ae6f2202b7d92661601683692416e72147bada7df6a463983aaa96ff9",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/device-0.disassembly.txt": "a83b87268958d491a29b576754376746e180379fa1e23a61d6bd8bc1046f7981",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/execute.log": "04a7b6a2a4f63b4e84284dcfd7a0da9bdc3ee44b33577f3f3d3f84a4568384d2",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/inputs.bin": "dd3642afb49c25919b478322cb5f3ea9c251bdde587bc02957cfae23598e08d4",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "295b72e59056b69c64dc08036b9a10833edd01f5e226ce35253642618463fcf6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-01-seed-1/device/811f21c9ef3fc0ca9b44f43880015ea70807540a787f6150c6300c0628fd569f-device.elf": "811f21c9ef3fc0ca9b44f43880015ea70807540a787f6150c6300c0628fd569f"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 1,
+        "original_ordinal": 950,
+        "process_wall_seconds": 4.828186141999595,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/command.txt": "ad061beb997483efd44c9c037cc1bc8fbb3c40321ff7996b3b09c93145fc09ea",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/device-0.disassembly.txt": "c012d11da41985784f182328671ca1695dd7678def29f9cc4d4dcc80bf79135a",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/inputs.bin": "a89b076a444bf606b8d1c197df4a582b7bfd24da44cb4888ae73a7e53104b5d4",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "93ca1fb9786a0cee4f3cf67f1b2a47420f80c2bf773a830158ece3524532fb78",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-smoke-headerfixed/P3-MINI-30-seed-1/device/789ca4836c9503245be1e8c207487910ccb0830e17a9555839774a901f4d57b9-device.elf": "789ca4836c9503245be1e8c207487910ccb0830e17a9555839774a901f4d57b9"
+        }
+      }
+    ],
+    "bindings": {
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/runtime/libvortex-rtlsim.so": "83114d4ca894d95510bda45b1da3d872923f0fde534cc3f6c5eadf0b293a11cf",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/runtime/librtlsim.so": "80ef67f1f73c7f9d2d7b77d3dd7ccafbb882eb400ee3f8adff6c0ea2fd893731",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/runtime/libvortex.so": "997e66b8a88dddb21160929d99b388cfb7566dd50e6a3997ef4d0757d2232d12",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/kernel/libvortex2.a": "2b842249f7e509fbdc95e32a839259183c121c9b429ac2a182fea5fc9b929f13",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/config.mk": "3c3e30456bcb9fba38b40a6a674b723eed250fda6ecb6ffae92b6ad00b74c131",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/hw/VX_config.vh": "24b8ed7365db46f867f447b1b0c192f22552a4d7e47b1546dba5ce9e815ea31d",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-rtlsim-fault-build-ascii-retry/receipt.json": "fca9b24ad8476374c218a2fa3eae5a3806d92167d9e7cc6830b7626ec3b63d37",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-overlay/p3-fault-app/student_mini.cu": "10c8769b474071d204a5b1a293d5030c8cda4a4ae26275584a6c646bc7f3057c",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-smoke-headerfixed/student_mini.cu": "10c8769b474071d204a5b1a293d5030c8cda4a4ae26275584a6c646bc7f3057c",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-smoke-headerfixed/student_mini": "fc84c5e54b6fb977eb5ca76e87db7d7dc3d411d0cbffbbdeb6c424b106e1f6e7",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-smoke-headerfixed/Makefile": "9adbd9401f8b93a835c8d39c9c06f8f5877d78a4737ffeb2fc88147a66fe73a9",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-smoke-headerfixed/common.mk": "6cfa2d9396eaf72d3a2bb62deb844d63bc61488f3ae9f66cd810a8c7fb0be9bc",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-smoke-headerfixed/common.h": "8bb8b12f7e074cc031f208550fafd798a4995dcd7d82d0cbc3f61ec280e5944c",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-smoke-headerfixed/kernel_compat/libvortex2.a": "9af5fd199d1499f151ecf26de01310fc4e92725623f63e6933739ffa275368eb",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/data/golden/vectors.jsonl": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-overlay/p3-fault-overlay-binding.json": "0ba9a89278daea39accc7fd0b7cc95de0d5730439111620284a961b6121cd0b1"
+    },
+    "limitation": "Processor RTL fault smoke only. No full AFU/xrt, MINI31-33, physical or performance qualification."
+  },
+  "gpu_processor_fault_ten_seeds": {
+    "status": "SELECTED_P3_PROCESSOR_RTL_FAULT_PASS",
+    "records": [
+      {
+        "case_id": "P3-MINI-01",
+        "seed": 1,
+        "original_ordinal": 660,
+        "process_wall_seconds": 6.170131494000088,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "OK",
+          "primitive": 0,
+          "actual_bits": [
+            48753,
+            48420,
+            15541,
+            16086,
+            15933,
+            48467,
+            48839,
+            48877,
+            15682,
+            48724,
+            48756,
+            15969,
+            15804,
+            15545,
+            48587,
+            16028
+          ],
+          "actual": [
+            -0.2353515625,
+            -0.0400390625,
+            0.0220947265625,
+            0.41796875,
+            0.1845703125,
+            -0.051513671875,
+            -0.388671875,
+            -0.462890625,
+            0.04736328125,
+            -0.20703125,
+            -0.23828125,
+            0.2197265625,
+            0.091796875,
+            0.0225830078125,
+            -0.09912109375,
+            0.3046875
+          ],
+          "selected": []
+        },
+        "comparison": {
+          "expected_status": "OK",
+          "actual_status": "OK",
+          "status_match": true,
+          "golden_bits": [
+            48753,
+            48420,
+            15541,
+            16086,
+            15933,
+            48467,
+            48839,
+            48877,
+            15682,
+            48724,
+            48756,
+            15969,
+            15804,
+            15545,
+            48587,
+            16028
+          ],
+          "actual_bits": [
+            48753,
+            48420,
+            15541,
+            16086,
+            15933,
+            48467,
+            48839,
+            48877,
+            15682,
+            48724,
+            48756,
+            15969,
+            15804,
+            15545,
+            48587,
+            16028
+          ],
+          "golden": [
+            -0.2353515625,
+            -0.0400390625,
+            0.0220947265625,
+            0.41796875,
+            0.1845703125,
+            -0.051513671875,
+            -0.388671875,
+            -0.462890625,
+            0.04736328125,
+            -0.20703125,
+            -0.23828125,
+            0.2197265625,
+            0.091796875,
+            0.0225830078125,
+            -0.09912109375,
+            0.3046875
+          ],
+          "actual": [
+            -0.2353515625,
+            -0.0400390625,
+            0.0220947265625,
+            0.41796875,
+            0.1845703125,
+            -0.051513671875,
+            -0.388671875,
+            -0.462890625,
+            0.04736328125,
+            -0.20703125,
+            -0.23828125,
+            0.2197265625,
+            0.091796875,
+            0.0225830078125,
+            -0.09912109375,
+            0.3046875
+          ],
+          "delta": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absolute_delta": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mismatch_indices": [],
+          "bit_mismatch_count": 0,
+          "max_absolute_delta": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "shape_match": true,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [],
+          "responses": [],
+          "unmapped": [],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/command.txt": "716e0bf5120aebc4ac1f448e2035d132f0665ad7757eda6d4e96eb86af00327e",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/device-0.disassembly.txt": "ed742842b994d625718574c22cc2544543dc486d8294f1651c8c58e8c00b50f4",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/execute.log": "04a7b6a2a4f63b4e84284dcfd7a0da9bdc3ee44b33577f3f3d3f84a4568384d2",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/inputs.bin": "dd3642afb49c25919b478322cb5f3ea9c251bdde587bc02957cfae23598e08d4",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/device/19f47471339cd83cc7289d9f9c3a6279bc4a6712ab8d50f5988d29561758592b-device.elf": "19f47471339cd83cc7289d9f9c3a6279bc4a6712ab8d50f5988d29561758592b",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "805203f02b3e4f0a64591a5d97ce3fcba78c3b051f7464b2c2f2ef4e510c690d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-01-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 1,
+        "original_ordinal": 950,
+        "process_wall_seconds": 5.229317031999926,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/command.txt": "aaccc65282ef245fcdc4ec637b7fd8f78af442f320da29468ceecf15bd50bc14",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/device-0.disassembly.txt": "78e545096862f12906d61e5b991ffb837ecbad56502b6d258f8ee0e46d2f3dda",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/inputs.bin": "a89b076a444bf606b8d1c197df4a582b7bfd24da44cb4888ae73a7e53104b5d4",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "6a2adc47a399fe043b3e7e5fa53a8bf64a886a138a4e5a91eff968bd29d675b8",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-1/device/c49d09bda0b09c89898f586c9407b3ce3df1a07446933b0f28007c391999cbc9-device.elf": "c49d09bda0b09c89898f586c9407b3ce3df1a07446933b0f28007c391999cbc9"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 2,
+        "original_ordinal": 951,
+        "process_wall_seconds": 5.244942586999969,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/command.txt": "b20bb26972adcc28b6c11667c446b0421e4ac22d90ba9e0d47d84845865f7500",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/device-0.disassembly.txt": "12246645a3eab6c2bf60a1b018c937aa3b810ef2e753eb032430621939064345",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/inputs.bin": "8a513ab9a31bf38dde8f281ad04a12ae25e0016283c58116f36b5a35388eb04a",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "8f2a708c7bfa4c9d6e4c8e66eb9cded84d0413b626237d2f124f54f597da0dca",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-2/device/9d48da37b63421bb60df200d0a14e5803f6f1024250e7beb4008cd558048495d-device.elf": "9d48da37b63421bb60df200d0a14e5803f6f1024250e7beb4008cd558048495d"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 3,
+        "original_ordinal": 952,
+        "process_wall_seconds": 5.202622131000226,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/command.txt": "3d48aa3e44541f808dc01911f9bb20527e1d136c77a67b409ff379dbc7c072ed",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/device-0.disassembly.txt": "9e17e1019b5e7692d257ab2dd34edf75ce3ff725f98dd2f0be844ea0cc847a47",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/inputs.bin": "e0ef95d13b42df2022ec0b2516172af8d444303f0316e5263e000da17014d134",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "8315e9d65404f5ce777739275183dab9e58a22a7759007ac1b851018815473c9",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-3/device/b9cbce88fca7fe34c873477c6b2350a4b24fe6344def21342761af1b0acd7a2f-device.elf": "b9cbce88fca7fe34c873477c6b2350a4b24fe6344def21342761af1b0acd7a2f"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 4,
+        "original_ordinal": 953,
+        "process_wall_seconds": 5.363116017000266,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/command.txt": "4b7281001321e73ef97b6a1bf9fff27522dce4b5e7454976242b9d720c5709a0",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/device-0.disassembly.txt": "3e376c8483b37280afe836b53d0496f1f850c791b5f3af793383d99e6bfd4bce",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/inputs.bin": "3eb394c6fb042852ff56003d2dd01a694dd69b08c18cc89c18f0b6c4389850da",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "7e2d8263883f5aa646e72336fe92953127a49723705f48815a81119f01656b76",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-4/device/5d4533d8c0ceaa34a206de08dea35deff06294a5b49944b2e9d1c9fd2dd66a57-device.elf": "5d4533d8c0ceaa34a206de08dea35deff06294a5b49944b2e9d1c9fd2dd66a57"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 5,
+        "original_ordinal": 954,
+        "process_wall_seconds": 5.1204318099999,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/command.txt": "247431f65576d72c782bdcc3c597e283e76e4507ba74674763a8eb0b78c3a940",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/device-0.disassembly.txt": "267445042fd9ea231cc1a9f2d33242247e8159bdd6a0c7ed1ce8f78d15aeadec",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/inputs.bin": "c53aff9096d7ae2a63755f6a08e20f95160d384d2595af206da705f6b4cf3266",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "1ccb94d2dbe64c8ecc5ca386ecf323d79974f93c130e1acb7bdafee85811fe29",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-5/device/66c887011712a41cc94270b625f96fec2358571b2220c6c97a6fa6339d2cd9c8-device.elf": "66c887011712a41cc94270b625f96fec2358571b2220c6c97a6fa6339d2cd9c8"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 6,
+        "original_ordinal": 955,
+        "process_wall_seconds": 5.222906286000125,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/command.txt": "4223f1fb16e66e36c06788542f6704161dbf521b5b3b175fd6207babe1098158",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/device-0.disassembly.txt": "2ce7cb04e79a7847cfba1d4b99660fe3118e5c4c368c84117cea784806a46983",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/inputs.bin": "159be39b06c7adf9a45326e6cc17d9818397011a04bf1187eb764601cdd785c8",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "3c88bb9f6653a95bf9a80de302eaed52415a5fb5547b4df07428ce60f480d2fc",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-6/device/f886a81c30e192c8c95ccf3727e3a2ffd9ef764610331e0810a9b275d8ef1d9b-device.elf": "f886a81c30e192c8c95ccf3727e3a2ffd9ef764610331e0810a9b275d8ef1d9b"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 7,
+        "original_ordinal": 956,
+        "process_wall_seconds": 5.189662116999898,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/command.txt": "1624264555b3f44fe3fcb5fd9f56e5e337ae65e2333bba7af7fc4c8f97ac14c1",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/device-0.disassembly.txt": "70010bbecc7a01fcb7ab4d73f008e39df1686a3d086bb60822d7bb3f23381df3",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/inputs.bin": "c7cdb354341999c8dd40723157ba44b20be77574f6750f1b1a05c3f851ac6e4c",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "7f01b5909b211d1038c4b16bc8fe7bd88e39617c8e160b5ff33577e05a8dffa0",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-7/device/58ea2bd121520f06741b159622e0a4e12622ea3e50cf819711ac82647d040de1-device.elf": "58ea2bd121520f06741b159622e0a4e12622ea3e50cf819711ac82647d040de1"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 8,
+        "original_ordinal": 957,
+        "process_wall_seconds": 5.312652033000177,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/command.txt": "f2440a2bb2e4c3b6aeeed57adc7894247307911064cf063a06b43eea8900b406",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/device-0.disassembly.txt": "1f4baf704ef88ebfea5fc03768a7da4978eee94569e18cc2787d0cf5bd5a544d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/inputs.bin": "6136efd0192d78e38fabf52d351d846483a6432b07223360773607cf3299685d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/device/1d7ff35b8f898da5fca6dbb062630b63b0346ef06824767335763cc92ab49610-device.elf": "1d7ff35b8f898da5fca6dbb062630b63b0346ef06824767335763cc92ab49610",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "b7ac91a8655ba9734fcb3a86e372f5e3031ed6f4695afbf15c021456b591ac17",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-8/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 9,
+        "original_ordinal": 958,
+        "process_wall_seconds": 5.205158664999999,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/command.txt": "002de442e89209ed491244ccdb2df888aca399f9ac6c0a34d6c4dd7ef77c7678",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/device-0.disassembly.txt": "594e88b23d7760e46ab8fd4caa5e616f11f03623229d6a2d30819955c8aa4337",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/inputs.bin": "deb477ef4aac7df7b235b0bb05c9af622867c783fa757d2c392411f7ef18cd77",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/device/07b109820c842c4ca567be6a37c432ea87b0fe967da52f7d9e33b3a84170fc42-device.elf": "07b109820c842c4ca567be6a37c432ea87b0fe967da52f7d9e33b3a84170fc42",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "3510731d950c2343a5846e84fb9f594933f7b63e72ddf18e14d8b880468ae889",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-9/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6"
+        }
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 10,
+        "original_ordinal": 959,
+        "process_wall_seconds": 5.1221664610002335,
+        "observation": {
+          "ordinal": 0,
+          "actual_status": "BUS_ERROR",
+          "primitive": 0,
+          "actual_bits": [],
+          "actual": [],
+          "selected": [],
+          "device_status": 6,
+          "classification_source": "Accepted unmapped read + matched error response + hardware sticky DCR per launch"
+        },
+        "comparison": {
+          "expected_status": "BUS_ERROR",
+          "actual_status": "BUS_ERROR",
+          "status_match": true,
+          "golden_bits": [],
+          "actual_bits": [],
+          "shape_match": true,
+          "bit_mismatch_count": 0,
+          "status": "PASS"
+        },
+        "events": {
+          "requests": [
+            [
+              "0",
+              "00000000e0000000",
+              "003",
+              "1"
+            ]
+          ],
+          "responses": [
+            [
+              "0",
+              "003",
+              "1"
+            ]
+          ],
+          "unmapped": [
+            "3758096384"
+          ],
+          "launch_statuses": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "artifacts": {
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/command.txt": "35188a80dbc6651d3d6a5a746ed203dc70628b5f6b06f1ef01424f6627abb39b",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/device-0.disassembly.txt": "794f8b7fa8b9649e58ff7ac67696569f9d6af5dc77becc29d9859e852a673b3e",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/execute.log": "0b3059842fd1dcf61165759afb2d83d3826e168f33831d3d4efdefff255e5f6d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/inputs.bin": "ec78f667ec69689fe415bdea148f164ab3a2d3697409354402283ce5b001447d",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-binding.json": "2b6b100777c51c3f0e6027c9a823a4e099990932c7818883cdcff10fed372d00",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/device/23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6-device.vxbin": "23ef99a6791753256dab84775c5248b65c5501b7f98b0ffe532f0d5b53c901f6",
+          "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-fault-rtl-ten-seeds/P3-MINI-30-seed-10/device/aa038bc99acebfa5ca10b496e815f10052d62e4cd74c8f616ede44a71b627a90-device.elf": "aa038bc99acebfa5ca10b496e815f10052d62e4cd74c8f616ede44a71b627a90"
+        }
+      }
+    ],
+    "bindings": {
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/runtime/libvortex-rtlsim.so": "83114d4ca894d95510bda45b1da3d872923f0fde534cc3f6c5eadf0b293a11cf",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/runtime/librtlsim.so": "80ef67f1f73c7f9d2d7b77d3dd7ccafbb882eb400ee3f8adff6c0ea2fd893731",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/runtime/libvortex.so": "997e66b8a88dddb21160929d99b388cfb7566dd50e6a3997ef4d0757d2232d12",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/sw/kernel/libvortex2.a": "2b842249f7e509fbdc95e32a839259183c121c9b429ac2a182fea5fc9b929f13",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/config.mk": "3c3e30456bcb9fba38b40a6a674b723eed250fda6ecb6ffae92b6ad00b74c131",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-rtlsim-fault/hw/VX_config.vh": "24b8ed7365db46f867f447b1b0c192f22552a4d7e47b1546dba5ce9e815ea31d",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-rtlsim-fault-build-ascii-retry/receipt.json": "fca9b24ad8476374c218a2fa3eae5a3806d92167d9e7cc6830b7626ec3b63d37",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-overlay/p3-fault-app/student_mini.cu": "10c8769b474071d204a5b1a293d5030c8cda4a4ae26275584a6c646bc7f3057c",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-ten-seeds/student_mini.cu": "10c8769b474071d204a5b1a293d5030c8cda4a4ae26275584a6c646bc7f3057c",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-ten-seeds/student_mini": "e9fedb374ef14bcf9743ec093747aa75628c7d586d76a169b2fb77ce20e0946e",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-ten-seeds/Makefile": "9adbd9401f8b93a835c8d39c9c06f8f5877d78a4737ffeb2fc88147a66fe73a9",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-ten-seeds/common.mk": "6cfa2d9396eaf72d3a2bb62deb844d63bc61488f3ae9f66cd810a8c7fb0be9bc",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-ten-seeds/common.h": "8bb8b12f7e074cc031f208550fafd798a4995dcd7d82d0cbc3f61ec280e5944c",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-rtl-ten-seeds/kernel_compat/libvortex2.a": "e922c3574691f6e7a0d57bdf7a9aa2e0ba8c9bd0a29c917a310b30b57baaf92d",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/data/golden/vectors.jsonl": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/build/gpu-fault-overlay/p3-fault-overlay-binding.json": "0ba9a89278daea39accc7fd0b7cc95de0d5730439111620284a961b6121cd0b1"
+    },
+    "limitation": "Processor RTL fault smoke only. No full AFU/xrt, MINI31-33, physical or performance qualification."
+  },
+  "cpu_merge_local": {
+    "status": "LOCAL_SHAPED_REGISTER_BOUNDARY_STA_ONLY",
+    "records": {
+      "baseline": {
+        "stat": {
+          "creator": "Yosys 0.33 (git sha1 2584903a060)",
+          "invocation": "stat -json -liberty \"/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\" ",
+          "modules": {
+            "\\cpu_merge_probe": {
+              "num_wires": 439,
+              "num_wire_bits": 1120,
+              "num_pub_wires": 21,
+              "num_pub_wire_bits": 702,
+              "num_memories": 0,
+              "num_memory_bits": 0,
+              "num_processes": 0,
+              "num_cells": 570,
+              "area": 6411.1488,
+              "num_cells_by_type": {
+                "sky130_fd_sc_hd__a21boi_0": 1,
+                "sky130_fd_sc_hd__a21o_1": 13,
+                "sky130_fd_sc_hd__a21oi_1": 21,
+                "sky130_fd_sc_hd__and2_0": 7,
+                "sky130_fd_sc_hd__and3_1": 1,
+                "sky130_fd_sc_hd__clkinv_1": 12,
+                "sky130_fd_sc_hd__dfxtp_1": 152,
+                "sky130_fd_sc_hd__maj3_1": 25,
+                "sky130_fd_sc_hd__mux2_1": 125,
+                "sky130_fd_sc_hd__nand2_1": 46,
+                "sky130_fd_sc_hd__nand2b_1": 2,
+                "sky130_fd_sc_hd__nand3_1": 7,
+                "sky130_fd_sc_hd__nor2_1": 31,
+                "sky130_fd_sc_hd__nor2b_1": 6,
+                "sky130_fd_sc_hd__o21ai_0": 16,
+                "sky130_fd_sc_hd__o2bb2ai_1": 12,
+                "sky130_fd_sc_hd__o311a_1": 6,
+                "sky130_fd_sc_hd__o31ai_1": 2,
+                "sky130_fd_sc_hd__or2_0": 1,
+                "sky130_fd_sc_hd__xnor2_1": 51,
+                "sky130_fd_sc_hd__xnor3_1": 1,
+                "sky130_fd_sc_hd__xor2_1": 31,
+                "sky130_fd_sc_hd__xor3_1": 1
+              }
+            }
+          },
+          "design": {
+            "num_wires": 439,
+            "num_wire_bits": 1120,
+            "num_pub_wires": 21,
+            "num_pub_wire_bits": 702,
+            "num_memories": 0,
+            "num_memory_bits": 0,
+            "num_processes": 0,
+            "num_cells": 570,
+            "area": 6411.1488,
+            "num_cells_by_type": {
+              "sky130_fd_sc_hd__a21boi_0": 1,
+              "sky130_fd_sc_hd__a21o_1": 13,
+              "sky130_fd_sc_hd__a21oi_1": 21,
+              "sky130_fd_sc_hd__and2_0": 7,
+              "sky130_fd_sc_hd__and3_1": 1,
+              "sky130_fd_sc_hd__clkinv_1": 12,
+              "sky130_fd_sc_hd__dfxtp_1": 152,
+              "sky130_fd_sc_hd__maj3_1": 25,
+              "sky130_fd_sc_hd__mux2_1": 125,
+              "sky130_fd_sc_hd__nand2_1": 46,
+              "sky130_fd_sc_hd__nand2b_1": 2,
+              "sky130_fd_sc_hd__nand3_1": 7,
+              "sky130_fd_sc_hd__nor2_1": 31,
+              "sky130_fd_sc_hd__nor2b_1": 6,
+              "sky130_fd_sc_hd__o21ai_0": 16,
+              "sky130_fd_sc_hd__o2bb2ai_1": 12,
+              "sky130_fd_sc_hd__o311a_1": 6,
+              "sky130_fd_sc_hd__o31ai_1": 2,
+              "sky130_fd_sc_hd__or2_0": 1,
+              "sky130_fd_sc_hd__xnor2_1": 51,
+              "sky130_fd_sc_hd__xnor3_1": 1,
+              "sky130_fd_sc_hd__xor2_1": 31,
+              "sky130_fd_sc_hd__xor3_1": 1
+            }
+          }
+        },
+        "wns_report": "worst slack 0.27\n"
+      },
+      "candidate": {
+        "stat": {
+          "creator": "Yosys 0.33 (git sha1 2584903a060)",
+          "invocation": "stat -json -liberty \"/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/tools/physical/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib\" ",
+          "modules": {
+            "\\cpu_merge_probe": {
+              "num_wires": 442,
+              "num_wire_bits": 1327,
+              "num_pub_wires": 25,
+              "num_pub_wire_bits": 910,
+              "num_memories": 0,
+              "num_memory_bits": 0,
+              "num_processes": 0,
+              "num_cells": 569,
+              "area": 6449.936,
+              "num_cells_by_type": {
+                "sky130_fd_sc_hd__a21o_1": 14,
+                "sky130_fd_sc_hd__a21oi_1": 20,
+                "sky130_fd_sc_hd__a31o_1": 1,
+                "sky130_fd_sc_hd__and2_0": 1,
+                "sky130_fd_sc_hd__and3_1": 2,
+                "sky130_fd_sc_hd__clkinv_1": 19,
+                "sky130_fd_sc_hd__dfxtp_1": 152,
+                "sky130_fd_sc_hd__maj3_1": 23,
+                "sky130_fd_sc_hd__mux2_1": 128,
+                "sky130_fd_sc_hd__nand2_1": 42,
+                "sky130_fd_sc_hd__nand2b_1": 4,
+                "sky130_fd_sc_hd__nand3_1": 6,
+                "sky130_fd_sc_hd__nor2_1": 17,
+                "sky130_fd_sc_hd__nor2b_1": 8,
+                "sky130_fd_sc_hd__o21a_1": 10,
+                "sky130_fd_sc_hd__o21ai_0": 19,
+                "sky130_fd_sc_hd__o22ai_1": 5,
+                "sky130_fd_sc_hd__o2bb2ai_1": 4,
+                "sky130_fd_sc_hd__o311a_1": 5,
+                "sky130_fd_sc_hd__or2_0": 1,
+                "sky130_fd_sc_hd__xnor2_1": 47,
+                "sky130_fd_sc_hd__xnor3_1": 3,
+                "sky130_fd_sc_hd__xor2_1": 38
+              }
+            }
+          },
+          "design": {
+            "num_wires": 442,
+            "num_wire_bits": 1327,
+            "num_pub_wires": 25,
+            "num_pub_wire_bits": 910,
+            "num_memories": 0,
+            "num_memory_bits": 0,
+            "num_processes": 0,
+            "num_cells": 569,
+            "area": 6449.936,
+            "num_cells_by_type": {
+              "sky130_fd_sc_hd__a21o_1": 14,
+              "sky130_fd_sc_hd__a21oi_1": 20,
+              "sky130_fd_sc_hd__a31o_1": 1,
+              "sky130_fd_sc_hd__and2_0": 1,
+              "sky130_fd_sc_hd__and3_1": 2,
+              "sky130_fd_sc_hd__clkinv_1": 19,
+              "sky130_fd_sc_hd__dfxtp_1": 152,
+              "sky130_fd_sc_hd__maj3_1": 23,
+              "sky130_fd_sc_hd__mux2_1": 128,
+              "sky130_fd_sc_hd__nand2_1": 42,
+              "sky130_fd_sc_hd__nand2b_1": 4,
+              "sky130_fd_sc_hd__nand3_1": 6,
+              "sky130_fd_sc_hd__nor2_1": 17,
+              "sky130_fd_sc_hd__nor2b_1": 8,
+              "sky130_fd_sc_hd__o21a_1": 10,
+              "sky130_fd_sc_hd__o21ai_0": 19,
+              "sky130_fd_sc_hd__o22ai_1": 5,
+              "sky130_fd_sc_hd__o2bb2ai_1": 4,
+              "sky130_fd_sc_hd__o311a_1": 5,
+              "sky130_fd_sc_hd__or2_0": 1,
+              "sky130_fd_sc_hd__xnor2_1": 47,
+              "sky130_fd_sc_hd__xnor3_1": 3,
+              "sky130_fd_sc_hd__xor2_1": 38
+            }
+          }
+        },
+        "wns_report": "worst slack 0.47\n"
+      }
+    },
+    "corner": "SKY130HD TT 1.8V 25C",
+    "clock_ns": 10,
+    "bindings": {
+      "rerun_sqrt3/VexRiscv_Full_4k.v": "1ee38dc4b0f3a2ce08de9df1f8e2bb8fceb628a89adb7f624f38ae44cebe9fcc",
+      "optimization/p3/build/rtl-csa/VexRiscv_Full_4k.v": "ba174dab61faefac1cad9e83f1d0090343c88acd6ac353b3fb68f136fb2db80c",
+      "optimization/p3/tools/physical/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+      "optimization/p3/physical/gpu-multiplier-mapped-filtered/mapping.lib": "f97adcfe9854c9a5b147c919ad7ebb3169555e56bc7d2784b314a54691335c05",
+      "optimization/p3/tools/map_cpu_merge.py": "3594374839123071e42303ac916fe18b1a694a2812b9d7857cbc0696c2a9e381",
+      "optimization/p3/tools/physical/openroad-2024-12-14/usr/bin/openroad": "93fe61454a52b927602fd6c798c4402214c19e80e7d614636345f0f427ea2f46",
+      "optimization/p3/tools/physical/sky130hd/lef/sky130_fd_sc_hd.tlef": "8e99b4e8b016db0713029ebcae6b2cc2aedd9c2c49682e2f23521dd0b1a2085e",
+      "optimization/p3/tools/physical/sky130hd/lef/sky130_fd_sc_hd_merged.lef": "44180aaa0068b1fcb0789f128b090304c01ad48f511d3f7afa66c90b3e176ec5",
+      "optimization/p3/physical/cpu-merge-shaped/baseline/design.sv": "1d5869de087cda8b88ecf9f6f6bf35843878b2e370f4646b147dc80306d5ed2a",
+      "optimization/p3/physical/cpu-merge-shaped/baseline/mapped.v": "28c47a3bd9dc0df07f759f6b1df1e8d53bfdc56bfe6cf8fdf8451d5b82ce3818",
+      "optimization/p3/physical/cpu-merge-shaped/baseline/constraints.sdc": "ee9eeaaa31ce2b63012ca858451f38e4caaf2d47dbe62326c4f3bc3bbd6be648",
+      "optimization/p3/physical/cpu-merge-shaped/candidate/design.sv": "64a3d3319cc0c33c709bb12a32a21b0e7b0cc03e9dc237f12c1455e173508951",
+      "optimization/p3/physical/cpu-merge-shaped/candidate/mapped.v": "186a7235b396d9deab58dfad70aa55d43334849178cf620dab287c98110ab918",
+      "optimization/p3/physical/cpu-merge-shaped/candidate/constraints.sdc": "ccb404e4aeb094c9313b49f13dbf10357fd3068ad9f032e79db4fc66045a1020"
+    },
+    "limitation": "Real 32/34/34-bit operand shape, zero low 16 bits, sign extension and 52-bit output preserved. Source registers represent the existing pipeline boundary, with independent abstract enables. Partial products are unconstrained at this boundary; no claim of full pipeline/control equivalence. Ideal wires/clocks only, no placement/CTS/routing/full-core Fmax/power/signoff."
+  },
+  "cpu_p3_uart_protocol": {
+    "status": "CPU_P3_UART_PROTOCOL_30_PASS",
+    "counts": {
+      "P3-MINI-31": 10,
+      "P3-MINI-32": 10,
+      "P3-MINI-33": 10
+    },
+    "receipt_sha256": "0886dacd6ce2e36e3831f1426ada29d8aea0dfe771d008249781aa3aaafc2711",
+    "limitation": "Current scalar candidate original CPU core UART stream/reset only. No DFI protocol, CSA core or physical mapped netlist qualification. Host expected payload derives from current 1000/1000 frozen-golden comparison."
+  },
+  "gpu_device_bound_comparison": {
+    "status": "INTEGRATED_GPU_RTLSIM_NATIVE_EXACT_PASS",
+    "simx": {
+      "instructions": 1713555,
+      "cycles": 17188623
+    },
+    "rtlsim": {
+      "instructions": 1713555,
+      "cycles": 17077421
+    },
+    "aggregate_cycle_relative_difference": 0.006469511839313714,
+    "bindings": {
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-algorithm-abs-fix/execute.log": "fecf0079db047c4d8606c53cb64016fd383a6b47e5fa115f166d19ac600d09e0",
+      "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/optimization/p3/runs/gpu-rtl-native-device-bound/execute.log": "21b3176a84662821acf9450edb14e34334d193a4e3e94bc806ecda7dc720321c"
+    },
+    "limitation": "One processor RTL native session, not full AFU/platform fault/protocol/all-case coverage or official model_parity gate. Baseline RTL performance NOT_RUN."
+  },
+  "required_remaining": [
+    "Actual whole-core IO boundary/corner qualification and full-core PPA",
+    "CPU full-core PPA",
+    "CTS/route/extracted STA, DRC/antenna/PDN/LVS/activity power and full-chip binding",
+    "GPU genuine bus fault/protocol and CPU CSA/physical-interface protocol qualification",
+    "CPU remaining prompt RTL regression (see audited completed/missing indices), final repeated performance and complete device provenance"
+  ],
+  "bindings": {
+    "runs/cpu-ablation-retry/comparison.json": "5628fd81b52d218ae8a6b70990eda6d4b94539dbf07fe75fef68770811c15a75",
+    "runs/gpu-rtl-native-matched-config/comparison.json": "9f5cc082b26a66253de95f99c076f40c96e635e07699542b8b0590042a9e2d7a",
+    "runs/gpu-rtl-native-matched-config/receipt.json": "53da8b22f9fd61aee1f828323c89bebe615b150d77fc7f49c5825d90c29e015d",
+    "runs/gpu-rtl-native-matched-config/execute.log": "d6cdbe226d6e1210b2393c157197879f48163feb7e6ab13c4c8bc28d61d5c189",
+    "physical/gpu-multiplier-placement-filtered/baseline-u40/wns-placement.rpt": "3c2279c772a95a37cdd73dd4f642867440dfd9012d981d73e7de39d7f0159dc0",
+    "physical/gpu-multiplier-placement-filtered/baseline-u30/wns-placement.rpt": "d1dcefbd3ee8a8af4fd8985c61d614e239dc5840358c1b14c795d7785c7209ab",
+    "physical/gpu-multiplier-placement-filtered/candidate-u40/wns-placement.rpt": "26c13d23cf8894bd3c77334f3ed78bcfe8ffa3817f2c347be5b2b2801fc1b0ca",
+    "physical/gpu-multiplier-placement-filtered/candidate-u30/wns-placement.rpt": "20b51afc9cb0427cb11884ade25d0fdf08f3434a1fae5e6468c08200a9a8cf16",
+    "physical/gpu-multiplier-placement-vendor/vendor-u40/wns-placement.rpt": "8ac626247421ce18a6967abf913a66fa662943ec1ccbe5c79e6fde01a2c444d8",
+    "physical/gpu-multiplier-placement-vendor/vendor-u30/wns-placement.rpt": "3c6ce81f44c6fd4d8751f4ea259578fe9ca95a12693bcbc78b6c5d327afab669",
+    "physical/cpu-merge-shaped/comparison.json": "ecbb629d060cd7233b464a2bf66d72dd3feb913fc0bdb0e224e1dbf2b2d751b7",
+    "physical/gpu-multiplier-route-hilomap/receipt.json": "66a7b4d66e98474342dc289d76c2f7f1ff4f64bb1cf389d88935033094dc49d9",
+    "physical/gpu-multiplier-extract-limb-u30/wns-extracted.rpt": "e4aeb4de98de467daef8c50ecb106a26b0453bddbe03985453e1af61ad256314",
+    "physical/gpu-multiplier-extract-limb-u30/hold-extracted.rpt": "d5621c7d2aa995eece79751f3ba0854a3a84922b6c7a3df1e383d3289a85b5d2",
+    "physical/gpu-multiplier-extract-limb-u30/receipt.json": "0607201b6a6393f9a8cd79082fc7e9f51de9cdd27fc041bba7584779954a43cf",
+    "physical/gpu-multiplier-routed-outputbound-comparison.json": "37e4dcc4342531e667fddff4c422093b2a3032356814bf1d0ede7f28fa3c1ecb",
+    "runs/gpu-rtl-parent-comparison.json": "980b461a2abf1bb209d162d1bc272580b54c832b4de4fe787d6d50cfdaaeff77",
+    "runs/gpu-twelve-prompt-comparison.json": "25b51449449b647684642cb87e093a02acadb24a59aec01475572e6c16017f45",
+    "runs/cpu-prompt-regression-audit.json": "e3001787199d1b28252da06a4cfbf7f08234a8349b5911a0124a244bcd4500c1",
+    "runs/cpu-current-rom-core-replay/independent-audit.json": "e185f291835b5546ce176fa26a868c39f47d3233e7f6b693b06aae0b632e0bcd",
+    "runs/gpu-fault-rtl-smoke-headerfixed/receipt.json": "574c5d4dfc239901318e9ddf1fb0ceb948b6eaeb1b05f23606277ee8d133133a",
+    "runs/gpu-fault-rtl-ten-seeds/receipt.json": "6a663d2e284df2ce634410f54b3f299f81a20a4f5760c3731aa3a3846ea975b2",
+    "runs/cpu-scalar-protocol/comparison.json": "f50c83861fd2a623712560146fa65aa673dca13e0ac910ebf294c5735e8a469e",
+    "runs/gpu-rtl-native-device-bound/comparison.json": "07e6e51bab8660359da6fbb22b9ac5350540f12cd97a6cc6e8c761e5058e370a"
+  }
+}

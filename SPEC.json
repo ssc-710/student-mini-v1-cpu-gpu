@@ -1,0 +1,1206 @@
+{
+  "schema_version": 1,
+  "release_id": "student-mini-v1",
+  "implementation_started_at": "2026-10-07T19:06:42+08:00",
+  "deadline_seconds": 3600,
+  "routes": {
+    "A": {
+      "name": "CPU + 专用加速器",
+      "platforms": [
+        "cpu",
+        "accelerator"
+      ],
+      "baseline_count": 6,
+      "optimization_chains": 2
+    },
+    "B": {
+      "name": "CPU + GPU",
+      "platforms": [
+        "cpu",
+        "gpu"
+      ],
+      "baseline_count": 6,
+      "optimization_chains": 2
+    }
+  },
+  "operators": [
+    "p1",
+    "p2",
+    "p3"
+  ],
+  "layers": [
+    "runtime",
+    "algorithm",
+    "microarchitecture",
+    "physical"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "hardware": {
+    "cpu": {
+      "core": "VexRiscv",
+      "isa": "RV32IM",
+      "source_profile": "VexRiscv_Full_4k",
+      "cache_profile_kib": 4,
+      "require_generated_i_d_cache_sizes": true
+    },
+    "gpu": {
+      "core": "Vortex",
+      "cores": 1,
+      "warps": 2,
+      "threads": 4,
+      "l2_kib": 0,
+      "functional_backend": "simx",
+      "performance_backend": "rtlsim"
+    },
+    "accelerator": {
+      "execution": "serial",
+      "promotion_optimizations": false
+    },
+    "attention": {
+      "heads": 1,
+      "nope_dim": 8,
+      "rope_dim": 4,
+      "index_dim": 8,
+      "value_dim": 8,
+      "topk_capacity": 4,
+      "splits": [
+        1,
+        2,
+        4
+      ],
+      "page_sizes": [
+        1,
+        4
+      ],
+      "p2_partition": "contiguous-ceil-chunk; merge nonempty splits by ascending split ID"
+    },
+    "moe": {
+      "max_hidden": 16,
+      "max_intermediate": 16,
+      "routed_experts": 2,
+      "active_experts": 1,
+      "nano_shared_experts": 1
+    },
+    "physical": {
+      "profile": "mini",
+      "platform": "sky130hd",
+      "clock_period_ns": 10,
+      "frequency_hz": 100000000,
+      "unique_packages": 5
+    }
+  },
+  "numeric": {
+    "input": "int8",
+    "input_range": [
+      -128,
+      127
+    ],
+    "random_range": [
+      -8,
+      7
+    ],
+    "accumulator": "int32",
+    "wide_intermediates": "preserve-existing-contract",
+    "semantic_input": "bf16",
+    "semantic_range": [
+      -16,
+      16
+    ],
+    "score_delta": "signed-q5.11[-16,0]",
+    "exp_output": "q1.15",
+    "scale": "finite-positive-fp32",
+    "scale_range": [
+      1.52587890625e-05,
+      65536
+    ],
+    "route_weight_range": [
+      0,
+      1
+    ],
+    "requantization": "rne-then-saturate-int8",
+    "output": "bf16-rne",
+    "hardware_tolerance": "bit-exact",
+    "semantic_tolerance": {
+      "rtol": 0.02,
+      "atol": 0.01
+    },
+    "separate_semantic_quantization_error": true
+  },
+  "nano": {
+    "layers": 1,
+    "hidden": 16,
+    "heads": 1,
+    "intermediate": 16,
+    "experts": 2,
+    "active_experts": 1,
+    "shared_experts": 1,
+    "vocab": 256,
+    "context": 32,
+    "max_generated_tokens": 12,
+    "training_device": "cpu",
+    "training_seed": 1,
+    "domains": [
+      "greeting",
+      "identity",
+      "weather-honest-fallback",
+      "fixed-arithmetic"
+    ],
+    "held_out_question": "今天天气怎么样？",
+    "runtime_answer_lookup": false
+  },
+  "resources": {
+    "architecture": "x86_64",
+    "host_ram_gib": 16,
+    "validation_vcpus": 2,
+    "validation_memory_gib": 8,
+    "threads": 2,
+    "physical_concurrency": 1,
+    "physical_gpu_required": false
+  },
+  "packaging": {
+    "compressed_limit_bytes": 1073741824,
+    "expanded_limit_bytes": 3221225472,
+    "include_software_installers": false,
+    "include_report_template": false,
+    "include_docx_rubric": false,
+    "require_complete_first_package": true
+  },
+  "protocol_interfaces": {
+    "gpu": "vortex_physical_top ports: MINI-31 seeded stalls on memory request acceptance and response delivery (both ports); MINI-32 host command response (host_rsp_ready_i) held N cycles per response; MINI-33 reset after 64 busy cycles of the first launch, all DCR writes replayed, launch reissued; stability of every DUT-held handshake checked",
+    "cpu": "CPU die ports: the UART result stream (serial_source valid/ready) for MINI-31 seeded stalls and MINI-32 per-byte holds, asic_reset_i for MINI-33 (reset 2000 cycles into the record, re-execution after reboot); DFI is a fixed-latency PHY interface without handshake. The target record is placed in image slot 0"
+  },
+  "power_method": "Routed netlist (6_final.v) compiled from Liberty cell functions into a zero-delay two-state event-driven gate model (tools/gatesim, scripts/student_mini_gatesim.py); OpenRAM macros modelled natively; driven by the cycle-by-cycle port trace of the RTL execution of the same workload; every recorded output cycle compared. Pin activity (toggle count, high time) per window written as SAIF and annotated in OpenROAD with the final SDC and SPEF (report_power, tt 25C 1.8V). Accelerators: Icarus gate simulation VCD (existing packages). Engine cross-checked against Verilator SAIF on a ROM bank: identical toggles, 4.30 vs 4.31 mW.",
+  "tools": {
+    "method": "Every non-repository file bound (path -> SHA-256) by the packaged evidence runs; current SHA-256 re-measured at plan time and the version printed by that binary; ORFS/OpenROAD commits from git.",
+    "binaries": [
+      {
+        "path": "/home/soclab/.local/bin/openroad",
+        "recorded_sha256": [
+          "1eef6f3a5e442b7321fb1f598a2f232f8baf00499a96f03570554b5fda399037"
+        ],
+        "current_sha256": "1eef6f3a5e442b7321fb1f598a2f232f8baf00499a96f03570554b5fda399037",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/cpu-gate-power/fc65c450176f0f01eb8dfeffeb9662b10fe67592ba8c18065cb59452fec64f39/completion.json",
+          "build/student-mini/gpu-gate-power/5d1eaf9eefee3b6451618d7c784bde777b1bc7ef370ad833ba4dae6296b8cbc2/completion.json",
+          "build/student-mini/rom-bank-physical/052096813284a18a0075d9d9c5fb0ac5ee1abb8b839444c0ee60fc55d044c381/completion.json",
+          "build/student-mini/rom-bank-physical/13943412ef0afdd6eace3165e4c490513fc7fa801cd56f180f2e328c75af7dcc/completion.json",
+          "build/student-mini/rom-bank-physical/1eefb242bf5a08e0295aa44977ff544546c19f8807d2f334827f6eade4f602bb/completion.json",
+          "build/student-mini/rom-bank-physical/306a42d535814383aba96e5df5614080ebef576940d6599b6316689e784f75ce/completion.json"
+        ],
+        "bound_by_count": 20,
+        "version": {
+          "command": [
+            "/home/soclab/.local/bin/openroad",
+            "-version"
+          ],
+          "exit_code": 0,
+          "output": [
+            "GITDIR-NOTFOUND"
+          ]
+        }
+      },
+      {
+        "path": "/home/soclab/.local/bin/openroad-drtbatch",
+        "recorded_sha256": [
+          "e2d931e2fe183472e65c0106a9c0d3e742733d4b4f0183f53df8894c5693f007"
+        ],
+        "current_sha256": "e2d931e2fe183472e65c0106a9c0d3e742733d4b4f0183f53df8894c5693f007",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 13,
+        "version": {
+          "command": [
+            "/home/soclab/.local/bin/openroad-drtbatch",
+            "-version"
+          ],
+          "exit_code": 0,
+          "output": [
+            "GITDIR-NOTFOUND"
+          ]
+        }
+      },
+      {
+        "path": "/home/soclab/.local/bin/sta",
+        "recorded_sha256": [
+          "3a7d2b0897ef99f636ed7b66071e78a79de68f10f88637067075acc9b79d1f17"
+        ],
+        "current_sha256": "3a7d2b0897ef99f636ed7b66071e78a79de68f10f88637067075acc9b79d1f17",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/gpu-fullchip-sta/6a98e1be91b33e6eca2b55263483ed11eb7a2dd47b73b162cf779370b1fbefe9/completion.json"
+        ],
+        "bound_by_count": 1,
+        "version": {
+          "command": [
+            "/home/soclab/.local/bin/sta",
+            "-version"
+          ],
+          "exit_code": 0,
+          "output": [
+            "3.1.0"
+          ]
+        }
+      },
+      {
+        "path": "/home/soclab/tools/oss-cad-suite/bin/yosys",
+        "recorded_sha256": [
+          "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6"
+        ],
+        "current_sha256": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 31,
+        "version": {
+          "command": [
+            "/home/soclab/tools/oss-cad-suite/bin/yosys",
+            "-V"
+          ],
+          "exit_code": 0,
+          "output": [
+            "Yosys 0.69+117 (git sha1 e8db64c60-dirty, Release, Clang /usr/bin/clang++ 21.1.8)"
+          ]
+        }
+      }
+    ],
+    "flow_and_pdk_files": [
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/Makefile",
+        "recorded_sha256": [
+          "1ca0d6a0d9bd76adfd03a5a09cd5e07325608a2c88771dd90b17e661db0c2c97"
+        ],
+        "current_sha256": "1ca0d6a0d9bd76adfd03a5a09cd5e07325608a2c88771dd90b17e661db0c2c97",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 31
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/config.mk",
+        "recorded_sha256": [
+          "1a36b8fbd58ee4b6b961bc14f3ca44e7b44a4ea47faf6f116f827eb5177509d5"
+        ],
+        "current_sha256": "1a36b8fbd58ee4b6b961bc14f3ca44e7b44a4ea47faf6f116f827eb5177509d5",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 31
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib",
+        "recorded_sha256": [
+          "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9"
+        ],
+        "current_sha256": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/cpu-gate-power/fc65c450176f0f01eb8dfeffeb9662b10fe67592ba8c18065cb59452fec64f39/completion.json",
+          "build/student-mini/gpu-fullchip-sta/6a98e1be91b33e6eca2b55263483ed11eb7a2dd47b73b162cf779370b1fbefe9/completion.json",
+          "build/student-mini/gpu-gate-power/5d1eaf9eefee3b6451618d7c784bde777b1bc7ef370ad833ba4dae6296b8cbc2/completion.json"
+        ],
+        "bound_by_count": 3
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/pdn.tcl",
+        "recorded_sha256": [
+          "d2244586d860af05157a2555a49602a5dfff178f636a797a7c892e8d395b74a8"
+        ],
+        "current_sha256": "d2244586d860af05157a2555a49602a5dfff178f636a797a7c892e8d395b74a8",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 31
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/scripts/detail_route.tcl",
+        "recorded_sha256": [
+          "e4041889c5949b6ea62f6e0605588c8bcdc55ea62bf9b71c51474bfd5d560952"
+        ],
+        "current_sha256": "e4041889c5949b6ea62f6e0605588c8bcdc55ea62bf9b71c51474bfd5d560952",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 6
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/scripts/generate_abstract.tcl",
+        "recorded_sha256": [
+          "5b40c4f2c5884e5dd77f437916b3667c571853ef22a33425d0234ce17ec76056"
+        ],
+        "current_sha256": "5b40c4f2c5884e5dd77f437916b3667c571853ef22a33425d0234ce17ec76056",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/rom-bank-physical/052096813284a18a0075d9d9c5fb0ac5ee1abb8b839444c0ee60fc55d044c381/completion.json",
+          "build/student-mini/rom-bank-physical/0b6383b21a1e64f890159a5bb9c110937f292fc37c08b2f3dd74dc8ce626d91e/completion.json",
+          "build/student-mini/rom-bank-physical/13943412ef0afdd6eace3165e4c490513fc7fa801cd56f180f2e328c75af7dcc/completion.json",
+          "build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/completion.json",
+          "build/student-mini/rom-bank-physical/1eefb242bf5a08e0295aa44977ff544546c19f8807d2f334827f6eade4f602bb/completion.json",
+          "build/student-mini/rom-bank-physical/306a42d535814383aba96e5df5614080ebef576940d6599b6316689e784f75ce/completion.json"
+        ],
+        "bound_by_count": 25
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/scripts/global_route.tcl",
+        "recorded_sha256": [
+          "aeeb5c3aa3bdef64ba569cb650fd119c3389d0f0bf7478a7e440dca3f6b50447"
+        ],
+        "current_sha256": "aeeb5c3aa3bdef64ba569cb650fd119c3389d0f0bf7478a7e440dca3f6b50447",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 6
+      },
+      {
+        "path": "/home/soclab/src/orfs-clean-aabf2a/flow/scripts/load.tcl",
+        "recorded_sha256": [
+          "bf7b6bc7e304c315fccc2ba3b0e79b8ea6cf927d56d28de51377c9ad3b3bb934"
+        ],
+        "current_sha256": "bf7b6bc7e304c315fccc2ba3b0e79b8ea6cf927d56d28de51377c9ad3b3bb934",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/rom-bank-physical/052096813284a18a0075d9d9c5fb0ac5ee1abb8b839444c0ee60fc55d044c381/completion.json",
+          "build/student-mini/rom-bank-physical/0b6383b21a1e64f890159a5bb9c110937f292fc37c08b2f3dd74dc8ce626d91e/completion.json",
+          "build/student-mini/rom-bank-physical/13943412ef0afdd6eace3165e4c490513fc7fa801cd56f180f2e328c75af7dcc/completion.json",
+          "build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/completion.json",
+          "build/student-mini/rom-bank-physical/1eefb242bf5a08e0295aa44977ff544546c19f8807d2f334827f6eade4f602bb/completion.json",
+          "build/student-mini/rom-bank-physical/306a42d535814383aba96e5df5614080ebef576940d6599b6316689e784f75ce/completion.json"
+        ],
+        "bound_by_count": 25
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libjemalloc.so.2",
+        "recorded_sha256": [
+          "567efa52ecf445d5966025e1dcfd6b927a986472d272be3742f74a4a373baf12"
+        ],
+        "current_sha256": "567efa52ecf445d5966025e1dcfd6b927a986472d272be3742f74a4a373baf12",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+          "build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+          "build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+          "build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db/completion.json",
+          "build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json",
+          "build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+        ],
+        "bound_by_count": 6
+      },
+      {
+        "path": "build/student-mini/combined-cpu-v2/951fc915b089ce360fdb175c0e3ea4d8a4654e21098367384730fb98beff972a/inputs.json",
+        "recorded_sha256": [
+          "e9f78dc42c0e8f1b584d5c93cd101da396da5df70277fcb1deec1eb4361139f0"
+        ],
+        "current_sha256": "e9f78dc42c0e8f1b584d5c93cd101da396da5df70277fcb1deec1eb4361139f0",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/combined-cpu-v2/951fc915b089ce360fdb175c0e3ea4d8a4654e21098367384730fb98beff972a/loader.bin",
+        "recorded_sha256": [
+          "a0bbfcf0b006eded07ce4cb98c17fccc6ea525e12a0f6404b7fd12cedd0a4a46"
+        ],
+        "current_sha256": "a0bbfcf0b006eded07ce4cb98c17fccc6ea525e12a0f6404b7fd12cedd0a4a46",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5/completion.json",
+        "recorded_sha256": [
+          "9473dd4eda32f133b8fe3da8425312377f4baa2e32b966a727309c5df67b8c80"
+        ],
+        "current_sha256": "9473dd4eda32f133b8fe3da8425312377f4baa2e32b966a727309c5df67b8c80",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5/mapped.v",
+        "recorded_sha256": [
+          "50f87328b2dd6c3b24ae43452d2fd76dfa66b6eea0ad119b0d171b501935fa64"
+        ],
+        "current_sha256": "50f87328b2dd6c3b24ae43452d2fd76dfa66b6eea0ad119b0d171b501935fa64",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af/completion.json",
+        "recorded_sha256": [
+          "c37d19565bcb0e4dea138faf7a2640499026ddae10c6f0694b57cfefdd1efae7"
+        ],
+        "current_sha256": "c37d19565bcb0e4dea138faf7a2640499026ddae10c6f0694b57cfefdd1efae7",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af/sim_mem_1.init",
+        "recorded_sha256": [
+          "f12fe51574bb4de1b1f9347903390d7b2e8edc9698d5acaed8ee0ddbd7f7564b"
+        ],
+        "current_sha256": "f12fe51574bb4de1b1f9347903390d7b2e8edc9698d5acaed8ee0ddbd7f7564b",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af/sim_mem_2.init",
+        "recorded_sha256": [
+          "b1faf69b296faa0766e5acd2f60c356a99de114f53fb4a5db16ec302a464ef2d"
+        ],
+        "current_sha256": "b1faf69b296faa0766e5acd2f60c356a99de114f53fb4a5db16ec302a464ef2d",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af/sim_mem_3.init",
+        "recorded_sha256": [
+          "27d60924a3ecbb12c04d62f3751cfe2a40250fb77f192a57a7ae4a09ddf3b625"
+        ],
+        "current_sha256": "27d60924a3ecbb12c04d62f3751cfe2a40250fb77f192a57a7ae4a09ddf3b625",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af/sim_mem_4.init",
+        "recorded_sha256": [
+          "3ed809603caccaa90dc6a402fe4addf667c9b95cb5ae3735a97a623064e73787"
+        ],
+        "current_sha256": "3ed809603caccaa90dc6a402fe4addf667c9b95cb5ae3735a97a623064e73787",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-results/7cdb3c6055305b8cf80470a7382a4535a518cb54a8019f6f18bb1449e702d1f5/producer.py",
+        "recorded_sha256": [
+          "e577f14454dfe17a3bb9d79070b35ea57922126311d0efb59a4e00ba5479263f"
+        ],
+        "current_sha256": "e577f14454dfe17a3bb9d79070b35ea57922126311d0efb59a4e00ba5479263f",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-results/7cdb3c6055305b8cf80470a7382a4535a518cb54a8019f6f18bb1449e702d1f5/qualified/completion.json",
+        "recorded_sha256": [
+          "7865990d5597eeca63d164f369d3b70817f06d108fc3ffca3d64e2d51e20f765"
+        ],
+        "current_sha256": "7865990d5597eeca63d164f369d3b70817f06d108fc3ffca3d64e2d51e20f765",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-results/7cdb3c6055305b8cf80470a7382a4535a518cb54a8019f6f18bb1449e702d1f5/qualified/measurements.json",
+        "recorded_sha256": [
+          "d55f04be0b2ae4832ee2bbd1620159811c9c659dc5aef810445fcc94ac98a361"
+        ],
+        "current_sha256": "d55f04be0b2ae4832ee2bbd1620159811c9c659dc5aef810445fcc94ac98a361",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/cpu-rombanks-results/7cdb3c6055305b8cf80470a7382a4535a518cb54a8019f6f18bb1449e702d1f5/qualified/uart-records.log",
+        "recorded_sha256": [
+          "e7ce75246244fa7f2437bc4485d051332dc96a22280a795fc5fdd3f83836d656"
+        ],
+        "current_sha256": "e7ce75246244fa7f2437bc4485d051332dc96a22280a795fc5fdd3f83836d656",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b/build.json",
+        "recorded_sha256": [
+          "37ec5fa8746c9843ff96d21560f10567dce119490a141f96a695e9970935fbc3"
+        ],
+        "current_sha256": "37ec5fa8746c9843ff96d21560f10567dce119490a141f96a695e9970935fbc3",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/9059347a45f29acb1bb18bfab682d0c73e84cd1616c2d82d54a02a16e20a7cca/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b/inputs.json",
+        "recorded_sha256": [
+          "5d3ede32424d2b6213ebd6709b19d637d6f915c29600f1b648cd66754fa27e83"
+        ],
+        "current_sha256": "5d3ede32424d2b6213ebd6709b19d637d6f915c29600f1b648cd66754fa27e83",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/9059347a45f29acb1bb18bfab682d0c73e84cd1616c2d82d54a02a16e20a7cca/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl",
+        "recorded_sha256": [
+          "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974"
+        ],
+        "current_sha256": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json",
+          "grading/evidence/student-mini-v1/results/9059347a45f29acb1bb18bfab682d0c73e84cd1616c2d82d54a02a16e20a7cca/results.json"
+        ],
+        "bound_by_count": 2
+      },
+      {
+        "path": "grading/evidence/student-mini-v1/results/fdcebd58b1964f79de4e73bece63566ce6a4a4ac56531d4ac4ba05523a047957/results.json",
+        "recorded_sha256": [
+          "7fe52002098e2919cedd05f9f03d75ddba6708207b33d1b55bec3d05677a6967"
+        ],
+        "current_sha256": "7fe52002098e2919cedd05f9f03d75ddba6708207b33d1b55bec3d05677a6967",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/9059347a45f29acb1bb18bfab682d0c73e84cd1616c2d82d54a02a16e20a7cca/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/assemble_student_mini_cpu_dfi_results.py",
+        "recorded_sha256": [
+          "37b0ee33e3ea023e020a579b92e75bb900d33a9609db712bcf66cacdd4df7807"
+        ],
+        "current_sha256": "37b0ee33e3ea023e020a579b92e75bb900d33a9609db712bcf66cacdd4df7807",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/assemble_student_mini_cpu_request_results.py",
+        "recorded_sha256": [
+          "16f2e5d34767fbdca77b86e66aafa4e83b9b08fd580f07ee095b6c0e0764e68b"
+        ],
+        "current_sha256": "16f2e5d34767fbdca77b86e66aafa4e83b9b08fd580f07ee095b6c0e0764e68b",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/assemble_student_mini_cpu_results.py",
+        "recorded_sha256": [
+          "5fab65f7e8c6f67ddcff212ddbe87b8b2ee26ab4569ac34aa3d406536dfdfcb6"
+        ],
+        "current_sha256": "5fab65f7e8c6f67ddcff212ddbe87b8b2ee26ab4569ac34aa3d406536dfdfcb6",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/assemble_student_mini_cpu_rombanks_results.py",
+        "recorded_sha256": [
+          "9415f83e1e15c6c40435a78367268ce565a847cd2eb9f51566e90d54ae9d1e08"
+        ],
+        "current_sha256": "9415f83e1e15c6c40435a78367268ce565a847cd2eb9f51566e90d54ae9d1e08",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/export_student_mini_input.py",
+        "recorded_sha256": [
+          "b26b6766925f851fbd109c10680ebf844506b163c320e43e8b0ffee28643ebde"
+        ],
+        "current_sha256": "b26b6766925f851fbd109c10680ebf844506b163c320e43e8b0ffee28643ebde",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/run_student_mini_gpu_platform_rtl.py",
+        "recorded_sha256": [
+          "3228fe15cafe5cf3cb7bcafe3a5b010203b00430e0fb55f892ae88c2cf324e7f"
+        ],
+        "current_sha256": "3228fe15cafe5cf3cb7bcafe3a5b010203b00430e0fb55f892ae88c2cf324e7f",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/9059347a45f29acb1bb18bfab682d0c73e84cd1616c2d82d54a02a16e20a7cca/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/student_mini.py",
+        "recorded_sha256": [
+          "dffa0df9b7ef44969261b607a1a0ec713a73d286017dd5cd9f6b43944b5f1bfb"
+        ],
+        "current_sha256": "dffa0df9b7ef44969261b607a1a0ec713a73d286017dd5cd9f6b43944b5f1bfb",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      },
+      {
+        "path": "scripts/student_mini_cpu_loader_banks.py",
+        "recorded_sha256": [
+          "f75d04f0d0d31c41e9a2eaac5eccf7629b07fc81db4a9b38213c4ea446bae3c4"
+        ],
+        "current_sha256": "f75d04f0d0d31c41e9a2eaac5eccf7629b07fc81db4a9b38213c4ea446bae3c4",
+        "current_matches_recorded": true,
+        "bound_by": [
+          "grading/evidence/student-mini-v1/results/1d1ff3dd7191e14b0c731698a0ae7e130f27330748aa017f1ecaa2897ac9e07c/results.json"
+        ],
+        "bound_by_count": 1
+      }
+    ],
+    "sources": {
+      "orfs": {
+        "path": "/home/soclab/src/orfs-clean-aabf2a",
+        "commit": {
+          "command": [
+            "git",
+            "-C",
+            "/home/soclab/src/orfs-clean-aabf2a",
+            "rev-parse",
+            "HEAD"
+          ],
+          "exit_code": 128,
+          "output": [
+            "fatal: not a git repository (or any of the parent directories): .git"
+          ]
+        },
+        "openroad_submodule_commit": {
+          "command": [
+            "git",
+            "-C",
+            "/home/soclab/src/orfs-clean-aabf2a/tools/OpenROAD",
+            "rev-parse",
+            "HEAD"
+          ],
+          "exit_code": 128,
+          "output": [
+            "fatal: not a git repository (or any of the parent directories): .git"
+          ]
+        },
+        "yosys_submodule_commit": {
+          "command": [
+            "git",
+            "-C",
+            "/home/soclab/src/orfs-clean-aabf2a/tools/yosys",
+            "rev-parse",
+            "HEAD"
+          ],
+          "exit_code": 128,
+          "output": [
+            "fatal: not a git repository (or any of the parent directories): .git"
+          ]
+        }
+      }
+    },
+    "provenance": [
+      {
+        "audit": "build/student-mini/openroad-source-export-audit-20261008/audit.json",
+        "sha256": "8091f0329a687c43bc4bfc33ed7c158dd886ee0ccc3286924a37a32a3041c6c6",
+        "schema": "student-mini-openroad-source-audit-v1",
+        "status": "SOURCE_AND_INSTALL_STAGE_PASS",
+        "source_commit": "90e29809c3d41f5ad289576e4c0c05b80c700bcd",
+        "source_url": null,
+        "source_repositories": [
+          {
+            "path": ".",
+            "commit": "90e29809c3d41f5ad289576e4c0c05b80c700bcd"
+          },
+          {
+            "path": "src/sta/",
+            "commit": "779d47250b65b121ad22c70eb42e242292f9babf"
+          },
+          {
+            "path": "third-party/abc/",
+            "commit": "d527cfab4ad731b767ea0a2be2021d920d3afece"
+          },
+          {
+            "path": "third-party/slang-elab/",
+            "commit": "82effc8d9541be69e1ed3ec44759a4449f5d9247"
+          },
+          {
+            "path": "third-party/slang-elab/third_party/fmt/",
+            "commit": "553ec11ec06fbe0beebfbb45f9dc3c9eabd83d28"
+          },
+          {
+            "path": "third-party/slang-elab/third_party/slang/",
+            "commit": "f04e81565793c768b747a8fd058f3e7aeceee1b5"
+          }
+        ],
+        "declared_tool_gitlinks": null,
+        "installed_binary": "1eef6f3a5e442b7321fb1f598a2f232f8baf00499a96f03570554b5fda399037",
+        "binaries": {
+          "/home/soclab/src/OpenROAD-clean-90e29809/build/bin/openroad": "2c73cb564e422feebcc7bae8210d1adb0feea5adc9bef42305bb39b1023c77f4",
+          "/home/soclab/.local/bin/openroad": "1eef6f3a5e442b7321fb1f598a2f232f8baf00499a96f03570554b5fda399037"
+        },
+        "limitations": [
+          "Tracked source export and install transformation only; generated build dependencies require their own lock.",
+          "No source archive download or clean compiler/linker reconstruction was performed.",
+          "No existing source, tool executable, physical input or result was modified."
+        ],
+        "scope": null
+      }
+    ],
+    "sources_lock": {
+      "path": "third_party/sources.lock.json",
+      "sha256": "18ad55f4fcc2e1e9b48b3204af6c88ec94a237e42807e85095c25c35b6e774d3",
+      "entries": [
+        {
+          "name": "ibex",
+          "commit": "90331a69edd7151413c335a7f4b3e950baa07c19",
+          "version": null,
+          "required_for": "final-integration"
+        },
+        {
+          "name": "openroad-flow-scripts",
+          "commit": "aabf2a397059704f68ddafe7e2c8bd1a0e7c65f5",
+          "version": null,
+          "required_for": "ppa"
+        },
+        {
+          "name": "sby",
+          "commit": "b1a1e98cba941ec8433f8dc27f416cd7bb7f14be",
+          "version": null,
+          "required_for": "formal"
+        },
+        {
+          "name": "openram",
+          "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+          "version": null,
+          "required_for": "teacher-sram-generation"
+        },
+        {
+          "name": "verilator",
+          "commit": "51cdf52d0f3a3e59b51fd87762646a851e9f4aff",
+          "version": "v5.040",
+          "required_for": "promotion-regression"
+        },
+        {
+          "name": "deepseek-v3.2-exp",
+          "commit": "87e509a2e5a100d221c97df52c6e8be7835f0057",
+          "version": null,
+          "required_for": "architecture-reference"
+        },
+        {
+          "name": "flashmla",
+          "commit": "ba89a3466e9470ad08ab39738d4e7bb66989e1e7",
+          "version": null,
+          "required_for": "kernel-reference"
+        },
+        {
+          "name": "vortex",
+          "commit": "b8c5a24336026d9d029a67197160eee6b017f262",
+          "version": null,
+          "required_for": "virtual-gpu-simx-rtlsim"
+        },
+        {
+          "name": "vortex-toolchain-prebuilt",
+          "commit": "d0e3fed1dbc4bbc882ea7d453d339b8dde874c13",
+          "version": "v3.0.1",
+          "required_for": "virtual-gpu-toolchain"
+        },
+        {
+          "name": "llvm-vortex",
+          "commit": "4c836512a60c0b965bb298104e084cd0f07ca962",
+          "version": null,
+          "required_for": "virtual-gpu-spirv-toolchain"
+        },
+        {
+          "name": "pocl-vortex",
+          "commit": "3d02254121390f63f83ccbd707a97d26498a227f",
+          "version": null,
+          "required_for": "virtual-gpu-opencl-backend"
+        },
+        {
+          "name": "chipstar-vortex",
+          "commit": "3929f054ecc1c3d70dfc45648c5046cd28f37df9",
+          "version": null,
+          "required_for": "virtual-gpu-cuda-hip-frontend"
+        }
+      ],
+      "patches": [
+        {
+          "path": "third_party/patches/openroad-drt-batch-size.patch",
+          "applies_to": "openroad-flow-scripts/tools/OpenROAD",
+          "sha256": "fdf12c5c744d5671c60d3b088e8fe4a36f864e635e9f25ddbbb369d8440a1ac6",
+          "purpose": "optional STUDENT_MINI_DRT_BATCH_SIZE detailed-router worker batch (memory; default behaviour unchanged)"
+        }
+      ]
+    },
+    "notes": [
+      "openroad-drtbatch (sha256 e2d931e2fe183472e65c0106a9c0d3e742733d4b4f0183f53df8894c5693f007) = OpenROAD 90e29809c3d41f5ad289576e4c0c05b80c700bcd + third_party/patches/openroad-drt-batch-size.patch (sha256 fdf12c5c744d5671c60d3b088e8fe4a36f864e635e9f25ddbbb369d8440a1ac6), built in /home/soclab/src/OpenROAD-clean-90e29809 (build/student-mini/explore/NOTES.md); used by the CPU and GPU platform route runs (drt_batch_size 64 recorded in each completion). The binaries print GITDIR-NOTFOUND as version (built from a source export without .git); their commits come from the source audits under provenance.",
+      "Python packages: requirements-lock.txt pins cocotb==2.1.0, cocotb-test==0.2.6 and numpy==2.3.5; the qualified environment build/student-mini/python-env-qualified-20261007 contains cocotb 2.1.0, cocotb-test 0.2.6 and numpy 2.5.3 (numpy differs from the lock file; observed at packaging time, not reconciled). Nano training: torch 2.9.1+cpu (native-nano inputs.json)."
+    ]
+  },
+  "host": {
+    "collected_by": "build_student_mini_release_plan.py --collect-environment",
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "uname": "Linux DESKTOP-8JN9R37 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64",
+    "cpu": {
+      "Model name": "Intel(R) Core(TM) Ultra 9 285K",
+      "Architecture": "x86_64",
+      "CPU(s)": "24",
+      "Thread(s) per core": "1",
+      "Core(s) per socket": "24",
+      "Socket(s)": "1",
+      "Hypervisor vendor": "Microsoft",
+      "Virtualization type": "full"
+    },
+    "memory_total_bytes": 133625884672,
+    "swap_total_bytes": 34359738368,
+    "logical_cpus": 24,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "wsl": true,
+    "windows": "Microsoft Windows [Version 10.0.26200.9457]"
+  },
+  "memory_layout": {
+    "description": "Memory layout of the CPU + GPU student-mini-v1 platforms, transcribed from the cited source files (every value has a source; nothing is assumed). The \"cpu\" section is copied unchanged from the CPU + accelerator course package (build/student-mini/release-cpu-accelerator/plan/memory-layout.json; same CPU build: its SoC address map also contains the accelerator Wishbone slave region, which the CPU + GPU course does not use). The \"gpu\" section is transcribed from the frozen GPU timing boundary 13ab94a2 (the mapped RTL bound by the GPU platform RTL, protocol and power runs) and the packaged GPU gate-power completion. The cited files are packaged under sources/.",
+    "cpu": {
+      "soc": {
+        "summary": "LiteX SimSoC, VexRiscv RV32IM (VexRiscv_Full_4k), 32-bit bus, 128-bit LiteDRAM, sim UART",
+        "source": "integration/litex/soc.py L690-L729, L821-L828, L868",
+        "settings": {
+          "integrated_rom_size": "0x20000",
+          "integrated_main_ram_size": 0,
+          "sdram_data_width": 128,
+          "cpu_type": "vexriscv",
+          "uart": "sim",
+          "COURSE_TARGET_CLOCK_HZ": 100000000,
+          "COURSE_DRAM_BYTES": "256 MiB",
+          "COURSE_DESCRIPTOR_BYTES": 64,
+          "accelerator_dma_port_bits": 128,
+          "uncached_alias_port_bits": 32
+        }
+      },
+      "address_map": {
+        "source": "build/student-mini/combined-cpu-v2/951fc915b089ce360fdb175c0e3ea4d8a4654e21098367384730fb98beff972a/soc/software/include/generated/regions.ld (generated by LiteX for the CPU build bound by the CPU results)",
+        "regions": [
+          {
+            "name": "rom",
+            "base": "0x00000000",
+            "size": "0x00020000"
+          },
+          {
+            "name": "sram",
+            "base": "0x10000000",
+            "size": "0x00002000"
+          },
+          {
+            "name": "main_ram",
+            "base": "0x40000000",
+            "size": "0x10000000"
+          },
+          {
+            "name": "accelerator",
+            "base": "0xe0000000",
+            "size": "0x00001000",
+            "note": "accelerator Wishbone slave (CSR map below), uncached"
+          },
+          {
+            "name": "uncached_dram",
+            "base": "0xe2000000",
+            "size": "0x02000000",
+            "note": "uncached alias of main_ram used for DMA results/descriptors"
+          },
+          {
+            "name": "csr",
+            "base": "0xf0000000",
+            "size": "0x00010000"
+          }
+        ],
+        "csr_blocks": {
+          "source": "build/student-mini/combined-cpu-v2/951fc915b089ce360fdb175c0e3ea4d8a4654e21098367384730fb98beff972a/soc/csr.csv",
+          "blocks": {
+            "accelerator_irq": "0xf0000000",
+            "cpu_traffic": "0xf0000800",
+            "ctrl": "0xf0001000",
+            "identifier_mem": "0xf0001800",
+            "sdram": "0xf0002000",
+            "timer0": "0xf0002800",
+            "uart": "0xf0003000"
+          },
+          "cpu_traffic_registers": {
+            "reset": "0xf0000800",
+            "capture": "0xf0000804",
+            "ibus_bytes": "0xf0000808 (64-bit)",
+            "dbus_bytes": "0xf0000810 (64-bit)",
+            "dma_bytes": "0xf0000818 (64-bit)"
+          }
+        }
+      },
+      "caches": {
+        "source": "build/vexriscv-profiles/manifest.json profiles['4'] (VexRiscv_Full_4k.v sha256 1ee38dc4b0f3a2ce08de9df1f8e2bb8fceb628a89adb7f624f38ae44cebe9fcc)",
+        "i_cache_bytes": 4096,
+        "d_cache_bytes": 4096,
+        "l2_bytes": 8192,
+        "l2_source": "generated soc.h CONFIG_L2_SIZE 8192 (same LiteX build)"
+      },
+      "rom_banks": {
+        "source": "scripts/prepare_student_mini_cpu_rom_banks.py L7-L8, L26-L59, L111; scripts/prepare_student_mini_cpu_rom_v2_boundary.py",
+        "banks": 25,
+        "words_per_bank": 512,
+        "word_bits": 32,
+        "addressing": "15-bit word address mini_rom_request_address[14:0]; bits [14:9] select the bank (registered), [8:0] the word; registered data[31:0]",
+        "image_words": "12590 (v2 firmware, cpu-rom-v2-boundary/e0d4eb6b completion rom_words); words beyond the image (bank 24 only) are 0"
+      },
+      "sram_macros": {
+        "source": "integration/student-mini/cpu_sram_32x1024.sv L7-L27; integration/student-mini/cpu_sram_library.txt; scripts/prepare_student_mini_cpu_macro_merge.py L1-L16",
+        "macro": "vortex_sp_32x1024_w4: 32 bit x 1024 words, 4-bit byte mask, 1 write + 1 read port, 4 KiB",
+        "instances": 12,
+        "mapping": [
+          "IBusCachedPlugin_cache.banks_0",
+          "IBusCachedPlugin_cache.ways_0_tags",
+          "RegFilePlugin_regFile.0",
+          "RegFilePlugin_regFile.1",
+          "dataCache_1.ways_0_data_merged (4 D-cache byte lanes in one macro)",
+          "dataCache_1.ways_0_tags",
+          "data_mem_quad0..quad3 (L2, 4 byte lanes per macro)",
+          "sram.0.0",
+          "sram.0.1"
+        ]
+      },
+      "external_memory": {
+        "source": "scripts/student_mini_cpu_loader_banks.py L9-L17; scripts/run_student_mini_cpu_protocol.py L40, L62-L68",
+        "main_ram": "LiteDRAM simulated SDRAM behind the DFI interface (fixed-latency PHY interface, no handshake)",
+        "loader": "image padded to 64 bytes, split into 128-bit words; bank = (offset // 16 // 512) % 4 -> sim_mem_1..4.init; 512 columns, row/bank/column interleave over 16-byte lines",
+        "dfi_port_widths": "not stated as literals in the cited sources"
+      },
+      "records": {
+        "source": "scripts/export_student_mini_input.py L12-L35; software/include/student_mini_scalar.h L7-L13; integration/litex/bios/student_mini_session.c L29-L35, L49",
+        "record_bytes": 1936,
+        "placement": "record i at MAIN_RAM_BASE + i*1936 (0x40000000 + i*1936); 1000 baseline records = 1,936,000 bytes; results are kept in student_mini_result and streamed over the UART (not written to DRAM); the protocol tests copy the target record into slot 0",
+        "header_words": "32 little-endian u32: w0 magic 0x31494e4d, w1 operator, w2 ordinal, w3 seed, w4 query/rows, w5 length, w6 topk, w7 splits, w8 hidden, w9 intermediate, w10 page_size, w11 causal, w12 inject_dma_error, w13 page count, w14-15 expert_ids, w16-24 fp32 scales/route weights (input, gate, up, intermediate, down, score, value, route0, route1), w25-28 primitive witness, w29+ page IDs",
+        "int8_fields": [
+          {
+            "field": "query (P1/P2) or activations (P3)",
+            "offset": 128,
+            "bytes": 32
+          },
+          {
+            "field": "keys",
+            "offset": 160,
+            "bytes": 96
+          },
+          {
+            "field": "values",
+            "offset": 256,
+            "bytes": 64
+          },
+          {
+            "field": "index_query",
+            "offset": 320,
+            "bytes": 16
+          },
+          {
+            "field": "index_keys",
+            "offset": 336,
+            "bytes": 64
+          },
+          {
+            "field": "gate",
+            "offset": 400,
+            "bytes": 512
+          },
+          {
+            "field": "up",
+            "offset": 912,
+            "bytes": 512
+          },
+          {
+            "field": "down",
+            "offset": 1424,
+            "bytes": 512
+          }
+        ],
+        "dma_probe": "the CPU writes a descriptor at UNCACHED_DRAM_BASE + 0x200000 and passes MAIN_RAM_BASE + 0x200000 to the accelerator (0x30000000 to inject a DMA fault)"
+      },
+      "nano_image": {
+        "source": "scripts/export_student_mini_native_image.py L37-L65; build/student-mini/selected-native-image/ed5a20f62d288936ec42a7877ffc5b246ec19a8cfd955627a4ffa40ed4fd2d1b/student_mini_native_image.h; scripts/run_student_mini_combined_cpu_v2.py L48-L49",
+        "base": "0x40000000 + COURSE_NATIVE_BASE_OFFSET (1936000, after the 1000 baseline records)",
+        "segments": "64-byte aligned; weights from offset 0 (attention_ckv 0..), kv_cache_bf16 at 15552 (2048 B), descriptors at 17600 (256 B), operator_scratch at 17856 (1 MiB); image 1,066,432 bytes",
+        "page_size": 4
+      }
+    },
+    "gpu": {
+      "physical_top": {
+        "source": "build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary/vortex_physical_top.sv L7-L10, L24-L35 (bus-fault-reporting variant of shared/rtl/vortex_physical_top.sv)",
+        "memory_ports": 2,
+        "mem_addr_width_bits": 26,
+        "mem_data_width_bits": 512,
+        "mem_tag_width_bits": 10,
+        "mem_byteen_bits_per_port": 64,
+        "addressing": "mem_req_addr is a 26-bit address of a 512-bit (64-byte) memory line; derived byte address space: 26 + log2(64) = 32 bits",
+        "port_signals": "per port: mem_req_valid/ready/rw, 64-bit byteen, 26-bit addr, 512-bit data, 10-bit tag; mem_rsp_valid/ready, 512-bit data, 10-bit tag, mem_rsp_error (bus error)",
+        "vector_declaration": "per-port 1-bit vectors are declared [0:MEM_PORTS-1] in the RTL; the GPU partition top declares six of them [1:0] (see the gate-power completion replay_port_order)"
+      },
+      "host_command": {
+        "source": "build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary/gpu_status_command_adapter.sv L1-L3, L30-L34, L41, L65-L90",
+        "port": "host_cmd_valid/ready, 2-bit host_cmd_kind, 12-bit host_cmd_addr, 32-bit host_cmd_data; host_rsp_valid/ready, 32-bit host_rsp_data, host_rsp_error",
+        "kinds": {
+          "0": "DCR write (addr = DCR address, data = value)",
+          "1": "DCR read",
+          "2": "start (accepted only while not busy)",
+          "3": "invalid: answered with host_rsp_error"
+        },
+        "status_register": "DCR read of address 0xFFF (STATUS_ADDR = all ones of the 12-bit address) returns {30'b0, busy, sticky bus fault} without a DCR access",
+        "dcr_space": "12-bit DCR address forwarded to the Vortex core (Vortex DCR map: external Vortex tree, third_party/sources.lock.json \"vortex\")"
+      },
+      "memory_adapter": {
+        "source": "build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary/gpu_fault_memory_adapter.sv L1-L5, L47-L60, L73, L92-L94; build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary/vortex_physical_top.sv L38, L59, L83",
+        "pipeline": "one registered request stage and one registered response stage per port (ready = !valid_q || downstream ready)",
+        "bus_fault": "a response with mem_rsp_error sets a sticky per-port fault bit, cleared by the next launch (start); the OR of both ports is the status bus-fault bit"
+      },
+      "sram_macros": {
+        "source": "build/student-mini/gpu-gate-power/5d1eaf9eefee3b6451618d7c784bde777b1bc7ef370ad833ba4dae6296b8cbc2/completion.json (records[0].macro_reads instance names; 37 instances) and build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary/macros-blackboxes.v (macro modules)",
+        "instances": {
+          "vortex_sp_64x128_w8": {
+            "count": 16,
+            "role": "dcache data store (cache_data.g_data_slice[*].data_store)"
+          },
+          "vortex_sp_32x256_w1": {
+            "count": 16,
+            "role": "icache data store (cache_data.g_data_slice[*].data_store)"
+          },
+          "vortex_dp_80x64_w4": {
+            "count": 1,
+            "role": "icache tag store (cache_tags.tag_store)"
+          },
+          "vortex_sp_32x1024_w4": {
+            "count": 4,
+            "role": "core local memory (mem_unit.local_mem.g_data_store[*].lmem_store)"
+          }
+        },
+        "note": "vortex_sp_128x128_w16 and vortex_sp_32x512_w4 libraries are bound by the power run but no instance of them is read in the packaged records"
+      },
+      "kernel_buffers": "Placement of the kernel image, arguments and P1/P2/P3 input/output buffers in the external memory is done by the Vortex runtime and kernel in the external Vortex tree (third_party/sources.lock.json \"vortex\"; scripts/run_student_mini_gpu_platform_rtl.py builds sw/kernel there); not transcribed here."
+    },
+    "not_used_by_student_mini": {
+      "software/include/accelerator.h": "general course header (ACCEL_BASE 0x40000000 does not match the student-mini SoC, where 0x40000000 is MAIN_RAM_BASE; register offsets match course_csr.sv); only hashed as an input binding by student-mini scripts",
+      "shared/python/soc_ai_labs/addressing.py": "general course helper; imported indirectly through the soc_ai_labs package, its functions are not called by the student-mini flow"
+    }
+  },
+  "course": {
+    "id": "cpu-gpu",
+    "name": "CPU + GPU",
+    "spec_route": "B",
+    "platforms": [
+      "cpu",
+      "gpu"
+    ],
+    "implementations": [
+      "cpu",
+      "gpu"
+    ],
+    "implementation_components": {
+      "cpu": "CPU top + 25 hardened ROM banks (cpu/top, cpu/rom-bank-00..24)",
+      "gpu": "hierarchical GPU: top-level route run (gpu/top) + 4 hardened quadrant blocks q0_LL, q1_LR, q2_UL, q3_UR (gpu/vortex_physical_top_q0..q3), timed by the full-chip STA of the assembled netlists (gpu/fullchip-sta), partition gpu/partition"
+    },
+    "package_name": "student-mini-v1-cpu-gpu",
+    "excluded_platforms": {
+      "accelerator": "Not part of this course: the dedicated accelerator (P1/P2/P3) baselines, its physical implementations, power and NanoChat session belong to the separate CPU+专用加速器 course (spec route A) and are released in that course package. Not missing, not PASS."
+    },
+    "spec_route_definition": {
+      "name": "CPU + GPU",
+      "platforms": [
+        "cpu",
+        "gpu"
+      ],
+      "baseline_count": 6,
+      "optimization_chains": 2
+    }
+  }
+}

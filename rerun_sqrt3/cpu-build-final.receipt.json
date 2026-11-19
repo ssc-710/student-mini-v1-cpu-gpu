@@ -1,0 +1,12 @@
+{
+  "command": [
+    "cpu-venv/bin/python",
+    "build_cpu.py"
+  ],
+  "cwd": "None",
+  "exit_code": 1,
+  "completion_marker_observed": false,
+  "elapsed_seconds": 102.54444909095764,
+  "started_at": "2026-11-06T10:44:57.386485+00:00",
+  "log_sha256": "115b44af02ffeff0a232333d7beaa7152e948b241bde9850fc0e1ab4f5d68f8d"
+}

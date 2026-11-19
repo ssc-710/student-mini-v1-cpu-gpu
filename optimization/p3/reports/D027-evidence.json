@@ -1,0 +1,82 @@
+{
+  "status": "HOLD_NOT_FINAL_ACCEPTANCE",
+  "evidence": {
+    "cpu_inline": {
+      "status": "CPU_INLINE_ROOT5_BOUND_COMPARISON",
+      "receipt": "runs/cpu-generated-counter-inline-root5-20261108-01/comparison.json",
+      "sha256": "d64bf290b933eb27898dd4ffba334d17e2d49e4b23cc7f50aba49e55a4c58102",
+      "bindings_verified": 22,
+      "generation_speedup": 1.0023744317933134,
+      "p3_speedup": 1.015334354127617,
+      "decision": "CONTINUE_QUALIFICATION"
+    },
+    "cpu_q6_i32": {
+      "status": "Q6_I32_FRESH_RTL_TOKEN_STATE_BOUND_PASS",
+      "receipt": "runs/cpu-generated-counter-inline-q6i32-root5-20261108-01/comparison.json",
+      "sha256": "7ea6ca24af79a063ffa997d12b6f49b52edc7373091f794fa9da4bdd3d54e14a",
+      "bindings_verified": 25,
+      "generation_speedup": 0.9981848634600522,
+      "p3_speedup": 1.0171985751324903
+    },
+    "gpu_fenced_simx_repeat5": {
+      "status": "GLOBALLY_FENCED_FULL_SIMX_FIVE_FRESH_PAIRS_BOUND_PASS",
+      "receipt": "runs/gpu-full-4t-leader-fenced-repeat5-20261108-01/result.json",
+      "sha256": "b27276db6bcbe8b1be7b73e027e49f61fadbc8f131def74d9007f4fd88d83f90",
+      "bindings_verified": 11,
+      "generation_speedup": 1.0096646563927336,
+      "p3_speedup": 1.0524658427005174
+    },
+    "gpu_fenced_rtlsim": {
+      "status": "GLOBALLY_FENCED_LEADER_FULL_PROCESSOR_RTLSIM_AUDIT_PASS",
+      "receipt": "runs/gpu-full-4t-leader-fenced-rtlsim-20261108-01/audit.json",
+      "sha256": "52178c0f97f9b07fac0ac64c71113114eaa913c3c1e7e69d15e2e8151a1c1c24",
+      "bindings_verified": 33,
+      "generation_speedup": 1.0103592392151184,
+      "p3_speedup": 1.0580462190077526
+    },
+    "gpu_generic_numeric": {
+      "status": "FENCED_GENERIC_TWO_ARM_320_EXACT_10_UNSUPPORTED",
+      "receipt": "runs/gpu-generic-fenced-audit-20261108-01/result.json",
+      "sha256": "abe6a56bafaabb39edac87c74d5bf981de2f67833714ba677f1e06b07bd4723a",
+      "bindings_verified": 9
+    },
+    "gpu_generic_fault10": {
+      "status": "SAME_FENCED_GENERIC_CANDIDATE_REAL_RTL_FAULT10_AUDIT_PASS",
+      "receipt": "runs/gpu-generic-fenced-fault-audit-20261108-01/result.json",
+      "sha256": "cb4eaf587f6f5bc2dcb04e6ab225a178052bed96456cd54240e5f97ccb763362",
+      "bindings_verified": 50
+    },
+    "cpu_benchmark1000": {
+      "status": "CURRENT_CUSTOM_NARROW_FROZEN1000_NUMERIC_AUDIT_PASS",
+      "receipt": "runs/cpu-generated-custom-narrow-frozen1000-audit-20261108-01/result.json",
+      "sha256": "6e9b5f3de8fc355c8cc9f8a97b2e512c0736c1a4669705eb04da7b4ea6d48a91",
+      "bindings_verified": 10
+    },
+    "cpu_uart30": {
+      "status": "CURRENT_CUSTOM_NARROW_UART_PROTOCOL30_EVENT_AUDIT_PASS",
+      "receipt": "runs/cpu-generated-custom-narrow-protocol-audit-20261108-01/result.json",
+      "sha256": "61a5b67a11f8c1d3387e96bb498d535f68e36cdad667ed53fdeac55a1c7a00d1",
+      "bindings_verified": 3
+    },
+    "cpu_parent_rom_route": {
+      "status": "FAIL",
+      "receipt": "physical/cpu-counter-candidate-rom-bank0-met5-20261108-01/result.json",
+      "sha256": "df4d542d1c2093df4e2d0bc88ec582e5d192099d01992b08c866c9bffe6d15a1",
+      "bindings_verified": 13
+    },
+    "cpu_rom_rc_repair": {
+      "status": "FAIL",
+      "receipt": "physical/cpu-counter-candidate-rom-bank0-rc-repair-20261108-01/result.json",
+      "sha256": "d71b0b7ffeb97fd7c45f67be1c54ac049308bdb19c65e10eda3ec5aa09f3896b",
+      "bindings_verified": 13
+    }
+  },
+  "remaining": [
+    "Same fault variant full330 and actual MINI31-33 protocol",
+    "CPU native ABI qualification and candidate wider regression",
+    "Final ROM RC route/extract, genuine SRAM integration, whole-core physical timing and activity power"
+  ],
+  "bindings": {
+    "optimization/p3/tools/summarize_d027.py": "9128562e0b785631cde75ccea76029744a9033e0af38edeb93c342e4196e43f3"
+  }
+}

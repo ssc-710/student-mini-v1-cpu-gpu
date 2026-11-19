@@ -1,0 +1,13 @@
+{
+  "kind": "host-reference-only-never-target-input",
+  "tokens": [
+    23,
+    52,
+    109,
+    4
+  ],
+  "text": "你好！",
+  "token_sha256": "f8b585f700fd9a17e7e8953c879d745c6aab60df3ef69c2a3f5cbf36362efbd7",
+  "image_sha256": "8f27d85e2e1c9abd62415c42e7e65bdac3d34589de6c91a33a3e7240dd8606c0",
+  "manifest_sha256": "c1ac1a38ed6d80d2b6ac0040aa8c8183718f65e2911223ed0e7fe82518796267"
+}

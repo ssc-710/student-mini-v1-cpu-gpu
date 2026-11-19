@@ -1,0 +1,5 @@
+{
+  "gpu": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825",
+  "cpu_loader_sha256": "09465f1f041b95c24560ddcf9820022a0a495cb1bb0ab70dbec2b1daf281c964",
+  "cpu_reuse_reason": "New question has byte-identical encoded model input; reuse compiled RTL, never saved output."
+}

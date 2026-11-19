@@ -1,0 +1,7002 @@
+[
+  {
+    "ordinal": 0,
+    "case_id": "P1-MINI-01",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 1,
+    "case_id": "P1-MINI-01",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 2,
+    "case_id": "P1-MINI-01",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 3,
+    "case_id": "P1-MINI-01",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 4,
+    "case_id": "P1-MINI-01",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 5,
+    "case_id": "P1-MINI-01",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 6,
+    "case_id": "P1-MINI-01",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 7,
+    "case_id": "P1-MINI-01",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 8,
+    "case_id": "P1-MINI-01",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 9,
+    "case_id": "P1-MINI-01",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 10,
+    "case_id": "P1-MINI-02",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 11,
+    "case_id": "P1-MINI-02",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 12,
+    "case_id": "P1-MINI-02",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 13,
+    "case_id": "P1-MINI-02",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 14,
+    "case_id": "P1-MINI-02",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 15,
+    "case_id": "P1-MINI-02",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 16,
+    "case_id": "P1-MINI-02",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 17,
+    "case_id": "P1-MINI-02",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 18,
+    "case_id": "P1-MINI-02",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 19,
+    "case_id": "P1-MINI-02",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 20,
+    "case_id": "P1-MINI-03",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 21,
+    "case_id": "P1-MINI-03",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 22,
+    "case_id": "P1-MINI-03",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 23,
+    "case_id": "P1-MINI-03",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 24,
+    "case_id": "P1-MINI-03",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 25,
+    "case_id": "P1-MINI-03",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 26,
+    "case_id": "P1-MINI-03",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 27,
+    "case_id": "P1-MINI-03",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 28,
+    "case_id": "P1-MINI-03",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 29,
+    "case_id": "P1-MINI-03",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 30,
+    "case_id": "P1-MINI-04",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 31,
+    "case_id": "P1-MINI-04",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 32,
+    "case_id": "P1-MINI-04",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 33,
+    "case_id": "P1-MINI-04",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 34,
+    "case_id": "P1-MINI-04",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 35,
+    "case_id": "P1-MINI-04",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 36,
+    "case_id": "P1-MINI-04",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 37,
+    "case_id": "P1-MINI-04",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 38,
+    "case_id": "P1-MINI-04",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 39,
+    "case_id": "P1-MINI-04",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 40,
+    "case_id": "P1-MINI-05",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 41,
+    "case_id": "P1-MINI-05",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 42,
+    "case_id": "P1-MINI-05",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 43,
+    "case_id": "P1-MINI-05",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 44,
+    "case_id": "P1-MINI-05",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 45,
+    "case_id": "P1-MINI-05",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 46,
+    "case_id": "P1-MINI-05",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 47,
+    "case_id": "P1-MINI-05",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 48,
+    "case_id": "P1-MINI-05",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 49,
+    "case_id": "P1-MINI-05",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 50,
+    "case_id": "P1-MINI-06",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 51,
+    "case_id": "P1-MINI-06",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 52,
+    "case_id": "P1-MINI-06",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 53,
+    "case_id": "P1-MINI-06",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 54,
+    "case_id": "P1-MINI-06",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 55,
+    "case_id": "P1-MINI-06",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 56,
+    "case_id": "P1-MINI-06",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 57,
+    "case_id": "P1-MINI-06",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 58,
+    "case_id": "P1-MINI-06",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 59,
+    "case_id": "P1-MINI-06",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 60,
+    "case_id": "P1-MINI-07",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 61,
+    "case_id": "P1-MINI-07",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 62,
+    "case_id": "P1-MINI-07",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 63,
+    "case_id": "P1-MINI-07",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 64,
+    "case_id": "P1-MINI-07",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 65,
+    "case_id": "P1-MINI-07",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 66,
+    "case_id": "P1-MINI-07",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 67,
+    "case_id": "P1-MINI-07",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 68,
+    "case_id": "P1-MINI-07",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 69,
+    "case_id": "P1-MINI-07",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 70,
+    "case_id": "P1-MINI-08",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 71,
+    "case_id": "P1-MINI-08",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 72,
+    "case_id": "P1-MINI-08",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 73,
+    "case_id": "P1-MINI-08",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 74,
+    "case_id": "P1-MINI-08",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 75,
+    "case_id": "P1-MINI-08",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 76,
+    "case_id": "P1-MINI-08",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 77,
+    "case_id": "P1-MINI-08",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 78,
+    "case_id": "P1-MINI-08",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 79,
+    "case_id": "P1-MINI-08",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 80,
+    "case_id": "P1-MINI-09",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 81,
+    "case_id": "P1-MINI-09",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 82,
+    "case_id": "P1-MINI-09",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 83,
+    "case_id": "P1-MINI-09",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 84,
+    "case_id": "P1-MINI-09",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 85,
+    "case_id": "P1-MINI-09",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 86,
+    "case_id": "P1-MINI-09",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 87,
+    "case_id": "P1-MINI-09",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 88,
+    "case_id": "P1-MINI-09",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 89,
+    "case_id": "P1-MINI-09",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 90,
+    "case_id": "P1-MINI-10",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 91,
+    "case_id": "P1-MINI-10",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 92,
+    "case_id": "P1-MINI-10",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 93,
+    "case_id": "P1-MINI-10",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 94,
+    "case_id": "P1-MINI-10",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 95,
+    "case_id": "P1-MINI-10",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 96,
+    "case_id": "P1-MINI-10",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 97,
+    "case_id": "P1-MINI-10",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 98,
+    "case_id": "P1-MINI-10",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 99,
+    "case_id": "P1-MINI-10",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 100,
+    "case_id": "P1-MINI-11",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 101,
+    "case_id": "P1-MINI-11",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 102,
+    "case_id": "P1-MINI-11",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 103,
+    "case_id": "P1-MINI-11",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 104,
+    "case_id": "P1-MINI-11",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 105,
+    "case_id": "P1-MINI-11",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 106,
+    "case_id": "P1-MINI-11",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 107,
+    "case_id": "P1-MINI-11",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 108,
+    "case_id": "P1-MINI-11",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 109,
+    "case_id": "P1-MINI-11",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 110,
+    "case_id": "P1-MINI-12",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 111,
+    "case_id": "P1-MINI-12",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 112,
+    "case_id": "P1-MINI-12",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 113,
+    "case_id": "P1-MINI-12",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 114,
+    "case_id": "P1-MINI-12",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 115,
+    "case_id": "P1-MINI-12",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 116,
+    "case_id": "P1-MINI-12",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 117,
+    "case_id": "P1-MINI-12",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 118,
+    "case_id": "P1-MINI-12",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 119,
+    "case_id": "P1-MINI-12",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 120,
+    "case_id": "P1-MINI-13",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 121,
+    "case_id": "P1-MINI-13",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 122,
+    "case_id": "P1-MINI-13",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 123,
+    "case_id": "P1-MINI-13",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 124,
+    "case_id": "P1-MINI-13",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 125,
+    "case_id": "P1-MINI-13",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 126,
+    "case_id": "P1-MINI-13",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 127,
+    "case_id": "P1-MINI-13",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 128,
+    "case_id": "P1-MINI-13",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 129,
+    "case_id": "P1-MINI-13",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 130,
+    "case_id": "P1-MINI-14",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 131,
+    "case_id": "P1-MINI-14",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 132,
+    "case_id": "P1-MINI-14",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 133,
+    "case_id": "P1-MINI-14",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 134,
+    "case_id": "P1-MINI-14",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 135,
+    "case_id": "P1-MINI-14",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 136,
+    "case_id": "P1-MINI-14",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 137,
+    "case_id": "P1-MINI-14",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 138,
+    "case_id": "P1-MINI-14",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 139,
+    "case_id": "P1-MINI-14",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 140,
+    "case_id": "P1-MINI-15",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 141,
+    "case_id": "P1-MINI-15",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 142,
+    "case_id": "P1-MINI-15",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 143,
+    "case_id": "P1-MINI-15",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 144,
+    "case_id": "P1-MINI-15",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 145,
+    "case_id": "P1-MINI-15",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 146,
+    "case_id": "P1-MINI-15",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 147,
+    "case_id": "P1-MINI-15",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 148,
+    "case_id": "P1-MINI-15",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 149,
+    "case_id": "P1-MINI-15",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 150,
+    "case_id": "P1-MINI-16",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 151,
+    "case_id": "P1-MINI-16",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 152,
+    "case_id": "P1-MINI-16",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 153,
+    "case_id": "P1-MINI-16",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 154,
+    "case_id": "P1-MINI-16",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 155,
+    "case_id": "P1-MINI-16",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 156,
+    "case_id": "P1-MINI-16",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 157,
+    "case_id": "P1-MINI-16",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 158,
+    "case_id": "P1-MINI-16",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 159,
+    "case_id": "P1-MINI-16",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 160,
+    "case_id": "P1-MINI-17",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 161,
+    "case_id": "P1-MINI-17",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 162,
+    "case_id": "P1-MINI-17",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 163,
+    "case_id": "P1-MINI-17",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 164,
+    "case_id": "P1-MINI-17",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 165,
+    "case_id": "P1-MINI-17",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 166,
+    "case_id": "P1-MINI-17",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 167,
+    "case_id": "P1-MINI-17",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 168,
+    "case_id": "P1-MINI-17",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 169,
+    "case_id": "P1-MINI-17",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 170,
+    "case_id": "P1-MINI-18",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 171,
+    "case_id": "P1-MINI-18",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 172,
+    "case_id": "P1-MINI-18",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 173,
+    "case_id": "P1-MINI-18",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 174,
+    "case_id": "P1-MINI-18",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 175,
+    "case_id": "P1-MINI-18",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 176,
+    "case_id": "P1-MINI-18",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 177,
+    "case_id": "P1-MINI-18",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 178,
+    "case_id": "P1-MINI-18",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 179,
+    "case_id": "P1-MINI-18",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 180,
+    "case_id": "P1-MINI-19",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 181,
+    "case_id": "P1-MINI-19",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 182,
+    "case_id": "P1-MINI-19",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 183,
+    "case_id": "P1-MINI-19",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 184,
+    "case_id": "P1-MINI-19",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 185,
+    "case_id": "P1-MINI-19",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 186,
+    "case_id": "P1-MINI-19",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 187,
+    "case_id": "P1-MINI-19",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 188,
+    "case_id": "P1-MINI-19",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 189,
+    "case_id": "P1-MINI-19",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 190,
+    "case_id": "P1-MINI-20",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 191,
+    "case_id": "P1-MINI-20",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 192,
+    "case_id": "P1-MINI-20",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 193,
+    "case_id": "P1-MINI-20",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 194,
+    "case_id": "P1-MINI-20",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 195,
+    "case_id": "P1-MINI-20",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 196,
+    "case_id": "P1-MINI-20",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 197,
+    "case_id": "P1-MINI-20",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 198,
+    "case_id": "P1-MINI-20",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 199,
+    "case_id": "P1-MINI-20",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 200,
+    "case_id": "P1-MINI-21",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 201,
+    "case_id": "P1-MINI-21",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 202,
+    "case_id": "P1-MINI-21",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 203,
+    "case_id": "P1-MINI-21",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 204,
+    "case_id": "P1-MINI-21",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 205,
+    "case_id": "P1-MINI-21",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 206,
+    "case_id": "P1-MINI-21",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 207,
+    "case_id": "P1-MINI-21",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 208,
+    "case_id": "P1-MINI-21",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 209,
+    "case_id": "P1-MINI-21",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 210,
+    "case_id": "P1-MINI-22",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 211,
+    "case_id": "P1-MINI-22",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 212,
+    "case_id": "P1-MINI-22",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 213,
+    "case_id": "P1-MINI-22",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 214,
+    "case_id": "P1-MINI-22",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 215,
+    "case_id": "P1-MINI-22",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 216,
+    "case_id": "P1-MINI-22",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 217,
+    "case_id": "P1-MINI-22",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 218,
+    "case_id": "P1-MINI-22",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 219,
+    "case_id": "P1-MINI-22",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 220,
+    "case_id": "P1-MINI-23",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 221,
+    "case_id": "P1-MINI-23",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 222,
+    "case_id": "P1-MINI-23",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 223,
+    "case_id": "P1-MINI-23",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 224,
+    "case_id": "P1-MINI-23",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 225,
+    "case_id": "P1-MINI-23",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 226,
+    "case_id": "P1-MINI-23",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 227,
+    "case_id": "P1-MINI-23",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 228,
+    "case_id": "P1-MINI-23",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 229,
+    "case_id": "P1-MINI-23",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 230,
+    "case_id": "P1-MINI-24",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 231,
+    "case_id": "P1-MINI-24",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 232,
+    "case_id": "P1-MINI-24",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 233,
+    "case_id": "P1-MINI-24",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 234,
+    "case_id": "P1-MINI-24",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 235,
+    "case_id": "P1-MINI-24",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 236,
+    "case_id": "P1-MINI-24",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 237,
+    "case_id": "P1-MINI-24",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 238,
+    "case_id": "P1-MINI-24",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 239,
+    "case_id": "P1-MINI-24",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 240,
+    "case_id": "P1-MINI-25",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 241,
+    "case_id": "P1-MINI-25",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 242,
+    "case_id": "P1-MINI-25",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 243,
+    "case_id": "P1-MINI-25",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 244,
+    "case_id": "P1-MINI-25",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 245,
+    "case_id": "P1-MINI-25",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 246,
+    "case_id": "P1-MINI-25",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 247,
+    "case_id": "P1-MINI-25",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 248,
+    "case_id": "P1-MINI-25",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 249,
+    "case_id": "P1-MINI-25",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 250,
+    "case_id": "P1-MINI-26",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 251,
+    "case_id": "P1-MINI-26",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 252,
+    "case_id": "P1-MINI-26",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 253,
+    "case_id": "P1-MINI-26",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 254,
+    "case_id": "P1-MINI-26",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 255,
+    "case_id": "P1-MINI-26",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 256,
+    "case_id": "P1-MINI-26",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 257,
+    "case_id": "P1-MINI-26",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 258,
+    "case_id": "P1-MINI-26",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 259,
+    "case_id": "P1-MINI-26",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 260,
+    "case_id": "P1-MINI-27",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 261,
+    "case_id": "P1-MINI-27",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 262,
+    "case_id": "P1-MINI-27",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 263,
+    "case_id": "P1-MINI-27",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 264,
+    "case_id": "P1-MINI-27",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 265,
+    "case_id": "P1-MINI-27",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 266,
+    "case_id": "P1-MINI-27",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 267,
+    "case_id": "P1-MINI-27",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 268,
+    "case_id": "P1-MINI-27",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 269,
+    "case_id": "P1-MINI-27",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 270,
+    "case_id": "P1-MINI-28",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 271,
+    "case_id": "P1-MINI-28",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 272,
+    "case_id": "P1-MINI-28",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 273,
+    "case_id": "P1-MINI-28",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 274,
+    "case_id": "P1-MINI-28",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 275,
+    "case_id": "P1-MINI-28",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 276,
+    "case_id": "P1-MINI-28",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 277,
+    "case_id": "P1-MINI-28",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 278,
+    "case_id": "P1-MINI-28",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 279,
+    "case_id": "P1-MINI-28",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 280,
+    "case_id": "P1-MINI-29",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 281,
+    "case_id": "P1-MINI-29",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 282,
+    "case_id": "P1-MINI-29",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 283,
+    "case_id": "P1-MINI-29",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 284,
+    "case_id": "P1-MINI-29",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 285,
+    "case_id": "P1-MINI-29",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 286,
+    "case_id": "P1-MINI-29",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 287,
+    "case_id": "P1-MINI-29",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 288,
+    "case_id": "P1-MINI-29",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 289,
+    "case_id": "P1-MINI-29",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 290,
+    "case_id": "P1-MINI-30",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 291,
+    "case_id": "P1-MINI-30",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 292,
+    "case_id": "P1-MINI-30",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 293,
+    "case_id": "P1-MINI-30",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 294,
+    "case_id": "P1-MINI-30",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 295,
+    "case_id": "P1-MINI-30",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 296,
+    "case_id": "P1-MINI-30",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 297,
+    "case_id": "P1-MINI-30",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 298,
+    "case_id": "P1-MINI-30",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 299,
+    "case_id": "P1-MINI-30",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 300,
+    "case_id": "P1-MINI-31",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 301,
+    "case_id": "P1-MINI-31",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 302,
+    "case_id": "P1-MINI-31",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 303,
+    "case_id": "P1-MINI-31",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 304,
+    "case_id": "P1-MINI-31",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 305,
+    "case_id": "P1-MINI-31",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 306,
+    "case_id": "P1-MINI-31",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 307,
+    "case_id": "P1-MINI-31",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 308,
+    "case_id": "P1-MINI-31",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 309,
+    "case_id": "P1-MINI-31",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 310,
+    "case_id": "P1-MINI-32",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 311,
+    "case_id": "P1-MINI-32",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 312,
+    "case_id": "P1-MINI-32",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 313,
+    "case_id": "P1-MINI-32",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 314,
+    "case_id": "P1-MINI-32",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 315,
+    "case_id": "P1-MINI-32",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 316,
+    "case_id": "P1-MINI-32",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 317,
+    "case_id": "P1-MINI-32",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 318,
+    "case_id": "P1-MINI-32",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 319,
+    "case_id": "P1-MINI-32",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 320,
+    "case_id": "P1-MINI-33",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 321,
+    "case_id": "P1-MINI-33",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 322,
+    "case_id": "P1-MINI-33",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 323,
+    "case_id": "P1-MINI-33",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 324,
+    "case_id": "P1-MINI-33",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 325,
+    "case_id": "P1-MINI-33",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 326,
+    "case_id": "P1-MINI-33",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 327,
+    "case_id": "P1-MINI-33",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 328,
+    "case_id": "P1-MINI-33",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 329,
+    "case_id": "P1-MINI-33",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 330,
+    "case_id": "P2-MINI-01",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 331,
+    "case_id": "P2-MINI-01",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 332,
+    "case_id": "P2-MINI-01",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 333,
+    "case_id": "P2-MINI-01",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 334,
+    "case_id": "P2-MINI-01",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 335,
+    "case_id": "P2-MINI-01",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 336,
+    "case_id": "P2-MINI-01",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 337,
+    "case_id": "P2-MINI-01",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 338,
+    "case_id": "P2-MINI-01",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 339,
+    "case_id": "P2-MINI-01",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 340,
+    "case_id": "P2-MINI-02",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 341,
+    "case_id": "P2-MINI-02",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 342,
+    "case_id": "P2-MINI-02",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 343,
+    "case_id": "P2-MINI-02",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 344,
+    "case_id": "P2-MINI-02",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 345,
+    "case_id": "P2-MINI-02",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 346,
+    "case_id": "P2-MINI-02",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 347,
+    "case_id": "P2-MINI-02",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 348,
+    "case_id": "P2-MINI-02",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 349,
+    "case_id": "P2-MINI-02",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 350,
+    "case_id": "P2-MINI-03",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 351,
+    "case_id": "P2-MINI-03",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 352,
+    "case_id": "P2-MINI-03",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 353,
+    "case_id": "P2-MINI-03",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 354,
+    "case_id": "P2-MINI-03",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 355,
+    "case_id": "P2-MINI-03",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 356,
+    "case_id": "P2-MINI-03",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 357,
+    "case_id": "P2-MINI-03",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 358,
+    "case_id": "P2-MINI-03",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 359,
+    "case_id": "P2-MINI-03",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 360,
+    "case_id": "P2-MINI-04",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 361,
+    "case_id": "P2-MINI-04",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 362,
+    "case_id": "P2-MINI-04",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 363,
+    "case_id": "P2-MINI-04",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 364,
+    "case_id": "P2-MINI-04",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 365,
+    "case_id": "P2-MINI-04",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 366,
+    "case_id": "P2-MINI-04",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 367,
+    "case_id": "P2-MINI-04",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 368,
+    "case_id": "P2-MINI-04",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 369,
+    "case_id": "P2-MINI-04",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 370,
+    "case_id": "P2-MINI-05",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 371,
+    "case_id": "P2-MINI-05",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 372,
+    "case_id": "P2-MINI-05",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 373,
+    "case_id": "P2-MINI-05",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 374,
+    "case_id": "P2-MINI-05",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 375,
+    "case_id": "P2-MINI-05",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 376,
+    "case_id": "P2-MINI-05",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 377,
+    "case_id": "P2-MINI-05",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 378,
+    "case_id": "P2-MINI-05",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 379,
+    "case_id": "P2-MINI-05",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 380,
+    "case_id": "P2-MINI-06",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 381,
+    "case_id": "P2-MINI-06",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 382,
+    "case_id": "P2-MINI-06",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 383,
+    "case_id": "P2-MINI-06",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 384,
+    "case_id": "P2-MINI-06",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 385,
+    "case_id": "P2-MINI-06",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 386,
+    "case_id": "P2-MINI-06",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 387,
+    "case_id": "P2-MINI-06",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 388,
+    "case_id": "P2-MINI-06",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 389,
+    "case_id": "P2-MINI-06",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 390,
+    "case_id": "P2-MINI-07",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 391,
+    "case_id": "P2-MINI-07",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 392,
+    "case_id": "P2-MINI-07",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 393,
+    "case_id": "P2-MINI-07",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 394,
+    "case_id": "P2-MINI-07",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 395,
+    "case_id": "P2-MINI-07",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 396,
+    "case_id": "P2-MINI-07",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 397,
+    "case_id": "P2-MINI-07",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 398,
+    "case_id": "P2-MINI-07",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 399,
+    "case_id": "P2-MINI-07",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 400,
+    "case_id": "P2-MINI-08",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 401,
+    "case_id": "P2-MINI-08",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 402,
+    "case_id": "P2-MINI-08",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 403,
+    "case_id": "P2-MINI-08",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 404,
+    "case_id": "P2-MINI-08",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 405,
+    "case_id": "P2-MINI-08",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 406,
+    "case_id": "P2-MINI-08",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 407,
+    "case_id": "P2-MINI-08",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 408,
+    "case_id": "P2-MINI-08",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 409,
+    "case_id": "P2-MINI-08",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 410,
+    "case_id": "P2-MINI-09",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 411,
+    "case_id": "P2-MINI-09",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 412,
+    "case_id": "P2-MINI-09",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 413,
+    "case_id": "P2-MINI-09",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 414,
+    "case_id": "P2-MINI-09",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 415,
+    "case_id": "P2-MINI-09",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 416,
+    "case_id": "P2-MINI-09",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 417,
+    "case_id": "P2-MINI-09",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 418,
+    "case_id": "P2-MINI-09",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 419,
+    "case_id": "P2-MINI-09",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 420,
+    "case_id": "P2-MINI-10",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 421,
+    "case_id": "P2-MINI-10",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 422,
+    "case_id": "P2-MINI-10",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 423,
+    "case_id": "P2-MINI-10",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 424,
+    "case_id": "P2-MINI-10",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 425,
+    "case_id": "P2-MINI-10",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 426,
+    "case_id": "P2-MINI-10",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 427,
+    "case_id": "P2-MINI-10",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 428,
+    "case_id": "P2-MINI-10",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 429,
+    "case_id": "P2-MINI-10",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 430,
+    "case_id": "P2-MINI-11",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 431,
+    "case_id": "P2-MINI-11",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 432,
+    "case_id": "P2-MINI-11",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 433,
+    "case_id": "P2-MINI-11",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 434,
+    "case_id": "P2-MINI-11",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 435,
+    "case_id": "P2-MINI-11",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 436,
+    "case_id": "P2-MINI-11",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 437,
+    "case_id": "P2-MINI-11",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 438,
+    "case_id": "P2-MINI-11",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 439,
+    "case_id": "P2-MINI-11",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 440,
+    "case_id": "P2-MINI-12",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 441,
+    "case_id": "P2-MINI-12",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 442,
+    "case_id": "P2-MINI-12",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 443,
+    "case_id": "P2-MINI-12",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 444,
+    "case_id": "P2-MINI-12",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 445,
+    "case_id": "P2-MINI-12",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 446,
+    "case_id": "P2-MINI-12",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 447,
+    "case_id": "P2-MINI-12",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 448,
+    "case_id": "P2-MINI-12",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 449,
+    "case_id": "P2-MINI-12",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 450,
+    "case_id": "P2-MINI-13",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 451,
+    "case_id": "P2-MINI-13",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 452,
+    "case_id": "P2-MINI-13",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 453,
+    "case_id": "P2-MINI-13",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 454,
+    "case_id": "P2-MINI-13",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 455,
+    "case_id": "P2-MINI-13",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 456,
+    "case_id": "P2-MINI-13",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 457,
+    "case_id": "P2-MINI-13",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 458,
+    "case_id": "P2-MINI-13",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 459,
+    "case_id": "P2-MINI-13",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 460,
+    "case_id": "P2-MINI-14",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 461,
+    "case_id": "P2-MINI-14",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 462,
+    "case_id": "P2-MINI-14",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 463,
+    "case_id": "P2-MINI-14",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 464,
+    "case_id": "P2-MINI-14",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 465,
+    "case_id": "P2-MINI-14",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 466,
+    "case_id": "P2-MINI-14",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 467,
+    "case_id": "P2-MINI-14",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 468,
+    "case_id": "P2-MINI-14",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 469,
+    "case_id": "P2-MINI-14",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 470,
+    "case_id": "P2-MINI-15",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 471,
+    "case_id": "P2-MINI-15",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 472,
+    "case_id": "P2-MINI-15",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 473,
+    "case_id": "P2-MINI-15",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 474,
+    "case_id": "P2-MINI-15",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 475,
+    "case_id": "P2-MINI-15",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 476,
+    "case_id": "P2-MINI-15",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 477,
+    "case_id": "P2-MINI-15",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 478,
+    "case_id": "P2-MINI-15",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 479,
+    "case_id": "P2-MINI-15",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 480,
+    "case_id": "P2-MINI-16",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 481,
+    "case_id": "P2-MINI-16",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 482,
+    "case_id": "P2-MINI-16",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 483,
+    "case_id": "P2-MINI-16",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 484,
+    "case_id": "P2-MINI-16",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 485,
+    "case_id": "P2-MINI-16",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 486,
+    "case_id": "P2-MINI-16",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 487,
+    "case_id": "P2-MINI-16",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 488,
+    "case_id": "P2-MINI-16",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 489,
+    "case_id": "P2-MINI-16",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 490,
+    "case_id": "P2-MINI-17",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 491,
+    "case_id": "P2-MINI-17",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 492,
+    "case_id": "P2-MINI-17",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 493,
+    "case_id": "P2-MINI-17",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 494,
+    "case_id": "P2-MINI-17",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 495,
+    "case_id": "P2-MINI-17",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 496,
+    "case_id": "P2-MINI-17",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 497,
+    "case_id": "P2-MINI-17",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 498,
+    "case_id": "P2-MINI-17",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 499,
+    "case_id": "P2-MINI-17",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 500,
+    "case_id": "P2-MINI-18",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 501,
+    "case_id": "P2-MINI-18",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 502,
+    "case_id": "P2-MINI-18",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 503,
+    "case_id": "P2-MINI-18",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 504,
+    "case_id": "P2-MINI-18",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 505,
+    "case_id": "P2-MINI-18",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 506,
+    "case_id": "P2-MINI-18",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 507,
+    "case_id": "P2-MINI-18",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 508,
+    "case_id": "P2-MINI-18",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 509,
+    "case_id": "P2-MINI-18",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 510,
+    "case_id": "P2-MINI-19",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 511,
+    "case_id": "P2-MINI-19",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 512,
+    "case_id": "P2-MINI-19",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 513,
+    "case_id": "P2-MINI-19",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 514,
+    "case_id": "P2-MINI-19",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 515,
+    "case_id": "P2-MINI-19",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 516,
+    "case_id": "P2-MINI-19",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 517,
+    "case_id": "P2-MINI-19",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 518,
+    "case_id": "P2-MINI-19",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 519,
+    "case_id": "P2-MINI-19",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 520,
+    "case_id": "P2-MINI-20",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 521,
+    "case_id": "P2-MINI-20",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 522,
+    "case_id": "P2-MINI-20",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 523,
+    "case_id": "P2-MINI-20",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 524,
+    "case_id": "P2-MINI-20",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 525,
+    "case_id": "P2-MINI-20",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 526,
+    "case_id": "P2-MINI-20",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 527,
+    "case_id": "P2-MINI-20",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 528,
+    "case_id": "P2-MINI-20",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 529,
+    "case_id": "P2-MINI-20",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 530,
+    "case_id": "P2-MINI-21",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 531,
+    "case_id": "P2-MINI-21",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 532,
+    "case_id": "P2-MINI-21",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 533,
+    "case_id": "P2-MINI-21",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 534,
+    "case_id": "P2-MINI-21",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 535,
+    "case_id": "P2-MINI-21",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 536,
+    "case_id": "P2-MINI-21",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 537,
+    "case_id": "P2-MINI-21",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 538,
+    "case_id": "P2-MINI-21",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 539,
+    "case_id": "P2-MINI-21",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 540,
+    "case_id": "P2-MINI-22",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 541,
+    "case_id": "P2-MINI-22",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 542,
+    "case_id": "P2-MINI-22",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 543,
+    "case_id": "P2-MINI-22",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 544,
+    "case_id": "P2-MINI-22",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 545,
+    "case_id": "P2-MINI-22",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 546,
+    "case_id": "P2-MINI-22",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 547,
+    "case_id": "P2-MINI-22",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 548,
+    "case_id": "P2-MINI-22",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 549,
+    "case_id": "P2-MINI-22",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 550,
+    "case_id": "P2-MINI-23",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 551,
+    "case_id": "P2-MINI-23",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 552,
+    "case_id": "P2-MINI-23",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 553,
+    "case_id": "P2-MINI-23",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 554,
+    "case_id": "P2-MINI-23",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 555,
+    "case_id": "P2-MINI-23",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 556,
+    "case_id": "P2-MINI-23",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 557,
+    "case_id": "P2-MINI-23",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 558,
+    "case_id": "P2-MINI-23",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 559,
+    "case_id": "P2-MINI-23",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 560,
+    "case_id": "P2-MINI-24",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 561,
+    "case_id": "P2-MINI-24",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 562,
+    "case_id": "P2-MINI-24",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 563,
+    "case_id": "P2-MINI-24",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 564,
+    "case_id": "P2-MINI-24",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 565,
+    "case_id": "P2-MINI-24",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 566,
+    "case_id": "P2-MINI-24",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 567,
+    "case_id": "P2-MINI-24",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 568,
+    "case_id": "P2-MINI-24",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 569,
+    "case_id": "P2-MINI-24",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 570,
+    "case_id": "P2-MINI-25",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 571,
+    "case_id": "P2-MINI-25",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 572,
+    "case_id": "P2-MINI-25",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 573,
+    "case_id": "P2-MINI-25",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 574,
+    "case_id": "P2-MINI-25",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 575,
+    "case_id": "P2-MINI-25",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 576,
+    "case_id": "P2-MINI-25",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 577,
+    "case_id": "P2-MINI-25",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 578,
+    "case_id": "P2-MINI-25",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 579,
+    "case_id": "P2-MINI-25",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 580,
+    "case_id": "P2-MINI-26",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 581,
+    "case_id": "P2-MINI-26",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 582,
+    "case_id": "P2-MINI-26",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 583,
+    "case_id": "P2-MINI-26",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 584,
+    "case_id": "P2-MINI-26",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 585,
+    "case_id": "P2-MINI-26",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 586,
+    "case_id": "P2-MINI-26",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 587,
+    "case_id": "P2-MINI-26",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 588,
+    "case_id": "P2-MINI-26",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 589,
+    "case_id": "P2-MINI-26",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 590,
+    "case_id": "P2-MINI-27",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 591,
+    "case_id": "P2-MINI-27",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 592,
+    "case_id": "P2-MINI-27",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 593,
+    "case_id": "P2-MINI-27",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 594,
+    "case_id": "P2-MINI-27",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 595,
+    "case_id": "P2-MINI-27",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 596,
+    "case_id": "P2-MINI-27",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 597,
+    "case_id": "P2-MINI-27",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 598,
+    "case_id": "P2-MINI-27",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 599,
+    "case_id": "P2-MINI-27",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 600,
+    "case_id": "P2-MINI-28",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 601,
+    "case_id": "P2-MINI-28",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 602,
+    "case_id": "P2-MINI-28",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 603,
+    "case_id": "P2-MINI-28",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 604,
+    "case_id": "P2-MINI-28",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 605,
+    "case_id": "P2-MINI-28",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 606,
+    "case_id": "P2-MINI-28",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 607,
+    "case_id": "P2-MINI-28",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 608,
+    "case_id": "P2-MINI-28",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 609,
+    "case_id": "P2-MINI-28",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 610,
+    "case_id": "P2-MINI-29",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 611,
+    "case_id": "P2-MINI-29",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 612,
+    "case_id": "P2-MINI-29",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 613,
+    "case_id": "P2-MINI-29",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 614,
+    "case_id": "P2-MINI-29",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 615,
+    "case_id": "P2-MINI-29",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 616,
+    "case_id": "P2-MINI-29",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 617,
+    "case_id": "P2-MINI-29",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 618,
+    "case_id": "P2-MINI-29",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 619,
+    "case_id": "P2-MINI-29",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 620,
+    "case_id": "P2-MINI-30",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 621,
+    "case_id": "P2-MINI-30",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 622,
+    "case_id": "P2-MINI-30",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 623,
+    "case_id": "P2-MINI-30",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 624,
+    "case_id": "P2-MINI-30",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 625,
+    "case_id": "P2-MINI-30",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 626,
+    "case_id": "P2-MINI-30",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 627,
+    "case_id": "P2-MINI-30",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 628,
+    "case_id": "P2-MINI-30",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 629,
+    "case_id": "P2-MINI-30",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 630,
+    "case_id": "P2-MINI-31",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 631,
+    "case_id": "P2-MINI-31",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 632,
+    "case_id": "P2-MINI-31",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 633,
+    "case_id": "P2-MINI-31",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 634,
+    "case_id": "P2-MINI-31",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 635,
+    "case_id": "P2-MINI-31",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 636,
+    "case_id": "P2-MINI-31",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 637,
+    "case_id": "P2-MINI-31",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 638,
+    "case_id": "P2-MINI-31",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 639,
+    "case_id": "P2-MINI-31",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 640,
+    "case_id": "P2-MINI-32",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 641,
+    "case_id": "P2-MINI-32",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 642,
+    "case_id": "P2-MINI-32",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 643,
+    "case_id": "P2-MINI-32",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 644,
+    "case_id": "P2-MINI-32",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 645,
+    "case_id": "P2-MINI-32",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 646,
+    "case_id": "P2-MINI-32",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 647,
+    "case_id": "P2-MINI-32",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 648,
+    "case_id": "P2-MINI-32",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 649,
+    "case_id": "P2-MINI-32",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 650,
+    "case_id": "P2-MINI-33",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 651,
+    "case_id": "P2-MINI-33",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 652,
+    "case_id": "P2-MINI-33",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 653,
+    "case_id": "P2-MINI-33",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 654,
+    "case_id": "P2-MINI-33",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 655,
+    "case_id": "P2-MINI-33",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 656,
+    "case_id": "P2-MINI-33",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 657,
+    "case_id": "P2-MINI-33",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 658,
+    "case_id": "P2-MINI-33",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 659,
+    "case_id": "P2-MINI-33",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 660,
+    "case_id": "P3-MINI-01",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 661,
+    "case_id": "P3-MINI-01",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 662,
+    "case_id": "P3-MINI-01",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 663,
+    "case_id": "P3-MINI-01",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 664,
+    "case_id": "P3-MINI-01",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 665,
+    "case_id": "P3-MINI-01",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 666,
+    "case_id": "P3-MINI-01",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 667,
+    "case_id": "P3-MINI-01",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 668,
+    "case_id": "P3-MINI-01",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 669,
+    "case_id": "P3-MINI-01",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 670,
+    "case_id": "P3-MINI-02",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 671,
+    "case_id": "P3-MINI-02",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 672,
+    "case_id": "P3-MINI-02",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 673,
+    "case_id": "P3-MINI-02",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 674,
+    "case_id": "P3-MINI-02",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 675,
+    "case_id": "P3-MINI-02",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 676,
+    "case_id": "P3-MINI-02",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 677,
+    "case_id": "P3-MINI-02",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 678,
+    "case_id": "P3-MINI-02",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 679,
+    "case_id": "P3-MINI-02",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 680,
+    "case_id": "P3-MINI-03",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 681,
+    "case_id": "P3-MINI-03",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 682,
+    "case_id": "P3-MINI-03",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 683,
+    "case_id": "P3-MINI-03",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 684,
+    "case_id": "P3-MINI-03",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 685,
+    "case_id": "P3-MINI-03",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 686,
+    "case_id": "P3-MINI-03",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 687,
+    "case_id": "P3-MINI-03",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 688,
+    "case_id": "P3-MINI-03",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 689,
+    "case_id": "P3-MINI-03",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 690,
+    "case_id": "P3-MINI-04",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 691,
+    "case_id": "P3-MINI-04",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 692,
+    "case_id": "P3-MINI-04",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 693,
+    "case_id": "P3-MINI-04",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 694,
+    "case_id": "P3-MINI-04",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 695,
+    "case_id": "P3-MINI-04",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 696,
+    "case_id": "P3-MINI-04",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 697,
+    "case_id": "P3-MINI-04",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 698,
+    "case_id": "P3-MINI-04",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 699,
+    "case_id": "P3-MINI-04",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 700,
+    "case_id": "P3-MINI-05",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 701,
+    "case_id": "P3-MINI-05",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 702,
+    "case_id": "P3-MINI-05",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 703,
+    "case_id": "P3-MINI-05",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 704,
+    "case_id": "P3-MINI-05",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 705,
+    "case_id": "P3-MINI-05",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 706,
+    "case_id": "P3-MINI-05",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 707,
+    "case_id": "P3-MINI-05",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 708,
+    "case_id": "P3-MINI-05",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 709,
+    "case_id": "P3-MINI-05",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 710,
+    "case_id": "P3-MINI-06",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 711,
+    "case_id": "P3-MINI-06",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 712,
+    "case_id": "P3-MINI-06",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 713,
+    "case_id": "P3-MINI-06",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 714,
+    "case_id": "P3-MINI-06",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 715,
+    "case_id": "P3-MINI-06",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 716,
+    "case_id": "P3-MINI-06",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 717,
+    "case_id": "P3-MINI-06",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 718,
+    "case_id": "P3-MINI-06",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 719,
+    "case_id": "P3-MINI-06",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 720,
+    "case_id": "P3-MINI-07",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 721,
+    "case_id": "P3-MINI-07",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 722,
+    "case_id": "P3-MINI-07",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 723,
+    "case_id": "P3-MINI-07",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 724,
+    "case_id": "P3-MINI-07",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 725,
+    "case_id": "P3-MINI-07",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 726,
+    "case_id": "P3-MINI-07",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 727,
+    "case_id": "P3-MINI-07",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 728,
+    "case_id": "P3-MINI-07",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 729,
+    "case_id": "P3-MINI-07",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 730,
+    "case_id": "P3-MINI-08",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 731,
+    "case_id": "P3-MINI-08",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 732,
+    "case_id": "P3-MINI-08",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 733,
+    "case_id": "P3-MINI-08",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 734,
+    "case_id": "P3-MINI-08",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 735,
+    "case_id": "P3-MINI-08",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 736,
+    "case_id": "P3-MINI-08",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 737,
+    "case_id": "P3-MINI-08",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 738,
+    "case_id": "P3-MINI-08",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 739,
+    "case_id": "P3-MINI-08",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 740,
+    "case_id": "P3-MINI-09",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 741,
+    "case_id": "P3-MINI-09",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 742,
+    "case_id": "P3-MINI-09",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 743,
+    "case_id": "P3-MINI-09",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 744,
+    "case_id": "P3-MINI-09",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 745,
+    "case_id": "P3-MINI-09",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 746,
+    "case_id": "P3-MINI-09",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 747,
+    "case_id": "P3-MINI-09",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 748,
+    "case_id": "P3-MINI-09",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 749,
+    "case_id": "P3-MINI-09",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 750,
+    "case_id": "P3-MINI-10",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 751,
+    "case_id": "P3-MINI-10",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 752,
+    "case_id": "P3-MINI-10",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 753,
+    "case_id": "P3-MINI-10",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 754,
+    "case_id": "P3-MINI-10",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 755,
+    "case_id": "P3-MINI-10",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 756,
+    "case_id": "P3-MINI-10",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 757,
+    "case_id": "P3-MINI-10",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 758,
+    "case_id": "P3-MINI-10",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 759,
+    "case_id": "P3-MINI-10",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 760,
+    "case_id": "P3-MINI-11",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 761,
+    "case_id": "P3-MINI-11",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 762,
+    "case_id": "P3-MINI-11",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 763,
+    "case_id": "P3-MINI-11",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 764,
+    "case_id": "P3-MINI-11",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 765,
+    "case_id": "P3-MINI-11",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 766,
+    "case_id": "P3-MINI-11",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 767,
+    "case_id": "P3-MINI-11",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 768,
+    "case_id": "P3-MINI-11",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 769,
+    "case_id": "P3-MINI-11",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 770,
+    "case_id": "P3-MINI-12",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 771,
+    "case_id": "P3-MINI-12",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 772,
+    "case_id": "P3-MINI-12",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 773,
+    "case_id": "P3-MINI-12",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 774,
+    "case_id": "P3-MINI-12",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 775,
+    "case_id": "P3-MINI-12",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 776,
+    "case_id": "P3-MINI-12",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 777,
+    "case_id": "P3-MINI-12",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 778,
+    "case_id": "P3-MINI-12",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 779,
+    "case_id": "P3-MINI-12",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 780,
+    "case_id": "P3-MINI-13",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 781,
+    "case_id": "P3-MINI-13",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 782,
+    "case_id": "P3-MINI-13",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 783,
+    "case_id": "P3-MINI-13",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 784,
+    "case_id": "P3-MINI-13",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 785,
+    "case_id": "P3-MINI-13",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 786,
+    "case_id": "P3-MINI-13",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 787,
+    "case_id": "P3-MINI-13",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 788,
+    "case_id": "P3-MINI-13",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 789,
+    "case_id": "P3-MINI-13",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 790,
+    "case_id": "P3-MINI-14",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 791,
+    "case_id": "P3-MINI-14",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 792,
+    "case_id": "P3-MINI-14",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 793,
+    "case_id": "P3-MINI-14",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 794,
+    "case_id": "P3-MINI-14",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 795,
+    "case_id": "P3-MINI-14",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 796,
+    "case_id": "P3-MINI-14",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 797,
+    "case_id": "P3-MINI-14",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 798,
+    "case_id": "P3-MINI-14",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 799,
+    "case_id": "P3-MINI-14",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 800,
+    "case_id": "P3-MINI-15",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 801,
+    "case_id": "P3-MINI-15",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 802,
+    "case_id": "P3-MINI-15",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 803,
+    "case_id": "P3-MINI-15",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 804,
+    "case_id": "P3-MINI-15",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 805,
+    "case_id": "P3-MINI-15",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 806,
+    "case_id": "P3-MINI-15",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 807,
+    "case_id": "P3-MINI-15",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 808,
+    "case_id": "P3-MINI-15",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 809,
+    "case_id": "P3-MINI-15",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 810,
+    "case_id": "P3-MINI-16",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 811,
+    "case_id": "P3-MINI-16",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 812,
+    "case_id": "P3-MINI-16",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 813,
+    "case_id": "P3-MINI-16",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 814,
+    "case_id": "P3-MINI-16",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 815,
+    "case_id": "P3-MINI-16",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 816,
+    "case_id": "P3-MINI-16",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 817,
+    "case_id": "P3-MINI-16",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 818,
+    "case_id": "P3-MINI-16",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 819,
+    "case_id": "P3-MINI-16",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 820,
+    "case_id": "P3-MINI-17",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 821,
+    "case_id": "P3-MINI-17",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 822,
+    "case_id": "P3-MINI-17",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 823,
+    "case_id": "P3-MINI-17",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 824,
+    "case_id": "P3-MINI-17",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 825,
+    "case_id": "P3-MINI-17",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 826,
+    "case_id": "P3-MINI-17",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 827,
+    "case_id": "P3-MINI-17",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 828,
+    "case_id": "P3-MINI-17",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 829,
+    "case_id": "P3-MINI-17",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 830,
+    "case_id": "P3-MINI-18",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 831,
+    "case_id": "P3-MINI-18",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 832,
+    "case_id": "P3-MINI-18",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 833,
+    "case_id": "P3-MINI-18",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 834,
+    "case_id": "P3-MINI-18",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 835,
+    "case_id": "P3-MINI-18",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 836,
+    "case_id": "P3-MINI-18",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 837,
+    "case_id": "P3-MINI-18",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 838,
+    "case_id": "P3-MINI-18",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 839,
+    "case_id": "P3-MINI-18",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 840,
+    "case_id": "P3-MINI-19",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 841,
+    "case_id": "P3-MINI-19",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 842,
+    "case_id": "P3-MINI-19",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 843,
+    "case_id": "P3-MINI-19",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 844,
+    "case_id": "P3-MINI-19",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 845,
+    "case_id": "P3-MINI-19",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 846,
+    "case_id": "P3-MINI-19",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 847,
+    "case_id": "P3-MINI-19",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 848,
+    "case_id": "P3-MINI-19",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 849,
+    "case_id": "P3-MINI-19",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 850,
+    "case_id": "P3-MINI-20",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 851,
+    "case_id": "P3-MINI-20",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 852,
+    "case_id": "P3-MINI-20",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 853,
+    "case_id": "P3-MINI-20",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 854,
+    "case_id": "P3-MINI-20",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 855,
+    "case_id": "P3-MINI-20",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 856,
+    "case_id": "P3-MINI-20",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 857,
+    "case_id": "P3-MINI-20",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 858,
+    "case_id": "P3-MINI-20",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 859,
+    "case_id": "P3-MINI-20",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 860,
+    "case_id": "P3-MINI-21",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 861,
+    "case_id": "P3-MINI-21",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 862,
+    "case_id": "P3-MINI-21",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 863,
+    "case_id": "P3-MINI-21",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 864,
+    "case_id": "P3-MINI-21",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 865,
+    "case_id": "P3-MINI-21",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 866,
+    "case_id": "P3-MINI-21",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 867,
+    "case_id": "P3-MINI-21",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 868,
+    "case_id": "P3-MINI-21",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 869,
+    "case_id": "P3-MINI-21",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 870,
+    "case_id": "P3-MINI-22",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 871,
+    "case_id": "P3-MINI-22",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 872,
+    "case_id": "P3-MINI-22",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 873,
+    "case_id": "P3-MINI-22",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 874,
+    "case_id": "P3-MINI-22",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 875,
+    "case_id": "P3-MINI-22",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 876,
+    "case_id": "P3-MINI-22",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 877,
+    "case_id": "P3-MINI-22",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 878,
+    "case_id": "P3-MINI-22",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 879,
+    "case_id": "P3-MINI-22",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 880,
+    "case_id": "P3-MINI-23",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 881,
+    "case_id": "P3-MINI-23",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 882,
+    "case_id": "P3-MINI-23",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 883,
+    "case_id": "P3-MINI-23",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 884,
+    "case_id": "P3-MINI-23",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 885,
+    "case_id": "P3-MINI-23",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 886,
+    "case_id": "P3-MINI-23",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 887,
+    "case_id": "P3-MINI-23",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 888,
+    "case_id": "P3-MINI-23",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 889,
+    "case_id": "P3-MINI-23",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 890,
+    "case_id": "P3-MINI-24",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 891,
+    "case_id": "P3-MINI-24",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 892,
+    "case_id": "P3-MINI-24",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 893,
+    "case_id": "P3-MINI-24",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 894,
+    "case_id": "P3-MINI-24",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 895,
+    "case_id": "P3-MINI-24",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 896,
+    "case_id": "P3-MINI-24",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 897,
+    "case_id": "P3-MINI-24",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 898,
+    "case_id": "P3-MINI-24",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 899,
+    "case_id": "P3-MINI-24",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 900,
+    "case_id": "P3-MINI-25",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 901,
+    "case_id": "P3-MINI-25",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 902,
+    "case_id": "P3-MINI-25",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 903,
+    "case_id": "P3-MINI-25",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 904,
+    "case_id": "P3-MINI-25",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 905,
+    "case_id": "P3-MINI-25",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 906,
+    "case_id": "P3-MINI-25",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 907,
+    "case_id": "P3-MINI-25",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 908,
+    "case_id": "P3-MINI-25",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 909,
+    "case_id": "P3-MINI-25",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 910,
+    "case_id": "P3-MINI-26",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 911,
+    "case_id": "P3-MINI-26",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 912,
+    "case_id": "P3-MINI-26",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 913,
+    "case_id": "P3-MINI-26",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 914,
+    "case_id": "P3-MINI-26",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 915,
+    "case_id": "P3-MINI-26",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 916,
+    "case_id": "P3-MINI-26",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 917,
+    "case_id": "P3-MINI-26",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 918,
+    "case_id": "P3-MINI-26",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 919,
+    "case_id": "P3-MINI-26",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 920,
+    "case_id": "P3-MINI-27",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 921,
+    "case_id": "P3-MINI-27",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 922,
+    "case_id": "P3-MINI-27",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 923,
+    "case_id": "P3-MINI-27",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 924,
+    "case_id": "P3-MINI-27",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 925,
+    "case_id": "P3-MINI-27",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 926,
+    "case_id": "P3-MINI-27",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 927,
+    "case_id": "P3-MINI-27",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 928,
+    "case_id": "P3-MINI-27",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 929,
+    "case_id": "P3-MINI-27",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 930,
+    "case_id": "P3-MINI-28",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 931,
+    "case_id": "P3-MINI-28",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 932,
+    "case_id": "P3-MINI-28",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 933,
+    "case_id": "P3-MINI-28",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 934,
+    "case_id": "P3-MINI-28",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 935,
+    "case_id": "P3-MINI-28",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 936,
+    "case_id": "P3-MINI-28",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 937,
+    "case_id": "P3-MINI-28",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 938,
+    "case_id": "P3-MINI-28",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 939,
+    "case_id": "P3-MINI-28",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 940,
+    "case_id": "P3-MINI-29",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 941,
+    "case_id": "P3-MINI-29",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 942,
+    "case_id": "P3-MINI-29",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 943,
+    "case_id": "P3-MINI-29",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 944,
+    "case_id": "P3-MINI-29",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 945,
+    "case_id": "P3-MINI-29",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 946,
+    "case_id": "P3-MINI-29",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 947,
+    "case_id": "P3-MINI-29",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 948,
+    "case_id": "P3-MINI-29",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 949,
+    "case_id": "P3-MINI-29",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 950,
+    "case_id": "P3-MINI-30",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 951,
+    "case_id": "P3-MINI-30",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 952,
+    "case_id": "P3-MINI-30",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 953,
+    "case_id": "P3-MINI-30",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 954,
+    "case_id": "P3-MINI-30",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 955,
+    "case_id": "P3-MINI-30",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 956,
+    "case_id": "P3-MINI-30",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 957,
+    "case_id": "P3-MINI-30",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 958,
+    "case_id": "P3-MINI-30",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 959,
+    "case_id": "P3-MINI-30",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 960,
+    "case_id": "P3-MINI-31",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 961,
+    "case_id": "P3-MINI-31",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 962,
+    "case_id": "P3-MINI-31",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 963,
+    "case_id": "P3-MINI-31",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 964,
+    "case_id": "P3-MINI-31",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 965,
+    "case_id": "P3-MINI-31",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 966,
+    "case_id": "P3-MINI-31",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 967,
+    "case_id": "P3-MINI-31",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 968,
+    "case_id": "P3-MINI-31",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 969,
+    "case_id": "P3-MINI-31",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 970,
+    "case_id": "P3-MINI-32",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 971,
+    "case_id": "P3-MINI-32",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 972,
+    "case_id": "P3-MINI-32",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 973,
+    "case_id": "P3-MINI-32",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 974,
+    "case_id": "P3-MINI-32",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 975,
+    "case_id": "P3-MINI-32",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 976,
+    "case_id": "P3-MINI-32",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 977,
+    "case_id": "P3-MINI-32",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 978,
+    "case_id": "P3-MINI-32",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 979,
+    "case_id": "P3-MINI-32",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 980,
+    "case_id": "P3-MINI-33",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 981,
+    "case_id": "P3-MINI-33",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 982,
+    "case_id": "P3-MINI-33",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 983,
+    "case_id": "P3-MINI-33",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 984,
+    "case_id": "P3-MINI-33",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 985,
+    "case_id": "P3-MINI-33",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 986,
+    "case_id": "P3-MINI-33",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 987,
+    "case_id": "P3-MINI-33",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 988,
+    "case_id": "P3-MINI-33",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 989,
+    "case_id": "P3-MINI-33",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 990,
+    "case_id": "P2-MINI-34",
+    "seed": 1,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 991,
+    "case_id": "P2-MINI-34",
+    "seed": 2,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 992,
+    "case_id": "P2-MINI-34",
+    "seed": 3,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 993,
+    "case_id": "P2-MINI-34",
+    "seed": 4,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 994,
+    "case_id": "P2-MINI-34",
+    "seed": 5,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 995,
+    "case_id": "P2-MINI-34",
+    "seed": 6,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 996,
+    "case_id": "P2-MINI-34",
+    "seed": 7,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 997,
+    "case_id": "P2-MINI-34",
+    "seed": 8,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 998,
+    "case_id": "P2-MINI-34",
+    "seed": 9,
+    "inputs_match": true,
+    "golden_match": true
+  },
+  {
+    "ordinal": 999,
+    "case_id": "P2-MINI-34",
+    "seed": 10,
+    "inputs_match": true,
+    "golden_match": true
+  }
+]

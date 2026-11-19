@@ -1,0 +1,12 @@
+{
+  "component": "or-tools",
+  "version": "9.14.6206",
+  "platform": "amd64-ubuntu-24.04-cpp",
+  "homepage": "https://developers.google.com/optimization",
+  "release_page": "https://github.com/google/or-tools/releases/tag/v9.14",
+  "download_url": "https://github.com/google/or-tools/releases/download/v9.14/or-tools_amd64_ubuntu-24.04_cpp_v9.14.6206.tar.gz",
+  "sha256": "be3855a32a7390c3957d43ebd3faec1610acdc28f06ef33cb50f1f72a9aa6621",
+  "bytes": 55992473,
+  "upstream_license": "Apache-2.0; bundled components have separate notices",
+  "scope": "OpenROAD runtime/build dependency; source lock alone is not environment qualification"
+}

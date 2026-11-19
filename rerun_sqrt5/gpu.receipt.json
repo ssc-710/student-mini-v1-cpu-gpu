@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/bin/bash",
+    "-c",
+    "OCL_ICD_VENDORS=/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/opencl-vendors LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/lib:/mnt/d/open-soc-ai-labs-vortex-tools/pocl/lib:/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime:/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/lib: POCL_IGNORE_CL_STD=1 POCL_VORTEX_XLEN=32 LLVM_PREFIX=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex POCL_PATH_LLVM_SPIRV=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/bin/llvm-spirv POCL_VORTEX_BINTOOL=\"OBJCOPY=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/bin/llvm-objcopy /mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/sw/kernel/scripts/vxbin.py\" POCL_VORTEX_CFLAGS=\"-O2 -ffp-contract=off -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw --target=riscv32-unknown-elf -O3 -mcmodel=medany --sysroot=/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain/riscv32-unknown-elf --gcc-toolchain=/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain -fno-rtti -fno-exceptions -nostartfiles -nostdlib -fdata-sections -ffunction-sections -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/hw -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/sw/kernel/include -DVX_CFG_XLEN=32 -DVX_CFG_XLEN_32 -DNDEBUG -D__VORTEX__ -Xclang -target-feature -Xclang +xvortex -Xclang -target-feature -Xclang +zicond -mllvm -disable-loop-idiom-all -march=rv32imaf -mabi=ilp32f\" POCL_VORTEX_LDFLAGS=\"/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/device_compat.o -fuse-ld=lld -Wl,-z,norelro -Wl,-Bstatic,--gc-sections,-T/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/sw/kernel/scripts/link32.ld,--defsym=STARTUP_ADDR=0x80000000 /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/kernel_compat/libvortex2.a -L/mnt/d/open-soc-ai-labs-vortex-tools/libc32/lib -lm -lc /mnt/d/open-soc-ai-labs-vortex-tools/libcrt32/lib/baremetal/libclang_rt.builtins-riscv32.a\" VORTEX_DRIVER=simx ./native_nano /mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt5/image/image.bin"
+  ],
+  "cwd": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825",
+  "started_at_utc": "2026-11-06T14:23:56.118921+00:00",
+  "pid": 457,
+  "exit_code": 0,
+  "elapsed_seconds": 15.06223869599998,
+  "complete": true,
+  "log_sha256": "7f5de541382eecca9c816982292ee47ebd1b78a1d2a7e22f0ebbe224cfb2c51d",
+  "binary_sha256": "bc5945feb8bd26203ebfafea5ce1878bb2e32cb8fb50ab7ae395cfb1e1aaaef1",
+  "completion_seconds": 14.946473924000003
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_platform_physical.py",
+    "--platform",
+    "gpu-block",
+    "--abstract",
+    "--fresh-drt",
+    "--post-route-eco",
+    "--eco-passes",
+    "4",
+    "--config",
+    "build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q1_LR/config.mk",
+    "--parent",
+    "build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/completion.json",
+    "--expected-macros",
+    "8",
+    "--timeout",
+    "64000"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-645",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 64800,
+  "created_at": "2026-10-14T10:57:58.505437+00:00",
+  "cpus": [
+    6,
+    7
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 8589934592,
+  "memory_events": "low 0\nhigh 0\nmax 33912\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 18602601616\nuser_usec 18186311441\nsystem_usec 416290174\nnice_usec 0\nnr_periods 104349\nnr_throttled 4572\nthrottled_usec 16251580\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 10619.130835767999
+}

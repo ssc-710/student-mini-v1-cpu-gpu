@@ -1,0 +1,27 @@
+# Local build environments and downloaded dependencies
+/.github-upload-tools/
+/.yosys_history
+/student-mini-v1-cpu-gpu
+**/__pycache__/
+**/*.py[cod]
+/optimization/p3/build/
+/optimization/p3/tools/
+/optimization/p3/cleanup/
+/optimization/p3/physical/
+/optimization/p3/reviews/
+/optimization/p3/runs/
+/rerun_sqrt3/.venv/
+/rerun_sqrt3/cpu-venv/
+/rerun_sqrt3/downloads/
+/rerun_sqrt3/tools/
+/rerun_sqrt3/vortex/
+/rerun_sqrt3/vortex-source/
+/rerun_sqrt3/image/
+/rerun_sqrt3/cpu/
+/rerun_sqrt3/baseline_bios/
+/rerun_sqrt5/image/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

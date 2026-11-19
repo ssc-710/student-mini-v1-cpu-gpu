@@ -1,0 +1,197 @@
+{
+  "gpu": {
+    "complete": true,
+    "records": 1000,
+    "matched": 970,
+    "mismatches": [
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 1,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 2,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 3,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 4,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 5,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 6,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 7,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 8,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 9,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P1-MINI-30",
+        "seed": 10,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 1,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 2,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 3,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 4,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 5,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 6,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 7,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 8,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 9,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P2-MINI-30",
+        "seed": 10,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 1,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 2,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 3,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 4,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 5,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 6,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 7,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 8,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 9,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      },
+      {
+        "case_id": "P3-MINI-30",
+        "seed": 10,
+        "expected": "BUS_ERROR",
+        "actual": "UNSUPPORTED_BUS_INJECTION"
+      }
+    ],
+    "protocol_qualification": "NOT_RERUN"
+  },
+  "cpu": {
+    "complete": true,
+    "records": 1000,
+    "matched": 1000,
+    "mismatches": [],
+    "protocol_qualification": "NOT_RERUN"
+  }
+}

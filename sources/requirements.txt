@@ -1,0 +1,5 @@
+numpy>=2.0,<3
+ml-dtypes>=0.5,<1
+pytest>=8,<10
+cocotb>=2,<3
+cocotb-test>=0.2.5,<1

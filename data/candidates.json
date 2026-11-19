@@ -1,0 +1,228 @@
+{
+  "description": "Four-layer candidate structure retained (task.md section 1); promotion is not run in student-mini-v1: no candidate executed, no performance improvement claimed, no PROMOTE.",
+  "layers": [
+    "runtime",
+    "algorithm",
+    "microarchitecture",
+    "physical"
+  ],
+  "promote": false,
+  "candidates": [
+    {
+      "platform": "cpu",
+      "operator": "p1",
+      "layer": "runtime",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p1",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p1",
+      "layer": "algorithm",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p1",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p1",
+      "layer": "microarchitecture",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p1",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p1",
+      "layer": "physical",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p1",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p2",
+      "layer": "runtime",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p2",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p2",
+      "layer": "algorithm",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p2",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p2",
+      "layer": "microarchitecture",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p2",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p2",
+      "layer": "physical",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p2",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p3",
+      "layer": "runtime",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p3",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p3",
+      "layer": "algorithm",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p3",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p3",
+      "layer": "microarchitecture",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p3",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "cpu",
+      "operator": "p3",
+      "layer": "physical",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:cpu/p3",
+      "parent_implementation": "cpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p1",
+      "layer": "runtime",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p1",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p1",
+      "layer": "algorithm",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p1",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p1",
+      "layer": "microarchitecture",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p1",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p1",
+      "layer": "physical",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p1",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p2",
+      "layer": "runtime",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p2",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p2",
+      "layer": "algorithm",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p2",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p2",
+      "layer": "microarchitecture",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p2",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p2",
+      "layer": "physical",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p2",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p3",
+      "layer": "runtime",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p3",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p3",
+      "layer": "algorithm",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p3",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p3",
+      "layer": "microarchitecture",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p3",
+      "parent_implementation": "gpu"
+    },
+    {
+      "platform": "gpu",
+      "operator": "p3",
+      "layer": "physical",
+      "status": "NOT_RUN",
+      "promote": false,
+      "parent": "baseline:gpu/p3",
+      "parent_implementation": "gpu"
+    }
+  ]
+}

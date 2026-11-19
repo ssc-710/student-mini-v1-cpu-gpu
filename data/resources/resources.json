@@ -1,0 +1,1244 @@
+[
+  {
+    "record": "cpu-final-physical-20261011-r4.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8589934592,
+    "elapsed_seconds": 41586.644506619,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 45343,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform cpu --config build/student-mini/cpu-top-physical-config/f6033baf7f88e18d4a056e05dcb1d45bcad229217832d46c5b8195404d8d48c7/config.mk --parent build/student-mini/cpu-rombanks-replay-launch/ca895382fa391545572ada3735d7a9e15df98491f89436c93"
+  },
+  {
+    "record": "cpu-final-physical-20261012-r4-reaudit.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 4572205056,
+    "elapsed_seconds": 113.12255865999998,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform cpu --config build/student-mini/cpu-top-physical-config/f6033baf7f88e18d4a056e05dcb1d45bcad229217832d46c5b8195404d8d48c7/config.mk --parent build/student-mini/cpu-rombanks-replay-launch/ca895382fa391545572ada3735d7a9e15df98491f89436c93"
+  },
+  {
+    "record": "cpu-gate-power-20261012.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2931552256,
+    "elapsed_seconds": 12626.471031468998,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_cpu_gate_power.py --physical build/student-mini/platform-physical/595e9b6abc4b6b5f1395ec90d2426ecddae54995df533be7d17b6cae4f1f02db --banks build/student-mini/rom-bank-physical/c000f34272e87d75e19a69403f8d15ba27c31ba16c2b48e4ff62195c83ea06ba build/student-mini/rom-ban"
+  },
+  {
+    "record": "cpu-protocol-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1945681920,
+    "elapsed_seconds": 530.0896045070003,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_cpu_protocol.py --replay build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl --paralle"
+  },
+  {
+    "record": "cpu-rom-bank-00-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1431793664,
+    "elapsed_seconds": 9417.284221622001,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 0"
+  },
+  {
+    "record": "cpu-rom-bank-00-v3-physical-resume-238981ea.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 165752832,
+    "elapsed_seconds": 4.763725961005548,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/238981ea55d5cd482a1f93da775667d8433b30e6405510787e1f2689d6e1d5f4"
+  },
+  {
+    "record": "cpu-rom-bank-01-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1648001024,
+    "elapsed_seconds": 9195.461153797994,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 1"
+  },
+  {
+    "record": "cpu-rom-bank-01-v3-physical-resume-8b8df73f.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 163622912,
+    "elapsed_seconds": 4.662627666024491,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/8b8df73ff7084564b6e08d005f33ebd270fa731dff9ac9b6218bb0451de47256"
+  },
+  {
+    "record": "cpu-rom-bank-02-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2099666944,
+    "elapsed_seconds": 11472.407709697,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 2"
+  },
+  {
+    "record": "cpu-rom-bank-02-v3-physical-resume-28f2089b.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 144797696,
+    "elapsed_seconds": 4.702063454024028,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/28f2089b44323c527c81b708e2bb1dc0a3beb7d4d3d865f62a40ce7bb95e337b"
+  },
+  {
+    "record": "cpu-rom-bank-03-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1995563008,
+    "elapsed_seconds": 5943.106341765,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 3"
+  },
+  {
+    "record": "cpu-rom-bank-03-v3-physical-resume-8e96806f.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 175550464,
+    "elapsed_seconds": 4.9151196379971225,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/8e96806f3da4a487457ddbc2930085fa7ea834fc9c8275dd7597e62e2c57d908"
+  },
+  {
+    "record": "cpu-rom-bank-04-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2404454400,
+    "elapsed_seconds": 11531.198365757009,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 4"
+  },
+  {
+    "record": "cpu-rom-bank-04-v3-physical-resume-6a1b5bc3.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 146878464,
+    "elapsed_seconds": 5.065968405018793,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/6a1b5bc33f8f3f815addab538335d8011a174826617ca50441f71ef0c226d8df"
+  },
+  {
+    "record": "cpu-rom-bank-05-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1524260864,
+    "elapsed_seconds": 1649.4289600420016,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 5"
+  },
+  {
+    "record": "cpu-rom-bank-06-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2415001600,
+    "elapsed_seconds": 2166.426781863993,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 6"
+  },
+  {
+    "record": "cpu-rom-bank-06-v3-physical-resume-3db41984.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 160755712,
+    "elapsed_seconds": 4.808901932003209,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/3db41984b9f3bbe4f04d1dd8f1778b87b57b9db6a09986e2232c3a4e01aca614"
+  },
+  {
+    "record": "cpu-rom-bank-07-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2787897344,
+    "elapsed_seconds": 2301.955129512993,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 7"
+  },
+  {
+    "record": "cpu-rom-bank-08-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2116526080,
+    "elapsed_seconds": 2375.137075685998,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 8"
+  },
+  {
+    "record": "cpu-rom-bank-09-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2902114304,
+    "elapsed_seconds": 3433.4149590269953,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 9"
+  },
+  {
+    "record": "cpu-rom-bank-10-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2010976256,
+    "elapsed_seconds": 2009.54217104899,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 10"
+  },
+  {
+    "record": "cpu-rom-bank-11-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1827663872,
+    "elapsed_seconds": 1807.2212029219954,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 11"
+  },
+  {
+    "record": "cpu-rom-bank-12-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1807765504,
+    "elapsed_seconds": 1724.7381805070036,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 12"
+  },
+  {
+    "record": "cpu-rom-bank-13-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2114936832,
+    "elapsed_seconds": 2318.713035455992,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 13"
+  },
+  {
+    "record": "cpu-rom-bank-13-v3-physical-resume-f2ea3708.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 137785344,
+    "elapsed_seconds": 4.662722016015323,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/f2ea3708785d22c6f4ad93118ffe954cf2c8b7e90c557d8f7c994e4d7ddb6b87"
+  },
+  {
+    "record": "cpu-rom-bank-14-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1654562816,
+    "elapsed_seconds": 3522.2592164890084,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 14"
+  },
+  {
+    "record": "cpu-rom-bank-14-v3-physical-resume-66a0405a.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 136126464,
+    "elapsed_seconds": 5.108311588992365,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/66a0405abb33cd3ada2ed08868c7d5767ce19f08cec87a52771e88c11fdd8e0e"
+  },
+  {
+    "record": "cpu-rom-bank-15-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1965658112,
+    "elapsed_seconds": 1254.3014686899842,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 15"
+  },
+  {
+    "record": "cpu-rom-bank-15-v3-physical-resume-869c2cb0.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 131571712,
+    "elapsed_seconds": 4.214286242990056,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/869c2cb0b617fc654f445bb6b141514ed84de244bd91c44b57ac8371a1445d12"
+  },
+  {
+    "record": "cpu-rom-bank-16-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2586935296,
+    "elapsed_seconds": 1374.3518422759953,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 16"
+  },
+  {
+    "record": "cpu-rom-bank-16-v3-physical-resume-5c9cd1ff.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 137125888,
+    "elapsed_seconds": 4.516674688988132,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/5c9cd1ffd59878e84b3d97b6755ec5a39c797c9729cd17baebd7e398568c6465"
+  },
+  {
+    "record": "cpu-rom-bank-17-v3-physical-20261010.json",
+    "status": "HOLD",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1945530368,
+    "elapsed_seconds": 1431.8022327619838,
+    "exit_code": 1,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 17"
+  },
+  {
+    "record": "cpu-rom-bank-17-v3-physical-resume-e0219a78.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 137195520,
+    "elapsed_seconds": 4.460544377012411,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --resume build/student-mini/rom-bank-physical/e0219a782bc2648da474d5d96a6c57cae57f1a9dec7a11177bf573c9198173a8"
+  },
+  {
+    "record": "cpu-rom-bank-18-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1944580096,
+    "elapsed_seconds": 2192.3186374829966,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 18"
+  },
+  {
+    "record": "cpu-rom-bank-19-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1174081536,
+    "elapsed_seconds": 1828.2822659010126,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 19"
+  },
+  {
+    "record": "cpu-rom-bank-20-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1508040704,
+    "elapsed_seconds": 506.4883667009999,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 20"
+  },
+  {
+    "record": "cpu-rom-bank-21-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 742694912,
+    "elapsed_seconds": 285.2596888229891,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 21"
+  },
+  {
+    "record": "cpu-rom-bank-22-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 705105920,
+    "elapsed_seconds": 134.3188769929984,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 22"
+  },
+  {
+    "record": "cpu-rom-bank-23-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 726237184,
+    "elapsed_seconds": 236.89775815498433,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 23"
+  },
+  {
+    "record": "cpu-rom-bank-24-v3-physical-20261010.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 683216896,
+    "elapsed_seconds": 188.18105279898737,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_rom_bank_physical.py --boundary build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --bank 24"
+  },
+  {
+    "record": "cpu-rom-v2-replay-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 6578708480,
+    "elapsed_seconds": 2089.4737774999994,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_cpu_rombanks_replay.py --mapping build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5 --cpu-run build/student-mini/combined-cpu-v2/951fc915b089ce360fdb175c0e3ea4d8a4654e21098367384730fb98beff972a"
+  },
+  {
+    "record": "cpu-rombanks-results-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 1980313600,
+    "elapsed_seconds": 772.5542697439996,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/assemble_student_mini_cpu_rombanks_results.py --replay build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.js"
+  },
+  {
+    "record": "nano-exact-selection-postboot-20261008.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 308895744,
+    "elapsed_seconds": 47.605477973000006,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "build/student-mini/teacher-cpu-env-20261007/bin/python scripts/train_student_mini_exact_selection.py --parent build/student-mini/native-nano/ab740c0a3200b4fcb4eb4d49cd9ec06cc057a8220f39dd1a49f5141d0351bf89/candidate.json"
+  },
+  {
+    "record": "cpu-nano-sessions-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 2014035968,
+    "elapsed_seconds": 8517.711002855,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "env PATH=/home/soclab/tools/verilator-5.040/bin:/home/soclab/.local/bin:/usr/local/bin:/usr/bin:/bin build/student-mini/teacher-cpu-env-20261007/bin/python scripts/run_student_mini_cpu_nano_sessions.py --replay build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d"
+  },
+  {
+    "record": "nano-test-sessions-gpu-accelerator-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 253296640,
+    "elapsed_seconds": 982.0635007320016,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "env PATH=/home/soclab/tools/verilator-5.040/bin:/home/soclab/.local/bin:/usr/local/bin:/usr/bin:/bin build/student-mini/teacher-cpu-env-20261007/bin/python scripts/run_student_mini_nano_test_sessions.py --candidate build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1"
+  },
+  {
+    "record": "gpu-platform-rtl-build-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 842579968,
+    "elapsed_seconds": 355.9628757850005,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_platform_rtl.py build --boundary build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary --functional build/student-mini/gpu-fault/c6f5e417caf1bfd81395e21cc7597a2c515a64f81a793054a305385215f511ab"
+  },
+  {
+    "record": "gpu-platform-rtl-shard0-of4-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 178315264,
+    "elapsed_seconds": 3405.790402299004,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_platform_rtl.py run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b --shard 0 --shards 4"
+  },
+  {
+    "record": "gpu-platform-rtl-shard1-of4-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 193851392,
+    "elapsed_seconds": 3405.7911744489975,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_platform_rtl.py run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b --shard 1 --shards 4"
+  },
+  {
+    "record": "gpu-platform-rtl-shard2-of4-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 176590848,
+    "elapsed_seconds": 3473.093715029994,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_platform_rtl.py run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b --shard 2 --shards 4"
+  },
+  {
+    "record": "gpu-platform-rtl-shard3-of4-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 184700928,
+    "elapsed_seconds": 3473.1437766550007,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_platform_rtl.py run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b --shard 3 --shards 4"
+  },
+  {
+    "record": "gpu-platform-rtl-assemble-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 175964160,
+    "elapsed_seconds": 26.866952773001685,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_platform_rtl.py assemble --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8"
+  },
+  {
+    "record": "gpu-protocol-rtl-build-20261009-r11.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 827428864,
+    "elapsed_seconds": 352.0858757069982,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_protocol_rtl.py --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl build --boundary build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a45"
+  },
+  {
+    "record": "gpu-protocol-r11-shard0-of3-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 261967872,
+    "elapsed_seconds": 457.79481891699834,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_protocol_rtl.py --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-protocol-rtl/4427a4c19558b5fdde997b1e0"
+  },
+  {
+    "record": "gpu-protocol-r11-shard1-of3-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 263454720,
+    "elapsed_seconds": 504.4650166089996,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_protocol_rtl.py --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-protocol-rtl/4427a4c19558b5fdde997b1e0"
+  },
+  {
+    "record": "gpu-protocol-r11-shard2-of3-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 256937984,
+    "elapsed_seconds": 498.9640728400009,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_protocol_rtl.py --vectors grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl run --work /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-protocol-rtl/4427a4c19558b5fdde997b1e0"
+  },
+  {
+    "record": "gpu-protocol-assemble-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 37101568,
+    "elapsed_seconds": 1.6519761130039115,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/assemble_student_mini_gpu_protocol.py --work build/student-mini/gpu-protocol-rtl/4427a4c19558b5fdde997b1e0fd8bc1dc836f6c0f856d1f770d59fb51ef22ebb --baseline /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad416"
+  },
+  {
+    "record": "gpu-activity-rtl-build-20261009-r2.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 808800256,
+    "elapsed_seconds": 738.5989802549993,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_activity_trace.py build --boundary build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary --functional build/student-mini/gpu-fault/c6f5e417caf1bfd81395e21cc7597a2c515a64f81a793054a305385215f511ab"
+  },
+  {
+    "record": "gpu-activity-traces-20261009.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 192610304,
+    "elapsed_seconds": 153.33549751300234,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_activity_trace.py run --work build/student-mini/gpu-activity-rtl/919d1e7bbceda4974c7c1283120bbf97b2b4f13e196873c5d364335e87ba9863 --ordinals 0 1 2 3 4 5 6 7 8 9 330 331 332 333 334 335 336 337 338 339 660 661 662 663 664 665 666 667 668 669"
+  },
+  {
+    "record": "gpu-block-q0_LL-physical-clean-20261014d.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8589934592,
+    "elapsed_seconds": 27900.763089111,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 67890,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform gpu-block --abstract --fresh-drt --post-route-eco --eco-passes 4 --config build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q0_LL/config.mk --parent build/student-mini/gpu-partition/4c30e"
+  },
+  {
+    "record": "gpu-block-q1_LR-physical-clean-20261014d.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8589934592,
+    "elapsed_seconds": 10619.130835767999,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 33912,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform gpu-block --abstract --fresh-drt --post-route-eco --eco-passes 4 --config build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q1_LR/config.mk --parent build/student-mini/gpu-partition/4c30e"
+  },
+  {
+    "record": "gpu-block-q2_UL-physical-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8589934592,
+    "elapsed_seconds": 11593.028635119997,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 15835,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform gpu-block --abstract --fresh-drt --post-route-eco --eco-passes 4 --config build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q2_UL/config.mk --parent build/student-mini/gpu-partition/4c30e"
+  },
+  {
+    "record": "gpu-block-q3_UR-physical-clean-20261014.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8589934592,
+    "elapsed_seconds": 7518.811173666003,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 25405,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform gpu-block --abstract --fresh-drt --post-route-eco --eco-passes 4 --config build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q3_UR/config.mk --parent build/student-mini/gpu-partition/4c30e"
+  },
+  {
+    "record": "gpu-block-context-clean-20261014-i2.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 3240660992,
+    "elapsed_seconds": 132.37344821199804,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/derive_student_mini_gpu_block_context.py --top /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/a674da82bde3113d835a2f1479aa7b85b15c749bceba70a16b163057c2d7a1ed/completion.json --blocks /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini"
+  },
+  {
+    "record": "gpu-block-q1_LR-ctx-eco-clean-20261014-i2.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8589934592,
+    "elapsed_seconds": 2109.596572689996,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 6905,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical_ctx.py --platform gpu-block --abstract --fresh-drt --config build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q1_LR/config.mk --parent build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533e"
+  },
+  {
+    "record": "gpu-block-q2_UL-ctx-eco-clean-20261014-i2.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 8518582272,
+    "elapsed_seconds": 2407.5857701729983,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical_ctx.py --platform gpu-block --abstract --fresh-drt --config build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/q2_UL/config.mk --parent build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533e"
+  },
+  {
+    "record": "gpu-top-config-clean-20261014-i3.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 125349888,
+    "elapsed_seconds": 2.2479477130036685,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/prepare_student_mini_gpu_top.py --blocks build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b --block-runs /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f"
+  },
+  {
+    "record": "gpu-top-physical-clean-20261014-i3.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 4351049728,
+    "elapsed_seconds": 369.69175137399725,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_platform_physical.py --platform gpu --config build/student-mini/gpu-top-config/clean-20261014-i3/config.mk --parent build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/completion.json --expected-macros 4 --timeout 64000"
+  },
+  {
+    "record": "gpu-fullchip-sta-clean-20261014-i3.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 3208916992,
+    "elapsed_seconds": 131.77048939299857,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_fullchip_sta.py --top /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json --blocks /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/pla"
+  },
+  {
+    "record": "gpu-gate-power-clean-20261014-i3.json",
+    "status": "PASS",
+    "cpu_limit": 2,
+    "memory_limit_bytes": 8589934592,
+    "memory_peak_bytes": 3029778432,
+    "elapsed_seconds": 5903.4222042699985,
+    "exit_code": 0,
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "command": "python3 scripts/run_student_mini_gpu_gate_power.py --top /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51 --blocks /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/116"
+  }
+]

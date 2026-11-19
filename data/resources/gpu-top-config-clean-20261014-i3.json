@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/prepare_student_mini_gpu_top.py",
+    "--blocks",
+    "build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b",
+    "--block-runs",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+    "--out",
+    "build/student-mini/gpu-top-config/clean-20261014-i3"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-885705",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 3600,
+  "created_at": "2026-10-14T20:59:30.356325+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 125349888,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 2057279\nuser_usec 1896240\nsystem_usec 161039\nnice_usec 0\nnr_periods 22\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 2.2479477130036685
+}

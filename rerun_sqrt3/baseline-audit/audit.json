@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-11-06T13:46:44.395647+00:00",
+  "mode": "archived_actual_recomparison_and_golden_regeneration",
+  "target_simulations_rerun": false,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numpy": "2.3.5",
+  "ml_dtypes": "0.5.4",
+  "golden_records": 1000,
+  "unique_cases": 100,
+  "golden_regeneration_matches": 1000,
+  "baselines": [
+    {
+      "platform": "cpu",
+      "operator": "p1",
+      "cases": 33,
+      "records": 330,
+      "passed": 330,
+      "expected_status_counts": {
+        "OK": 260,
+        "BAD_LENGTH": 10,
+        "NUMERIC_ERROR": 50,
+        "BUS_ERROR": 10
+      },
+      "numeric_records": 260,
+      "elements": 2320,
+      "bit_mismatches": 0,
+      "max_absolute_delta": 0.0,
+      "selection_records": 260,
+      "primitive_records": 60,
+      "expected_events": 810,
+      "backends": {
+        "vexriscv-rtl": 300,
+        "cpu-protocol-run": 30
+      }
+    },
+    {
+      "platform": "cpu",
+      "operator": "p2",
+      "cases": 34,
+      "records": 340,
+      "passed": 340,
+      "expected_status_counts": {
+        "OK": 260,
+        "BAD_LENGTH": 10,
+        "BAD_DESCRIPTOR": 10,
+        "NUMERIC_ERROR": 50,
+        "BUS_ERROR": 10
+      },
+      "numeric_records": 260,
+      "elements": 2160,
+      "bit_mismatches": 0,
+      "max_absolute_delta": 0.0,
+      "selection_records": 0,
+      "primitive_records": 60,
+      "expected_events": 840,
+      "backends": {
+        "vexriscv-rtl": 310,
+        "cpu-protocol-run": 30
+      }
+    },
+    {
+      "platform": "cpu",
+      "operator": "p3",
+      "cases": 33,
+      "records": 330,
+      "passed": 330,
+      "expected_status_counts": {
+        "OK": 250,
+        "BAD_DESCRIPTOR": 20,
+        "NUMERIC_ERROR": 50,
+        "BUS_ERROR": 10
+      },
+      "numeric_records": 250,
+      "elements": 7840,
+      "bit_mismatches": 0,
+      "max_absolute_delta": 0.0,
+      "selection_records": 0,
+      "primitive_records": 60,
+      "expected_events": 820,
+      "backends": {
+        "vexriscv-rtl": 300,
+        "cpu-protocol-run": 30
+      }
+    },
+    {
+      "platform": "gpu",
+      "operator": "p1",
+      "cases": 33,
+      "records": 330,
+      "passed": 330,
+      "expected_status_counts": {
+        "OK": 260,
+        "BAD_LENGTH": 10,
+        "NUMERIC_ERROR": 50,
+        "BUS_ERROR": 10
+      },
+      "numeric_records": 260,
+      "elements": 2320,
+      "bit_mismatches": 0,
+      "max_absolute_delta": 0.0,
+      "selection_records": 260,
+      "primitive_records": 60,
+      "expected_events": 810,
+      "backends": {
+        "vortex-rtlsim-mapped-core-fault-adapters": 300,
+        "gpu-protocol-run": 30
+      }
+    },
+    {
+      "platform": "gpu",
+      "operator": "p2",
+      "cases": 34,
+      "records": 340,
+      "passed": 340,
+      "expected_status_counts": {
+        "OK": 260,
+        "BAD_LENGTH": 10,
+        "BAD_DESCRIPTOR": 10,
+        "NUMERIC_ERROR": 50,
+        "BUS_ERROR": 10
+      },
+      "numeric_records": 260,
+      "elements": 2160,
+      "bit_mismatches": 0,
+      "max_absolute_delta": 0.0,
+      "selection_records": 0,
+      "primitive_records": 60,
+      "expected_events": 840,
+      "backends": {
+        "vortex-rtlsim-mapped-core-fault-adapters": 310,
+        "gpu-protocol-run": 30
+      }
+    },
+    {
+      "platform": "gpu",
+      "operator": "p3",
+      "cases": 33,
+      "records": 330,
+      "passed": 330,
+      "expected_status_counts": {
+        "OK": 250,
+        "BAD_DESCRIPTOR": 20,
+        "NUMERIC_ERROR": 50,
+        "BUS_ERROR": 10
+      },
+      "numeric_records": 250,
+      "elements": 7840,
+      "bit_mismatches": 0,
+      "max_absolute_delta": 0.0,
+      "selection_records": 0,
+      "primitive_records": 60,
+      "expected_events": 820,
+      "backends": {
+        "vortex-rtlsim-mapped-core-fault-adapters": 300,
+        "gpu-protocol-run": 30
+      }
+    }
+  ],
+  "all_checks_passed": true,
+  "issue_count": 0,
+  "issues": [],
+  "cpu_gpu_status_and_bits_equal": 1000,
+  "release_verifier": {
+    "command": [
+      "/mnt/d/\u5927\u5b66/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu-venv/bin/python",
+      "/mnt/d/\u5927\u5b66/codex/student-mini-v1-cpu-gpu/verify_release.py"
+    ],
+    "exit_code": 1,
+    "result": {
+      "release_status": "PARTIAL_NOT_RELEASED",
+      "record_status": {
+        "cpu": {
+          "PASS": 1000
+        },
+        "gpu": {
+          "PASS": 1000
+        }
+      },
+      "evidence": {
+        "files": 2572,
+        "aliases": 1145,
+        "power_bindings_checked": 480,
+        "power_bindings_without_packaged_view": 0,
+        "missing_at_packaging": [],
+        "omitted_files": 0,
+        "omitted_bytes": 0
+      },
+      "problems": [
+        "manifest mismatch: sources/scripts/run_student_mini_native_gpu.py"
+      ],
+      "problem_count": 1,
+      "course": "cpu-gpu",
+      "platforms": [
+        "cpu",
+        "gpu"
+      ],
+      "candidates": 24
+    }
+  },
+  "source_hashes": {
+    "rerun_sqrt3/audit_baselines.py": "f91957c4ff45aef3d2e8fba1d13c3839b5e09d91a7f5a6a0f7909de9ea20f00f",
+    "verify_release.py": "2d6074e76e4fe8154954425c446ff4c6e63a188d500ffea4313076bf7463fe1e",
+    "data/golden/vectors.jsonl": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974",
+    "data/golden/manifest.json": "17ac27185fb95425360cbb494ec1bbbe4b8a15f3d0ae07b4c7b33dae74eb6b0d",
+    "data/records/cpu.jsonl": "36496672bc181855d15a173238ec16e396ec007013a340e1aa9fcc6f953aa6f6",
+    "data/records/gpu.jsonl": "bfb03b3df6b760b400818af8f890701462e971d2e7ecbe38c715cb97925a8fee",
+    "MANIFEST.sha256": "d2933d075e7a0c32c166605b6958130eb9398a72896fcd53c45ddf02b3bffd8b",
+    "release.json": "fea07c798150d0b781b132d7151c1581ace5142c5d2a271a68d5de232d6ccab8"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "status": "ROM_BANK_PHYSICAL_STAGE_PASS",
+  "bank": 24,
+  "design": "student_mini_cpu_rom_bank_24",
+  "bindings": {
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/run_student_mini_rom_bank_physical.py": "daf13eeaad9d58d1da093e9ef5e7bb96dcb7d4299ab3a6a4b86bfec087aa10eb",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/run_student_mini_platform_physical.py": "da2048328ef82edf7d95aed734a1db90e667d0222f6c11c6f8ec9187c5f302f5",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/audit_student_mini_route.py": "44db6baab75a512bb3505b930480882d035e7432017b941db1426fdcbced93ac",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/integration/student-mini/audit_platform_route.tcl": "643aa1b4c4e5d80322783a1cb88281881c6f1a3420beb65513bbc5cf4b05b83f",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5/completion.json": "9473dd4eda32f133b8fe3da8425312377f4baa2e32b966a727309c5df67b8c80",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5/banks/student_mini_cpu_rom_bank_24.v": "dc14e500da5fffd85bf98e66f4f4faaea2c2fc8067937d3a00ff6629a08b3398",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/integration/student-mini/rom_bank_pdn.tcl": "1a2f68de6e40979e6530907295b8b33ecf0a31ad32a7e8a2319660a65870c30c",
+    "/home/soclab/.local/bin/openroad-drtbatch": "e2d931e2fe183472e65c0106a9c0d3e742733d4b4f0183f53df8894c5693f007",
+    "/home/soclab/tools/oss-cad-suite/bin/yosys": "7c3e3396b38c129dd7485be5a0a0f0da8e495a94c8fd486059e3bea043a588d6",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/Makefile": "1ca0d6a0d9bd76adfd03a5a09cd5e07325608a2c88771dd90b17e661db0c2c97",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/scripts/generate_abstract.tcl": "5b40c4f2c5884e5dd77f437916b3667c571853ef22a33425d0234ce17ec76056",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/scripts/load.tcl": "bf7b6bc7e304c315fccc2ba3b0e79b8ea6cf927d56d28de51377c9ad3b3bb934",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/config.mk": "1a36b8fbd58ee4b6b961bc14f3ca44e7b44a4ea47faf6f116f827eb5177509d5",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/pdn.tcl": "d2244586d860af05157a2555a49602a5dfff178f636a797a7c892e8d395b74a8",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/config.mk": "d726b7f217a98ab145b455e736a601af593d12b6bcfba307f4b345c122f24995",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/constraint.sdc": "e6286418bba9d605e24f1bd3bdd4c204e6edf35a8af6ebba9f043728084e4e07",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/io.tcl": "c0fd9becbbbadd92afa473280a1be906b9a4664fa8f4f70b3399c467029ec105"
+  },
+  "variant": "student-mini-rom-bank-18e59761794f181f",
+  "clock_period_ns": 10,
+  "io_budget": {
+    "input_delay_ns": 3.0,
+    "output_delay_ns": 5.0
+  },
+  "threads": 2,
+  "result_directory": "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f",
+  "metrics_directory": "/home/soclab/src/orfs-clean-aabf2a/flow/logs/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f",
+  "formal_baseline": false,
+  "resumed_from": null,
+  "gds": "not generated (KLayout not installed)",
+  "make_exit_code": 0,
+  "route_metrics": {
+    "clock_period_ns": 10,
+    "wns_ns": 3.56064,
+    "drc": 0,
+    "antenna_nets": 0,
+    "antenna_pins": 0,
+    "hold_wns_ns": 3.42353
+  },
+  "abstract": {
+    "lef": "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/student_mini_cpu_rom_bank_24.lef",
+    "lib": "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/student_mini_cpu_rom_bank_24_typ.lib"
+  },
+  "artifacts": {
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/6_final.def": "79e6795a46fff6859f86fc6bca2ea0c05fc7c071de1d408ea9d59698ec98c0a1",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/6_final.v": "ff26b3afb775b0a4090c7cd18c0ad1b4c7ba31b97025a092cecd153b0e771d04",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/6_final.sdc": "be1b9ef7ab20da73f8fd7c717ab40caee8b7d5ff0afd4dc96f0bddc78d173b6a",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/6_final.spef": "0e56b9fd542c0289307c506be2b99242b04bd263729ec0e5f2b3d9dc8b287e8e",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/6_final.odb": "6d748233a82783fb03b6cd6734214c3fa41983e9545a91b88b15f7dea49220e7",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/student_mini_cpu_rom_bank_24.lef": "4455c4dbbba6a533c4202d13b13386712b88c451d0009453528acba980487bd9",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/student_mini_cpu_rom_bank_24_typ.lib": "a944f7715b4c3d0b6ac1a1d3f38ab05ebfb9f5bb99e2a475065afacf950740ee",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/logs/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/5_2_route.json": "8f95de8f0e0162f39083ab9b95969739f684772c20592b2ad55b3fc6ad2d7d6f",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/logs/sky130hd/student_mini_cpu_rom_bank_24/student-mini-rom-bank-18e59761794f181f/6_report.json": "a104020334e0fb18e19d2aaf0c1b7ea5e79d9ae05ce25c78282923c8283a0f45",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/make.log": "eb7c811fc5d51c0233a1009d56d39080f79e89d270bfa72b381d2b08813b1539",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/18e59761794f181f14c26119846d4a4f77b61dd3e360c1f6896e42df2f328f46/audit.log": "9b0efed83b812a8074dfebabf7ed2205b43d30178d30b9a7ef1c18f6a4554fcd"
+  },
+  "power_grid": {
+    "VDD": "PASS",
+    "VSS": "PASS"
+  },
+  "reason": "Bank closed at 10 ns with its I/O budget, DRC/antenna zero, PDN connected; abstract generated",
+  "elapsed_seconds": 187.95712799998
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/derive_student_mini_gpu_block_context.py",
+    "--top",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/a674da82bde3113d835a2f1479aa7b85b15c749bceba70a16b163057c2d7a1ed/completion.json",
+    "--blocks",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/e9f0cde51ef9dd125edafad8bf0b6614a037891568d03dad53287eef2483748c/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/940bd5533128d2b15c3bae5f2a38d1a1d3013c9fcc0de1045cd7dd06171752bf/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json",
+    "--sram-libs",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_dp_80x64_w4/vortex_dp_80x64_w4_TT_1p8V_25C.lib",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_128x128_w16/vortex_sp_128x128_w16_TT_1p8V_25C.lib",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x1024_w4/vortex_sp_32x1024_w4_TT_1p8V_25C.lib",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x256_w1/vortex_sp_32x256_w1_TT_1p8V_25C.lib",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x512_w4/vortex_sp_32x512_w4_TT_1p8V_25C.lib",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_64x128_w8/vortex_sp_64x128_w8_TT_1p8V_25C.lib"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-884312",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 7200,
+  "created_at": "2026-10-14T20:17:10.237529+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 3240660992,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 63501597\nuser_usec 58256390\nsystem_usec 5245207\nnice_usec 0\nnr_periods 1324\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 132.37344821199804
+}

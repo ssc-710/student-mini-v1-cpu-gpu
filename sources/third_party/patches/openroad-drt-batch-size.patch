@@ -1,0 +1,20 @@
+Detailed routing memory: FlexDR keeps every routed worker of a batch (BATCHSIZE = 1024 workers)
+in memory until the whole batch is committed, independent of the thread count, so the batch size
+sets the peak memory of an iteration.  STUDENT_MINI_DRT_BATCH_SIZE (optional) sets a smaller
+batch; the workers, their checkerboard order and the routing algorithm are unchanged.
+--- a/src/drt/src/TritonRoute.cpp
++++ b/src/drt/src/TritonRoute.cpp
+@@ -86,6 +86,13 @@ TritonRoute::TritonRoute(odb::dbDatabase* db,
+   design_ = std::make_unique<frDesign>(logger_, router_cfg_.get());
+   dist->addCallBack(new RoutingCallBack(this, dist, logger));
+   service_registry_->provide<PinAccessService>(this);
++  if (const char* batch = std::getenv("STUDENT_MINI_DRT_BATCH_SIZE")) {
++    const int size = std::atoi(batch);
++    if (size > 0) {
++      router_cfg_->BATCHSIZE = size;
++      logger_->info(DRT, 9001, "Worker batch size {} (STUDENT_MINI_DRT_BATCH_SIZE).", size);
++    }
++  }
+ }
+ 
+ TritonRoute::~TritonRoute()

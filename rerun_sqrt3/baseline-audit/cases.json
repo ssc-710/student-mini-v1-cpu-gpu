@@ -1,0 +1,3802 @@
+[
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-01",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-02",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-03",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-04",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-05",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-06",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-07",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-08",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-09",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-10",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-11",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-12",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-13",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-14",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-15",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-16",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-17",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-18",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-19",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-20",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-21",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-22",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-23",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-24",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-25",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-26",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-27",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-28",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-29",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-30",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-31",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-32",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P1-MINI-33",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-01",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-02",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-03",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-04",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-05",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-06",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-07",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-08",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-09",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-10",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-11",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-12",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-13",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-14",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-15",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-16",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-17",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-18",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-19",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-20",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-21",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-22",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-23",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-24",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-25",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-26",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-27",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-28",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-29",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-30",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-31",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-32",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-33",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-01",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-02",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-03",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-04",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-05",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-06",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-07",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-08",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-09",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-10",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-11",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-12",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-13",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-14",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-15",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-16",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-17",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-18",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-19",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-20",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-21",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-22",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-23",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-24",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-25",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-26",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-27",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-28",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-29",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-30",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-31",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-32",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P3-MINI-33",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "cpu",
+    "case_id": "P2-MINI-34",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-01",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-02",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-03",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-04",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-05",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-06",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-07",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-08",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-09",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-10",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-11",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-12",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-13",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-14",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-15",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-16",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-17",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-18",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-19",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-20",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-21",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-22",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-23",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-24",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-25",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-26",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-27",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-28",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-29",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-30",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-31",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-32",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P1-MINI-33",
+    "operator": "p1",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-01",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-02",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-03",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-04",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-05",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-06",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-07",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-08",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-09",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-10",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-11",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-12",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-13",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-14",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-15",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-16",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-17",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-18",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-19",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-20",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-21",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-22",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-23",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-24",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-25",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-26",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-27",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-28",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-29",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-30",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-31",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-32",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-33",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-01",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-02",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-03",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-04",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-05",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-06",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-07",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-08",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-09",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-10",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-11",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-12",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-13",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-14",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-15",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-16",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-17",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-18",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-19",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-20",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-21",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-22",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-23",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-24",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-25",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-26",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-27",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-28",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-29",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-30",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-31",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-32",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P3-MINI-33",
+    "operator": "p3",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  },
+  {
+    "platform": "gpu",
+    "case_id": "P2-MINI-34",
+    "operator": "p2",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "passed": 10,
+    "failed_seeds": []
+  }
+]

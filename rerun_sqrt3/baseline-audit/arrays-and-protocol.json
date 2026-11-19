@@ -1,0 +1,6 @@
+{
+  "scope": "NPZ cross-check and packaged protocol counter consistency; not fresh execution",
+  "checks": 2182,
+  "passed": 2182,
+  "failures": []
+}

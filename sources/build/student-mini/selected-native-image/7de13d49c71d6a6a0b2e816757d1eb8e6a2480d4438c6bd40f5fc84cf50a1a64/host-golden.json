@@ -1,0 +1,20 @@
+{
+  "kind": "host-reference-only-never-target-input",
+  "tokens": [
+    67,
+    69,
+    84,
+    97,
+    90,
+    56,
+    71,
+    51,
+    82,
+    8,
+    4
+  ],
+  "text": "我无法获知实时天气。",
+  "token_sha256": "420033bddbc7de6532338a433a8bd07d50a683ba8c4322245012e254dbe60aac",
+  "image_sha256": "94d7434739bf16bc8c4e488804e5a92cc6a90a1bbf3dfcb2f57e79c2a7976d96",
+  "manifest_sha256": "1c098fdc76b3fb3ae6eb788487f66bcf8cf7273ab8763e018f79709ee9de7b58"
+}

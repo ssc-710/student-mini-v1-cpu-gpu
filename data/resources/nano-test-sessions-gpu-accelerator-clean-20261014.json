@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "env",
+    "PATH=/home/soclab/tools/verilator-5.040/bin:/home/soclab/.local/bin:/usr/local/bin:/usr/bin:/bin",
+    "build/student-mini/teacher-cpu-env-20261007/bin/python",
+    "scripts/run_student_mini_nano_test_sessions.py",
+    "--candidate",
+    "build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1e74ca47572/candidate.json",
+    "--quality-audit",
+    "build/student-mini/native-quality/a3d26dbabc6a2d889f79edd07247037d3d59a75ea78bae08221f62aaf3fc9a46/audit.json",
+    "--p1-placement",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/physical/f6cf135dc2fda10c2b888233847b368ffd1751e1e1ae3ea703129d44e62d36ce",
+    "--p2-placement",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/physical/9dd7bb12967025dc110261aae894754558acbc506f32ece67dd000dd328641d8",
+    "--p3-placement",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/physical/6a530ac3e49a86fb275faa3506475b8883e37ade36c3cac76890c20d8ce528eb"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-152295",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 14400,
+  "created_at": "2026-10-14T08:50:05.407677+00:00",
+  "cpus": [
+    2,
+    3
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 253296640,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 272092280\nuser_usec 195105104\nsystem_usec 76987175\nnice_usec 0\nnr_periods 9820\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 982.0635007320016
+}

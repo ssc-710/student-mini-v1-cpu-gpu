@@ -1,0 +1,7 @@
+platform,operator,status,records,passed,held,failed,cases,cases_passed,mean_cycles,physical,power,power_seeds
+cpu,p1,PASS,330,330,0,0,33,33,24506.2,cpu,180.297 mW,10
+cpu,p2,PASS,340,340,0,0,34,34,40836.5,cpu,180.788 mW,10
+cpu,p3,PASS,330,330,0,0,33,33,77619.5,cpu,184.026 mW,10
+gpu,p1,PASS,330,330,0,0,33,33,111886.0,gpu,1263.701 mW,10
+gpu,p2,PASS,340,340,0,0,34,34,129366.6,gpu,1263.755 mW,10
+gpu,p3,PASS,330,330,0,0,33,33,298378.2,gpu,1263.910 mW,10

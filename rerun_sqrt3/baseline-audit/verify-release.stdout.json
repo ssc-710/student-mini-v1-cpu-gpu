@@ -1,0 +1,30 @@
+{
+  "release_status": "PARTIAL_NOT_RELEASED",
+  "record_status": {
+    "cpu": {
+      "PASS": 1000
+    },
+    "gpu": {
+      "PASS": 1000
+    }
+  },
+  "evidence": {
+    "files": 2572,
+    "aliases": 1145,
+    "power_bindings_checked": 480,
+    "power_bindings_without_packaged_view": 0,
+    "missing_at_packaging": [],
+    "omitted_files": 0,
+    "omitted_bytes": 0
+  },
+  "problems": [
+    "manifest mismatch: sources/scripts/run_student_mini_native_gpu.py"
+  ],
+  "problem_count": 1,
+  "course": "cpu-gpu",
+  "platforms": [
+    "cpu",
+    "gpu"
+  ],
+  "candidates": 24
+}

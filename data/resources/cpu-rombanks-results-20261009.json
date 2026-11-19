@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/assemble_student_mini_cpu_rombanks_results.py",
+    "--replay",
+    "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af",
+    "--vectors",
+    "grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-225321",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "created_at": "2026-10-09T15:50:03.256013+00:00",
+  "exit_code": 0,
+  "memory_peak_bytes": 1980313600,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 19785128\nuser_usec 8884902\nsystem_usec 10900225\nnice_usec 0\nnr_periods 6222\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 772.5542697439996
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "release_id": "student-mini-v1",
+  "implementation_started_at": "2026-10-07T19:06:42+08:00",
+  "deadline_seconds": 3600,
+  "routes": {
+    "A": {"name": "CPU + 专用加速器", "platforms": ["cpu", "accelerator"], "baseline_count": 6, "optimization_chains": 2},
+    "B": {"name": "CPU + GPU", "platforms": ["cpu", "gpu"], "baseline_count": 6, "optimization_chains": 2}
+  },
+  "operators": ["p1", "p2", "p3"],
+  "layers": ["runtime", "algorithm", "microarchitecture", "physical"],
+  "seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "hardware": {
+    "cpu": {"core": "VexRiscv", "isa": "RV32IM", "source_profile": "VexRiscv_Full_4k", "cache_profile_kib": 4, "require_generated_i_d_cache_sizes": true},
+    "gpu": {"core": "Vortex", "cores": 1, "warps": 2, "threads": 4, "l2_kib": 0, "functional_backend": "simx", "performance_backend": "rtlsim"},
+    "accelerator": {"execution": "serial", "promotion_optimizations": false},
+    "attention": {"heads": 1, "nope_dim": 8, "rope_dim": 4, "index_dim": 8, "value_dim": 8, "topk_capacity": 4, "splits": [1, 2, 4], "page_sizes": [1, 4], "p2_partition": "contiguous-ceil-chunk; merge nonempty splits by ascending split ID"},
+    "moe": {"max_hidden": 16, "max_intermediate": 16, "routed_experts": 2, "active_experts": 1, "nano_shared_experts": 1},
+    "physical": {"profile": "mini", "platform": "sky130hd", "clock_period_ns": 10, "frequency_hz": 100000000, "unique_packages": 5}
+  },
+  "numeric": {
+    "input": "int8", "input_range": [-128, 127], "random_range": [-8, 7],
+    "accumulator": "int32", "wide_intermediates": "preserve-existing-contract",
+    "semantic_input": "bf16", "semantic_range": [-16, 16],
+    "score_delta": "signed-q5.11[-16,0]", "exp_output": "q1.15",
+    "scale": "finite-positive-fp32", "scale_range": [0.0000152587890625, 65536],
+    "route_weight_range": [0, 1], "requantization": "rne-then-saturate-int8",
+    "output": "bf16-rne", "hardware_tolerance": "bit-exact",
+    "semantic_tolerance": {"rtol": 0.02, "atol": 0.01},
+    "separate_semantic_quantization_error": true
+  },
+  "nano": {
+    "layers": 1, "hidden": 16, "heads": 1, "intermediate": 16,
+    "experts": 2, "active_experts": 1, "shared_experts": 1,
+    "vocab": 256, "context": 32, "max_generated_tokens": 12,
+    "training_device": "cpu", "training_seed": 1,
+    "domains": ["greeting", "identity", "weather-honest-fallback", "fixed-arithmetic"],
+    "held_out_question": "今天天气怎么样？", "runtime_answer_lookup": false
+  },
+  "resources": {"architecture": "x86_64", "host_ram_gib": 16, "validation_vcpus": 2, "validation_memory_gib": 8, "threads": 2, "physical_concurrency": 1, "physical_gpu_required": false},
+  "packaging": {"compressed_limit_bytes": 1073741824, "expanded_limit_bytes": 3221225472, "include_software_installers": false, "include_report_template": false, "include_docx_rubric": false, "require_complete_first_package": true}
+}

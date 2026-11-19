@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "total": 100,
+  "manual_review_required": true,
+  "report_template": false,
+  "dimensions": [
+    {"id": "report", "title": "技术报告与交付表达", "points": 20, "question": "别人能看懂、找到、检查你的工作吗？", "items": [
+      {"id": "report_story", "title": "叙述清晰", "points": 5, "evidence": "问题、工作、结论容易找到，不规定章节或页数。"},
+      {"id": "report_spec", "title": "条件与结果表述", "points": 5, "evidence": "SPEC、平台、版本、单位和实验条件准确区分。"},
+      {"id": "report_figures", "title": "图表与证据导航", "points": 5, "evidence": "图表服务解释，每个结论可定位原始数据，而非只展示漂亮截图。"},
+      {"id": "report_delivery", "title": "交付说明与引用", "points": 5, "evidence": "运行入口、个人贡献、引用和未完成事项明确。"}
+    ], "anchors": ["缺失", "零散", "基本可读", "清楚完整", "证据组织良好", "准确简洁，便于独立核查"]},
+    {"id": "correctness", "title": "合规与正确性", "points": 40, "question": "算对了吗？遵守约定吗？结果真实可复现吗？", "items": [
+      {"id": "contract", "title": "SPEC 合规", "points": 8, "evidence": "数据类型、数值范围、舍入/饱和、硬件/模型/测试版本，各 2 分。"},
+      {"id": "cases", "title": "算子正确性", "points": 16, "evidence": "基本功能、数值边界、布局/非法输入、协议/恢复，各 4 分。每类先按冻结 case×seed 通过率计算，再对六个 baseline 等权平均。缺项按失败，不准增加简单题稀释失败。"},
+      {"id": "nano", "title": "Nano 正确性与真实性", "points": 10, "evidence": "两平台各 5 分：回答合理性 2、事实诚实性 2、真实执行及来源 1。天气不能编造；所有问题都回答不知道也不能拿合理性满分。冻结模型的 token 一致性与开放表达的质量分别检查。"},
+      {"id": "reproduction", "title": "可复现性", "points": 6, "evidence": "环境与命令、seed 与完整输入、原始证据与 SHA，各 2 分。"}
+    ]},
+    {"id": "understanding", "title": "项目理解与研究能力", "points": 20, "question": "为什么会这样？你的证据排除了什么解释？", "items": [
+      {"id": "principles", "title": "原理理解", "points": 5, "evidence": "解释 P1/P2/P3、数值处理、数据流及平台差异。"},
+      {"id": "bottleneck", "title": "瓶颈判断", "points": 5, "evidence": "依据周期、访存、流水线或关键路径，不靠感觉。"},
+      {"id": "experiment", "title": "实验设计", "points": 5, "evidence": "控制变量，公平比较，检查替代解释和测量边界。"},
+      {"id": "reflection", "title": "反思与迁移", "points": 5, "evidence": "解释失败、资源代价、适用范围，并提出可验证预测。"}
+    ], "anchors": ["无证据", "复述术语", "局部理解", "正确解释", "对照验证", "提出并验证预测与边界"]},
+    {"id": "optimization", "title": "优化晋升与交互性能", "points": 20, "per_platform": 10, "question": "真的更快了吗？为什么？付出了什么代价？", "items": [
+      {"id": "operator_gain", "title": "算子实测收益", "points": 3, "per_platform": true, "evidence": "冻结性能板加权加速比提升：不足 2% 得 0；2%–不足 5% 得 1；5%–不足 15% 得 2；至少 15% 得 3。", "bands": [[0.02, 1], [0.05, 2], [0.15, 3]]},
+      {"id": "promotion", "title": "有效晋升与父链", "points": 2, "per_platform": true, "evidence": "缺失/无效 0；完整正确但收益不足的 HOLD 1；通过全部门槛且直接父链有效的 PROMOTE 2。"},
+      {"id": "attribution", "title": "优化因果解释", "points": 2, "per_platform": true, "evidence": "只有结论 0；机制与计数相符 1；有消融/对照排除替代解释 2。不用理解总分再次限制本项。"},
+      {"id": "nano_gain", "title": "Nano 交互收益", "points": 2, "per_platform": true, "evidence": "优化前确定主指标：P1 首 token、P2 每 token 解码、P3 完整会话。提升不足 2% 得 0；2%–不足 10% 得 1；至少 10% 得 2。所有三个指标仍需报告。", "bands": [[0.02, 1], [0.10, 2]]},
+      {"id": "side_effects", "title": "资源与副作用", "points": 1, "per_platform": true, "evidence": "完整报告面积、功耗/能耗、流量和回退，并满足约束得 1。"}
+    ]}
+  ],
+  "rules": [
+    "技术报告自由组织：没有报告模板，不按字数、页数、装饰、commit 数或代码量计分。",
+    "失败实验只要设计扎实、证据完整、解释有依据，也可以获得理解分。",
+    "任一 seed 失败，则该 case 不通过；平均误差为零不代表每次都正确。",
+    "相同输入、seed、工作量、时钟及模型；逐 case/seed 比值按冻结权重取几何平均。",
+    "GPU 计分数据来自 RTLSIM，不用 SimX 墙钟、主机 CPU 速度或本机 GPU 替代。",
+    "正确性、合同、物理或来源绑定失败的候选，其算子与 Nano 收益不计分。",
+    "其他冻结性能用例或受约束指标回退超过 5%，不能有效晋升。",
+    "错误候选不能替换正确 baseline；诚实保留失败不会抹去 baseline 已得分。",
+    "硬件未改可复用完全匹配的物理包；硬件改变必须重新验证。",
+    "真实性争议交教师人工复核，网页不自动判学术不端或整门课程零分。"
+  ],
+  "examples": [
+    {"title": "复现成功，优化未提速", "text": "可以得到报告、正确性和理解分；没有测到的收益不能领分。"},
+    {"title": "很快，但降低精度或少跑数据", "text": "比较不公平，收益无效，不能晋升。"},
+    {"title": "只快一点，但实验很扎实", "text": "可得有效晋升、归因和理解分；不要求速度翻倍才认可工作。"}
+  ]
+}

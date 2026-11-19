@@ -1,0 +1,73 @@
+{
+  "question": "根号5等于几？",
+  "prompt_tokens": [
+    1,
+    2,
+    5,
+    5,
+    5,
+    92,
+    16,
+    27,
+    111,
+    3
+  ],
+  "unknown_characters": [
+    "根",
+    "号",
+    "5"
+  ],
+  "image_sha256": "5e474b45641353fcbf37b76f930cacf3eb0855f1a9ec5466bc6c6fca14ebf758",
+  "model_ptq_sha256": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74",
+  "cpu_gpu_token_hidden_logits_equal": true,
+  "results": {
+    "cpu": {
+      "answer": "我无法获知实时天气。",
+      "tokens": [
+        67,
+        69,
+        84,
+        97,
+        90,
+        56,
+        71,
+        51,
+        82,
+        8,
+        4
+      ],
+      "generated_tokens_including_eos": 11,
+      "answer_tokens_excluding_eos": 10,
+      "qa_wall_seconds": 24.911344474000003,
+      "wall_tokens_per_second_including_eos": 0.44156589025055276,
+      "wall_answer_tokens_per_second": 0.4014235365914116,
+      "started_at_utc": "2026-11-06T14:23:20.128036+00:00",
+      "generation_boundary_wall_seconds": 13.379813874999996,
+      "generation_cycles": 13586292
+    },
+    "gpu": {
+      "answer": "我无法获知实时天气。",
+      "tokens": [
+        67,
+        69,
+        84,
+        97,
+        90,
+        56,
+        71,
+        51,
+        82,
+        8,
+        4
+      ],
+      "generated_tokens_including_eos": 11,
+      "answer_tokens_excluding_eos": 10,
+      "qa_wall_seconds": 14.946473924000003,
+      "wall_tokens_per_second_including_eos": 0.7359595350671284,
+      "wall_answer_tokens_per_second": 0.6690541227882986,
+      "started_at_utc": "2026-11-06T14:23:56.118921+00:00"
+    }
+  },
+  "timing_definition": "Monotonic host wall time from fresh process launch to reception of COMPLETE. Excludes build; CPU includes boot and UART state dump; GPU includes initialization/JIT/input upload/compute/readback/state dump. Not physical chip performance.",
+  "token_timing_limit": "Both targets dump tokens after generation. CPU has actual per-step simulated cycle counters; GPU has no per-step generation timing. Event timestamps are reception timestamps, not live token emission."
+}

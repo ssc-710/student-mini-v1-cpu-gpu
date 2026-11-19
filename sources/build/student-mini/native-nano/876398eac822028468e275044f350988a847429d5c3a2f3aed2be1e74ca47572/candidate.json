@@ -1,0 +1,5423 @@
+{
+  "status": "HOLD",
+  "target_execution": false,
+  "accepted_nano_sessions": 0,
+  "bindings": {
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/train_student_mini_native_nano.py": "e3c251d3d1c88957b435250661f5de85b4e0c4d0212de0f94ccda5a1e70f4b89",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/train_student_mini_nano.py": "f794316e3606288a34292261c159b68480ef9f8c0fdc42df2e1664021904c484",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/grading/student-mini/spec.json": "67c1bbfb43e90533463130202f30542fe65f0d2505f76f4a980b5bbe6162827b",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/student_mini_nano_model.py": "93fafe04d68a5b65efa65f6ee01fe8dc6d7e6d9dfe60d07b9446072890e7f2c8",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/student_mini_nano_runtime.py": "579ef159e3d323375560846c8d429fc30f9ff520d6d29bc24a72a352071bc219",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/nano_chat_model.py": "5ed4ef59f66b5e05b0cb6c5d2f6b435731ffc00dfee69d72c490fd2dfc3b333a",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/nano_chat_runtime.py": "14e9f8c1236f219724bfdc361c7e29810a367ef5b152d3cf30c25cb92a9d93b3",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/rtl_oracle.py": "ab727cedad15174a5aa44bed755d15eb191903ae4e06b49993538f399a6ee2a4",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/numeric.py": "fc53b48a3c00db221d617822694a9210bb17854d71199a669c23668c69570571",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/tiny_model.py": "edf2b36c44efafac24720a44ed7b0377f4b7ed5ada8543d93854bed5d1579303",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/litex_contract.py": "5df9b5deb48321bcef61dc63053605a7b6be329dc4874b429370c0e060a8c0fa",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/dsa.py": "35c9a14faf803bbf798de1cc84557e9f928911e02749f45a1d8fcce7ce557c9b",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/train_student_mini_exact_selection.py": "504f6d50c5e78ef3951e7a4c7697593369ddc7109e4cdf1ee8f14fc01890303a",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/native-nano/ab740c0a3200b4fcb4eb4d49cd9ec06cc057a8220f39dd1a49f5141d0351bf89/candidate.json": "d7984a6a259d458f2f8f3f5a4b886c964276e73466010db46a1096045c64ceb5",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/native-nano/ab740c0a3200b4fcb4eb4d49cd9ec06cc057a8220f39dd1a49f5141d0351bf89/inputs.json": "a5238394796b46fb4b267ff39c86a56d7a2dad53719f7d123a6a0517b568c858",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/audit_student_mini_native_quality.py": "213f6afb7329bde9b0e9d33079c44c6e9af130fa8779f4b4c0ad97d7014ea73b"
+  },
+  "kind": "teacher-native-exact-reference-candidate",
+  "parameters": 11344,
+  "lineage": {
+    "fp32": {
+      "checkpoint": "fp32.pt",
+      "sha256": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4",
+      "parent_fp32_sha256": null,
+      "selected_validation_passed": 8,
+      "selected_step": 2000,
+      "quantized": "ptq.npz",
+      "quantized_sha256": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74"
+    },
+    "qat": {
+      "checkpoint": "qat.pt",
+      "sha256": "b77571faa177832e4bc0a98c09e4de7480db84aeee31390b9d352d7481b80d43",
+      "parent_fp32_sha256": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4",
+      "selected_validation_passed": 7,
+      "selected_step": 500,
+      "quantized": "qat.npz",
+      "quantized_sha256": "d5df8e7d8f3edc9f56ad5d4c91fa51be9980038efce3c3e1b4ab043063de482e"
+    }
+  },
+  "quality": {
+    "fp32": [
+      {
+        "domain": "greeting",
+        "question": "你好呀",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "greeting",
+        "question": "早上好",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "你是谁呀",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "介绍自己",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "今天天气怎么样？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "今天会下雨吗？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "现在冷不冷？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于几？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1是多少？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      }
+    ],
+    "ptq_exact": [
+      {
+        "domain": "greeting",
+        "question": "你好呀",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "greeting",
+        "question": "早上好",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "你是谁呀",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "介绍自己",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "今天天气怎么样？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "今天会下雨吗？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "现在冷不冷？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于几？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1是多少？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      }
+    ],
+    "qat_exact": [
+      {
+        "domain": "greeting",
+        "question": "你好呀",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "greeting",
+        "question": "早上好",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨",
+        "answer": "你好！",
+        "tokens": [
+          23,
+          52,
+          109,
+          4
+        ],
+        "actual_text": "你好！",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "你是谁呀",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "identity",
+        "question": "介绍自己",
+        "answer": "我是小助手。",
+        "tokens": [
+          67,
+          73,
+          58,
+          30,
+          68,
+          8,
+          4
+        ],
+        "actual_text": "我是小助手。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "今天天气怎么样？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "今天会下雨吗？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "weather",
+        "question": "现在冷不冷？",
+        "answer": "我无法获知实时天气。",
+        "tokens": [
+          67,
+          69,
+          84,
+          97,
+          90,
+          56,
+          71,
+          51,
+          82,
+          8,
+          4
+        ],
+        "actual_text": "我无法获知实时天气。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于几？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1是多少？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一？",
+        "answer": "等于二。",
+        "tokens": [
+          92,
+          16,
+          15,
+          8,
+          4
+        ],
+        "actual_text": "等于二。",
+        "passed": true
+      }
+    ]
+  },
+  "training_log": [
+    {
+      "stage": "fp32",
+      "step": 100,
+      "loss": 0.09266051650047302,
+      "validation_passed": 6,
+      "validation_total": 8,
+      "checkpoint_sha256": "97ee6ca67c0245e237ea50d6e0808f3112a85fcc0a9f11ad10d9beace169ece5",
+      "export_sha256": "997c2fc071b608a3468c659fa003c714e78e22fc9aa936a8ce160f8d50c5de06",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": false
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": false
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 200,
+      "loss": 0.0108156967908144,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "ce50196b10e8ab769d3d1c36f668543c9d7626150512705cdca6fcf900f9e050",
+      "export_sha256": "6d8637d27e47d96bcab3439de8af2cb3026be9683457bdf7b4bf71f1b44c82f2",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 300,
+      "loss": 0.0053804535418748856,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "7f9ee2a85617e068a12602bcd059585abcdb11bba0883f0fdc6920a6b40ddbab",
+      "export_sha256": "2f72666d26428eed0a9a532763a669b605764e513fc56837ea316c22965fb30b",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 400,
+      "loss": 0.003376211039721966,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "444dbeff217209878040c2e4c9f6385b38ee3256d05b7413ed59b0b8268fe28c",
+      "export_sha256": "15b6bbe34e6644a94cd0c70edc83a0c43ad62038bfcea7919f24fe719b2c421c",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 500,
+      "loss": 0.0024215562734752893,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "687f525e761c6ff30c4e43fa3d2a254bbbc747e4f377c0c32ce11d1b55400735",
+      "export_sha256": "0de3b13887b30005dd271300f0239dc7a8d567f834fce72dc67b4b8379d3358b",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 600,
+      "loss": 0.0018447666661813855,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "f7926fcff2ce265ba128d9684932bfc6ccb7c1635a01e44e4257cc067cbee062",
+      "export_sha256": "39faa3616739c3e1033b8250513646b889a03e841cadd9d4d2eb17d9bba57c81",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 700,
+      "loss": 0.0014613865641877055,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "6f94f3dc71e11d82ca7ef06fb784b0b9fdc3db26e01c059baef3360549130d9d",
+      "export_sha256": "365a2479934e27ed49d7c8db1f7f028e129ed32b77fbda343536c32b675191f7",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 800,
+      "loss": 0.0011842744424939156,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "198338797fda428a5949d26c51e0a1e207622bf84990c96c52bb052b9fd89e11",
+      "export_sha256": "09d800ee4151bf879b464d2ee35aa33e3c796491d6fd6ef772dd929b63eab38e",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 900,
+      "loss": 0.0010107365669682622,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "680b0fffd9f09450d172ac520e3d8216276574eb61196771a797e2775f70b80a",
+      "export_sha256": "0bc8475c8ec9b364e9e816a632ccb277b7c6062496aba05a600370397b4a06e6",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1000,
+      "loss": 0.000896492216270417,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "85980747065ee5e3d51daba8f9365967e18c6651f84aa88c459b507a282072b9",
+      "export_sha256": "9be8f4c6762b216e7354f3bd7dc2bcc23c518e47d84a9551329b897f68d0058d",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1100,
+      "loss": 0.0007582098478451371,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "315c264f5c4900e22b068eb62523e88c578eeeaccaf18810f7f4eabeabdbbed3",
+      "export_sha256": "5bfeb7c52be266d7d682953376d52728569d586cc86df774c0e84b60b2287f02",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1200,
+      "loss": 0.0006858532433398068,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "6d635d07b226fd4adfe98e4ddfb9843ee6231ba2e5b8db7e56909ae8e339240c",
+      "export_sha256": "836cd9fb7ce1356c202e40d0eb63e9742c19008dc9361c83f63d262d5283d5f4",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1300,
+      "loss": 0.0006105929496698081,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "10ccdf28cda309b38c8d7f947fee08843acb34557d13cc72b0f304308cafd8a8",
+      "export_sha256": "a179169fead1d2bc9684660f43727e01b9f124ccf6ab27dfc01ae9e50c4f723d",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1400,
+      "loss": 0.0005599088035523891,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "323b07fe720dcca295eec28ab73f40e7d11e2b0cf441d06cba58f0e4b5145dc7",
+      "export_sha256": "ba5242dbdda53739d5704c00c6704ab7c49d1989065f07d69d357ebe6eada779",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1500,
+      "loss": 0.000507165037561208,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "5b37a3364d87ccb785f9927e2d0ad51392739ffb88914c72f7a1a31469cd3486",
+      "export_sha256": "94b0032df7587df53780a8b06bf4376d0197eed4940dc989e3b7d0b072426b5c",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1600,
+      "loss": 0.00045646578655578196,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "b732e9aed354b362e6577fab7848decceb09c8a9bde5efc9bb06dd7e8f555fce",
+      "export_sha256": "4aacf6c194b873e672671f2a9c642eb4f57078ad4181280c4c611487a17de441",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1700,
+      "loss": 0.00042265199590474367,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "9817aa910c1e1e97b4b3954975d2525132969f57a5795137f0bab57fd1c6bb5b",
+      "export_sha256": "8405f4270c6898a8489329c669850bc227d3d691e4e19305cdd3c598724768ce",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1800,
+      "loss": 0.000385837018257007,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "c297a625362e289a58e8d5aa56d5299d07cecd23ee736f0610580b85ecd5f567",
+      "export_sha256": "b3ae0d2ab18236aacfd55ac0f936c8fca75326f8e503307360e6fcc0a88967db",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 1900,
+      "loss": 0.0006278490764088929,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "4cec50653aeb5853062bae8b5a05486c6efd9b6922b48c66d6ab7007da4e4410",
+      "export_sha256": "9d74a288a6bf746753e5c163d6a4613eac0baf981b0f9ed299409975f6908b96",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2000,
+      "loss": 0.00035994319478049874,
+      "validation_passed": 8,
+      "validation_total": 8,
+      "checkpoint_sha256": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4",
+      "export_sha256": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2100,
+      "loss": 0.0002984439779538661,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "26b7a681061d1f00ee6f8fd2996fd065191f32d45e4d15b6e3befaef1a145a54",
+      "export_sha256": "a47ad3aa35d93fdadd724f7912a2173a3b617fe9cf63ca92c03eec8fbfff1633",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2200,
+      "loss": 0.0002650237875059247,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "807ea87b3058dae2c8c241d44e13e81f4e7e66c5262d3acb5ea42b1bd67f7366",
+      "export_sha256": "217d54624dee2da74228656eff2dc45cc8cb2a0a165830966fc18ca74e4afd9a",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2300,
+      "loss": 0.00024530745577067137,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "0813a8724f2ec25194445ced55f9cbb2f0e3b46ac7a0d27598c108e4e4a2279b",
+      "export_sha256": "064092f03e5d6e12bcc431419b50d21548e2421a84199b70d1f3b3b85baad8e3",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2400,
+      "loss": 0.0002177747228415683,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "332b6822f64d5798dd2f7a31eef90aec3130ea8b670b00c080bb240bb9ca16ee",
+      "export_sha256": "ab80c4b1152f3bc076fcecad3501eb2b3107be2f5306f98ca97e6897e3885f32",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2500,
+      "loss": 0.000211687438422814,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "5e5ec7e5fe404eca52e30f6951fd436a141402903a9e7e7cf14d3963a7f6d1a7",
+      "export_sha256": "3623b3e771baa2da7f1bd761483e5c3666b7d8b48e0a1d9fab6e5211046c1115",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2600,
+      "loss": 0.00020011590095236897,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "0db0762923fb7048cd9c1addc98fe3f6d2288f7b975c3d35d6154b94bc5e88e3",
+      "export_sha256": "e70aa3402fab119b7a34f1981b80546297a86567d60254960016662530f6b647",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2700,
+      "loss": 0.00019155336485709995,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "36dde5d4c4d4fdb21ebecfe0c27be08be95fcfd9201e92245c56c7ac0267668a",
+      "export_sha256": "80be41b89da01d398a2829807b7f931c3bd59670b191cfdbcb4d8d58690ddba9",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2800,
+      "loss": 0.00018547134823165834,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "9ec6cd2c58c6fb6cd2e86edc6d22be30db3901235a084c8cecc3e69a05defe09",
+      "export_sha256": "28996060a917c8fc175721b0f87e38965d700fe7fdef071b9387062c965f9cc9",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 2900,
+      "loss": 0.00017447893333155662,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "1fd2eb5441617f71c45b8b8101f0a22c2e8d9055a009bdfdeeaaf53cea912b50",
+      "export_sha256": "96606c616ae16cc582b9f8950e9db20cbf3b9c1313359c4d3a9cb3a3a89e9fe7",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "fp32",
+      "step": 3000,
+      "loss": 0.00016762180894147605,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "f395cbba9fcde073fe9dfd94b44cd5c09c16e3cf9be8ad1db25dba9afa7b8bdb",
+      "export_sha256": "59c304167b5589a76969f63af24641dd660deee9f2c05cd80e159bd7849c77e0",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "qat",
+      "step": 100,
+      "loss": 0.0005284980870783329,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "61c59d2430803a2c14f0975058263ff154e830c31ecbb07ce73c8ab9a812ed74",
+      "export_sha256": "d2d08776630d947baea9962c64a29a5f940533afaa039f55cc41c8dde502b510",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "你我无法获知实时天气。",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "qat",
+      "step": 200,
+      "loss": 0.00033493200317025185,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "8159725c42a5c9eb2488bff0dbca1d0b90667541480a3ff548070030caf07816",
+      "export_sha256": "135ed4c9a7c88a60d19455f75d0f56ad2932e7ce267a8fa7519a7d8b70566291",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "qat",
+      "step": 300,
+      "loss": 0.0001924556854646653,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "e01f3758c57056b11d632b7ed3faa18a01d000538ddb3576f2fd144e1cabbaea",
+      "export_sha256": "615d15bf585b25f22300a71eaf1f2c3cbcca05a689503b269fd5af4db18df957",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "你我无法获知实时天气。",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "qat",
+      "step": 400,
+      "loss": 0.00012621581845451146,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "11de6fd0f713bfac31d7f60904bb175e92f995896a883501e43023ef19ab5e90",
+      "export_sha256": "d403b185f77d596ec29bb96fea6289819a4f2e24cc9ada2caa53cf1624506ec5",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "stage": "qat",
+      "step": 500,
+      "loss": 9.943607437890023e-05,
+      "validation_passed": 7,
+      "validation_total": 8,
+      "checkpoint_sha256": "b77571faa177832e4bc0a98c09e4de7480db84aeee31390b9d352d7481b80d43",
+      "export_sha256": "d5df8e7d8f3edc9f56ad5d4c91fa51be9980038efce3c3e1b4ab043063de482e",
+      "validation": [
+        {
+          "domain": "greeting",
+          "question": "你好朋友呀",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "greeting",
+          "question": "午安",
+          "answer": "你好！",
+          "tokens": [
+            23,
+            52,
+            109,
+            4
+          ],
+          "actual_text": "你好！",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "请说你的名字",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "identity",
+          "question": "能介绍你吗",
+          "answer": "我是小助手。",
+          "tokens": [
+            67,
+            73,
+            58,
+            30,
+            68,
+            8,
+            4
+          ],
+          "actual_text": "我是小助手。",
+          "passed": true
+        },
+        {
+          "domain": "weather",
+          "question": "这会儿天气如何",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            23,
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "你我无法获知实时天气。",
+          "passed": false
+        },
+        {
+          "domain": "weather",
+          "question": "此刻天气怎样",
+          "answer": "我无法获知实时天气。",
+          "tokens": [
+            67,
+            69,
+            84,
+            97,
+            90,
+            56,
+            71,
+            51,
+            82,
+            8,
+            4
+          ],
+          "actual_text": "我无法获知实时天气。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "请计算1加1",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        },
+        {
+          "domain": "arithmetic",
+          "question": "告诉我一加一",
+          "answer": "等于二。",
+          "tokens": [
+            92,
+            16,
+            15,
+            8,
+            4
+          ],
+          "actual_text": "等于二。",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "boundary": "Previously observed test set is regression, not blind evidence; reference-only; platform execution remains mandatory",
+  "elapsed_seconds": 46.84379429,
+  "artifacts": {
+    "checkpoint-selection.json": "07d932fbca419c8eca7004d424bd6d48b76e4c82fe45704ce19dec0133c2a557",
+    "fp32-100.npz": "997c2fc071b608a3468c659fa003c714e78e22fc9aa936a8ce160f8d50c5de06",
+    "fp32-100.pt": "97ee6ca67c0245e237ea50d6e0808f3112a85fcc0a9f11ad10d9beace169ece5",
+    "fp32-1000.npz": "9be8f4c6762b216e7354f3bd7dc2bcc23c518e47d84a9551329b897f68d0058d",
+    "fp32-1000.pt": "85980747065ee5e3d51daba8f9365967e18c6651f84aa88c459b507a282072b9",
+    "fp32-1100.npz": "5bfeb7c52be266d7d682953376d52728569d586cc86df774c0e84b60b2287f02",
+    "fp32-1100.pt": "315c264f5c4900e22b068eb62523e88c578eeeaccaf18810f7f4eabeabdbbed3",
+    "fp32-1200.npz": "836cd9fb7ce1356c202e40d0eb63e9742c19008dc9361c83f63d262d5283d5f4",
+    "fp32-1200.pt": "6d635d07b226fd4adfe98e4ddfb9843ee6231ba2e5b8db7e56909ae8e339240c",
+    "fp32-1300.npz": "a179169fead1d2bc9684660f43727e01b9f124ccf6ab27dfc01ae9e50c4f723d",
+    "fp32-1300.pt": "10ccdf28cda309b38c8d7f947fee08843acb34557d13cc72b0f304308cafd8a8",
+    "fp32-1400.npz": "ba5242dbdda53739d5704c00c6704ab7c49d1989065f07d69d357ebe6eada779",
+    "fp32-1400.pt": "323b07fe720dcca295eec28ab73f40e7d11e2b0cf441d06cba58f0e4b5145dc7",
+    "fp32-1500.npz": "94b0032df7587df53780a8b06bf4376d0197eed4940dc989e3b7d0b072426b5c",
+    "fp32-1500.pt": "5b37a3364d87ccb785f9927e2d0ad51392739ffb88914c72f7a1a31469cd3486",
+    "fp32-1600.npz": "4aacf6c194b873e672671f2a9c642eb4f57078ad4181280c4c611487a17de441",
+    "fp32-1600.pt": "b732e9aed354b362e6577fab7848decceb09c8a9bde5efc9bb06dd7e8f555fce",
+    "fp32-1700.npz": "8405f4270c6898a8489329c669850bc227d3d691e4e19305cdd3c598724768ce",
+    "fp32-1700.pt": "9817aa910c1e1e97b4b3954975d2525132969f57a5795137f0bab57fd1c6bb5b",
+    "fp32-1800.npz": "b3ae0d2ab18236aacfd55ac0f936c8fca75326f8e503307360e6fcc0a88967db",
+    "fp32-1800.pt": "c297a625362e289a58e8d5aa56d5299d07cecd23ee736f0610580b85ecd5f567",
+    "fp32-1900.npz": "9d74a288a6bf746753e5c163d6a4613eac0baf981b0f9ed299409975f6908b96",
+    "fp32-1900.pt": "4cec50653aeb5853062bae8b5a05486c6efd9b6922b48c66d6ab7007da4e4410",
+    "fp32-200.npz": "6d8637d27e47d96bcab3439de8af2cb3026be9683457bdf7b4bf71f1b44c82f2",
+    "fp32-200.pt": "ce50196b10e8ab769d3d1c36f668543c9d7626150512705cdca6fcf900f9e050",
+    "fp32-2000.npz": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74",
+    "fp32-2000.pt": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4",
+    "fp32-2100.npz": "a47ad3aa35d93fdadd724f7912a2173a3b617fe9cf63ca92c03eec8fbfff1633",
+    "fp32-2100.pt": "26b7a681061d1f00ee6f8fd2996fd065191f32d45e4d15b6e3befaef1a145a54",
+    "fp32-2200.npz": "217d54624dee2da74228656eff2dc45cc8cb2a0a165830966fc18ca74e4afd9a",
+    "fp32-2200.pt": "807ea87b3058dae2c8c241d44e13e81f4e7e66c5262d3acb5ea42b1bd67f7366",
+    "fp32-2300.npz": "064092f03e5d6e12bcc431419b50d21548e2421a84199b70d1f3b3b85baad8e3",
+    "fp32-2300.pt": "0813a8724f2ec25194445ced55f9cbb2f0e3b46ac7a0d27598c108e4e4a2279b",
+    "fp32-2400.npz": "ab80c4b1152f3bc076fcecad3501eb2b3107be2f5306f98ca97e6897e3885f32",
+    "fp32-2400.pt": "332b6822f64d5798dd2f7a31eef90aec3130ea8b670b00c080bb240bb9ca16ee",
+    "fp32-2500.npz": "3623b3e771baa2da7f1bd761483e5c3666b7d8b48e0a1d9fab6e5211046c1115",
+    "fp32-2500.pt": "5e5ec7e5fe404eca52e30f6951fd436a141402903a9e7e7cf14d3963a7f6d1a7",
+    "fp32-2600.npz": "e70aa3402fab119b7a34f1981b80546297a86567d60254960016662530f6b647",
+    "fp32-2600.pt": "0db0762923fb7048cd9c1addc98fe3f6d2288f7b975c3d35d6154b94bc5e88e3",
+    "fp32-2700.npz": "80be41b89da01d398a2829807b7f931c3bd59670b191cfdbcb4d8d58690ddba9",
+    "fp32-2700.pt": "36dde5d4c4d4fdb21ebecfe0c27be08be95fcfd9201e92245c56c7ac0267668a",
+    "fp32-2800.npz": "28996060a917c8fc175721b0f87e38965d700fe7fdef071b9387062c965f9cc9",
+    "fp32-2800.pt": "9ec6cd2c58c6fb6cd2e86edc6d22be30db3901235a084c8cecc3e69a05defe09",
+    "fp32-2900.npz": "96606c616ae16cc582b9f8950e9db20cbf3b9c1313359c4d3a9cb3a3a89e9fe7",
+    "fp32-2900.pt": "1fd2eb5441617f71c45b8b8101f0a22c2e8d9055a009bdfdeeaaf53cea912b50",
+    "fp32-300.npz": "2f72666d26428eed0a9a532763a669b605764e513fc56837ea316c22965fb30b",
+    "fp32-300.pt": "7f9ee2a85617e068a12602bcd059585abcdb11bba0883f0fdc6920a6b40ddbab",
+    "fp32-3000.npz": "59c304167b5589a76969f63af24641dd660deee9f2c05cd80e159bd7849c77e0",
+    "fp32-3000.pt": "f395cbba9fcde073fe9dfd94b44cd5c09c16e3cf9be8ad1db25dba9afa7b8bdb",
+    "fp32-400.npz": "15b6bbe34e6644a94cd0c70edc83a0c43ad62038bfcea7919f24fe719b2c421c",
+    "fp32-400.pt": "444dbeff217209878040c2e4c9f6385b38ee3256d05b7413ed59b0b8268fe28c",
+    "fp32-500.npz": "0de3b13887b30005dd271300f0239dc7a8d567f834fce72dc67b4b8379d3358b",
+    "fp32-500.pt": "687f525e761c6ff30c4e43fa3d2a254bbbc747e4f377c0c32ce11d1b55400735",
+    "fp32-600.npz": "39faa3616739c3e1033b8250513646b889a03e841cadd9d4d2eb17d9bba57c81",
+    "fp32-600.pt": "f7926fcff2ce265ba128d9684932bfc6ccb7c1635a01e44e4257cc067cbee062",
+    "fp32-700.npz": "365a2479934e27ed49d7c8db1f7f028e129ed32b77fbda343536c32b675191f7",
+    "fp32-700.pt": "6f94f3dc71e11d82ca7ef06fb784b0b9fdc3db26e01c059baef3360549130d9d",
+    "fp32-800.npz": "09d800ee4151bf879b464d2ee35aa33e3c796491d6fd6ef772dd929b63eab38e",
+    "fp32-800.pt": "198338797fda428a5949d26c51e0a1e207622bf84990c96c52bb052b9fd89e11",
+    "fp32-900.npz": "0bc8475c8ec9b364e9e816a632ccb277b7c6062496aba05a600370397b4a06e6",
+    "fp32-900.pt": "680b0fffd9f09450d172ac520e3d8216276574eb61196771a797e2775f70b80a",
+    "fp32.pt": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4",
+    "heartbeat.json": "c5b4b529a2de4202554e1c00818d6d3bb7834771764642d2b44bbc3148b54938",
+    "inputs.json": "1907fbdd67992819acab34f0c0822556a06654fc567e341610b8c80be4ff9be1",
+    "ptq.npz": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74",
+    "qat-100.npz": "d2d08776630d947baea9962c64a29a5f940533afaa039f55cc41c8dde502b510",
+    "qat-100.pt": "61c59d2430803a2c14f0975058263ff154e830c31ecbb07ce73c8ab9a812ed74",
+    "qat-200.npz": "135ed4c9a7c88a60d19455f75d0f56ad2932e7ce267a8fa7519a7d8b70566291",
+    "qat-200.pt": "8159725c42a5c9eb2488bff0dbca1d0b90667541480a3ff548070030caf07816",
+    "qat-300.npz": "615d15bf585b25f22300a71eaf1f2c3cbcca05a689503b269fd5af4db18df957",
+    "qat-300.pt": "e01f3758c57056b11d632b7ed3faa18a01d000538ddb3576f2fd144e1cabbaea",
+    "qat-400.npz": "d403b185f77d596ec29bb96fea6289819a4f2e24cc9ada2caa53cf1624506ec5",
+    "qat-400.pt": "11de6fd0f713bfac31d7f60904bb175e92f995896a883501e43023ef19ab5e90",
+    "qat-500.npz": "d5df8e7d8f3edc9f56ad5d4c91fa51be9980038efce3c3e1b4ab043063de482e",
+    "qat-500.pt": "b77571faa177832e4bc0a98c09e4de7480db84aeee31390b9d352d7481b80d43",
+    "qat.npz": "d5df8e7d8f3edc9f56ad5d4c91fa51be9980038efce3c3e1b4ab043063de482e",
+    "qat.pt": "b77571faa177832e4bc0a98c09e4de7480db84aeee31390b9d352d7481b80d43"
+  }
+}

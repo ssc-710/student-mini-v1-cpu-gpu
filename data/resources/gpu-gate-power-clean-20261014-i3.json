@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_gpu_gate_power.py",
+    "--top",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51",
+    "--blocks",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a",
+    "--partition",
+    "build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b",
+    "--signoff",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-fullchip-sta/6a98e1be91b33e6eca2b55263483ed11eb7a2dd47b73b162cf779370b1fbefe9",
+    "--activity",
+    "build/student-mini/gpu-activity-rtl/919d1e7bbceda4974c7c1283120bbf97b2b4f13e196873c5d364335e87ba9863",
+    "--baseline",
+    "build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b",
+    "--vectors",
+    "grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-887675",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 64800,
+  "created_at": "2026-10-14T21:30:36.814688+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 3029778432,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 5331862165\nuser_usec 5270176056\nsystem_usec 61686109\nnice_usec 0\nnr_periods 59034\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 5903.4222042699985
+}

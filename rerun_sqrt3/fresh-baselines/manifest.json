@@ -1,0 +1,13 @@
+{
+  "count": 1000,
+  "bindings": {
+    "software/student_mini_scalar.c": "9df7244eb3077dca32dec59da773c26f8df2efc1824530144435ab6c0098e37f",
+    "software/include/student_mini_scalar.h": "293c697925faaafabc729fd580a202f718b0f8d48b94226b0d26ad1683f3a688",
+    "software/operator_scalar.c": "0033aeca594b264570c6d4ddfd03d11bb4c3c69e7d3b6238970a4120c065c910",
+    "software/include/numeric_luts.h": "e1772efaff856eeccf195157bd7940fb965a9a7ffaac99cac4cb81c2db39da17"
+  },
+  "artifacts": {
+    "inputs.bin": "baafeaeb6b75e03a6df72a6841d043140154d74bfcbede6011eaf69948c83bf6"
+  },
+  "golden_sha256": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974"
+}

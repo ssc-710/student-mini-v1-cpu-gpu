@@ -1,0 +1,105 @@
+{
+  "top": "vortex_physical_top",
+  "die": 7400.0,
+  "channel": 100.0,
+  "boxes": {
+    "0": [
+      15.64,
+      15.64,
+      3644.1200000000003,
+      3644.1200000000003
+    ],
+    "1": [
+      3753.6000000000004,
+      15.64,
+      7382.08,
+      3644.1200000000003
+    ],
+    "2": [
+      15.64,
+      3753.6000000000004,
+      3644.1200000000003,
+      7382.08
+    ],
+    "3": [
+      3753.6000000000004,
+      3753.6000000000004,
+      7382.08,
+      7382.08
+    ]
+  },
+  "blocks": {
+    "LL": {
+      "module": "vortex_physical_top_q0",
+      "origin": [
+        15.64,
+        15.64
+      ],
+      "size": [
+        3628.4800000000005,
+        3628.4800000000005
+      ],
+      "macros": 8,
+      "unmatched_ports": 0,
+      "vertical_edge_pins": 1802,
+      "horizontal_edge_pins": 2504,
+      "chip_edge_pins": 2363,
+      "budgets": 4304,
+      "cells": 129811
+    },
+    "LR": {
+      "module": "vortex_physical_top_q1",
+      "origin": [
+        3753.6000000000004,
+        15.64
+      ],
+      "size": [
+        3628.4799999999996,
+        3628.4800000000005
+      ],
+      "macros": 8,
+      "unmatched_ports": 0,
+      "vertical_edge_pins": 1829,
+      "horizontal_edge_pins": 1372,
+      "chip_edge_pins": 0,
+      "budgets": 3200,
+      "cells": 86206
+    },
+    "UL": {
+      "module": "vortex_physical_top_q2",
+      "origin": [
+        15.64,
+        3753.6000000000004
+      ],
+      "size": [
+        3628.4800000000005,
+        3628.4799999999996
+      ],
+      "macros": 17,
+      "unmatched_ports": 0,
+      "vertical_edge_pins": 1063,
+      "horizontal_edge_pins": 2537,
+      "chip_edge_pins": 0,
+      "budgets": 3598,
+      "cells": 83950
+    },
+    "UR": {
+      "module": "vortex_physical_top_q3",
+      "origin": [
+        3753.6000000000004,
+        3753.6000000000004
+      ],
+      "size": [
+        3628.4799999999996,
+        3628.4799999999996
+      ],
+      "macros": 4,
+      "unmatched_ports": 0,
+      "vertical_edge_pins": 1044,
+      "horizontal_edge_pins": 1346,
+      "chip_edge_pins": 0,
+      "budgets": 2389,
+      "cells": 68452
+    }
+  }
+}

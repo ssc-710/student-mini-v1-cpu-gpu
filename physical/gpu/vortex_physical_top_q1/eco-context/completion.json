@@ -1,0 +1,92 @@
+{
+  "status": "GPU_BLOCK_CONTEXT_PASS",
+  "bindings": {
+    "/home/soclab/.local/bin/sta": "3a7d2b0897ef99f636ed7b66071e78a79de68f10f88637067075acc9b79d1f17",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_dp_80x64_w4/vortex_dp_80x64_w4_TT_1p8V_25C.lib": "f4742fb2e9c42f374b530881b53e96ed7a0f75e9cf9f50ca78f69bd249965886",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_128x128_w16/vortex_sp_128x128_w16_TT_1p8V_25C.lib": "8b942ab557c8437788dc867f494ba31346ceef1e1182b3efe399018d15d46b5e",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x1024_w4/vortex_sp_32x1024_w4_TT_1p8V_25C.lib": "05a9685f05b441f680ad062074d647241ca649a3c608e8951e9408a04e53519c",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x256_w1/vortex_sp_32x256_w1_TT_1p8V_25C.lib": "bec3c12fae51e95a0c0615e3afd6cc12255bfa9db94d02ed2149f88bfcc2bd16",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x512_w4/vortex_sp_32x512_w4_TT_1p8V_25C.lib": "8fde4c93af38d6f39ed947faea8496e4d90ee3c5374e1b7f537d483e1f9d43ad",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_64x128_w8/vortex_sp_64x128_w8_TT_1p8V_25C.lib": "993bc3b30374cd2c5aa3cfa3a57ad6a891e9ea197bb3f461daf353278830f7eb",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/derive_student_mini_gpu_block_context.py": "f27011cf77fc1ea38f4f763c9d394931699af111fc36fce44aea5067fda4c59d",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/run_student_mini_gpu_fullchip_sta.py": "3602eec06ae8047723da6f987b043876ba115793252bb7b6584b9bc1534c965d",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/integration/student-mini/gpu_block_context.tcl": "683af12972a03f1ea2bed70d42c2359506a849d203e4013d50f6671b3a4aab9f",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/a674da82bde3113d835a2f1479aa7b85b15c749bceba70a16b163057c2d7a1ed/completion.json": "a2de2c9efde6d61919dd6f948a2aa45d444ce6e35896ff9432b408aa466f995a",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-a674da82bde3113d/6_final.v": "f861659e55732864c2d642064a4fecd3d95be7b6be84781c2ad1a67298f417c7",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-a674da82bde3113d/6_final.spef": "947c6ad61dd34fa4fbfd41539939c34abb6df4c0cd1fa896c7fcbfc3dd740c40",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-a674da82bde3113d/6_final.sdc": "786307b748e83ada7928d8bfe38f19f483e70b868a798a2cd920d4b6a54496ec",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json": "ffd2ad118e9bdf19473f1096a7ec770678ca52f30ed0c7e2e410ca6d7fa65472",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/6_final.v": "e76c47db887ce9b588e0b4c41ff48c4e592396ca98f9a98b6eb2e14183a52ce7",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/6_final.spef": "82e2720d8c38a69ffe73372fb87df31b44d014d60aa475448e732324f71207c6",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/e9f0cde51ef9dd125edafad8bf0b6614a037891568d03dad53287eef2483748c/completion.json": "45738ffe79d473654f6e91496e392e8de25d36a4d56565c17b817c10387ab147",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/6_final.v": "2f3cf5a19cdb9783cd37e8da057b3616a2997e10ed39e337e11d11520cce3416",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/6_final.spef": "1d46ebfd6de0075975b74a6edb0e109ef297570c1c59af081f0b53c3f6a305b6",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/940bd5533128d2b15c3bae5f2a38d1a1d3013c9fcc0de1045cd7dd06171752bf/completion.json": "c8f9288f51868d387ea5602762286faf734f51f96f871c6e3f1f02d68fc1f393",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/6_final.v": "b5aa9fd0a5f047346f0965d61f12a00548724c06ef33dfe51db961a5866e3392",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/6_final.spef": "b804cf0e9c939f1b67ec10793bb8c6e3d5f4b778638329bc0aa1195858510813",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json": "eea7a1ce88f3131689d3373a121827d51ad93827119925b81c5f2fbe3f39a114",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/6_final.v": "30cee57b8cd74ddffbd6b3e1c35d69c83ab29afd3eda5a798b2c6372211a8fdf",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/6_final.spef": "fb20bef871a4f079e7c84c5d3f0b4604599ea33be0a11bd84772eb7d1b92921c"
+  },
+  "top": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/a674da82bde3113d835a2f1479aa7b85b15c749bceba70a16b163057c2d7a1ed/completion.json",
+  "blocks": [
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/e9f0cde51ef9dd125edafad8bf0b6614a037891568d03dad53287eef2483748c/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/940bd5533128d2b15c3bae5f2a38d1a1d3013c9fcc0de1045cd7dd06171752bf/completion.json",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json"
+  ],
+  "elapsed_seconds": 130.1910465799956,
+  "peak_rss_bytes": 3207319552,
+  "contexts": {
+    "vortex_physical_top_q0_inst": {
+      "sdc": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-block-context/91bcb20ede62602eb17c0d9194becde741191330282fc3f84ac3dd23583426cf/vortex_physical_top_q0_inst.sdc",
+      "sha256": "b6acb5a0881ba1f4890ac9652989a2308dfbc451c868c603dd32d46f23821995",
+      "setup_margin_ns": 0.1,
+      "clock_rise_ns": 1.7543,
+      "clock_fall_ns": 6.619,
+      "clock_slew_rise_ns": 0.5098,
+      "clock_slew_fall_ns": 0.3286,
+      "timed_inputs": 3172,
+      "timed_outputs": 3488,
+      "untimed_ports": 8
+    },
+    "vortex_physical_top_q1_inst": {
+      "sdc": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-block-context/91bcb20ede62602eb17c0d9194becde741191330282fc3f84ac3dd23583426cf/vortex_physical_top_q1_inst.sdc",
+      "sha256": "86a9395d7d2395dd2acd2f7b3393ed086774568accf456958ca083301d682bc9",
+      "setup_margin_ns": 0.1,
+      "clock_rise_ns": 1.456,
+      "clock_fall_ns": 6.3985,
+      "clock_slew_rise_ns": 0.276,
+      "clock_slew_fall_ns": 0.1918,
+      "timed_inputs": 2037,
+      "timed_outputs": 1157,
+      "untimed_ports": 6
+    },
+    "vortex_physical_top_q2_inst": {
+      "sdc": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-block-context/91bcb20ede62602eb17c0d9194becde741191330282fc3f84ac3dd23583426cf/vortex_physical_top_q2_inst.sdc",
+      "sha256": "87c8e083c6bb759bb1c806ab6b07eea5a40c46a4acfc834dbbc006bb1815a923",
+      "setup_margin_ns": 0.1,
+      "clock_rise_ns": 1.4562,
+      "clock_fall_ns": 6.396,
+      "clock_slew_rise_ns": 0.2762,
+      "clock_slew_fall_ns": 0.1858,
+      "timed_inputs": 1692,
+      "timed_outputs": 1902,
+      "untimed_ports": 5
+    },
+    "vortex_physical_top_q3_inst": {
+      "sdc": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-block-context/91bcb20ede62602eb17c0d9194becde741191330282fc3f84ac3dd23583426cf/vortex_physical_top_q3_inst.sdc",
+      "sha256": "7996e10244ff0100f9991ada5d97924760680af86b78bf004690ab5a4d080796",
+      "setup_margin_ns": 0.1,
+      "clock_rise_ns": 1.4218,
+      "clock_fall_ns": 6.3751,
+      "clock_slew_rise_ns": 0.2233,
+      "clock_slew_fall_ns": 0.1503,
+      "timed_inputs": 966,
+      "timed_outputs": 1404,
+      "untimed_ports": 19
+    }
+  },
+  "reason": "chip timing context of every quadrant block written"
+}

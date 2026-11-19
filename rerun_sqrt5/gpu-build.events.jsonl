@@ -1,0 +1,79 @@
+{"seconds": 0.023169058999997105, "line": "Makefile:18: warning: overriding recipe for target '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/kernel_compat/libvortex2.a'"}
+{"seconds": 0.02456940899999438, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/tests/hip/common.mk:130: warning: ignoring old recipe for target '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/kernel_compat/libvortex2.a'"}
+{"seconds": 0.08440650599999344, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain/bin/riscv32-unknown-elf-g++ -march=rv32imaf -mabi=ilp32f -O2 -ffreestanding -fno-builtin -fno-exceptions -fno-rtti -c device_compat.cc -o device_compat.o"}
+{"seconds": 0.10959732899999608, "line": "CONFIGS=\"-DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_WARPS=2 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_FPU_TYPE=STD\"   make -C /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/stub DESTDIR=/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime"}
+{"seconds": 0.12598153099999365, "line": "make[1]: Entering directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/stub'"}
+{"seconds": 0.5730334049999897, "line": "mkdir -p /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/kernel_compat"}
+{"seconds": 0.5766118210000002, "line": "cp /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/kernel/libvortex2.a /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/kernel_compat/libvortex2.a"}
+{"seconds": 0.5909730419999875, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain/bin/riscv32-unknown-elf-gcc-ar rcs /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/kernel_compat/libvortex2.a device_compat.o"}
+{"seconds": 0.5958262809999866, "line": "make[1]: Nothing to be done for 'all'."}
+{"seconds": 0.5974190190000002, "line": "make[1]: Leaving directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/stub'"}
+{"seconds": 0.7672477209999897, "line": "HIP_CLANG_PATH=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/bin LD_LIBRARY_PATH=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/lib: /mnt/d/open-soc-ai-labs-vortex-tools/chipstar/bin/cucc -O2 -ffp-contract=off -fno-fast-math -fno-builtin -fno-builtin-abs -fno-builtin-labs -std=c++17 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_WARPS=2 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_FPU_TYPE=STD --offload-pointer-width=32 --hip-path=/mnt/d/open-soc-ai-labs-vortex-tools/chipstar -L/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/lib -Wl,-rpath,/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/lib -Wl,-rpath-link,/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime -Wl,-rpath-link,/mnt/d/open-soc-ai-labs-vortex-tools/pocl/lib -Wl,-rpath-link,/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/lib -O2 -I. /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu -o native_nano"}
+{"seconds": 1.0009611139999919, "line": "warning: cucc is a work-in-progress. It is incomplete and may behave incorrectly."}
+{"seconds": 1.0026046789999867, "line": "Please, report issues at https://github.com/CHIP-SPV/chipStar/issues."}
+{"seconds": 4.881188602999984, "line": "In file included from <built-in>:2:"}
+{"seconds": 4.882573223999984, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:817:4: warning: \"cudaFreeAsync is mapped to hipFree\" [-W#warnings]"}
+{"seconds": 4.883903560000007, "line": "  817 |   #warning \"cudaFreeAsync is mapped to hipFree\""}
+{"seconds": 4.885348363000006, "line": "      |    ^"}
+{"seconds": 4.886568543999985, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:868:4: warning: \"cudaMallocAsync is mapped to hipMalloc\" [-W#warnings]"}
+{"seconds": 4.887797896999999, "line": "  868 |   #warning \"cudaMallocAsync is mapped to hipMalloc\""}
+{"seconds": 4.889095522999995, "line": "      |    ^"}
+{"seconds": 4.8903348079999915, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:1408:10: warning: 'hipGetTextureReference' is deprecated: This API is marked as deprecated and might not be supported in future releases. For more details please refer https://github.com/ROCm/HIP/blob/develop/docs/reference/deprecated_api_list.md [-Wdeprecated-declarations]"}
+{"seconds": 4.891454059999987, "line": " 1408 |   return hipGetTextureReference(texref, symbol);"}
+{"seconds": 4.892724123999997, "line": "      |          ^"}
+{"seconds": 4.894467935999998, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:7506:1: note: 'hipGetTextureReference' has been explicitly marked deprecated here"}
+{"seconds": 4.895815200000001, "line": " 7506 | HIP_DEPRECATED(HIP_DEPRECATED_MSG)"}
+{"seconds": 4.897181349999997, "line": "      | ^"}
+{"seconds": 4.898541371000007, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:680:44: note: expanded from macro 'HIP_DEPRECATED'"}
+{"seconds": 4.8999806469999925, "line": "  680 | #define HIP_DEPRECATED(msg) __attribute__((deprecated(msg)))"}
+{"seconds": 4.901243465000007, "line": "      |                                            ^"}
+{"seconds": 4.926540908000007, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 4.928104807999986, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 4.929279137999984, "line": "      |     ^~~~~~~~ ~~~"}
+{"seconds": 4.930522315000005, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:19: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 4.931931232999986, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 4.933188700999992, "line": "      |                   ^~~~~~~~ ~~~~"}
+{"seconds": 4.934543219999981, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:34: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 4.935968260999985, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 4.937189341999996, "line": "      |                                  ^~~~~~~~ ~~~~~~~~~~~~"}
+{"seconds": 4.938326887999992, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:57: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 4.939656486000004, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 4.940886687999992, "line": "      |                                                         ^~~~~~~~ ~~~~~~~~~~~~~"}
+{"seconds": 4.942229722999983, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:81: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 4.943653887999986, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 4.945020123999981, "line": "      |                                                                                 ^~~~~~~~ ~~~~~~~~~~~~~"}
+{"seconds": 5.142599689999983, "line": "8 warnings generated when compiling for ."}
+{"seconds": 5.562612192000003, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/tools/llvm-vortex/bin/opt: WARNING: failed to create target machine for 'spirv32': unable to get target for 'spirv32', see --version and --triple."}
+{"seconds": 7.1796720859999965, "line": "In file included from <built-in>:2:"}
+{"seconds": 7.181557104999982, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:817:4: warning: \"cudaFreeAsync is mapped to hipFree\" [-W#warnings]"}
+{"seconds": 7.182763407999985, "line": "  817 |   #warning \"cudaFreeAsync is mapped to hipFree\""}
+{"seconds": 7.183982403000002, "line": "      |    ^"}
+{"seconds": 7.185361533000005, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:868:4: warning: \"cudaMallocAsync is mapped to hipMalloc\" [-W#warnings]"}
+{"seconds": 7.186570051999993, "line": "  868 |   #warning \"cudaMallocAsync is mapped to hipMalloc\""}
+{"seconds": 7.187765975000005, "line": "      |    ^"}
+{"seconds": 7.189146925000003, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:1408:10: warning: 'hipGetTextureReference' is deprecated: This API is marked as deprecated and might not be supported in future releases. For more details please refer https://github.com/ROCm/HIP/blob/develop/docs/reference/deprecated_api_list.md [-Wdeprecated-declarations]"}
+{"seconds": 7.190367440999992, "line": " 1408 |   return hipGetTextureReference(texref, symbol);"}
+{"seconds": 7.19156058099999, "line": "      |          ^"}
+{"seconds": 7.193143051000007, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:7506:1: note: 'hipGetTextureReference' has been explicitly marked deprecated here"}
+{"seconds": 7.194379130999991, "line": " 7506 | HIP_DEPRECATED(HIP_DEPRECATED_MSG)"}
+{"seconds": 7.195655457000001, "line": "      | ^"}
+{"seconds": 7.197095478999998, "line": "/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:680:44: note: expanded from macro 'HIP_DEPRECATED'"}
+{"seconds": 7.198197503999992, "line": "  680 | #define HIP_DEPRECATED(msg) __attribute__((deprecated(msg)))"}
+{"seconds": 7.199379952000001, "line": "      |                                            ^"}
+{"seconds": 7.209356682999996, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 7.210619846, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 7.211786607999997, "line": "      |     ^~~~~~~~ ~~~"}
+{"seconds": 7.213209524999982, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:19: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 7.214714154999982, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 7.2158046809999945, "line": "      |                   ^~~~~~~~ ~~~~"}
+{"seconds": 7.217623848999992, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:34: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 7.218929472999989, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 7.220013573000003, "line": "      |                                  ^~~~~~~~ ~~~~~~~~~~~~"}
+{"seconds": 7.221548987999981, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:57: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 7.222889027999983, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 7.223967530999985, "line": "      |                                                         ^~~~~~~~ ~~~~~~~~~~~~~"}
+{"seconds": 7.225431299999983, "line": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/8a487d978548155bc17cffce2698d9aee83a6dba0730c29a0ce4062bf1712825/native_nano.cu:627:81: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]"}
+{"seconds": 7.226692287000006, "line": "  627 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_result);cudaFree(device_status);"}
+{"seconds": 7.227828599999995, "line": "      |                                                                                 ^~~~~~~~ ~~~~~~~~~~~~~"}
+{"seconds": 7.3939588230000055, "line": "8 warnings generated when compiling for host."}
+{"seconds": 7.743240511999986, "line": ""}

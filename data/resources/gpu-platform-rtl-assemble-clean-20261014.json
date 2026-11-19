@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_gpu_platform_rtl.py",
+    "assemble",
+    "--work",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b",
+    "--vectors",
+    "grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl",
+    "--functional-results",
+    "grading/evidence/student-mini-v1/results/fdcebd58b1964f79de4e73bece63566ce6a4a4ac56531d4ac4ba05523a047957/results.json"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-120751",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 3600,
+  "created_at": "2026-10-14T06:21:45.547597+00:00",
+  "cpus": [
+    6,
+    7
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 175964160,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 4103865\nuser_usec 1991581\nsystem_usec 2112283\nnice_usec 0\nnr_periods 269\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 26.866952773001685
+}

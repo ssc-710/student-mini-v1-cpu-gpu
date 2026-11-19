@@ -1,0 +1,5 @@
+{
+  "original_sha256": "9df7244eb3077dca32dec59da773c26f8df2efc1824530144435ab6c0098e37f",
+  "candidate_sha256": "51b91370c079a32bb8de952b8094001528d9a24aad8386693f431abc79880771",
+  "change": "P3 row-major four-output blocking and scale hoisting; validation/P1/P2/primitive unchanged; general scale helper retained"
+}

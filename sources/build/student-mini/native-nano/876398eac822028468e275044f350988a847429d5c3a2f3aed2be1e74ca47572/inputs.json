@@ -1,0 +1,3844 @@
+{
+  "bindings": {
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/train_student_mini_native_nano.py": "e3c251d3d1c88957b435250661f5de85b4e0c4d0212de0f94ccda5a1e70f4b89",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/train_student_mini_nano.py": "f794316e3606288a34292261c159b68480ef9f8c0fdc42df2e1664021904c484",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/grading/student-mini/spec.json": "67c1bbfb43e90533463130202f30542fe65f0d2505f76f4a980b5bbe6162827b",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/student_mini_nano_model.py": "93fafe04d68a5b65efa65f6ee01fe8dc6d7e6d9dfe60d07b9446072890e7f2c8",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/student_mini_nano_runtime.py": "579ef159e3d323375560846c8d429fc30f9ff520d6d29bc24a72a352071bc219",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/nano_chat_model.py": "5ed4ef59f66b5e05b0cb6c5d2f6b435731ffc00dfee69d72c490fd2dfc3b333a",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/nano_chat_runtime.py": "14e9f8c1236f219724bfdc361c7e29810a367ef5b152d3cf30c25cb92a9d93b3",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/rtl_oracle.py": "ab727cedad15174a5aa44bed755d15eb191903ae4e06b49993538f399a6ee2a4",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/numeric.py": "fc53b48a3c00db221d617822694a9210bb17854d71199a669c23668c69570571",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/tiny_model.py": "edf2b36c44efafac24720a44ed7b0377f4b7ed5ada8543d93854bed5d1579303",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/litex_contract.py": "5df9b5deb48321bcef61dc63053605a7b6be329dc4874b429370c0e060a8c0fa",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/shared/python/soc_ai_labs/dsa.py": "35c9a14faf803bbf798de1cc84557e9f928911e02749f45a1d8fcce7ce557c9b",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/train_student_mini_exact_selection.py": "504f6d50c5e78ef3951e7a4c7697593369ddc7109e4cdf1ee8f14fc01890303a",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/native-nano/ab740c0a3200b4fcb4eb4d49cd9ec06cc057a8220f39dd1a49f5141d0351bf89/candidate.json": "d7984a6a259d458f2f8f3f5a4b886c964276e73466010db46a1096045c64ceb5",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/native-nano/ab740c0a3200b4fcb4eb4d49cd9ec06cc057a8220f39dd1a49f5141d0351bf89/inputs.json": "a5238394796b46fb4b267ff39c86a56d7a2dad53719f7d123a6a0517b568c858",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/audit_student_mini_native_quality.py": "213f6afb7329bde9b0e9d33079c44c6e9af130fa8779f4b4c0ad97d7014ea73b"
+  },
+  "seed": 1,
+  "device": "cpu",
+  "torch_version": "2.9.1+cpu",
+  "steps": 3000,
+  "qat_steps": 500,
+  "dataset": {
+    "train": [
+      {
+        "domain": "greeting",
+        "question": "你好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "您好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "您好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "您好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "您好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "您好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问您好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问您好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问您好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问您好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问您好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，您好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，您好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，您好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，您好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，您好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨你好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨你好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨你好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨你好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨你好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨你好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨你好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨你好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨你好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨你好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨你好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨你好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨你好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨你好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨你好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好朋友",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好朋友？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好朋友呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好朋友。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好朋友",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好朋友？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好朋友呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好朋友呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好朋友。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好朋友",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好朋友？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好朋友呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好朋友呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好朋友。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好啊",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好啊？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好啊呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好啊呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好啊。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好啊",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好啊？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好啊呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好啊呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问你好啊。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好啊",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好啊？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好啊呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好啊呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，你好啊。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "大家好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "大家好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "大家好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "大家好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "大家好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问大家好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问大家好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问大家好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问大家好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问大家好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，大家好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，大家好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，大家好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，大家好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，大家好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "向你问好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "向你问好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "向你问好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "向你问好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "向你问好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问向你问好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问向你问好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问向你问好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问向你问好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问向你问好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，向你问好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，向你问好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，向你问好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，向你问好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，向你问好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "哈喽",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "哈喽？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "哈喽呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "哈喽呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "哈喽。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问哈喽",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问哈喽？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问哈喽呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问哈喽呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问哈喽。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，哈喽",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，哈喽？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，哈喽呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，哈喽呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，哈喽。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨朋友",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨朋友？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨朋友呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨朋友呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨朋友。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨朋友",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨朋友？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨朋友呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨朋友呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问嗨朋友。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨朋友",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨朋友？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨朋友呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨朋友呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，嗨朋友。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "早安",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "早安？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "早安呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "早安呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "早安。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问早安",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问早安？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问早安呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问早安呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问早安。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，早安",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，早安？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，早安呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，早安呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，早安。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "晚上好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "晚上好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "晚上好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "晚上好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "晚上好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问晚上好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问晚上好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问晚上好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问晚上好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问晚上好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，晚上好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，晚上好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，晚上好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，晚上好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，晚上好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "下午好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "下午好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "下午好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "下午好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "下午好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问下午好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问下午好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问下午好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问下午好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "请问下午好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，下午好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，下午好？",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，下午好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，下午好呢",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "你好，下午好。",
+        "answer": "你好！"
+      },
+      {
+        "domain": "identity",
+        "question": "介绍你自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "介绍你自己？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "介绍你自己呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "介绍你自己呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "介绍你自己。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问介绍你自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问介绍你自己？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问介绍你自己呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问介绍你自己呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问介绍你自己。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，介绍你自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，介绍你自己？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，介绍你自己呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，介绍你自己呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，介绍你自己。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么名字？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么名字呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么名字呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么名字。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你叫什么名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你叫什么名字？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你叫什么名字呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你叫什么名字呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你叫什么名字。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你叫什么名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你叫什么名字？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你叫什么名字呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你叫什么名字呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你叫什么名字。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "告诉我你是谁",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "告诉我你是谁？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "告诉我你是谁呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "告诉我你是谁呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "告诉我你是谁。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问告诉我你是谁",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问告诉我你是谁？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问告诉我你是谁呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问告诉我你是谁呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问告诉我你是谁。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，告诉我你是谁",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，告诉我你是谁？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，告诉我你是谁呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，告诉我你是谁呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，告诉我你是谁。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请介绍自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请介绍自己？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请介绍自己呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请介绍自己呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请介绍自己。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请介绍自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请介绍自己？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请介绍自己呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请介绍自己呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请介绍自己。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请介绍自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请介绍自己？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请介绍自己呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请介绍自己呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请介绍自己。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的名字是啥",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的名字是啥？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的名字是啥呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的名字是啥呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的名字是啥。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的名字是啥",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的名字是啥？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的名字是啥呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的名字是啥呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的名字是啥。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的名字是啥",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的名字是啥？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的名字是啥呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的名字是啥呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的名字是啥。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么助手",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么助手？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么助手呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么助手呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么助手。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么助手",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么助手？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么助手呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么助手呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么助手。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么助手",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么助手？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么助手呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么助手呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么助手。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请问你的身份",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请问你的身份？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请问你的身份呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请问你的身份呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问请问你的身份。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请问你的身份",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请问你的身份？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请问你的身份呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请问你的身份呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，请问你的身份。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "说说你的名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "说说你的名字？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "说说你的名字呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "说说你的名字呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "说说你的名字。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问说说你的名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问说说你的名字？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问说说你的名字呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问说说你的名字呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问说说你的名字。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，说说你的名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，说说你的名字？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，说说你的名字呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，说说你的名字呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，说说你的名字。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "怎么称呼你",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "怎么称呼你？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "怎么称呼你呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "怎么称呼你呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "怎么称呼你。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问怎么称呼你",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问怎么称呼你？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问怎么称呼你呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问怎么称呼你呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问怎么称呼你。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，怎么称呼你",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，怎么称呼你？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，怎么称呼你呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，怎么称呼你呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，怎么称呼你。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是什么。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你是什么。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你是什么。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "自我介绍一下",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "自我介绍一下？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "自我介绍一下呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "自我介绍一下呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "自我介绍一下。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问自我介绍一下",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问自我介绍一下？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问自我介绍一下呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问自我介绍一下呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问自我介绍一下。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，自我介绍一下",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，自我介绍一下？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，自我介绍一下呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，自我介绍一下呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，自我介绍一下。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的身份是什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的身份是什么？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的身份是什么呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的身份是什么呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你的身份是什么。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份是什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份是什么？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份是什么呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份是什么呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "请问你的身份是什么。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的身份是什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的身份是什么？",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的身份是什么呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的身份是什么呢",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你好，你的身份是什么。",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气情况",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气情况？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气情况呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气情况呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气情况。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问请问天气情况",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问请问天气情况？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问请问天气情况呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问请问天气情况呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问请问天气情况。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，请问天气情况",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，请问天气情况？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，请问天气情况呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，请问天气情况呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，请问天气情况。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在天气如何",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在天气如何？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在天气如何呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在天气如何呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在天气如何。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在天气如何",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在天气如何？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在天气如何呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在天气如何呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在天气如何。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在天气如何",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在天气如何？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在天气如何呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在天气如何呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在天气如何。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面是什么天气",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面是什么天气？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面是什么天气呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面是什么天气呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面是什么天气。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面是什么天气",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面是什么天气？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面是什么天气呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面是什么天气呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面是什么天气。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面是什么天气",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面是什么天气？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面是什么天气呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面是什么天气呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面是什么天气。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气晴朗吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气晴朗吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气晴朗吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气晴朗吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气晴朗吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气晴朗吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气晴朗吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气晴朗吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气晴朗吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气晴朗吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气晴朗吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气晴朗吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气晴朗吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气晴朗吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气晴朗吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "明天会有雨吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "明天会有雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "明天会有雨吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "明天会有雨吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "明天会有雨吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问明天会有雨吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问明天会有雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问明天会有雨吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问明天会有雨吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问明天会有雨吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，明天会有雨吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，明天会有雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，明天会有雨吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，明天会有雨吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，明天会有雨吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面会下雨吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面会下雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面会下雨吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面会下雨吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面会下雨吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面会下雨吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面会下雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面会下雨吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面会下雨吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面会下雨吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面会下雨吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面会下雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面会下雨吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面会下雨吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面会下雨吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气冷吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气冷吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气冷吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气冷吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "天气冷吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气冷吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气冷吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气冷吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气冷吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问天气冷吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气冷吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气冷吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气冷吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气冷吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，天气冷吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "我想查询天气",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "我想查询天气？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "我想查询天气呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "我想查询天气呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "我想查询天气。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问我想查询天气",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问我想查询天气？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问我想查询天气呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问我想查询天气呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问我想查询天气。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，我想查询天气",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，我想查询天气？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，我想查询天气呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，我想查询天气呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，我想查询天气。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在是晴天吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在是晴天吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在是晴天吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在是晴天吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在是晴天吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在是晴天吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在是晴天吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在是晴天吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在是晴天吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问现在是晴天吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在是晴天吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在是晴天吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在是晴天吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在是晴天吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，现在是晴天吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天温度是多少",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天温度是多少？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天温度是多少呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天温度是多少呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天温度是多少。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问今天温度是多少",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问今天温度是多少？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问今天温度是多少呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问今天温度是多少呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问今天温度是多少。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，今天温度是多少",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，今天温度是多少？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，今天温度是多少呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，今天温度是多少呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，今天温度是多少。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面热不热",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面热不热？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面热不热呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面热不热呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "外面热不热。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面热不热",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面热不热？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面热不热呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面热不热呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问外面热不热。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面热不热",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面热不热？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面热不热呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面热不热呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，外面热不热。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "能告诉我天气吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "能告诉我天气吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "能告诉我天气吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "能告诉我天气吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "能告诉我天气吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问能告诉我天气吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问能告诉我天气吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问能告诉我天气吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问能告诉我天气吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "请问能告诉我天气吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，能告诉我天气吗",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，能告诉我天气吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，能告诉我天气吗呀",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，能告诉我天气吗呢",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "你好，能告诉我天气吗。",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一等于多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一等于多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一等于多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一等于多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一等于多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一等于多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一等于多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一等于多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一等于多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一等于多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "计算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "计算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "计算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "计算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "计算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问计算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问计算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问计算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问计算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问计算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，计算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，计算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，计算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，计算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，计算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1加1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1加1？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1加1呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1加1呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1加1。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1加1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1加1？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1加1呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1加1呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1加1。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1加1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1加1？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1加1呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1加1呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1加1。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加上一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加上一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加上一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加上一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加上一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加上一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加上一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加上一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加上一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加上一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加上一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加上一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加上一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加上一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加上一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "求一加一的和",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "求一加一的和？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "求一加一的和呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "求一加一的和呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "求一加一的和。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问求一加一的和",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问求一加一的和？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问求一加一的和呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问求一加一的和呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问求一加一的和。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，求一加一的和",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，求一加一的和？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，求一加一的和呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，求一加一的和呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，求一加一的和。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一与一相加",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一与一相加？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一与一相加呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一与一相加呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一与一相加。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一与一相加",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一与一相加？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一与一相加呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一与一相加呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一与一相加。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一与一相加",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一与一相加？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一与一相加呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一与一相加呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一与一相加。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "算算1+1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "算算1+1？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "算算1+1呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "算算1+1呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "算算1+1。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问算算1+1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问算算1+1？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问算算1+1呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问算算1+1呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问算算1+1。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，算算1+1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，算算1+1？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，算算1+1呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，算算1+1呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，算算1+1。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1等于多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1等于多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1等于多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1等于多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1等于多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1+1等于多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1+1等于多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1+1等于多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1+1等于多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问1+1等于多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1+1等于多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1+1等于多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1+1等于多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1+1等于多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，1+1等于多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一是多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一是多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一是多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一是多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一是多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一是多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一是多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一是多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一是多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一是多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一是多少",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一是多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一是多少呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一是多少呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，一加一是多少。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请问一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请问一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请问一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请问一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问请问一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请问一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请问一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请问一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请问一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，请问一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "帮我算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "帮我算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "帮我算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "帮我算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "帮我算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问帮我算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问帮我算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问帮我算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问帮我算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请问帮我算一加一。",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，帮我算一加一",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，帮我算一加一？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，帮我算一加一呀",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，帮我算一加一呢",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "你好，帮我算一加一。",
+        "answer": "等于二。"
+      }
+    ],
+    "validation": [
+      {
+        "domain": "greeting",
+        "question": "你好朋友呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "午安",
+        "answer": "你好！"
+      },
+      {
+        "domain": "identity",
+        "question": "请说你的名字",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "能介绍你吗",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "weather",
+        "question": "这会儿天气如何",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "此刻天气怎样",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "请计算1加1",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "告诉我一加一",
+        "answer": "等于二。"
+      }
+    ],
+    "test": [
+      {
+        "domain": "greeting",
+        "question": "你好呀",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "早上好",
+        "answer": "你好！"
+      },
+      {
+        "domain": "greeting",
+        "question": "嗨",
+        "answer": "你好！"
+      },
+      {
+        "domain": "identity",
+        "question": "你叫什么",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "你是谁呀",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "identity",
+        "question": "介绍自己",
+        "answer": "我是小助手。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天天气怎么样？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "今天会下雨吗？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "weather",
+        "question": "现在冷不冷？",
+        "answer": "我无法获知实时天气。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一等于几？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "1+1是多少？",
+        "answer": "等于二。"
+      },
+      {
+        "domain": "arithmetic",
+        "question": "一加一？",
+        "answer": "等于二。"
+      }
+    ]
+  },
+  "tokenizer": {
+    "special": {
+      "PAD": 0,
+      "BOS": 1,
+      "USER": 2,
+      "ASSISTANT": 3,
+      "EOS": 4,
+      "UNK": 5
+    },
+    "characters": {
+      "+": 6,
+      "1": 7,
+      "。": 8,
+      "一": 9,
+      "上": 10,
+      "下": 11,
+      "不": 12,
+      "与": 13,
+      "么": 14,
+      "二": 15,
+      "于": 16,
+      "什": 17,
+      "今": 18,
+      "介": 19,
+      "份": 20,
+      "会": 21,
+      "何": 22,
+      "你": 23,
+      "儿": 24,
+      "况": 25,
+      "冷": 26,
+      "几": 27,
+      "刻": 28,
+      "加": 29,
+      "助": 30,
+      "午": 31,
+      "友": 32,
+      "叫": 33,
+      "名": 34,
+      "向": 35,
+      "吗": 36,
+      "呀": 37,
+      "告": 38,
+      "呢": 39,
+      "呼": 40,
+      "和": 41,
+      "哈": 42,
+      "啊": 43,
+      "啥": 44,
+      "喽": 45,
+      "嗨": 46,
+      "在": 47,
+      "外": 48,
+      "多": 49,
+      "大": 50,
+      "天": 51,
+      "好": 52,
+      "如": 53,
+      "字": 54,
+      "安": 55,
+      "实": 56,
+      "家": 57,
+      "小": 58,
+      "少": 59,
+      "己": 60,
+      "帮": 61,
+      "度": 62,
+      "怎": 63,
+      "您": 64,
+      "情": 65,
+      "想": 66,
+      "我": 67,
+      "手": 68,
+      "无": 69,
+      "早": 70,
+      "时": 71,
+      "明": 72,
+      "是": 73,
+      "晚": 74,
+      "晴": 75,
+      "有": 76,
+      "朋": 77,
+      "朗": 78,
+      "查": 79,
+      "样": 80,
+      "此": 81,
+      "气": 82,
+      "求": 83,
+      "法": 84,
+      "温": 85,
+      "热": 86,
+      "现": 87,
+      "的": 88,
+      "相": 89,
+      "知": 90,
+      "称": 91,
+      "等": 92,
+      "算": 93,
+      "绍": 94,
+      "能": 95,
+      "自": 96,
+      "获": 97,
+      "计": 98,
+      "诉": 99,
+      "询": 100,
+      "说": 101,
+      "请": 102,
+      "谁": 103,
+      "身": 104,
+      "这": 105,
+      "问": 106,
+      "雨": 107,
+      "面": 108,
+      "！": 109,
+      "，": 110,
+      "？": 111
+    },
+    "vocab_capacity": 256
+  },
+  "checkpoint_selection": "exact exported validation only; loss breaks ties",
+  "parent_candidate_sha256": "d7984a6a259d458f2f8f3f5a4b886c964276e73466010db46a1096045c64ceb5"
+}

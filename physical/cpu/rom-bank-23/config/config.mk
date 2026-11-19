@@ -1,0 +1,12 @@
+export PLATFORM = sky130hd
+export DESIGN_NAME = student_mini_cpu_rom_bank_23
+export VERILOG_FILES = /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/cpu-rom-v2-boundary/e0d4eb6bb6f1305468af78c4ce7f6ca739515292732ffb878d6e952979268ad5/banks/student_mini_cpu_rom_bank_23.v
+export SDC_FILE = /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/dadccb5099bbcdda31ee0fe2fb55b34cc65e03e85ee2db15832c7d8d27a0f259/constraint.sdc
+export DIE_AREA = 0 0 300 300
+export CORE_AREA = 10 10 290 290
+export PLACE_DENSITY = 0.3
+export IO_CONSTRAINTS = /mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/rom-bank-physical/dadccb5099bbcdda31ee0fe2fb55b34cc65e03e85ee2db15832c7d8d27a0f259/io.tcl
+export SYNTH_MEMORY_MAX_BITS = 500000
+export NUM_CORES = 2
+export PDN_TCL = /mnt/c/Users/admin/Downloads/open-soc-ai-labs/integration/student-mini/rom_bank_pdn.tcl
+export MAX_ROUTING_LAYER = met4

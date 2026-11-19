@@ -1,0 +1,12 @@
+{
+  "vortex_upstream_commit": "b8c5a24336026d9d029a67197160eee6b017f262",
+  "softfloat_commit": "b51ef8f3201669b2288104c28546fc72532a1ea4",
+  "ramulator_commit": "e62c84a6f0e06566ba6e182d308434b4532068a5",
+  "archives_sha256": {
+    "softfloat-b51ef8f.tar.gz": "94f62d78ac68d8591a1f14f601224a9e011c1459211028030f3200f9e214d568",
+    "ramulator-e62c84a.tar.gz": "b2389de9a7ad4d2e5bfa464a2e50a6191722cd6066ac40319654f6343045e2aa",
+    "yaml-cpp-0.7.0.tar.gz": "43e6a9fcb146ad871515f0d0873947e5d497a1c9c60c58cb102a97b47208b7c3",
+    "spdlog-1.11.0.tar.gz": "ca5cae8d6cac15dae0ec63b21d6ad3530070650f68076f3a4a862ca293a858bb",
+    "argparse-2.9.tar.gz": "cd563293580b9dc592254df35b49cf8a19b4870ff5f611c7584cf967d9e6031e"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "question": "根号3等于几？",
+  "actual_tokenized_question": "[UNK][UNK][UNK]等于几？",
+  "backend": "Vortex SimX (not physical GPU)",
+  "tokens": [
+    67,
+    69,
+    84,
+    97,
+    90,
+    56,
+    71,
+    51,
+    82,
+    8,
+    4
+  ],
+  "answer": "我无法获知实时天气。",
+  "completion": [
+    "STUDENT_NATIVE_GPU status=0 count=11",
+    "STUDENT_NATIVE_GPU_COMPLETE count=11 p1=1 p2=10 p3=40"
+  ],
+  "cpu_gpu_tokens_equal": true,
+  "cpu_gpu_hidden_and_logits_equal": true,
+  "source_run": "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/simx-4d09b2e6c8231170652ba21fff4dd0180343188ef53886f7b6a6ee9149f81206",
+  "sha256": {
+    "completion.json": "5f217b62713aebf4aa75fa1f030e79c7bec5a012e1361a34dc5a7b7d91185915",
+    "cpu-run.log": "6122f02e8f2a219ed498cc5d4d11f9c45f9563fc79fbe7156d18ce1428ebfb2a",
+    "execute.log": "caf90c7dfe486734ca9118bb20dd43b2c4087a30ff6535383a29c887b669109f"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "seconds": 264.77275242699994,
+  "simulator_sha256": "70098066360a985412bed62b89bd3a260ec2287b53bf88a85e0483e14fd41fcd",
+  "input_sha256": "baafeaeb6b75e03a6df72a6841d043140154d74bfcbede6011eaf69948c83bf6",
+  "console_sha256": "826e7149d8d8b2d6b6eb14d92e838f1e0d009bccc69372c09c3af715b5464962",
+  "stopped_after_completion": true,
+  "exit_code": -15
+}

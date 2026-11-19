@@ -1,0 +1,40 @@
+{
+  "status": "PARTIAL_NOT_RELEASED",
+  "numeric_paths": {"path": "build/student-mini/numeric-path-witnesses/de0dc89af1215b07f93baf96eca4a39a47374e4ab4e797a3cb90844634ad06a4/completion.json", "sha256": "9534b1b28ed8bfab69579755274cf7d76525364fe3c0b77ef71875250f3c7436"},
+  "gpu_system_runtime": {"path": "build/student-mini/gpu-system-runtime-archives-20261008/audit.json", "sha256": "5cf90a4b4a27b09f6c1f715c1a633257d939e150cdfb7e20fa504aa9e0cf6c79"},
+  "gpu_runtime_archives": {"path": "build/student-mini/gpu-small-runtime-archives-20261008/audit.json", "sha256": "0f5d3071284eada394a3d0603b3853d09aaff83ab1b5021399ed5d0e67015a00"},
+  "gpu_compiler_archives": {"path": "build/student-mini/gpu-compiler-archives-20261008/audit.json", "sha256": "900468bf3df10197c228f0109eb7496101c6e0bc37d0645ba6d198ff51c57339"},
+  "pocl_relocation": {"path": "build/student-mini/pocl-upstream-relocation-20261008/audit.json", "sha256": "f18c6279400af4514df74790767cfd5a033a55fe80259c3b11b210d940abc2f2"},
+  "orfs_source": {"path": "build/student-mini/orfs-declared-export-audit-20261008/audit.json", "sha256": "fa4c22caafc45d3d18a2ed2f0b86e677f8dce8f083a13a26980e5ad117b85419"},
+  "system_runtime": {"path": "build/student-mini/system-elf-runtime-snapshot-20261008/audit.json", "sha256": "491133c756023d29a89536e2ebf51a5e4b18fbda4e26176efa3120567f35acc9"},
+  "vortex_verilator_archive": {"path": "build/student-mini/vortex-verilator-archive-audit-20261008/audit.json", "sha256": "de32b4d7074c77db21fff6b35b8541ce58e58a45d0c25d1a016d0b4c5812ce41"},
+  "openroad_source": {"path": "build/student-mini/openroad-source-export-audit-20261008/audit.json", "sha256": "8091f0329a687c43bc4bfc33ed7c158dd886ee0ccc3286924a37a32a3041c6c6"},
+  "ortools_archive": {"path": "build/student-mini/ortools-runtime-archive-audit-20261008/audit.json", "sha256": "ca528c598e702ad574658d1a978cc5964e73c9a3cef3c8c5d3fda6409d16c9b4"},
+  "oss_archive": {"path": "build/student-mini/oss-official-archive-verified-retry-20261008/audit.json", "sha256": "e1a121f8401389397b9c17f2c7c1f744a355e673bbe38a84cd5c14d5dc06c5b3"},
+  "litex_environment": {"path": "build/student-mini/litex-environment/6f8c6c9a4381ae980ef7864b8311ad2f2502eea7c35e48ed21275fed6af06020/completion.json", "sha256": "52b0e87b5547fd91acb9cf9a1153cd6189aa12b155c113a453b1a12cbfff84b6"},
+  "native_image": {"path": "build/student-mini/selected-native-image/7de13d49c71d6a6a0b2e816757d1eb8e6a2480d4438c6bd40f5fc84cf50a1a64/manifest.json", "sha256": "1c098fdc76b3fb3ae6eb788487f66bcf8cf7273ab8763e018f79709ee9de7b58"},
+  "native_numeric_sessions": [
+    {"path": "grading/evidence/student-mini-v1/selected-native-sessions/c37a180e23ccee2cbcd23ecb848e5fb437a5c8579137107d44166a680907bfe9/session.json", "sha256": "35e5bca6e98f11691ab2063fbf2e93785a860e4584e3513238615efa5a44c2a4"},
+    {"path": "grading/evidence/student-mini-v1/selected-native-sessions/6b18c9ac7a7d9eb16b6b9434e18fbd6528018acff754f20e1112ed3544023b8c/session.json", "sha256": "73e1fea51d05aea0b441e7b762f762269317089df5ab9ea2b33d78eca58e1ebf"},
+    {"path": "grading/evidence/student-mini-v1/selected-native-accelerator-sessions/0d45c7f79b5a734c5c2781217883883dab5434b4b1359c019b73af55bb3e6972/session.json", "sha256": "e1eb34deae47596fd22e27946b7baccd807e41e6a35e4b10444f89b347c9f834"}
+  ],
+  "litex_runtime": {"path": "build/student-mini/litex-runtime-lock-20261008/runtime-lock.json", "sha256": "76e31c14acd455cbaf428b724618a1e50f8d120559bb38f496a48d3334ab68b5"},
+  "tool_roles": {"path": "grading/evidence/student-mini-v1/environment/tool-roles-20261008.json", "sha256": "5ad90977ec33f04d44af544c91e89fac9aea68b318452e74b793e9043b5b721c"},
+  "python_lock": {"path": "build/student-mini/python-lock-20261007/python-lock.json", "sha256": "326942f4c8245b711cc5f91f1ff673319c3b02058627619104c297d80d11156f"},
+  "python_environment": {"path": "build/student-mini/python-env-qualified-20261007/validation.json", "sha256": "3000f526f9cda8392f1502300a7f18a0c7f7c50ee03d2f341bbc54d20dfa3ec5"},
+  "progress": {"path": "grading/evidence/student-mini-v1/progress/5f5760c2e095c83bfa4ba7d80fbc4e00cd9af3e5f8c4199b10967015e3843c12/progress.json", "sha256": "8ac90e35553b0a8f19d1ca924a498ad02abf512d88e99727ff734f85d2c52cfe"},
+  "teacher_lock": {"path": "build/student-mini/teacher-cpu-env-20261007/teacher-lock.json", "sha256": "ab555e69961bffaec421c8f69f6680b7c97d5f00c18ceff6963ed378285923b9"},
+  "teacher_qualification": {"path": "build/student-mini/teacher-qualification-20261008/qualification.json", "sha256": "f03fbfc4c6d76630dc03c4f2a0ac40795e43c9a31352503da506acc9ae3128f8"},
+  "semantic": {"path": "grading/evidence/student-mini-v1/semantic/2d89dd8ee85dc2ad2e716456b7ee72bd6686a245b2a500601ff3d3768127e0e0/semantic.json", "sha256": "50209badb42d7e083c6bfa5a4e7353daf715a45a8e07d17f4d2c73c6e102e2de"},
+  "cpu_core": {"path": "build/vexriscv-profiles/VexRiscv_Full_4k.v", "sha256": "1ee38dc4b0f3a2ce08de9df1f8e2bb8fceb628a89adb7f624f38ae44cebe9fcc", "i_cache_bytes": 4096, "d_cache_bytes": 4096},
+  "nano_candidate": {"path": "build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1e74ca47572/candidate.json", "sha256": "f7c5488c4a6958a58ef8c65ec8910c6ee1f29b12f1fdce6bd8fd17e7ba2869e7"},
+  "golden": "grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl",
+  "golden_sha256": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974",
+  "results": [
+    {"path": "grading/evidence/student-mini-v1/results/f5924a7bb5ff22f4a0f55993467849b2a40d73400b329bff633f434385c66e01/results.json", "sha256": "901c59a126def90bce77dcad811ee5839920fdfb43a1e5dca4f3aeb9f189b37c"},
+    {"path": "grading/evidence/student-mini-v1/results/301ee27074033c14340e14ffa3e20faa55dcc59650f34bca1496e9a66696d156/results.json", "sha256": "981d41d54e7c610aa55fcfa8c30f50243727082bdd66599c0ce9bd6e45980b06"},
+    {"path": "grading/evidence/student-mini-v1/results/37a8476369aae9674a85dd5743a7117dc77db2c237fc5ba0c15be2004a5d0b4b/results.json", "sha256": "611a98ac90ac0b7f3d4a35fb9c8c054a73d999000e43b7b4059d5ada4c2f540b"},
+    {"path": "grading/evidence/student-mini-v1/results/5350739617689239f91a40ce7435ccc73d21626df5500d8bcc97714cf6bf6179/results.json", "sha256": "b7b6b6811a4fd11b49c3f04ef8046e82ae3e6f31d30a1746ec299f552049b350"},
+    {"path": "grading/evidence/student-mini-v1/results/0e29ff3c212fbbd3ba4d39615fc5c9cd708418a7562d546d68bf71ae91195f93/results.json", "sha256": "5dccc9bd9900555317286d3d702a621661efc3919ab02f1273233de5c355b5f1"}
+  ]
+}

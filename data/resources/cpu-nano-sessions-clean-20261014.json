@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "env",
+    "PATH=/home/soclab/tools/verilator-5.040/bin:/home/soclab/.local/bin:/usr/local/bin:/usr/bin:/bin",
+    "build/student-mini/teacher-cpu-env-20261007/bin/python",
+    "scripts/run_student_mini_cpu_nano_sessions.py",
+    "--replay",
+    "build/student-mini/cpu-rombanks-replay/725079bec6529eff212698165f449f48f6da3ab5fabddf479d51ff397e95d0af",
+    "--old-image-dir",
+    "build/student-mini/native-image/dee82f17962a3df6d0a03567e2564f396e5fb096c2e659ee9bd7ff1169929659",
+    "--candidate",
+    "build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1e74ca47572/candidate.json"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-5489",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 21600,
+  "created_at": "2026-10-14T11:31:43.719039+00:00",
+  "cpus": [
+    2,
+    3
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 2014035968,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 5571495249\nuser_usec 5235332467\nsystem_usec 336162782\nnice_usec 0\nnr_periods 84554\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 8517.711002855
+}

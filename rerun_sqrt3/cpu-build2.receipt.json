@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/tmp/sqrt3-cpu-venv/bin/python",
+    "build_cpu.py"
+  ],
+  "cwd": "None",
+  "exit_code": 1,
+  "completion_marker_observed": false,
+  "elapsed_seconds": 245.49936413764954,
+  "started_at": "2026-11-06T08:45:03.827305+00:00",
+  "log_sha256": "2f097380ee0b58313f930d7d3bdb11e02f6b1bea2997637bb0b3badcc6b0b7aa"
+}

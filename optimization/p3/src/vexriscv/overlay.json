@@ -1,0 +1,22 @@
+{
+  "status": "SOURCE_OVERLAY_NOT_COMPILED_OR_QUALIFIED",
+  "source": "rerun_sqrt3\\cpu-venv\\lib\\python3.12\\site-packages\\pythondata_cpu_vexriscv\\verilog\\ext\\VexRiscv\\src\\main\\scala\\vexriscv\\plugin\\MulPlugin.scala",
+  "source_sha256": "050afe5d0b09a96d6a6698827b3f1da0381d94033d4db7972d790590178651e3",
+  "overlay_sha256": "bd03c78a6825eab50dac4471db3762a562366b05d1fac9b66f2fe87839deefa3",
+  "generator_sha256": "ee15d36e2a8c61d6f74c59dd611ec2de2abb30b6472a05b9ddddcde0ec7fe88a",
+  "finish_sha256": "caa77ba3915769e4e9abde260a65fcb4029f5cea7ce212806b6bffe617427f02",
+  "supported_generation": {
+    "inputBuffer": false,
+    "outputBuffer": false
+  },
+  "required_gates": [
+    "Scala compile/elaboration",
+    "matched baseline configuration",
+    "ISA decode/illegal trap",
+    "RAW/WAW/rd0/ordinary MUL",
+    "stall/removal/reset",
+    "P3 330",
+    "fresh root5 cycles",
+    "macro-aware physical backend"
+  ]
+}

@@ -1,0 +1,920 @@
+{
+  "status": "HOLD_NOT_FINAL_ACCEPTANCE",
+  "checkpoint": "D036",
+  "cpu": {
+    "fresh_full1000": {
+      "p1": {
+        "records": 330,
+        "matched": 330
+      },
+      "p2": {
+        "records": 340,
+        "matched": 340
+      },
+      "p3": {
+        "records": 330,
+        "matched": 330
+      },
+      "source": "runs/cpu-signedbias-full1000-20261114-01/result.json"
+    },
+    "fresh_prompt12_exact": 12,
+    "prompt12_speedup_vs_retained_parent": 1.0007352106430354,
+    "root5": {
+      "status": "GENERATED_CPU_ROOT5_TOKEN_STATE_EXACT_PASS",
+      "build": "cpu-p3-q6-signedbias-noinline-helper32-20261114-01",
+      "token_count": 11,
+      "generation_cycles": 10060264,
+      "p3_cycles": 585212,
+      "configured_clock_hz": 1000000,
+      "generation_simulated_seconds": 10.060264,
+      "generation_tokens_per_simulated_second": 1.0934106699386816,
+      "simulator_wall_seconds": 19.322483647000126,
+      "qa_host_wall_seconds": 18.122245405000058,
+      "bindings": {
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/bios/student_mini_native_nano.c": "ce42e4432e6ae01f39e9300c8411afc849eb802e348c5bb120a3d938107ec36c",
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/soc/software/bios/bios.bin": "7c1dae5426309d54b70715f02db1a4938b38346aa88a66f10f620adb8f59e1e9",
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/soc/software/bios/bios.elf": "ef2050bb128453f43e131c1e7455406c86934309cb99872b4b1dd5f5430ff49b",
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/soc/gateware/sim.v": "f422fb0cb82dde08357253a5938f482e9675da5c0f42411659edfd8cc0b075ba",
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/soc/gateware/sim_rom.init": "bbc286df58d04d3e8a85d8a21055fd072c007629fe2f15d7526c04fb120d713a",
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/soc/gateware/obj_dir/Vsim": "4a8f1154e4b9df31e48eb2a3dd431f7b77f1b3ba94a90e64234d4d2edfbf2de1",
+        "optimization/p3/build/cpu-p3-q6-signedbias-noinline-helper32-20261114-01/soc/gateware/sim_config.js": "e0e6119353e6ae983eec0ae56fdcec58a6ddc0236e6f16905618644481efa3b7",
+        "rerun_sqrt5/image/image.bin": "5e474b45641353fcbf37b76f930cacf3eb0855f1a9ec5466bc6c6fca14ebf758"
+      },
+      "log_sha256": "8003ddd8bbd54a13410baf71b12b8b232165874e673d8aa966fdf7492628eccd",
+      "instructions": 6879367,
+      "ibus_bytes": 783200,
+      "dbus_bytes": 1670678,
+      "dma_bytes": 0,
+      "token_stream": [
+        {
+          "step": 0,
+          "token": 67,
+          "elapsed_cycles": 3028806
+        },
+        {
+          "step": 1,
+          "token": 69,
+          "elapsed_cycles": 3651408
+        },
+        {
+          "step": 2,
+          "token": 84,
+          "elapsed_cycles": 4292124
+        },
+        {
+          "step": 3,
+          "token": 97,
+          "elapsed_cycles": 4949153
+        },
+        {
+          "step": 4,
+          "token": 90,
+          "elapsed_cycles": 5621463
+        },
+        {
+          "step": 5,
+          "token": 56,
+          "elapsed_cycles": 6315431
+        },
+        {
+          "step": 6,
+          "token": 71,
+          "elapsed_cycles": 7026601
+        },
+        {
+          "step": 7,
+          "token": 51,
+          "elapsed_cycles": 7757896
+        },
+        {
+          "step": 8,
+          "token": 82,
+          "elapsed_cycles": 8507778
+        },
+        {
+          "step": 9,
+          "token": 8,
+          "elapsed_cycles": 9273769
+        },
+        {
+          "step": 10,
+          "token": 4,
+          "elapsed_cycles": 10060030
+        }
+      ],
+      "time_to_first_token_simulated_seconds": 3.028806,
+      "decode_tokens_per_simulated_second": 1.4222274813033975,
+      "semantic_reference_sha256": "05330a3109204179cbc2d19e5c79fda0fe79281428a42bb3081bee299b04d663",
+      "runner_sha256": "bc0bd9c4460ce548105b353825c4a795711aa482b6e57d1690ebaa4732f349ed",
+      "limitation": "Fresh RTL generated with Spinal1.7; configured simulation time is not physical Fmax. Host Q&A interval includes UART/output buffering and simulator execution, not hardware throughput.",
+      "input_metadata_correction": "Historical run consumed correct root5 IDs; unused user.utf8 was stale. New clean image and fresh mapped replay are separately bound."
+    },
+    "byte4_wholecore_replay": "runs/cpu-q6-byte4-core-replay-20261114-01/result.json",
+    "root5_vs_immediate_block2_parent": {
+      "parent_generation_cycles": 10127934,
+      "candidate_generation_cycles": 10100173,
+      "cycle_reduction_percent": 0.27410328700798736,
+      "parent_p3_cycles": 614629,
+      "candidate_p3_cycles": 587070,
+      "p3_cycle_reduction_percent": 4.483843098844997,
+      "evidence": "runs/cpu-block2-q6i32-layout-repeat5-20261114-01/result.json",
+      "fresh_alternating_pairs": 5
+    },
+    "g2d4_layout40_experimental": {
+      "status": "ALL_ALGORITHM_TARGET_CORRECTNESS_SPEED_FRONTEND_GATES_PASS_PHYSICAL_HOLD",
+      "source": "src/p3_native_g2d4_q6_layout40_custom.c",
+      "parent_generation_cycles": 10100173,
+      "candidate_generation_cycles": 10067122,
+      "parent_p3_cycles": 587070,
+      "candidate_p3_cycles": 591871,
+      "generation_cycle_reduction_pct": 0.32723201869908564,
+      "scope": "Gate2/down4 explicit accumulation, align16/helper16 and two40byte jump-padding sites (scale_prepare and function return). Joint software/layout benefit, P3 phase regresses; not pure arithmetic speedup, not promoted.",
+      "fresh_prompt12_exact": 12,
+      "prompt12_aggregate_speedup_vs_retained_parent": 1.0033604079568075,
+      "prompt12_cycle_reduction_pct": 0.33491534349561203,
+      "full1000": {
+        "p1": 330,
+        "p2": 340,
+        "p3": 330
+      },
+      "allbank_defined_reads": 31977,
+      "allbank_core_generation_cycles": 10067122,
+      "root5": {
+        "status": "GENERATED_CPU_ROOT5_TOKEN_STATE_EXACT_PASS",
+        "build": "cpu-q6-g2d4-layout40-20261114-01",
+        "token_count": 11,
+        "generation_cycles": 10067122,
+        "p3_cycles": 591871,
+        "configured_clock_hz": 1000000,
+        "generation_simulated_seconds": 10.067122,
+        "generation_tokens_per_simulated_second": 1.092665808559785,
+        "simulator_wall_seconds": 17.87471404600001,
+        "qa_host_wall_seconds": 16.611909121999986,
+        "bindings": {
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/bios/student_mini_native_nano.c": "6591afabbe40b9858ee55bc22189aa43b1910c66bae2f1f77af6a477ab13692a",
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/soc/software/bios/bios.bin": "a128bab37d485d24ad363a7167c7dbeb05563e8d0c997c53288f843f7f7ac206",
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/soc/software/bios/bios.elf": "317601b8c2af9f120b97ef190fab9455d6196f8104f1b59098aa1f01871de13d",
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/soc/gateware/sim.v": "f422fb0cb82dde08357253a5938f482e9675da5c0f42411659edfd8cc0b075ba",
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/soc/gateware/sim_rom.init": "b9adc51f79e7fbed5802a09f9a740b22b5f81583cf84a94e335c891c9de2dc15",
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/soc/gateware/obj_dir/Vsim": "4a8f1154e4b9df31e48eb2a3dd431f7b77f1b3ba94a90e64234d4d2edfbf2de1",
+          "optimization/p3/build/cpu-q6-g2d4-layout40-20261114-01/soc/gateware/sim_config.js": "e0e6119353e6ae983eec0ae56fdcec58a6ddc0236e6f16905618644481efa3b7",
+          "rerun_sqrt5/image/image.bin": "5e474b45641353fcbf37b76f930cacf3eb0855f1a9ec5466bc6c6fca14ebf758"
+        },
+        "log_sha256": "214fd205324611a6effd1030ff4588a98ded570d1781126149044b9dc3dd292a",
+        "instructions": 6881537,
+        "ibus_bytes": 783200,
+        "dbus_bytes": 1670678,
+        "dma_bytes": 0,
+        "token_stream": [
+          {
+            "step": 0,
+            "token": 67,
+            "elapsed_cycles": 3032280
+          },
+          {
+            "step": 1,
+            "token": 69,
+            "elapsed_cycles": 3655209
+          },
+          {
+            "step": 2,
+            "token": 84,
+            "elapsed_cycles": 4296310
+          },
+          {
+            "step": 3,
+            "token": 97,
+            "elapsed_cycles": 4953685
+          },
+          {
+            "step": 4,
+            "token": 90,
+            "elapsed_cycles": 5626349
+          },
+          {
+            "step": 5,
+            "token": 56,
+            "elapsed_cycles": 6320587
+          },
+          {
+            "step": 6,
+            "token": 71,
+            "elapsed_cycles": 7032077
+          },
+          {
+            "step": 7,
+            "token": 51,
+            "elapsed_cycles": 7763647
+          },
+          {
+            "step": 8,
+            "token": 82,
+            "elapsed_cycles": 8513861
+          },
+          {
+            "step": 9,
+            "token": 8,
+            "elapsed_cycles": 9280186
+          },
+          {
+            "step": 10,
+            "token": 4,
+            "elapsed_cycles": 10066888
+          }
+        ],
+        "time_to_first_token_simulated_seconds": 3.03228,
+        "decode_tokens_per_simulated_second": 1.421543318405233,
+        "semantic_reference_sha256": "05330a3109204179cbc2d19e5c79fda0fe79281428a42bb3081bee299b04d663",
+        "runner_sha256": "bc0bd9c4460ce548105b353825c4a795711aa482b6e57d1690ebaa4732f349ed",
+        "limitation": "Fresh RTL generated with Spinal1.7; configured simulation time is not physical Fmax. Host Q&A interval includes UART/output buffering and simulator execution, not hardware throughput."
+      },
+      "changed_firmware_banks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "scale_product_edges": "4 actual RTL status4/count0 +326 frozen regression PASS",
+      "independent_full1000": "reviews/d033-20261114/full1000-result.json",
+      "helper_exhaustive_integers": 2147483649
+    },
+    "signedbias_current": {
+      "status": "ALGORITHM_PLATFORM_PROMPT12_TWO_LOCAL_BANKS_PASS_WHOLECORE_PHYSICAL_HOLD",
+      "build": "cpu-p3-q6-signedbias-noinline-helper32-20261114-01",
+      "root5": "runs/cpu-p3-q6-signedbias-noinline-helper32-20261114-01-root5/result.json",
+      "generation_cycles": 10060264,
+      "p3_cycles": 585212,
+      "firmware_bytes": 42636,
+      "firmware_sha256": "7c1dae5426309d54b70715f02db1a4938b38346aa88a66f10f620adb8f59e1e9",
+      "changed_banks_vs_g2d4": [
+        5,
+        20
+      ],
+      "scope": "Algorithm and code layout joint speedup. Two changed local ROM banks have route/antenna/driver/SAT/loaded-SPEF-STA evidence; other banks and wholecore still require independent physical completion.",
+      "prompt12_speedup_vs_retained_g2d4": 1.0007352106430354,
+      "physical_changed_banks": "reviews/d034-signedbias-physical/result.json"
+    },
+    "root5_q6_retained": {
+      "status": "GENERATED_CPU_ROOT5_TOKEN_STATE_EXACT_PASS",
+      "build": "cpu-block2-q6i32-layout-20261114-01",
+      "token_count": 11,
+      "generation_cycles": 10100173,
+      "p3_cycles": 587070,
+      "configured_clock_hz": 1000000,
+      "generation_simulated_seconds": 10.100173,
+      "generation_tokens_per_simulated_second": 1.0890902561768,
+      "simulator_wall_seconds": 18.79554387999997,
+      "qa_host_wall_seconds": 17.56488772700004,
+      "bindings": {
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/bios/student_mini_native_nano.c": "2339a20b73428f37df65693c58507fcff03edb835b68b804573eec816c1d825f",
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/soc/software/bios/bios.bin": "99cc6a92964b9d5f8c9d280732af07ad6a1926b4272cd1c04258a7b42110111d",
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/soc/software/bios/bios.elf": "5297cbd72246692b05b58c6d0b7e3fc8d21840163830be70b73f0202ecb7ec50",
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/soc/gateware/sim.v": "f422fb0cb82dde08357253a5938f482e9675da5c0f42411659edfd8cc0b075ba",
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/soc/gateware/sim_rom.init": "2add8ec10a962f8b5dc28c710964677e312c3469c07ab17a0ab6710018e26cad",
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/soc/gateware/obj_dir/Vsim": "4a8f1154e4b9df31e48eb2a3dd431f7b77f1b3ba94a90e64234d4d2edfbf2de1",
+        "optimization/p3/build/cpu-block2-q6i32-layout-20261114-01/soc/gateware/sim_config.js": "e0e6119353e6ae983eec0ae56fdcec58a6ddc0236e6f16905618644481efa3b7",
+        "rerun_sqrt5/image/image.bin": "5e474b45641353fcbf37b76f930cacf3eb0855f1a9ec5466bc6c6fca14ebf758"
+      },
+      "log_sha256": "69eadac33436b639880e3f079aeb295eec4bd7a074f3ce034a8f0778455cd184",
+      "instructions": 6892777,
+      "ibus_bytes": 819328,
+      "dbus_bytes": 1680054,
+      "dma_bytes": 0,
+      "token_stream": [
+        {
+          "step": 0,
+          "token": 67,
+          "elapsed_cycles": 3043190
+        },
+        {
+          "step": 1,
+          "token": 69,
+          "elapsed_cycles": 3668097
+        },
+        {
+          "step": 2,
+          "token": 84,
+          "elapsed_cycles": 4311040
+        },
+        {
+          "step": 3,
+          "token": 97,
+          "elapsed_cycles": 4970573
+        },
+        {
+          "step": 4,
+          "token": 90,
+          "elapsed_cycles": 5645668
+        },
+        {
+          "step": 5,
+          "token": 56,
+          "elapsed_cycles": 6342034
+        },
+        {
+          "step": 6,
+          "token": 71,
+          "elapsed_cycles": 7055843
+        },
+        {
+          "step": 7,
+          "token": 51,
+          "elapsed_cycles": 7789626
+        },
+        {
+          "step": 8,
+          "token": 82,
+          "elapsed_cycles": 8542285
+        },
+        {
+          "step": 9,
+          "token": 8,
+          "elapsed_cycles": 9310838
+        },
+        {
+          "step": 10,
+          "token": 4,
+          "elapsed_cycles": 10099942
+        }
+      ],
+      "time_to_first_token_simulated_seconds": 3.04319,
+      "decode_tokens_per_simulated_second": 1.4170825331540629,
+      "semantic_reference_sha256": "05330a3109204179cbc2d19e5c79fda0fe79281428a42bb3081bee299b04d663",
+      "runner_sha256": "bc0bd9c4460ce548105b353825c4a795711aa482b6e57d1690ebaa4732f349ed",
+      "limitation": "Fresh RTL generated with Spinal1.7; configured simulation time is not physical Fmax. Host Q&A interval includes UART/output buffering and simulator execution, not hardware throughput."
+    },
+    "all21_mapped_read_proof": "physical/cpu-signedbias-all21-mapped-20261114-01/verilator-read-proof/result.json",
+    "all21_mapped_synthesis": "physical/cpu-signedbias-all21-mapped-20261114-01/result.json",
+    "all21_mapped_synthesis_status": "All21 sequentialSAT PASS; originalvvp300s timeout preserved; same netlist/testbench compiled31977reads PASS",
+    "all21_mapped_core_replay": {
+      "status": "ALL21_MAPPED_ROM_WHOLECPU_FRESH_ROOT5_TOKEN_STATE_CYCLES_PASS",
+      "result": "runs/cpu-signedbias-all21-mapped-core-replay-20261114-01/result.json",
+      "generation_cycles": 10060264,
+      "host_timing": {
+        "completion_marker_observed": true,
+        "exit_code": -15,
+        "elapsed_seconds": 222.55658259300003,
+        "qa_host_wall_seconds": 213.90273368199996,
+        "log_sha256": "abd556ce968ce84ab862c5f606b7e4b4471d6720158f3c8a8b7bd6ef0c489792",
+        "limitation": "Host line-arrival interval includes simulation/UART/output buffering; hardware generation latency must use nonzero cycle CSR at configured clock.",
+        "events_source": "runs/cpu-signedbias-all21-mapped-core-replay-20261114-01/execute.receipt.json"
+      }
+    },
+    "primary_latest_clean_root5_result": "runs/cpu-signedbias-all21-mapped-core-replay-20261114-01/result.json",
+    "latest_three_routed_core_replay": "runs/cpu-signedbias-3routed-core-replay-20261114-01/result.json",
+    "latest_four_routed_core_replay": "runs/cpu-signedbias-4routed-core-replay-20261114-01/result.json",
+    "latest_five_routed_core_replay": "runs/cpu-signedbias-5routed-core-replay-20261114-01/result.json",
+    "latest_bank20_drive4_core_replay": "runs/cpu-signedbias-5routed-bank20-drive4-replay-d042-20261114-02/result.json"
+  },
+  "gpu": {
+    "root5": {
+      "status": "FRESH_CLEAN_INPUT_GPU_SIMX_TOKEN_STATE_TIMING_PASS",
+      "question": "根号5等于几？",
+      "answer": "我无法获知实时天气。",
+      "tokens": [
+        67,
+        69,
+        84,
+        97,
+        90,
+        56,
+        71,
+        51,
+        82,
+        8,
+        4
+      ],
+      "token_stream": [
+        {
+          "step": 0,
+          "token": 67,
+          "elapsed_cycles": 4228877
+        },
+        {
+          "step": 1,
+          "token": 69,
+          "elapsed_cycles": 5102852
+        },
+        {
+          "step": 2,
+          "token": 84,
+          "elapsed_cycles": 6000126
+        },
+        {
+          "step": 3,
+          "token": 97,
+          "elapsed_cycles": 6922778
+        },
+        {
+          "step": 4,
+          "token": 90,
+          "elapsed_cycles": 7865267
+        },
+        {
+          "step": 5,
+          "token": 56,
+          "elapsed_cycles": 8834618
+        },
+        {
+          "step": 6,
+          "token": 71,
+          "elapsed_cycles": 9828545
+        },
+        {
+          "step": 7,
+          "token": 51,
+          "elapsed_cycles": 10845582
+        },
+        {
+          "step": 8,
+          "token": 82,
+          "elapsed_cycles": 11892614
+        },
+        {
+          "step": 9,
+          "token": 8,
+          "elapsed_cycles": 12959509
+        },
+        {
+          "step": 10,
+          "token": 4,
+          "elapsed_cycles": 14054015
+        }
+      ],
+      "generation_cycles": 14055069,
+      "p3_cycles": 2243858,
+      "configured_physical_clock_hz": null,
+      "physical_generation_seconds": null,
+      "host_qa_compute_readback_seconds": 10.467320119,
+      "host_kernel_sync_seconds": 10.44960187,
+      "simulator_process_seconds": 11.455209907999915,
+      "host_tokens_per_second_including_eos": 1.0508898051214746,
+      "tokens_per_million_cycles": 0.7826357878428061,
+      "scope": "Fresh target execution with retained compiled candidate and private JIT cache. Physical clock unavailable. Host QA includes runtime input/kernel/readback; process includes startup/output. No parent pairing. Input user text19bytes in24bytes allocation/header unchanged.",
+      "bindings": {
+        "optimization/p3/runs/gpu-clean-root5-20261114-01/result.json": "492591ce0713d6cd49c12ca43e1fbb045678753f4a5df69c3402d79b31d2814d",
+        "optimization/p3/runs/gpu-clean-root5-20261114-01/execute.log": "548eba4e221dbc53f33a777ced3f429828d063dc4ae12f69490cf807d8331d6c",
+        "optimization/p3/inputs/root5-clean-20261114-01/image.bin": "9d30e181ec709efb7c80b17716368bedf724d2d532f1e9e972c1d740c03dc2d7",
+        "optimization/p3/inputs/root5-clean-20261114-01/audit.json": "6dc42b54aaab823d3fe1c4277f59fb88ee7cc0e0f0f594b3ab0011ecaefff62d",
+        "optimization/p3/inputs/root5-clean-20261114-01/manifest.json": "ca0e25048eca857777dd193b4c1792c4e7b70e56c511d64b7edf928c6df5f3ee"
+      }
+    },
+    "fault_status_scope": "Fresh same livehost/runtime all330 golden exact with actualDCR fault mapping, device raw320exact/hostAPI330exact. Frozen protocol honored. Singledevice serial qualificationadapter, AFU/physical separate.",
+    "live_probe_result": "runs/gpu-native-live-status-probe-20261114-01/result.json",
+    "live330_result": "runs/gpu-native-live-status-all330-20261114-01/result.json",
+    "live330_audit": "runs/gpu-native-live-status-all330-20261114-01/audit.json",
+    "live330_independent_audit": "reviews/live-status-review-20261114/all330-result.json",
+    "d034_fresh_root5": "runs/gpu-d034-root5-fresh-20261114-01/timing.json",
+    "root5_retained_prior_clean_input": {
+      "status": "FRESH_Q6_FINAL_ROOT5_SIMX_TOKEN_STATE_SHA_PASS_PHYSICAL_HOLD",
+      "question": "根号5等于几？",
+      "answer": "我无法获知实时天气。",
+      "tokens": [
+        67,
+        69,
+        84,
+        97,
+        90,
+        56,
+        71,
+        51,
+        82,
+        8,
+        4
+      ],
+      "generation_cycles": 14055069,
+      "p3_cycles": 2243858,
+      "tokens_per_million_cycles": 0.7826357878428061,
+      "generation_clock_hz": null,
+      "generation_seconds": null,
+      "qa_compute_readback_seconds": 9.979420691,
+      "host_tokens_per_second_including_eos": 1.1022683921843697,
+      "host_tokens_per_second_excluding_eos": 1.0020621747130634,
+      "kernel_sync_seconds": 9.961433852,
+      "process_wall_seconds": 10.503836775999844,
+      "token_cycles": [
+        {
+          "step": 0,
+          "cycles": 4228877
+        },
+        {
+          "step": 1,
+          "cycles": 5102852
+        },
+        {
+          "step": 2,
+          "cycles": 6000126
+        },
+        {
+          "step": 3,
+          "cycles": 6922778
+        },
+        {
+          "step": 4,
+          "cycles": 7865267
+        },
+        {
+          "step": 5,
+          "cycles": 8834618
+        },
+        {
+          "step": 6,
+          "cycles": 9828545
+        },
+        {
+          "step": 7,
+          "cycles": 10845582
+        },
+        {
+          "step": 8,
+          "cycles": 11892614
+        },
+        {
+          "step": 9,
+          "cycles": 12959509
+        },
+        {
+          "step": 10,
+          "cycles": 14054015
+        }
+      ],
+      "bindings": {
+        "optimization/p3/runs/gpu-q6-final-root5-20261114-01/result.json": "8ffcda6e933a7e4ec335851253cf34845057c52ec33ed569cf45db58306d78c6",
+        "optimization/p3/runs/gpu-q6-final-root5-20261114-01/4T-C32/execute.log": "227835e3bc5409ce1c6114ef1612c32c311738f861f8713e8183e17887b64835",
+        "optimization/p3/src/p3_gpu_4thread_fixed_q6_i32_fenced.cuh": "492ebfc0caa3aca48ec0110b76a571ea42167d91c230d3a58070087cf6535f42"
+      },
+      "limitation": "Fresh actual SimX execution. Cycles have no signed-off physical clock; tokens/million cycles is not physical tokens/s. Host QA includes runtime/JIT/input/readback, excludes token printing. 11 includes EOS,10 excludes EOS. Native fault adapter qualification separate."
+    },
+    "current_clean_input_result": "runs/gpu-clean-root5-20261114-01/result.json"
+  },
+  "cleanup_new_bytes": 2060215047,
+  "bindings": {
+    "runs/cpu-q6-layout-final-root5-20261114-01/result.json": "bafd61292ab8ed5fef9eb4f5b09a83f003c888d467b0d9852f5569b1bac4e31e",
+    "runs/gpu-q6-final-root5-20261114-01/timing.json": "e55f5a0f0108e22e82a7da5abdc6e6c1f614250397388579e729fa48e0401391",
+    "runs/cpu-q6-layout-sessions12-20261114-01/audit.json": "ecd35deec13908ed9013f540a7d44cc3d3eb34ade17a902abdef7508cc460a95",
+    "runs/cpu-q6-full1000-20261114-02/audit.json": "791dcf36ffc2017e9f20001ed031052f0c01d05fe812e6a75c3892bbec15e9ab",
+    "runs/cpu-native-dispatch-q6-layout-20261114-01/result.json": "559c763e775cf25a9c66c927e2ddf577f188a029bc646e06b336c622e3d93348",
+    "runs/cpu-native-protocol-q6-layout-20261114-01/result.json": "371d012da0e9ae2b4c10f88a665203cd37284902ae34cb87b1ddfbe60c2c205c",
+    "runs/cpu-q6-layout-product-edges-20261114-01/result.json": "630c4fff3b3bbda040a79cec5d33e23cc2061a5665567bddac046d75f52535e7",
+    "cleanup/historical-cpu-libc-duplicates-20261114/result.json": "23c220887bbe2f03747d7bcf723769337ebe15b6a01bd3240b3c9b0c5bd0aa9d",
+    "runs/gpu-native-live-status-all330-20261114-01/result.json": "3140fb65e97f8785a3da9beb2d96c2c71d9e84cb59dc9b2fe660292ad52a8d67",
+    "runs/gpu-native-live-status-all330-20261114-01/audit.json": "3ae4bbdf332025ba938d422a163a9b8db59352f13b7fc97c85547424525863f8",
+    "physical/cpu-q6-rom-bank5-area250-20261114-01/audit.json": "1d244b2a10512f2c39bea34b41e3b4bd634d215f8b96d62efabc5c8ee6363123",
+    "tools/physical/openram/locked-source-binding.json": "a93bc476d60ec2600a3dfafda67c25385d0fb1e183f5bd4f75e35b5b5b7278eb",
+    "tools/physical/openram/git-source-binding.json": "13c02d03a6b27b132d2807f24b1b8f9194df5055fcb176c8918e08a258511bf2",
+    "cleanup/gpu-live330-cache-20261114/result.json": "5f8a4e11461455a70517623c93e5a499ccda0f2d4c72c7c3089b43392b340514",
+    "reviews/live-status-review-20261114/all330-result.json": "3a73cd7d8ff4295a4348cb9f9951626d5961f71e51e4ecca96007ecc06e2b35e",
+    "runs/cpu-q6-g2d4-layout40-repeat3-20261114-01/result.json": "aa20ee95c12b7c2aeb848d96202fe9987eeb0e7430499c6f11d21a961b975965",
+    "runs/cpu-native-dispatch-g2d4-layout40-20261114-01/result.json": "04b16513e90da6b2777a1c2833f1813c76c0afcb78cb0e6573a1e37cfbf7dffa",
+    "runs/cpu-native-protocol-g2d4-layout40-20261114-01/result.json": "d5d43e047a6b160872f241f0792c2dc25bb7ac4f436a74c9efb4d91c1f564d9c",
+    "runs/cpu-g2d4-layout40-sessions12-20261114-01/audit.json": "d0aa33b552b52c1fd123ba430bab4c93755b41f4e5d60aa62237afe8deab6256",
+    "runs/cpu-g2d4-full1000-20261114-01/result.json": "c101ac82f2de0865ddb751e8bb02a4de77ba304b2bbde94387de7ad77abbea11",
+    "runs/cpu-g2d4-byte4-core-replay-20261114-01/result.json": "c09d749f4736b9548aafc9adc961cd4c27711253e59a2bfdc151f5a1df7d5485",
+    "physical/cpu-g2d4-rom-allbanks-byte4-proof-20261114-01/integration-preparation.json": "b2b3c940f8b349775f023f29c605297e1fdc05a647daf2f570ef9c5ca02516e5",
+    "runs/cpu-g2d4-layout40-firmware-map-20261114-01/result.json": "71cdb1f1595fb5624c80042c40312a26fc8c9d0bc311245da0b468a10a75b3a9",
+    "cleanup/cpu-g2d4-probe-duplicates-20261114-01/result.json": "973d49220aa833c007691f8d07b6e785fd28b5ff61b8c8bd146a617dfe3fd71f",
+    "reviews/d033-20261114/gpu-post-cleanup-result.json": "4fb5212d9dffe9164dc9233403b07ee93a0f525f7ad089c480ba826e95f29779",
+    "reviews/d033-20261114/qualification-result.json": "3b9c663ff0c196d65f42cb5abe996c6ba610ae29f56418fd7a73b3c491051640",
+    "reviews/d033-20261114/repeat3-result.json": "23bad308e9d59c2abb2a5347f830688b916eff1561f582e3995b24158068096d",
+    "reviews/d033-20261114/sessions12-result.json": "d0aa33b552b52c1fd123ba430bab4c93755b41f4e5d60aa62237afe8deab6256",
+    "reviews/d033-20261114/full1000-result.json": "101e6f14183d81222284ff627eb5c7bd2bae88b95baa4266b52a04aebc1f46b5",
+    "runs/cpu-g2d4-layout40-product-edges-20261114-01/result.json": "8a5df4c5de17d069df896f135121d11c1d41e0d340e636c68fca5ba543716b62",
+    "runs/openram-locked-files-20261114-01/result.json": "01a9f09070eede6ff7e139b89c4de7f0c41370f67facc30e470d93c50d29a02b",
+    "runs/openram-pdk-range-recovery-20261114-01/result.json": "4aa13e2550ecc8f5df4e1a6d3230b033e3c4b52ac2e36b8234e109d7095fedfb",
+    "runs/openram-sky130-init-20261114-04/result.json": "edf2fedaa886fcb35ed97764cdc720878354968725ee4dc806710574491703e1",
+    "cleanup/g2d4-byte4-core-pch-20261114-01/result.json": "f91c711d3366cd6bd4a51ad118a01afa321fe64e32f6daeca2a8a3925773724e",
+    "runs/cpu-g2d4-byte4-core-replay-20261114-01/binary-binding-audit.json": "ed1fb77b53ac9f481c1fde6b9982e1dbfd772c62ddfb1b31fef02d695b22869a",
+    "runs/cpu-g2d4-full1000-20261114-01/performance-scope.json": "bf1e9300a8293d0080a1ded75443e6018ddd99937affb9be4a4ab052a7d11916",
+    "runs/openram-sky130-functional-smoke-20261114-02/result.json": "339d719bbcfb4c5a6483213c88e238f03b7b854a5210c01213bdc41d6549443e",
+    "cleanup/predecode333-fanout-json-20261114-01/result.json": "ca2238b36516c6d48c97484eba528057c39e4599f069ffc96b490bc7b74a384d",
+    "physical/cpu-q6-bank5-predecode333-20261114-01/fullroute-audit.json": "120275e2364be50bf19ec556ee68fd8075182f2eb97c6ae2e112b027e343d580",
+    "reviews/backend-q6-predecode333-20261114.md": "5fa959d99cbaa89c0fdb63e06c137c1701290e81db0469c725b8680ceac4f14b",
+    "runs/cpu-g2d4-layout40-exhaustive-20261114-01/result.json": "16e46192f3887afb93a48642afe524a739891c525344be5f4fac08f9875de9d2",
+    "reviews/d033-20261114/core-replay-result.json": "e7287c82de602bfb6e1d65a46828567e303f8c476d4f53ffc5762d3093f7bd9b",
+    "reviews/d033-20261114/edges-result.json": "c197389ed76d3f10e6fe50f7541586764340cd912f7e073460e47af6b5bf9ed1",
+    "runs/openram-current-tool-bindings-20261114-01/result.json": "b1ad7a8c9e79417e2f6ebed2a2b4f61b9d9845b7ec407923ca14d90cd5181641",
+    "physical/cpu-g2d4-bank5-predecode333-local-pair-20261114-01/result.json": "326ef6a2fd72656b3ea77e691861923e8502cfdf3970f751150cc7c44d260398",
+    "physical/cpu-g2d4-rom-bank5-byte4-20261114-01/result.json": "f69f9cc7a1f1daabf60ff7903f372557932152fddcd8bf00216e3b074e3ad756",
+    "physical/cpu-g2d4-bank5-predecode333-local-20261114-01/result.json": "0d31c8aae10b3471ea816018318a47106fdaa28698f89f15b0f6b630208d9be1",
+    "reviews/openram-recovery-20261114.json": "087ef792b8e39947501cfc088772a9f8f676b51edc74b64fe879284095372fc0",
+    "runs/openram-current-source-audit-20261114-01/result.json": "8e281851f2d0839adf48270e49a3004a07108b42b428c03ecd88628944d45633",
+    "physical/cpu-g2d4-bank5-predecode333-local-pair-20261114-01/audit.json": "8ec294e6cf850092416f7653cb8d57761fbdeac1bf8b4a133af3ea07bbf5fd44",
+    "physical/cpu-g2d4-bank5-predecode423-local-20261114-01/result.json": "479619a66c2196731052e2f799ea3321e762782226259159db878931540174fa",
+    "physical/cpu-g2d4-bank5-predecode423-local-route-20261114-01/result.json": "4384ae04286542a73ddce6bbf9e14a4aa9c9d6918934333786388d231735e523",
+    "reviews/backend-g2d4-predecode423-20261114.md": "fa1fde40c55199381f669f7697c683de375bb4adb834fa6160df3c2a1e0ae5da",
+    "reviews/d033-20261114/cleanup-primary-audit.json": "68c6e5ba47ef286db67498e8ab5a4e4d5532354fdd7a13683030017829bf53e9",
+    "runs/openram-small-gds-structure-audit-20261114-01/result.json": "551de11720cdb26fed624c4d185de2b5b6094d6a931b3e72fa48f84438e8e9f7",
+    "physical/cpu-g2d4-bank5-predecode333-local-fullpair-20261114-01/result.json": "ab40bc69be441ddd2488626acf1c0cd9dfb18e8c3f6b14e49bfa03b9db1a29e1",
+    "physical/cpu-g2d4-bank5-predecode333-local-fullpair-20261114-01/audit.json": "5bd5c4c11a6495810b5cd91c037b016b02198cbca8d7db335e23360a0457ea7b",
+    "runs/openram-target-80x64-layout-20261114-01/result.json": "f6760cfec143b7a7545efa4725d72449b4053648b1b638b1cab7088b484e090d",
+    "runs/openram-target80x64-geometry-drc-20261114-02/result.json": "9bf320ae4d91e5a80e0271d685e37ac19ce55ed62da7754732f7dfc302db8ede",
+    "runs/openram-target80x64-model-protocol-20261114-01/result.json": "78547f28c8b1f643ff392f73416bca38b2d9bc4602908564767ebe1a7e90098e",
+    "runs/openram-target80x64-standard-drc-20261114-01/result.json": "779604c24f057ce1e7b26cdf6fb13e99cb7fb7bf4318e57cd06319cfa4990804",
+    "reviews/d034-primary/selected-source-audit.json": "bb95ad12f367a39c192506fee9dd1246b07b3c376242645880d7d99d92edfce3",
+    "reviews/d034-primary/qualification-binding-audit.json": "3c1ab0bbfc7b8368965589f4a58a0185aa1f387eb58415c7a775df2b25245abc",
+    "reviews/d034-primary/signedbias-firmware-map.json": "784399d8e35cc2226143f9b3f9b45ffd7d49035156514b89791b1d4c5318ab23",
+    "runs/cpu-signedbias-repeat3-20261114-01/result.json": "24b3fa9449b40abde9ebe1566eda9cdc0e88265a6f40071317ddfba60cde3fe0",
+    "runs/cpu-native-dispatch-signedbias-20261114-01/result.json": "9c6b726de44ad78ae7ad57418ec25380eda15a234cb63766e92c9d9bf5fe415d",
+    "runs/cpu-native-protocol-signedbias-20261114-01/result.json": "12f909cb458fd51a6e7faba218dc5a66ad254f0c00bbd8ac5cb6678a1f220a66",
+    "runs/cpu-signedbias-full1000-20261114-01/result.json": "4211778dd54726924452b8202390831bc168ed0dab7d0670f7433608d0a00b81",
+    "runs/cpu-signedbias-product-edges-20261114-01/result.json": "4f0d4f72861e5729e5c4a402f10233d40732c211379d6fdb649df1d829e893f5",
+    "physical/cpu-signedbias-rom-allbanks-byte4-proof-20261114-01/result.json": "193ca4c624c3aaa3c26d1ac9d6191768ad6e4568da5362e862dc944ab36ea0f2",
+    "runs/cpu-p3-q6-signedbias-noinline-helper32-probe-20261114-01/result.json": "99997a7151e8638d8f9c4e09a309c4cc2ea5f5352dfe13d731c60c127b62deea",
+    "reviews/d034-primary/signedbias-algorithm.md": "23428bf82508d7330c7dabeefee5f080bab245e5a674e92fa6cc913c07c6f460",
+    "runs/cpu-signedbias-sessions12-20261114-01/result.json": "4a926ce98bbfccc702a1f50930bff7f9cd104205057d7a0e13592f0bbad72965",
+    "runs/cpu-signedbias-sessions12-20261114-01/audit.json": "d8f8158001099d9a1cd9df55276fb1c82a90a75bb47e9d74d2c097b4ebce4847",
+    "runs/cpu-signedbias-byte4-core-replay-20261114-01/result.json": "6ea2990db0a017aac78e80ec5a30253dcb0e0786b1cbfe3ecb6bf3d5b4d21546",
+    "cleanup/d034-geometry-probe-cache-20261114-01/result.json": "498ec99c6d41211c3a14d96ce004ff2459a679f73e649430e5fd638b64dc83e4",
+    "cleanup/signedbias-byte4-core-pch-20261114-01/result.json": "cabdb5df6e718c7b6c926121390b583310e01b61af627d3183ff6317fc3bfe4f",
+    "reviews/d034-signedbias-independent/result.json": "6dd2932aa1b673e3a4815fb0402491c0c4745f9369cef83ad902764052f6387c",
+    "reviews/d034-signedbias-independent/report.md": "f356f5801635fd19fd21acdac9fe41a0c2bbaee9a1564ed6648aaa4b5223ca3b",
+    "reviews/d034-backend/result.json": "0689a2cb89a6ee01c87924423c6badd41e92c369540d585bd28570d99a9e580f",
+    "runs/gpu-d034-root5-fresh-20261114-01/result.json": "a65b67899593d31c8458f571572caeae7ed1774066ca8863cb4447daad5b810f",
+    "runs/gpu-d034-root5-fresh-20261114-01/timing.json": "c63cefc22b174ccd5958c2758ad1ef20879356b1f32d9b3a55b5994f9080b4c2",
+    "runs/openram-target80x64-abstract-drc-only-20261114-01/result.json": "8f62f82dbe9a991f2c5d806c333c824fb2cc71a321354c772ee1065ddb5caa5b",
+    "reviews/d034-lvs/result.json": "a5092df87a105472d27cd4ef851b78f38b5a281a34889b8c2dea5b349840aff5",
+    "cleanup/d034-geometry-details-20261114-01/result.json": "14e32b16291289a083f87ca5900c684dd0a7d7c133963c1b2762f275c4f258ab",
+    "reviews/d034-primary/geometry-drc-rule-counts.txt": "0fb7e3ad1abf56cbf7415c4bb43803dd1251dca5cc8914b19cb16f61b4327095",
+    "reviews/d034-signedbias-physical/result.json": "295f3aecc9c45fdc5b80c4f380dbb849b978d74b44ed0e829c51bbc6e9b77330",
+    "reviews/d034-signedbias-physical/report.md": "13853647cfec0deca58b65f42ce120c1ddcacc85c20ed4f47f92861247e7a4d6",
+    "reviews/d035-independent/result.json": "18109d3caa5a2e2719a0179eb2c7d78e25c59cb3ab45f63a8f30f00a875da33e",
+    "reviews/d035-independent/report.md": "35db96062f31d194109e493406177ec29376985dadc836007ff49cdd53dcb158",
+    "reviews/d035-clean-input/result.json": "2e76a4b82b83d9849a40da9bface01a205ae20339a091dad949892c63c150dc7",
+    "inputs/root5-clean-20261114-01/audit.json": "6dc42b54aaab823d3fe1c4277f59fb88ee7cc0e0f0f594b3ab0011ecaefff62d",
+    "inputs/root5-clean-20261114-01/image.bin": "9d30e181ec709efb7c80b17716368bedf724d2d532f1e9e972c1d740c03dc2d7",
+    "runs/gpu-clean-root5-20261114-01/result.json": "492591ce0713d6cd49c12ca43e1fbb045678753f4a5df69c3402d79b31d2814d",
+    "runs/gpu-clean-root5-20261114-01/timing.json": "333b1617b8fba1e981dc6690d03b8b87036823cfd828a76714e0fd53f4f96cc8",
+    "physical/cpu-signedbias-all21-mapped-20261114-01/result.json": "f71cb25f78bd8f79a003ee872fa6d12ea202fdc259f525e0917ccf610a2da85c",
+    "physical/cpu-signedbias-all21-mapped-20261114-01/verilator-read-proof/result.json": "9a88c7ff44d13de5190e1c1ac5c234ff02980c840829c7df4921207dc765a0eb",
+    "reviews/d034-short-repair-channelshift/summary.json": "ae60c70a7fd50cfe378a1ec70d756366f13f7e2a3d995f8ed024aa8b91269ed4",
+    "reviews/d034-short-repair-channelshift/calibre-view-adapter-allcells/result.json": "3a6367ed986f0a21ba315e663104b43f527af2ce7b22f7d9f09a562fcd95fb31",
+    "reviews/d034-short-repair-channelshift/cleanup.json": "b302b134e61e001e3fcf20c862980993582cdc1b83276552ba953815a57c4e1d",
+    "reviews/d034-short-repair-precharge-area/summary.json": "d9a97ca049e1d7ac27af1c95fb95acb07b8c3753f9d3846ed19d9b71551530eb",
+    "runs/cpu-signedbias-all21-mapped-core-replay-20261114-01/result.json": "fc74c381e7b320ec5f13cce9666cec79bb98d5342389894a45962cae09616074",
+    "cleanup/d035-completed-simulator-pch-20261114-01/result.json": "ddadc4e5a70abb67ad83dc3cc70f89fa1abb0639a5865f904e2a72e845f014d6",
+    "reviews/d035-clean-input/cleanup.json": "0f51fae3fc3a715130608f5e21d1bdd57e31ffde65d24c1ffd166aaf59228880",
+    "reviews/d034-short-repair-precharge-area/cleanup.json": "df801146a592f7bcb5b8d7cdf265c4cd42148ad55f506fdc96811be58aaff5b3",
+    "reports/CURRENT-STATUS.md": "3d2595b218fabf45fd610c1bdb4031a2f9ed687aff0df4f2eb3bae6bbdd23264",
+    "PLAN.md": "69683eef478c2b40502ab5224f5c4cf5a0815f5adf810ebff9608e1e46848d02",
+    "reviews/d035-final-audit/result.json": "c4b5460e3169013b4d63b26df517bc49196b12d5aa32071e85911216189ad986",
+    "reviews/d035-final-audit/report.md": "181a472b117d20d7bb9587583df9d187fa92e150058b461f11e5066ac0d2a0b4",
+    "physical/cpu-signedbias-banks5-20-actual-abstracts-20261114-01/result.json": "f4f7fda39642f95461040ac7f118f1031e7e5ac2a84946783f7b81401299be79",
+    "physical/cpu-signedbias-banks5-20-actual-abstracts-20261114-01/integration-roundtrip/result.json": "e3feddfa0d85922ebac5feb13d6833b9e205c6a43a8d58b11807e3b4b19db53d",
+    "reviews/d036-memory-audit/retry2/result.json": "022f3374e4741093a32a51a3c739158105bb870066eac4adf781c2668dd24575",
+    "reviews/d036-memory-audit/completion/result.json": "088946ca92d6446525715e243477c5024c9187adbaf27ab363e0d667b932b254",
+    "reviews/d036-memory-audit/report.md": "fd202430c01e48326e936bf896a27e7cc5c6667f5a9cc36dd8b4b30fee86968e",
+    "reviews/d036-bank20-pdn/result.json": "8ff4dbd02e12990f0fbe0c59c698648d2f914dcf61063e1fefde12e89ab4bcdc",
+    "reviews/d036-bank20-pdn/report.md": "e79c92e74cc93fb8e46784edc17e282308e20a0486726f3579e2ac0fc9f24e1a",
+    "reviews/d036-pg-independent/final-result.json": "d874264b366c7c35b215a145c01b9027ba6fd4d56e8e1f8e26f16ac4ca2e35af",
+    "reviews/d036-pg-independent/explicit-domain-retry/result.json": "d4c520d6b57cb1eaa21b9365f6acd3e6e66475ccee8c8d76acbb2fc6199b5d09",
+    "reviews/d036-pg-independent/report.md": "87b78eb3fa117a7b61d8a5ac05aceff16bbf8e7040858869b025736b46337915",
+    "reviews/d035-target-macro/result.json": "c39e805d70391c73f78cba9d7535468d2c451a6d8bf82f7785d8a5287dee6df4",
+    "reviews/d035-target-macro/report.md": "5bf3b1539de78802a691ce0190f9643deee7bb497f5df6f13145bd049f06a0ec",
+    "reviews/d035-target-macro/verification/result.json": "be382264ef7e781663f461d822aebf850e3b1f5f26971cae62c9343cbfc06473",
+    "cleanup/d036-historical-cpu-pch-20261114-01/result.json": "bbbe02d30e26619bc9156859efe0a763a6ee58bee0b9d1d3a4676ce6b7ea40ab",
+    "physical/cpu-signedbias-bank14-byte4-die300-20261114-01/result.json": "68512dfbc2921a16d177572d78237e89a12442a09e7e320bbbe7fb0230810af6",
+    "physical/cpu-signedbias-bank14-die300-electrical-repair-20261114-01/result.json": "1b1ef1141720354b2f7d9dadf0aacc754c1cbc62bba237f72febbd75ed2dfc7e",
+    "physical/cpu-signedbias-bank14-byte4-branches-die300-20261114-01/result.json": "475501c9648ae783b31974522bbfa60596f9ee98d6a3a8271de16f43ca834963",
+    "physical/cpu-signedbias-bank14-byte4-a3branches-die300-20261114-01/result.json": "3f888c8afdb97a583cfdc176870d48dfb6d58f7f33bed930d33ae44ccd073efb",
+    "reviews/d035-bank14-electrical-diagnosis/result.json": "c7e07ccf105b34cc601e1e7f89bbb923cfe396b1b734ebbe55da7d002abd5a49",
+    "reviews/d035-bank14-electrical-diagnosis/report.md": "1dba27707e15077ef175a36d8339ca0a92348a5b901460bca521e5c33c879f52",
+    "physical/cpu-signedbias-bank14-byte4-a3root-20261114-01/result.json": "69d9d27528e0dacf9580e9abb8550072d48ef24ad91d1b6f7b8f17bf3b02cc48",
+    "reviews/d037-independent/terminal-route/result.json": "b1722a673713d2920cedd541dbe82e1a00f4aef93aec3a4eac2df761bbecca14",
+    "reviews/d037-independent/a3root-fresh-sat/result.json": "5ad8a856b1d9bb7f7e359f2f803f3441184350246bfe7e91de8e7862ec30581e",
+    "physical/cpu-signedbias-bank14-a3root-actual-abstract-20261114-01/result.json": "c38e393b86d49127dc226b349e0eb4720e3c2efb81ab7a6287bb82674948a02c",
+    "physical/cpu-signedbias-bank14-byte4-a3root-die300-20261114-01/result.json": "a6561dacf10fb98c929cfbf570867b1718230a0dd12ed019dc566a02228dd446",
+    "reviews/d037-independent/result.json": "9777d2203f094455a07fd00249d3dd4e735319e00fbff377c64d45f57d335900",
+    "reviews/d037-independent/report.md": "53f2b345f3a522ccce8841691b9c7c88e4152d7b56cac2d46f55b878fad75d6d",
+    "reviews/d037-bank5-pdn/result.json": "7bdb79d81ecb3b58539d6d5246b6b38df143ce0bd7b7caee14f3426a12726646",
+    "reviews/d037-bank5-pdn/report.md": "cf5abe305a7bb0e6bc54319930579ba650e18d1aa7b01b202b50e657c12ae1fe",
+    "reviews/d037-sram-clock/result.json": "d07737742946c901b35b8cfb1c064a6a8178cd52af01ef38656c254cf948ca4f",
+    "reports/CONTINUATION.md": "428e064949fea0b3a82cd13c49df1966189c49ace94a482eacccc208a093651d",
+    "reports/D036-RESULTS.md": "e490866a2a99a97c55940a7a443bf38bf2f28e20b6e2f9dbe752a91acd39ef45",
+    "reviews/d038-independent/result.json": "ffc30e425eb75cb6030bc696814e9271e96321c3b89fa051139f274fe8ece215",
+    "reviews/d038-independent/report.md": "87fb2c932c710514a7ed0d6cd618efb0a280eadcf1d30bf557470f4fc17a8e25",
+    "reviews/d038-independent/cpu-followup/result.json": "1afbc05ed77b031828b4bd31803385f6c79970cc964bc490e8227d09733f7fde",
+    "physical/cpu-signedbias-bank14-a3root-actual-abstract-20261114-01/integration-roundtrip/result.json": "b0c978d45db03f7e21b3a0be398ef550617d47c14a1cad3a759fdba08a763769",
+    "physical/cpu-signedbias-bank10-byte4-die300-20261114-01/result.json": "b671dd262dedcc1ba3a28f171d4a571e451ec731871a74d89bcc1c7577b6fac2",
+    "cleanup/d038-three-routed-cpu-pch-20261114-01/result.json": "4f098cd4d5b3c0d20a5890115f54cd3f230bcfb28a6f8d09314a2eca57517e45",
+    "cleanup/d037-sram-clock-small-temp-20261114-01/result.json": "a8ea9889d0fc9fae4a777242ff1dda31c4c76b152d3f972aa7d8e0fc447da903",
+    "physical/cpu-signedbias-3routed-rom-integration-20261114-01/result.json": "2d1fbe81eac3bd10ac88ab45b9b0c8631e089f73a20e23902968286ee7897c10",
+    "runs/cpu-signedbias-3routed-core-replay-20261114-01/result.json": "60e370efefc9311d3b2d782cd4b958c87e0d9d0dceeda7f432d2df1ae6342650",
+    "reviews/d037-sram-clock/report.md": "0b0c61b9324e0d2cdd6295545048ca3142cb78871facd130fb617373179c3b35",
+    "reviews/d040-backend-engineer/final-result.json": "7cbd5209165a4afb44b0f4a318ec68ebba65b953d98e220adb77eb380e0350b1",
+    "reviews/d040-backend-engineer/final-report.md": "9d8a65f288f29785cf78116b5c6c390fcceefe4b260b1abba87b62e5c2c3af92",
+    "reviews/d041-bank20-lvs/result.json": "fc650dc470b5c67cf53346c4e923e72cfafd09950c9790eac0ec3bd7dbe2187c",
+    "physical/cpu-signedbias-5routed-rom-integration-20261114-01/result.json": "b84bf483df95d47766a597ecf3561b58754c7c2d1316a18c3be560706bdc5e56",
+    "reviews/d038-bank20-gds/final-result.json": "3ac35bec318d4809bd506895e368c3a70501934104311285397933c14e279e58",
+    "reviews/d038-bank20-gds/final-binding-audit.json": "66cf47b754b1c135994e2ee11df41f319a26e5d03e62f906f8448417d28b1159",
+    "reviews/d038-bank20-gds/report.md": "102ee75806949eb637be900d4d72831c3f9f80da2c6532717255b5dcc351f808",
+    "reviews/d038-bank20-gds/lvs-leaf-diagnosis.json": "8335e2018999bbf450e3f1d914975a3674a157b79afbf5fddade560d3997cfa6",
+    "physical/cpu-signedbias-bank3-byte4-targetpad4-die300-d040-20261114-01/result.json": "210bf8af829e1ea830e63c5320587db7f84fa1dc57c04bea5d37a9e9479410c0",
+    "physical/cpu-signedbias-bank3-byte4-a34root-d040-20261114-01/result.json": "667363d2a5a2038499f5a461e14e4e935efb13ee5060c05b0b2c6b55b305429e",
+    "physical/cpu-signedbias-bank3-byte4-a34root-targetpad4-die300-d040-20261114-01/result.json": "e03150578564867eabfe627555b18cc187b998b372fef8b0f48e345bcf3cc9a0",
+    "reviews/d040-independent-bank10/result.json": "72ebc8a9e4ad700a63efe92533559d9b4645ab8851c49eb655c0accd64e43e5e",
+    "reviews/d040-independent-bank10/report.md": "a8e114561a0a0b4ec22908b813e51e04e5f135b4ff3256a8ffe6c8c2df1ebe76",
+    "reviews/d040-bank14-pg-independent/result.json": "3f9e3fbb7454b3a99d6b8c870eaaae685a1450ac9521b9777eda0cf8853b465d",
+    "reviews/d040-bank14-pg-independent/report.md": "1a2708d638fbbd82a269571dafd65b77cd070b598e878a88cfce4905c706fc56",
+    "reviews/d040-bank14-pg-independent/drc-snapshot-diagnosis.json": "87c24563401c9c54756cd799c900db0e2a71e67adf558c654548a3a1aa134a8a",
+    "runs/cpu-signedbias-4routed-core-replay-20261114-01/result.json": "a9b4d5a81a528df9d8ba1700942d433e12ffc40ae2579e2d49ba3b54167838f0",
+    "physical/cpu-signedbias-4routed-rom-integration-20261114-01/result.json": "d88029969c01b8f0fb2aa558d663df570d193df6dcc9177f56eab078afdd4d61",
+    "cleanup/d040-four-routed-cpu-pch-20261114-01/result.json": "c924375d6fd57b76b7b9bf06e70cb8b50b1498b8fc5d21dc7e38c7d050aeeba4",
+    "physical/cpu-signedbias-bank14-pdn-20261114-01/result.json": "ac34a50baee7358b1f6913290edfbca6ecad70c136bfb75af57acf39ffa32492",
+    "physical/cpu-signedbias-bank14-pdn-reroute-20261114-01/result.json": "a815cc487e5af4ceee20ebe252ae3a6df639df8f6fbcaf28911ced4f4b8300cd",
+    "physical/cpu-signedbias-bank14-pdn-ripup-20261114-01/result.json": "8df8636058cc1b2651c048bb55a1e45e0a4717b9111864a74f1c35a0f7315b04",
+    "physical/cpu-signedbias-bank14-pgaware-pad2-die300-20261114-01/result.json": "8cd7a4fa558cb3cc352cbcdcc8c2b304827e360be01f8426809383050503e306",
+    "physical/cpu-signedbias-bank14-pgaware-pad2-die300-20261114-02/result.json": "ba29f616c8fbedabae3ba0a60381b3950c9b7a0eaff95ce48e19c0bc57add07f",
+    "reviews/d038-bank20-gds/sparsetap-gds-roundtrip/result.json": "52f17ba118f35bc1f29fdee3aa409a5f2b8ef1bea363655abd42aa993ef226dd",
+    "reviews/d038-bank20-gds/sparsetapfilled-lvs-native-mos-v3/result.json": "3baa3a09dd663d7b1e82ea053ecad474dbcec800ee01e928184b54914ea62c46",
+    "reviews/d038-bank20-gds/sparsetapfilled-lvs-series-v4/result.json": "da09873aeb41fcfa22c97a6f48d987448a29d49097a60f80b9c6ce11e2afd690",
+    "physical/cpu-signedbias-bank20-fullgds-sparsetapfilled-20261114-01/result.json": "33f3af89b130b412b3cbcb709cc9bb506589dda6caca8b9d477c36f648f4b623",
+    "physical/cpu-signedbias-bank3-byte4-pad2-die300-d040-20261114-01/result.json": "c071efb41ab967598cc155a3f4f71129a4c649001855aecf42e3ca6f79bc21d9",
+    "reviews/d040-backend-engineer/result.json": "09f2b07ad7a30c04839eb450eea0da93a202b83818e7450ee3195d40ea1703ba",
+    "reviews/d040-backend-engineer/diagnosis.json": "c38fdc5b48dafffd5c0e3dede3671f1b4bf33d46ce3b8578449ca27cfb10c4c9",
+    "reviews/d039-independent/precision-followup.json": "09e5ac6c4ca8f3a29c4f0414f736d28d96e993a881471e6365016abe3d122f6f",
+    "reviews/d039-independent/gds-grid-evidence.json": "d4491adf5bdb78f31fe4d72e64d429d8a5a93ad05c6f65c66822fe6b70140655",
+    "reviews/d038-bank20-gds/filled-lvs-adapter-v2/result.json": "cddc6173a61734e0705b8f5b2531644779acc43b2acbf16a1a0760250a796840",
+    "reviews/d039-independent/result.json": "743a251464c981dbdc351b21cf90dd7ea9415eb759cb8a263da3d1cb6dd948b4",
+    "reviews/d039-independent/report.md": "c5b0cea881b606b0a4480fc5c1a7336e964a4780c3455084dc08a0475aff094a",
+    "physical/cpu-signedbias-bank10-byte4-a4root-pad2-die300-20261114-01/bank-10/constant-output-validation/result.json": "6461df745fd975603241bb8ff24402aabdde53dd1cbb75eedac374165e2b34e8",
+    "reviews/d037-sram-clock/corrected-row-supply-diagnosis.json": "518ee734ff78772c695f4a33af111e55e195246d0a9aae0be7b1d7c66a1ab1f3",
+    "cleanup/d037-sram-clock-target-temp-20261114-01/result.json": "d08f0ab6e2fad261a90d73f9cfde4dd20f1f9a69c2abbf73e25c8d2f953113ac",
+    "physical/cpu-signedbias-bank10-byte4-pad2-die300-20261114-01/result.json": "222f7e8f72be7362ab10cc1df83ab7931a5643f7a37c767e59ea0909f3cba731",
+    "physical/cpu-signedbias-bank10-byte4-a4root-20261114-01/result.json": "2c36a37e03ef8c1236aa7f206ce906650124dad893c910785ad8ba75080dd18f",
+    "physical/cpu-signedbias-bank20-fullgds-filled-20261114-01/result.json": "0f791f0bfaa5f56e803f8dac6e9ff26180eb3c57302e2f87506c387e0f566a08",
+    "physical/cpu-signedbias-bank20-pdn-filled-20261114-01/result.json": "777388e606ae3bc93201b8bf83da8577cdf1ab82a55981c5cf6054a7ee3242ff",
+    "reviews/d041-sram-local-final/result.json": "70b0b26d92c0659e46fc74d5024a0864dc88912d9394e166a82d8d4e6ace426f",
+    "reviews/d041-sram-local-final/report.md": "d58592be9a0d38777104617e17b5d143648bdcc573d707ad374d5f8015bbecca",
+    "reviews/d041-sram-local-gap03/result.json": "21e4e7067445f83e7046d58bcf618b3a4a3c7355b34c1bd42696717039816fa2",
+    "reviews/d041-sram-local-gap03/connectivity/result.json": "113d766713b2d682e43733339da27ca54f5cf87ad03ef20e8f385bd5eec89c24",
+    "reviews/d041-bank20-lvs/root-cause.json": "fb3f5924becc70e3815f69c2162f50db9aae73ccfffb78aae26bff835ccd0d47",
+    "reviews/d041-bank3-independent/retry1/result.json": "439916107bc8110071b8379badd1aa080c2526e36876c12a675416162a5b0728",
+    "physical/cpu-signedbias-bank3-a34root-actual-abstract-20261114-01/result.json": "ff54c0cb322e798ab33df0d153ec0c3f46e8af1adbaf29ea2b6eac421958b8d8",
+    "physical/cpu-signedbias-bank3-a34root-actual-abstract-20261114-01/integration-roundtrip/result.json": "18675d7d5785b140e7399914cc035f8343206999532d9cf6b4cada0887109c88",
+    "reviews/d041-bank3-independent/result.json": "9089dca0c742e99a6eed0e289c0d5ff36cc65821913033da3be4e1dc9b6aede4",
+    "reviews/d041-bank3-independent/report.md": "3ddca46b76e2bd5aec38a641197df0e28554fdedb532ba99c6a0c38e4e248825",
+    "reviews/d041-bank3-independent/cpu-followup/result.json": "2d74237ed299e8e8fb0d13843af084b8d0074ca438ebff2877f8fa1d91668ae3",
+    "reviews/d041-sram-local/result.json": "b0c4ebadfe52df56331621ce00cd35e4023a0705b7ed48e576a543509853bce3",
+    "runs/cpu-signedbias-5routed-core-replay-20261114-01/result.json": "384370d779c070e5c3adcd0882e1dd739f432d4102bbe5f14eaf7491dfb8fc71",
+    "cleanup/d041-five-routed-cpu-pch-20261114-01/result.json": "c52e20d9916317cb9c9156a5dee6712809ed4971b0b920ea5c3d9b1d47d22fb3",
+    "reviews/d041-bank20-lvs/report.md": "bd2803873cafd6571f4ad4e18b0e643461efbef24090e320c8771e4d94441385",
+    "physical/cpu-signedbias-bank20-pgabstract-d042-20261114-04/result.json": "1c122513f9e382346dfe64c1859c30fa6dbe6345816230819168abf722f5e5c8",
+    "reviews/d041-bank20-lvs/final-result.json": "faaaf5cbc6a1909fdedfe95892b0de301a1f19eb02796e6dbd37b7cb4a12ce16",
+    "reviews/d041-bank20-lvs/final-binding-audit.json": "d812169957f761fe83c18c056c107d9dda203c569f837c2daa050b9767f02773",
+    "reviews/d041-bank20-lvs/leaf-qualification.json": "7247eef0334075237a7c8622be6584440e2ab5a36909c1f881b517af78b93c3c",
+    "reviews/d041-bank20-lvs/drive4-physical-validation/result.json": "5008c8dd31a8821cf2b98926e5b0a79179d7999959ba0892f299b2b8c7b60f68",
+    "reviews/d041-bank20-lvs/drive4-fullgds-lvs/result.json": "9d4b798b9f06274518aafafebbca4cadde388111c90965eb1f24472d3c3386ce",
+    "reviews/d041-bank20-lvs/drive4-fullgds-lvs-official-gds-mode/result.json": "7f902faa12e165c137031d10fe18c02099acfa378ee4885c937f9098a9027c09",
+    "reviews/d041-bank20-lvs/drive4-gds-roundtrip/result.json": "3208f6ffe35b81973a477260c9fd84daef87dc576d54f323832c0d46ddb87d7f",
+    "physical/cpu-signedbias-bank20-drive4-fullgds-20261114-01/result.json": "5144ce96a77f03a53090e7c0df97d544ee69c86d26a2cb156e18d449aa13e725",
+    "physical/cpu-signedbias-bank20-drive4-sparsetapfilled-20261114-03/result.json": "c27ff650cbc9352366469d64eba3f943d6acfdfef4aab28313474ee6bf3f5a14",
+    "reviews/d042-independent/result.json": "6f5549ef573ea8dbabf0f2867f964447e64bd3b40328beb2750763e5181e4b0a",
+    "reviews/d042-independent/report.md": "b666f99132b92d1c9f51ab62561550f744372a7e023587e8e52943bc3bacd6c3",
+    "reviews/d042-independent/initial-result.json": "e5b46520ac69c941f661013a9f0112acdb79057b463f622c5c10ba5f06bbf341",
+    "reviews/d042-sram-generator-qualified/result.json": "781b5c2a01290e0566c85a9e2821fabd9c5274b27e61731a7817fc0a94627267",
+    "reviews/d042-sram-generator-qualified/report.md": "bac4c37f0d82e192011cd25a9da2b58646558c42fd8fde172ffcf8adc34b62bd",
+    "reviews/d042-sram-rowaddr-gap04/result.json": "76abf39d7d7b844bff5a62efbf317b0a2a15a844a44bd9f740164f9f67888210",
+    "reviews/d042-primary-evidence-correction/result.json": "f5b99cba4fe7c747f4b8e987e0303b8f27a31e2eb1dd101ded6d502a3a6cc68e",
+    "reviews/d042-bank3-diagnosis/result.json": "d2db204fcf330c9d67b90d225fd36864aecc2aca0b127213ce96f29cea837053",
+    "physical/cpu-signedbias-bank3-pdn-d042-20261114-01/result.json": "6725b7a12021103cad745154293c1899ab1dbe654c851f76fbf388550f995307",
+    "physical/cpu-signedbias-bank3-pdn-reroute-d042-20261114-01/result.json": "1da881e0c1254b85b2cbd7cf09f83dd2420d0191362a8b82ae323170b2e1d8e3",
+    "physical/cpu-signedbias-bank3-pgaware-targetpad4-d042-20261114-01/result.json": "622c069dc8d5ddf02396bcb85869b86e40fd97b3f91ae7a8cf6d1f300ab2aa6f",
+    "runs/cpu-signedbias-5routed-bank20-drive4-replay-d042-20261114-01/result.json": "35f19c4c1104164cc740dc6cff3d4d8ee781d29dc122db199bb3d1e866b2b660",
+    "runs/cpu-signedbias-5routed-bank20-drive4-replay-d042-20261114-02/result.json": "5797f15e371e26f383939e32ed56cd9c20617e0d0ba59e704f67a5cb4207e7fc",
+    "physical/cpu-signedbias-5routed-bank20-drive4-signal-integration-d042-20261114-02/result.json": "f50962502ced2d9f9a488fdc6a4113840208970ae20857bf8838e4c2cd26299a",
+    "cleanup/d042-historical-mag-ntfs-20261114-01/result.json": "e220667983db8ceaddea9c9dc9bb5e4996d5ca26efbfe4e3a79d069eb3f97458",
+    "cleanup/d042-bank20-drive4-cpu-pch-20261114-01/result.json": "eaf58cf47bfe878dee2215c64a7f03a75b2dc656549c7c6dad502cea4d6bcf19",
+    "reviews/d042-final-actual-independent/result.json": "67a049e8c072ad8d560bb905cf8734f0e946b17f0f745b3c254dfa46fd6155da",
+    "reviews/d042-final-actual-independent/report.md": "f628a0afc1e7bdb8cff45cfcb4351a3abbf5b08d61f502cb3112637f058af78e",
+    "reviews/d042-bank20-pgabstract/result.json": "eafd4cd4963d13a80d7e51e184feb194bc8584455dc0e2894d70c68213a24302",
+    "reviews/d042-bank20-pgabstract/report.md": "9c780c2003333b4980bcf69ad3cd2367ddf051b5b161876e3a8587a09c28dc8a",
+    "reports/D042-RESULTS.md": "8ffb92743ea91a06ef38f5e2ece95a2b3103e9777f69d605c87f29b9d77b128c",
+    "reports/D043-RESULTS.md": "23ba9590bf8672ec9a27faf37f9ffdae8606ebd7aa614f1f0df736220fb3200a",
+    "physical/cpu-signedbias-small-pgaware-d043-20261119-01/bank-16/result.json": "6c8493ec215cf861fe318fa37b2b08d560a95e61715f712e27e42dca49ea76a1",
+    "physical/cpu-signedbias-small-pgaware-d043-20261119-01/bank-17/result.json": "80fc7316043c66388e616550af29efc3e7921a50acf15734f82ad0cd29c58d01",
+    "physical/cpu-signedbias-small-pgaware-d043-20261119-01/bank-18/result.json": "eed7cf4add20dd59e47694f31eec4d92721daf93ac38e2d8ac6f3cf780dba1e7",
+    "physical/cpu-signedbias-small-pgaware-d043-20261119-01/bank-19/result.json": "036383788de57746fd3632029e5d09e25071c0b32504e36b65768aabe5bd1699",
+    "physical/cpu-signedbias-small-pgaware-d043-20261119-01/bank-18/constant-output-validation-retry1/result.json": "adbbfb54eb6e6402c9de871528d3e2aeb0777c8b11757d53f8823b07fe06848e",
+    "physical/cpu-signedbias-bank16-viewcompatible-d043-20261119-01/result.json": "fa856d5ddcbef1afb9485a8b7b7c01101ab20dfdef23736639ce0a4e575b3611",
+    "physical/cpu-signedbias-bank16-viewcompatible-d043-20261119-01/qualification/result.json": "0db3b9fc38edc0a81d9080a793c625cf58eb2066e66d6016fb2c13cb8d82f5c5",
+    "physical/cpu-signedbias-bank16-viewcompatible-filled-d043-20261119-01/qualification/result.json": "cee215fde84bf0ea101ccca644b9841561aa4bd67cf20074acdde971c27e677c",
+    "physical/cpu-signedbias-bank16-viewcompatible-fullgds-d043-20261119-01/result.json": "ae5847498cc5798c48c8080fd42561542b7797d2552d40c2b75efdd019bbcb46",
+    "reviews/d043-bank16-redesign-fullgds/native-lvs/result.json": "536da41a08313cc6c8d224b5814bfdca8e9ad15724c96427a67c4599cc10159c",
+    "reviews/d043-bank16-replacement-geometry/result.json": "c59570da3053c0f375ab5ae94d14ae8055431b4a34a1bfed03e75d7884d8272c",
+    "reviews/d043-bank16-fullgds/native-lvs/result.json": "d26abcbd8b4a844feb7a45825e4dbad5585a27c1e86c21056901fffcf08ec37a"
+  },
+  "cleanup_live330_cache_bytes": 13170300,
+  "cleanup_d033_probe_dedup_bytes": 17786944,
+  "cleanup_d033_verified_bytes": 144140805,
+  "cleanup_d033_backend_recoverable_bytes": 13941020,
+  "physical_d033_newfirmware_early": {
+    "status": "MAPPED_SAT_AND_FRESH_EARLY_PAIR_PASS_FRESH_FULLPAIR_BOTH_TIMEOUT_NOT_SIGNOFF",
+    "firmware": "build/cpu-q6-g2d4-layout40-20261114-01/soc/software/bios/bios.bin",
+    "bank": 5,
+    "parent": {
+      "drc": 2992,
+      "area_um2": 15510,
+      "estimated_setup_slack_ns": 4.16,
+      "estimated_hold_slack_ns": 2.79
+    },
+    "local333": {
+      "drc": 2452,
+      "area_um2": 14858,
+      "estimated_setup_slack_ns": 4.17,
+      "estimated_hold_slack_ns": 3.06
+    },
+    "drc_reduction_pct": 18.048128342245988,
+    "scope": "Both arms300s fullroute timed out. Later D034 met2trunk/aliasflatten/diode route is separately bound; no fullcore qualification.",
+    "fullroute_scope": "Both newcontent arms300sec timeout, no finalODB/extractedSTA; early reduction does not prove final PPA."
+  },
+  "openram_recovery_current": "reviews/openram-recovery-20261114.json",
+  "openram_target80x64_layout": "ACTUAL_LAYOUT_GENERATED_FULL_GEOMETRY_DRC712801_FAIL_NO_LVS_CHAR_QUALIFICATION",
+  "cleanup_openram_verified_released_bytes": 75930322,
+  "cleanup_verified_d033_total_bytes": 234012147,
+  "physical_d034_g2d4_bank5": "reviews/d034-backend/result.json",
+  "openram_d034_lvs": "reviews/d034-lvs/result.json",
+  "cleanup_d034_verified_bytes": 189019563,
+  "current_input": "inputs/root5-clean-20261114-01/audit.json",
+  "physical_d035_changed_banks": "reviews/d034-signedbias-physical/result.json",
+  "openram_d035_small_route_repair": "reviews/d034-short-repair-channelshift/summary.json",
+  "openram_d035_small_precharge_repair": "reviews/d034-short-repair-precharge-area/summary.json",
+  "openram_d035_scope": "Small macro actual signal short fixed; explicit original-Calibre-consistent library adapter LVS PASS. Original Magic reference retains propertyFAIL; fullgeometryDRC17864 remainsFAIL. Target80x64 and other5 macro qualification/TTchar/wholecorePPA absent.",
+  "cleanup_d035_verified_pch_bytes": 250314879,
+  "cleanup_d035_verified_gpu_cache_bytes": 175228,
+  "cleanup_small_macro_rebuildable_bytes": 4321652,
+  "cleanup_d035_scope": "PCH and fresh GPU cache sum250490107. Small macro intermediateGDS4321652 separately reported across repair steps. Values are verified released cache bytes, not net workspace size.",
+  "independent_d035_final_audit": "reviews/d035-final-audit/result.json",
+  "physical_d035_actual_bank_abstracts": "physical/cpu-signedbias-banks5-20-actual-abstracts-20261114-01/integration-roundtrip/result.json",
+  "physical_d035_abstract_scope": "Actual OpenSTA write_timing_model from current routeODB+readSPEF; real LEF exporter; identity normalized and actual import/link PASS. Signal-only TT hierarchy preparation; no PG/GDS/LVS/wholecore acceptance.",
+  "physical_d036_bank20_pdn": "reviews/d036-bank20-pdn/result.json",
+  "independent_d036_bank20_pdn": "reviews/d036-pg-independent/final-result.json",
+  "independent_d036_memory_abstracts": "reviews/d036-memory-audit/completion/result.json",
+  "physical_d036_bank14_diagnosis": "reviews/d035-bank14-electrical-diagnosis/result.json",
+  "physical_d036_bank14_scope": "300um die (2.16769x original die area), route/antenna0 and setup+3.78/hold+2.76 but316slew alladdress3 so electricalFAIL. Automaticrepairsegfault,alladdressbranchesGRTFAIL,targeted18branches300stimeout all retained. A3root actuallocalPASS:DRC0antenna0electrical0/setup+3.13hold+2.75/TNS0/area17457; source and actualroutedSAT pass. No PG/GDS/LVS or new QA cycle or clock improvement claimed.",
+  "openram_d036_target_repair": "reviews/d035-target-macro/result.json",
+  "openram_d036_target_scope": "Actual repaired80x64 generation677.180755s; fullgeometry712801DRCtiles+18unknownlayer; abstract10; extraction240stimeout, noLVS/TTchar. Direct memory model binding violates disable-hold contract, independent witness retained.",
+  "cleanup_d036_historical_pch_bytes": 2912916887,
+  "cleanup_d036_target_temp_bytes": 11301195,
+  "cleanup_d036_scope": "Historical42PCH/21simulators verifiedrecoverable net2912916887bytes; targetendedtemp/crashrecovery11301195bytes separately. Not workspace net growth estimate.",
+  "next_steps": [
+    "Resume independent and senior engineering agents; audit D043 bank16 finalfilled/fullGDS/LVS and smallbank PG/SAT.",
+    "Finish bank16 PG qualification/abstract/integration; remainingbank originalGDS/LVS.",
+    "Resume measured bank3 hotspot redesign and actual target SRAM generator binding before fullgeometry/LVS/TT.",
+    "Wholecore CPU/GPU physical timing/PPA/activity and fresh fair RTL/SimX QA with tokens/s and totalduration."
+  ],
+  "physical_d037_bank14_qualified": "physical/cpu-signedbias-bank14-byte4-a3root-die300-20261114-01/result.json",
+  "independent_d037_bank14": "reviews/d037-independent/terminal-route/result.json",
+  "physical_d037_bank5_pdn": "reviews/d037-bank5-pdn/result.json",
+  "independent_d038_bank5": "reviews/d038-independent/result.json",
+  "independent_d038_three_routed_cpu": "reviews/d038-independent/cpu-followup/result.json",
+  "cleanup_d038_pch_bytes": 126210813,
+  "physical_d038_bank10_qualified": "physical/cpu-signedbias-bank10-byte4-a4root-pad2-die300-20261114-01/bank-10/constant-output-validation/result.json",
+  "physical_d038_bank20_fullgeometry": "physical/cpu-signedbias-bank20-fullgds-filled-20261114-01/result.json",
+  "independent_d039_geometry": "reviews/d039-independent/result.json",
+  "physical_d040_bank3_signal": "reviews/d040-backend-engineer/final-result.json",
+  "independent_d040_bank10": "reviews/d040-independent-bank10/result.json",
+  "physical_d040_bank14_pg": "physical/cpu-signedbias-bank14-pdn-20261114-01/result.json",
+  "cleanup_d040_pch_bytes": 128546388,
+  "historical_next_steps_d036": [
+    "Finish bank14 measured-address topology physical qualification, preserve explicit area cost and all failure receipts.",
+    "Bank5 PG-aware signal reroute and local physical checks.",
+    "SRAM clock/channel geometry repair plus exact adapter for hold/edge/collision semantics.",
+    "Remaining banks and wholecore CPU/GPU PG/PDN/GDS/LVS/STA/PPA/activitypower; final physically bound fair QA."
+  ],
+  "independent_d041_bank3_cpu": "reviews/d041-bank3-independent/result.json",
+  "cleanup_d041_pch_bytes": 128513877,
+  "historical_next_steps_d040": [
+    "Finish PG-aware fresh placement for bank14 with pad2, preserve failed postroute and ripup attempts.",
+    "Fix remaining-bank address slew and route hotspots from actual loaded RC; no partial-route qualification.",
+    "Resolve bank20 actual full-GDS LVS reference topology; retain DRC0 and failing LVS separately.",
+    "Fix SRAM row-supply landing/channel with local geometry evidence; retain target clockcenter failures.",
+    "Wholecore CPU/GPU PG/PDN/GDS/LVS/STA/PPA/activitypower and final physically bound fair QA."
+  ],
+  "physical_d042_bank20_fullgds_lvs": "reviews/d041-bank20-lvs/final-result.json",
+  "sram_d042_native_local": "reviews/d042-sram-generator-qualified/result.json",
+  "sram_d042_target_abstract": "reviews/d042-sram-rowaddr-gap04/result.json",
+  "independent_d042": "reviews/d042-independent/result.json",
+  "historical_stale_binding_disclosure": "reviews/d042-primary-evidence-correction/result.json",
+  "cleanup_d042_pch_net_saved_bytes": 128544779,
+  "cleanup_d042_ntfs_allocated_saved_bytes": 14115812,
+  "execution_state": "PAUSED_BY_USER",
+  "latest_checkpoint": "reports/D043-RESULTS.md",
+  "physical_d043_bank16": "reviews/d043-bank16-redesign-fullgds/native-lvs/result.json"
+}

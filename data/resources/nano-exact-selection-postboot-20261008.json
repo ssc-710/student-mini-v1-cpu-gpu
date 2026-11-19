@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "build/student-mini/teacher-cpu-env-20261007/bin/python",
+    "scripts/train_student_mini_exact_selection.py",
+    "--parent",
+    "build/student-mini/native-nano/ab740c0a3200b4fcb4eb4d49cd9ec06cc057a8220f39dd1a49f5141d0351bf89/candidate.json"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-51",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "created_at": "2026-10-08T01:28:46.067492+00:00",
+  "exit_code": 0,
+  "memory_peak_bytes": 308895744,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 25645847\nuser_usec 24229105\nsystem_usec 1416742\nnice_usec 0\nnr_periods 335\nnr_throttled 26\nthrottled_usec 71552\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 47.605477973000006
+}

@@ -1,0 +1,1119 @@
+Makefile:18: warning: overriding recipe for target '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/kernel_compat/libvortex2.a'
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/tests/hip/common.mk:130: warning: ignoring old recipe for target '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/kernel_compat/libvortex2.a'
+/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain/bin/riscv32-unknown-elf-g++ -march=rv32imaf -mabi=ilp32f -O2 -ffreestanding -fno-builtin -fno-exceptions -fno-rtti -c device_compat.cc -o device_compat.o
+CONFIGS="-DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_WARPS=2 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_FPU_TYPE=STD"   make -C /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/stub DESTDIR=/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime
+make[1]: Entering directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/stub'
+mkdir -p /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/kernel_compat
+cp /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/kernel/libvortex2.a /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/kernel_compat/libvortex2.a
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/stub'
+/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain/bin/riscv32-unknown-elf-gcc-ar rcs /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/kernel_compat/libvortex2.a device_compat.o
+HIP_CLANG_PATH=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/bin LD_LIBRARY_PATH=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/lib: /mnt/d/open-soc-ai-labs-vortex-tools/chipstar/bin/cucc -O2 -ffp-contract=off -fno-builtin -fno-builtin-abs -fno-builtin-labs -std=c++17 -DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_WARPS=2 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_FPU_TYPE=STD --offload-pointer-width=32 --hip-path=/mnt/d/open-soc-ai-labs-vortex-tools/chipstar -L/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/lib -Wl,-rpath,/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/lib -Wl,-rpath-link,/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime -Wl,-rpath-link,/mnt/d/open-soc-ai-labs-vortex-tools/pocl/lib -Wl,-rpath-link,/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/lib -O2 -I. /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu -o student_mini
+warning: cucc is a work-in-progress. It is incomplete and may behave incorrectly.
+Please, report issues at https://github.com/CHIP-SPV/chipStar/issues.
+In file included from <built-in>:2:
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:817:4: warning: "cudaFreeAsync is mapped to hipFree" [-W#warnings]
+  817 |   #warning "cudaFreeAsync is mapped to hipFree"
+      |    ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:868:4: warning: "cudaMallocAsync is mapped to hipMalloc" [-W#warnings]
+  868 |   #warning "cudaMallocAsync is mapped to hipMalloc"
+      |    ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:1408:10: warning: 'hipGetTextureReference' is deprecated: This API is marked as deprecated and might not be supported in future releases. For more details please refer https://github.com/ROCm/HIP/blob/develop/docs/reference/deprecated_api_list.md [-Wdeprecated-declarations]
+ 1408 |   return hipGetTextureReference(texref, symbol);
+      |          ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:7506:1: note: 'hipGetTextureReference' has been explicitly marked deprecated here
+ 7506 | HIP_DEPRECATED(HIP_DEPRECATED_MSG)
+      | ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:680:44: note: expanded from macro 'HIP_DEPRECATED'
+  680 | #define HIP_DEPRECATED(msg) __attribute__((deprecated(msg)))
+      |                                            ^
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |     ^~~~~~~~ ~~~
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:19: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |                   ^~~~~~~~ ~~~~
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:34: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |                                  ^~~~~~~~ ~~~~~~~~~~~~
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:57: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |                                                         ^~~~~~~~ ~~~~~~~~~~~~~
+7 warnings generated when compiling for .
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/tools/llvm-vortex/bin/opt: WARNING: failed to create target machine for 'spirv32': unable to get target for 'spirv32', see --version and --triple.
+In file included from <built-in>:2:
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:817:4: warning: "cudaFreeAsync is mapped to hipFree" [-W#warnings]
+  817 |   #warning "cudaFreeAsync is mapped to hipFree"
+      |    ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:868:4: warning: "cudaMallocAsync is mapped to hipMalloc" [-W#warnings]
+  868 |   #warning "cudaMallocAsync is mapped to hipMalloc"
+      |    ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/cuspv/cuda_runtime.h:1408:10: warning: 'hipGetTextureReference' is deprecated: This API is marked as deprecated and might not be supported in future releases. For more details please refer https://github.com/ROCm/HIP/blob/develop/docs/reference/deprecated_api_list.md [-Wdeprecated-declarations]
+ 1408 |   return hipGetTextureReference(texref, symbol);
+      |          ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:7506:1: note: 'hipGetTextureReference' has been explicitly marked deprecated here
+ 7506 | HIP_DEPRECATED(HIP_DEPRECATED_MSG)
+      | ^
+/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/include/hip/hip_runtime_api.h:680:44: note: expanded from macro 'HIP_DEPRECATED'
+  680 | #define HIP_DEPRECATED(msg) __attribute__((deprecated(msg)))
+      |                                            ^
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |     ^~~~~~~~ ~~~
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:19: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |                   ^~~~~~~~ ~~~~
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:34: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |                                  ^~~~~~~~ ~~~~~~~~~~~~
+/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/student_mini.cu:365:57: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  365 |     cudaFree(exp);cudaFree(silu);cudaFree(device_input);cudaFree(device_output);free(input);free(output);
+      |                                                         ^~~~~~~~ ~~~~~~~~~~~~~
+7 warnings generated when compiling for host.
+
+CONFIGS="-DVX_CFG_NUM_CORES=1 -DVX_CFG_NUM_WARPS=2 -DVX_CFG_NUM_THREADS=4 -DVX_CFG_FPU_TYPE=STD"   make -C /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/simx DESTDIR=/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime
+make[1]: Entering directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/simx'
+DESTDIR=/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime make -C /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sim/simx /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/libsimx.so
+make[2]: Entering directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sim/simx'
+make[2]: Leaving directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sim/simx'
+make[1]: Leaving directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime/simx'
+OCL_ICD_VENDORS=/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/opencl-vendors LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/mnt/d/open-soc-ai-labs-vortex-tools/chipstar/lib:/mnt/d/open-soc-ai-labs-vortex-tools/pocl/lib:/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw/runtime:/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/lib: POCL_IGNORE_CL_STD=1 POCL_VORTEX_XLEN=32 LLVM_PREFIX=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex POCL_PATH_LLVM_SPIRV=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/bin/llvm-spirv POCL_VORTEX_BINTOOL="OBJCOPY=/mnt/d/open-soc-ai-labs-vortex-tools/llvm-vortex/bin/llvm-objcopy /mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/sw/kernel/scripts/vxbin.py" POCL_VORTEX_CFLAGS="-O2 -ffp-contract=off -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw --target=riscv32-unknown-elf -O3 -mcmodel=medany --sysroot=/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain/riscv32-unknown-elf --gcc-toolchain=/mnt/d/open-soc-ai-labs-vortex-tools/riscv32-gnu-toolchain -fno-rtti -fno-exceptions -nostartfiles -nostdlib -fdata-sections -ffunction-sections -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/sw -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/native-gpu/fc14e0f618eacaeb78fd0df4626bab2fd19315064842dab6b7c12084b13bb61c/vortex-build/hw -I/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/sw/kernel/include -DVX_CFG_XLEN=32 -DVX_CFG_XLEN_32 -DNDEBUG -D__VORTEX__ -Xclang -target-feature -Xclang +xvortex -Xclang -target-feature -Xclang +zicond -mllvm -disable-loop-idiom-all -march=rv32imaf -mabi=ilp32f" POCL_VORTEX_LDFLAGS="/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/device_compat.o -fuse-ld=lld -Wl,-z,norelro -Wl,-Bstatic,--gc-sections,-T/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/vortex-source/sw/kernel/scripts/link32.ld,--defsym=STARTUP_ADDR=0x80000000 /mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/build/student-mini/gpu/564d2826b16a6d0564793dfe477fa651ac8375651a3c3031b092f44bc80fd5f1/kernel_compat/libvortex2.a -L/mnt/d/open-soc-ai-labs-vortex-tools/libc32/lib -lm -lc /mnt/d/open-soc-ai-labs-vortex-tools/libcrt32/lib/baremetal/libclang_rt.builtins-riscv32.a" VORTEX_DRIVER=simx ./student_mini /mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/fresh-baselines/inputs.bin
+CHIP info [TID 433] [1793973439.815105563] : CHIP_PLATFORM=0
+CHIP info [TID 433] [1793973439.816527294] : CHIP_DEVICE_TYPE=gpu
+CHIP info [TID 433] [1793973439.817218945] : CHIP_DEVICE=0
+CHIP info [TID 433] [1793973439.817837082] : CHIP_BE=opencl
+CHIP info [TID 433] [1793973439.818476686] : CHIP_DUMP_SPIRV=off
+CHIP info [TID 433] [1793973439.819321257] : CHIP_RTC_SAVE_TEMPS=off
+CHIP info [TID 433] [1793973439.820080087] : CHIP_JIT_FLAGS_OVERRIDE=
+CHIP info [TID 433] [1793973439.820815556] : CHIP_L0_COLLECT_EVENTS_TIMEOUT=0
+CHIP info [TID 433] [1793973439.821587589] : CHIP_L0_EVENT_TIMEOUT=0
+CHIP info [TID 433] [1793973439.822412213] : CHIP_SKIP_UNINIT=off
+CHIP info [TID 433] [1793973439.823416567] : CHIP_LAZY_JIT=on
+CHIP info [TID 433] [1793973439.824114390] : CHIP_OCL_DISABLE_QUEUE_PROFILING=off
+CHIP info [TID 433] [1793973439.824766345] : CHIP_OCL_USE_ALLOC_STRATEGY=off
+CHIP info [TID 433] [1793973439.825431390] : CHIP_MODULE_CACHE_DIR=/home/ssc/.cache/chipStar
+CHIP info [TID 433] [1793973439.826140227] : CHIP_DUMP_PROCESSED_SPIRV=off
+CHIP debug [TID 433] [1793973439.827895022] : CHIPDriver Initialize
+CHIP debug [TID 433] [1793973439.828625298] : CHIPBE=OPENCL... Initializing OpenCL Backend
+CHIP info [TID 433] [1793973441.106312967] : OpenCL Devices of type gpu with SPIR-V_1 support across all platforms:
+Platform 0: Vortex OpenGPU  is supported.
+
+CHIP warning [TID 433] [1793973441.169407484] : The device might not support subgroup size 32, warp-size sensitive kernels might not work correctly.
+CHIP info [TID 433] [1793973441.201071064] : No rtdevlib imports, building directly
+warning: overriding the module target triple with riscv32-unknown-unknown-elf [-Woverride-module]
+1 warning generated.
+CHIP info [TID 433] [1793973447.094559356] : Program LOG for device #0:Vortex OpenGPU:
+
+
+CHIP info [TID 433] [1793973447.095639885] : Kernel compilation took 5.89589 seconds
+CHIP info [TID 433] [1793973447.096355896] : Module compilation took 5896911 microseconds
+CHIP info [TID 433] [1793973447.097180664] : initDeviceHeap() device_heap: 0x0
+CHIP info [TID 433] [1793973447.097915823] : initDeviceHeap() allocated init_device_heap_ptr: 0x10840
+[VXDRV] Warning: CP has not retired a command in 10s.
+[VXDRV]   Q_SEQNUM=254 target=255 CP_CTRL=0x00000001 CP_STATUS=0x00000001 Q_ERROR=0x00000000
+[VXDRV]   RING_BASE=0x000061a3ec9b3980 HEAD_ADDR=0x000061a3ec9c39c0 CMPL_ADDR=0x000061a3ec9c3ac0
+[VXDRV]   RING_SIZE_LOG2=16 Q_CONTROL=0x00000001 Q_TAIL=0x0000000000003fc0
+[VXDRV]   The ring was accepted but nothing is executing. Set VORTEX_CP_POLL_TIMEOUT_S=<sec> to abort instead of spinning.
+STUDENT_GPU ordinal=0 status=0 primitive=0 bits=bc80,bd00,3d80,3d40,3d80,bda0,3dc0,0000 selected=0
+STUDENT_GPU ordinal=1 status=0 primitive=0 bits=bde0,3c80,bd00,bdc0,bda0,bc80,3d40,3d40 selected=0
+STUDENT_GPU ordinal=2 status=0 primitive=0 bits=3d40,3da0,bde0,3c80,3d00,3d40,bc80,3dc0 selected=0
+STUDENT_GPU ordinal=3 status=0 primitive=0 bits=bd40,bde0,3d40,bde0,bdc0,3de0,bd80,bde0 selected=0
+STUDENT_GPU ordinal=4 status=0 primitive=0 bits=3de0,bd80,bd40,0000,3c80,bda0,be00,bd80 selected=0
+STUDENT_GPU ordinal=5 status=0 primitive=0 bits=3c80,0000,be00,3de0,be00,bc80,3d80,bc80 selected=0
+STUDENT_GPU ordinal=6 status=0 primitive=0 bits=bda0,3d80,3d00,bc80,bc80,3d40,3c80,3d00 selected=0
+STUDENT_GPU ordinal=7 status=0 primitive=0 bits=3da0,3de0,bd40,3dc0,3dc0,3dc0,bd40,3da0 selected=0
+STUDENT_GPU ordinal=8 status=0 primitive=0 bits=bc80,bda0,3de0,bd40,bd00,bdc0,bdc0,be00 selected=0
+STUDENT_GPU ordinal=9 status=0 primitive=0 bits=bde0,bc80,3d00,3d80,3da0,bd00,3dc0,bda0 selected=0
+STUDENT_GPU ordinal=10 status=0 primitive=0 bits=bd28,3d63,bdd4,bd57,bd63,bcb9,3c67,3dcf selected=2,1
+STUDENT_GPU ordinal=11 status=0 primitive=0 bits=bdc1,3c80,bd1f,bdd0,bdcf,bd3d,3d9e,3d9e selected=0,3
+STUDENT_GPU ordinal=12 status=0 primitive=0 bits=3d84,bc29,bc46,bd62,3d48,bd2a,bcc8,3d9c selected=0,2
+STUDENT_GPU ordinal=13 status=0 primitive=0 bits=bcdc,bdb7,3ae6,bdad,bd8d,3d5e,bd6b,bd84 selected=0,2
+STUDENT_GPU ordinal=14 status=0 primitive=0 bits=bc82,3c19,3c99,bcfb,bdd9,0000,bd0d,3d33 selected=1,2
+STUDENT_GPU ordinal=15 status=0 primitive=0 bits=bd1a,bd2f,bc96,bd24,bda9,bd6f,3d54,bd43 selected=3,0
+STUDENT_GPU ordinal=16 status=0 primitive=0 bits=bd06,3d53,3d68,3d19,3dc8,bd93,bd85,3d0f selected=1,2
+STUDENT_GPU ordinal=17 status=0 primitive=0 bits=3cff,3de0,bc59,3da4,3d08,3ca2,bd89,3c90 selected=2,0
+STUDENT_GPU ordinal=18 status=0 primitive=0 bits=3ab0,bd8f,3dcf,bd40,3b30,bc8f,bc12,be00 selected=0,3
+STUDENT_GPU ordinal=19 status=0 primitive=0 bits=bd82,3d9b,3db5,bd81,3c1d,bd86,3c62,bc1d selected=3,0
+STUDENT_GPU ordinal=20 status=0 primitive=0 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=21 status=0 primitive=0 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=22 status=0 primitive=0 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=23 status=0 primitive=0 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=24 status=0 primitive=0 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=25 status=0 primitive=0 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=26 status=0 primitive=0 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=27 status=0 primitive=0 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=28 status=0 primitive=0 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=29 status=0 primitive=0 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=30 status=0 primitive=0 bits=3d32,3d6c,bd62,bb60,bc9c,3d8d,bd9e,bcc3,bd7d,bd19,bc96,bd56,bd38,bdcf,3d64,3db3 selected=3,2,4,0
+STUDENT_GPU ordinal=31 status=0 primitive=0 bits=bd20,bdcc,3b1b,3cb1,bdef,3da9,bd22,3d36,bd94,3c68,bd2e,bddc,bdfe,bd95,3dd5,3dd6 selected=0,1,2,0
+STUDENT_GPU ordinal=32 status=0 primitive=0 bits=3da0,bcc7,3c0e,badc,bdaf,3d1f,3d14,3d80,bcda,3c88,bd25,3d65,bd59,3d5f,3d1f,3cb6 selected=1,0,0,4
+STUDENT_GPU ordinal=33 status=0 primitive=0 bits=bcc8,bd40,bda5,bd37,bced,bd37,bd8e,3c93,bdfa,bd3f,bd3e,bd99,bd73,ba1a,bdf8,bc6d selected=3,1,4,3
+STUDENT_GPU ordinal=34 status=0 primitive=0 bits=bab4,bbb8,3c24,bd63,bdc3,bd0b,bb3c,3ca4,ba42,bc63,3d0d,bdcd,bdd8,bcbc,3c2d,3d94 selected=0,3,4,0
+STUDENT_GPU ordinal=35 status=0 primitive=0 bits=3d03,bd56,bd4f,bd89,3d4c,3b95,bc5f,3d29,3dd1,3d00,3dcf,bde0,3db1,3d80,bdbf,bd3b selected=0,3,4,1
+STUDENT_GPU ordinal=36 status=0 primitive=0 bits=bda6,bd80,bd4c,3d11,3d8e,bdcc,3d9a,bbbb,bd07,3d53,3d6b,3d1a,3dc8,bd93,bd85,3d11 selected=3,1,0,1
+STUDENT_GPU ordinal=37 status=0 primitive=0 bits=bd88,3d98,bb88,3dc8,3d73,bdb8,3c4b,bd98,bd5e,3de0,3a00,bbdc,3be4,bdc0,bd91,bc86 selected=0,1,1,4
+STUDENT_GPU ordinal=38 status=0 primitive=0 bits=bde0,bd86,be00,bdb5,bda1,bd0a,bde0,bd6c,3d85,bdd6,bd49,3c91,bd85,bd6d,bd8e,3da5 selected=1,0,3,4
+STUDENT_GPU ordinal=39 status=0 primitive=0 bits=3a1b,3d0e,3d46,bd8d,3c96,bcc4,bd81,bd1e,3cfb,3dd0,3d91,bd62,3cfd,3bea,bc01,bd1e selected=2,1,2,0
+STUDENT_GPU ordinal=40 status=0 primitive=0 bits=3d32,3d6c,bd62,bb60,bc9c,3d8d,bd9e,bcc3,bd7d,bd19,bc96,bd56,bd38,bdcf,3d64,3db3 selected=3,2,4,0
+STUDENT_GPU ordinal=41 status=0 primitive=0 bits=bd20,bdcc,3b1b,3cb1,bdef,3da9,bd22,3d36,bd94,3c68,bd2e,bddc,bdfe,bd95,3dd5,3dd6 selected=0,1,2,0
+STUDENT_GPU ordinal=42 status=0 primitive=0 bits=bb97,bcdf,3bab,bcda,3d18,bd3b,bbbe,3cfb,bcda,3c88,bd25,3d65,bd59,3d5f,3d1f,3cb6 selected=1,4,0,4
+STUDENT_GPU ordinal=43 status=0 primitive=0 bits=bdc2,bd34,bd27,bd2b,bcee,bbc7,bdaf,bb64,bdfa,bd3f,bd3e,bd99,bd73,ba1a,bdf8,bc6d selected=3,4,4,3
+STUDENT_GPU ordinal=44 status=0 primitive=0 bits=bab4,bbb8,3c24,bd63,bdc3,bd0b,bb3c,3ca4,ba42,bc63,3d0d,bdcd,bdd8,bcbc,3c2d,3d94 selected=0,3,4,0
+STUDENT_GPU ordinal=45 status=0 primitive=0 bits=3d4b,3d00,3d24,bd9f,3dba,3cca,bce0,bda0,3dd1,3d00,3dcf,bde0,3db1,3d80,bdbf,bd3b selected=4,0,4,1
+STUDENT_GPU ordinal=46 status=0 primitive=0 bits=bda6,bd80,bd4c,3d11,3d8e,bdcc,3d9a,bbbb,bd07,3d53,3d6b,3d1a,3dc8,bd93,bd85,3d11 selected=3,1,0,1
+STUDENT_GPU ordinal=47 status=0 primitive=0 bits=bda0,3d9b,bca4,3d65,3dae,bdc9,3ca5,bd41,bd5e,3de0,3a00,bbdc,3be4,bdc0,bd91,bc86 selected=0,4,1,4
+STUDENT_GPU ordinal=48 status=0 primitive=0 bits=bc68,bd1d,bd3b,bda0,bdc0,3cc5,bd7d,3c16,3d85,bdd6,bd49,3c91,bd85,bd6d,bd8e,3da5 selected=1,4,3,4
+STUDENT_GPU ordinal=49 status=0 primitive=0 bits=bd1f,3d86,3dd8,bdbf,bb6b,bd7e,bbf9,bc4c,3cfb,3dd0,3d91,bd62,3cfd,3bea,bc01,bd1e selected=4,2,2,0
+STUDENT_GPU ordinal=50 status=0 primitive=0 bits=bc80,bd00,3d80,3d40,3d80,bda0,3dc0,0000 selected=0
+STUDENT_GPU ordinal=51 status=0 primitive=0 bits=bde0,3c80,bd00,bdc0,bda0,bc80,3d40,3d40 selected=0
+STUDENT_GPU ordinal=52 status=0 primitive=0 bits=3d40,3da0,bde0,3c80,3d00,3d40,bc80,3dc0 selected=0
+STUDENT_GPU ordinal=53 status=0 primitive=0 bits=bd40,bde0,3d40,bde0,bdc0,3de0,bd80,bde0 selected=0
+STUDENT_GPU ordinal=54 status=0 primitive=0 bits=3de0,bd80,bd40,0000,3c80,bda0,be00,bd80 selected=0
+STUDENT_GPU ordinal=55 status=0 primitive=0 bits=3c80,0000,be00,3de0,be00,bc80,3d80,bc80 selected=0
+STUDENT_GPU ordinal=56 status=0 primitive=0 bits=bda0,3d80,3d00,bc80,bc80,3d40,3c80,3d00 selected=0
+STUDENT_GPU ordinal=57 status=0 primitive=0 bits=3da0,3de0,bd40,3dc0,3dc0,3dc0,bd40,3da0 selected=0
+STUDENT_GPU ordinal=58 status=0 primitive=0 bits=bc80,bda0,3de0,bd40,bd00,bdc0,bdc0,be00 selected=0
+STUDENT_GPU ordinal=59 status=0 primitive=0 bits=bde0,bc80,3d00,3d80,3da0,bd00,3dc0,bda0 selected=0
+STUDENT_GPU ordinal=60 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=61 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=62 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=63 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=64 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=65 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=66 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=67 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=68 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=69 status=0 primitive=0 bits=3db3,3db3,3db3,3db3,3db3,3db3,3db3,3db3 selected=4,0
+STUDENT_GPU ordinal=70 status=0 primitive=0 bits=bc80,bd00,3d80,3d40,3d80,bda0,3dc0,0000 selected=0
+STUDENT_GPU ordinal=71 status=0 primitive=0 bits=bde0,3c80,bd00,bdc0,bda0,bc80,3d40,3d40 selected=0
+STUDENT_GPU ordinal=72 status=0 primitive=0 bits=3d40,3da0,bde0,3c80,3d00,3d40,bc80,3dc0 selected=0
+STUDENT_GPU ordinal=73 status=0 primitive=0 bits=bd40,bde0,3d40,bde0,bdc0,3de0,bd80,bde0 selected=0
+STUDENT_GPU ordinal=74 status=0 primitive=0 bits=3de0,bd80,bd40,0000,3c80,bda0,be00,bd80 selected=0
+STUDENT_GPU ordinal=75 status=0 primitive=0 bits=3c80,0000,be00,3de0,be00,bc80,3d80,bc80 selected=0
+STUDENT_GPU ordinal=76 status=0 primitive=0 bits=bda0,3d80,3d00,bc80,bc80,3d40,3c80,3d00 selected=0
+STUDENT_GPU ordinal=77 status=0 primitive=0 bits=3da0,3de0,bd40,3dc0,3dc0,3dc0,bd40,3da0 selected=0
+STUDENT_GPU ordinal=78 status=0 primitive=0 bits=bc80,bda0,3de0,bd40,bd00,bdc0,bdc0,be00 selected=0
+STUDENT_GPU ordinal=79 status=0 primitive=0 bits=bde0,bc80,3d00,3d80,3da0,bd00,3dc0,bda0 selected=0
+STUDENT_GPU ordinal=80 status=0 primitive=0 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=81 status=0 primitive=0 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=82 status=0 primitive=0 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=83 status=0 primitive=0 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=84 status=0 primitive=0 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=85 status=0 primitive=0 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=86 status=0 primitive=0 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=87 status=0 primitive=0 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=88 status=0 primitive=0 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=89 status=0 primitive=0 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=90 status=0 primitive=0 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=91 status=0 primitive=0 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=92 status=0 primitive=0 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=93 status=0 primitive=0 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=94 status=0 primitive=0 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=95 status=0 primitive=0 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=96 status=0 primitive=0 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=97 status=0 primitive=0 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=98 status=0 primitive=0 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=99 status=0 primitive=0 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=100 status=0 primitive=0 bits=bb62,3dcf,bdcf,3c34,bd35,3c95,bd8c,3d05,bcb2,bccf,bce3,bcd3,bcc6,bd5c,3ca3,3d85 selected=1,6,2,5,4,0,3,1
+STUDENT_GPU ordinal=101 status=0 primitive=0 bits=bc6f,bdac,bae0,bc87,bddb,3d5e,bc9a,3d37,bd93,bb68,bd17,bdac,bdf2,bd70,3db6,3dbc selected=7,1,0,5,1,2,6,4
+STUDENT_GPU ordinal=102 status=0 primitive=0 bits=3ce3,bc9f,bc98,bd7b,3d23,bdbf,bd1e,bcb0,bca4,3af5,bd3e,3d04,bda5,3d95,3ab9,3d13 selected=5,2,6,1,3,4,7,0
+STUDENT_GPU ordinal=103 status=0 primitive=0 bits=3c89,bcf6,bd4b,b901,3ac3,bd09,bd59,bc47,bce3,3c2e,3d0b,bce5,bd88,3bc6,bda4,bcee selected=2,1,4,5,2,6,3,7
+STUDENT_GPU ordinal=104 status=0 primitive=0 bits=3b91,b98d,3c8e,bd8c,bd38,3c82,bd89,3d5e,3bb2,bc97,3d4e,3bf4,bda3,3cba,bd80,3d4c selected=2,6,4,0,7,1,0,5
+STUDENT_GPU ordinal=105 status=0 primitive=0 bits=3d4a,3c54,3d35,bc9d,3b34,3cf0,3d15,bd18,bd29,bd26,3c89,bdb7,bc64,bd7e,3d4f,bd7e selected=4,2,6,3,0,2,4,5
+STUDENT_GPU ordinal=106 status=0 primitive=0 bits=bd90,bd89,bba0,bc4a,3b9e,bd63,3da3,3cf1,bdc8,3d1b,3c5e,3cc1,bd7e,bc8c,bd01,3b5f selected=1,3,7,5,6,2,1,4
+STUDENT_GPU ordinal=107 status=0 primitive=0 bits=3bf8,bd29,3bc6,bd13,bc8d,bcb3,bd3f,bd47,3d01,3d19,3d01,bb51,3d6e,bd81,bd68,3b9e selected=4,6,3,2,4,7,2,1
+STUDENT_GPU ordinal=108 status=0 primitive=0 bits=bc84,bd63,bbf2,bd10,bd47,3d2b,3cd6,bd64,bd06,bd8b,bc18,bd88,bd26,3cba,bca7,bd9a selected=2,7,1,5,2,1,6,4
+STUDENT_GPU ordinal=109 status=0 primitive=0 bits=3bc7,bba5,3c75,3bb8,3d8e,3cc1,bd93,bd2d,bda6,3d07,3d04,3d22,3d97,3cd9,bb87,bc87 selected=7,1,6,5,0,1,3,7
+STUDENT_GPU ordinal=110 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=111 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=112 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=113 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=114 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=115 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=116 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=117 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=118 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=119 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=120 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=121 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=122 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=123 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=124 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=125 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=126 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=127 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=128 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=129 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=0,1
+STUDENT_GPU ordinal=130 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=131 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=132 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=133 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=134 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=135 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=136 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=137 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=138 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=139 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=0,1
+STUDENT_GPU ordinal=140 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=141 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=142 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=143 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=144 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=145 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=146 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=147 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=148 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=149 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=0,1
+STUDENT_GPU ordinal=150 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=151 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=152 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=153 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=154 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=155 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=156 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=157 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=158 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=159 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=0,1
+STUDENT_GPU ordinal=160 status=0 primitive=0 bits=b780,38d0,b8c0,b840,b880,3800,b820,3820 selected=2,3
+STUDENT_GPU ordinal=161 status=0 primitive=0 bits=0000,b700,3800,b890,b8b0,3820,b700,0000 selected=0,1
+STUDENT_GPU ordinal=162 status=0 primitive=0 bits=3860,b7c0,b7c0,3800,b8e0,38b0,3700,3890 selected=4,1
+STUDENT_GPU ordinal=163 status=0 primitive=0 bits=0000,b860,b800,b700,b8d0,3890,b8b0,b8b0 selected=0,1
+STUDENT_GPU ordinal=164 status=0 primitive=0 bits=3860,b7c0,b780,b7c0,0000,b780,b900,b700 selected=0,3
+STUDENT_GPU ordinal=165 status=0 primitive=0 bits=38a0,b7c0,37c0,b8c0,3880,3820,b880,3800 selected=2,4
+STUDENT_GPU ordinal=166 status=0 primitive=0 bits=b8e0,3700,3700,3880,b7c0,b7c0,3820,3840 selected=4,3
+STUDENT_GPU ordinal=167 status=0 primitive=0 bits=b800,0000,b780,b780,b8a0,b7c0,b820,b8a0 selected=2,4
+STUDENT_GPU ordinal=168 status=0 primitive=0 bits=37c0,b8d0,37c0,b700,b840,b8b0,b8b0,b7c0 selected=0,4
+STUDENT_GPU ordinal=169 status=0 primitive=0 bits=b8e0,3840,b780,b780,3800,3700,38b0,b820 selected=4,0
+STUDENT_GPU ordinal=170 status=0 primitive=0 bits=c780,48d0,c8c0,c840,c880,4800,c820,4820 selected=2,3
+STUDENT_GPU ordinal=171 status=0 primitive=0 bits=48e0,c800,48c0,c840,c8c0,48c0,c880,c840 selected=0,1
+STUDENT_GPU ordinal=172 status=0 primitive=0 bits=4860,c7c0,c7c0,4800,c8e0,48b0,4700,4890 selected=4,1
+STUDENT_GPU ordinal=173 status=0 primitive=0 bits=c840,c8e0,4840,c8e0,c8c0,48e0,c880,c8e0 selected=0,1
+STUDENT_GPU ordinal=174 status=0 primitive=0 bits=4860,c7c0,c780,c7c0,0000,c780,c900,c700 selected=0,3
+STUDENT_GPU ordinal=175 status=0 primitive=0 bits=48a0,c7c0,47c0,c8c0,4880,4820,c880,4800 selected=2,4
+STUDENT_GPU ordinal=176 status=0 primitive=0 bits=c8e0,4700,4700,4880,c7c0,c7c0,4820,4840 selected=4,3
+STUDENT_GPU ordinal=177 status=0 primitive=0 bits=c800,c8e0,c880,c8c0,c8e0,4800,4780,c8c0 selected=2,4
+STUDENT_GPU ordinal=178 status=0 primitive=0 bits=c780,c8a0,48e0,c840,c800,c8c0,c8c0,c900 selected=0,4
+STUDENT_GPU ordinal=179 status=0 primitive=0 bits=c8e0,48e0,c880,c8c0,c780,4840,48a0,0000 selected=4,0
+STUDENT_GPU ordinal=180 status=0 primitive=2 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=181 status=0 primitive=2 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=182 status=0 primitive=2 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=183 status=0 primitive=2 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=184 status=0 primitive=2 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=185 status=0 primitive=2 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=186 status=0 primitive=2 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=187 status=0 primitive=2 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=188 status=0 primitive=2 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=189 status=0 primitive=2 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=190 status=0 primitive=4 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=191 status=0 primitive=4 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=192 status=0 primitive=4 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=193 status=0 primitive=4 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=194 status=0 primitive=4 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=195 status=0 primitive=4 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=196 status=0 primitive=4 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=197 status=0 primitive=4 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=198 status=0 primitive=4 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=199 status=0 primitive=4 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=200 status=0 primitive=-2 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=201 status=0 primitive=-2 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=202 status=0 primitive=-2 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=203 status=0 primitive=-2 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=204 status=0 primitive=-2 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=205 status=0 primitive=-2 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=206 status=0 primitive=-2 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=207 status=0 primitive=-2 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=208 status=0 primitive=-2 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=209 status=0 primitive=-2 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=210 status=0 primitive=-4 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=211 status=0 primitive=-4 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=212 status=0 primitive=-4 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=213 status=0 primitive=-4 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=214 status=0 primitive=-4 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=215 status=0 primitive=-4 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=216 status=0 primitive=-4 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=217 status=0 primitive=-4 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=218 status=0 primitive=-4 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=219 status=0 primitive=-4 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=220 status=0 primitive=-128 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=221 status=0 primitive=-128 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=222 status=0 primitive=-128 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=223 status=0 primitive=-128 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=224 status=0 primitive=-128 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=225 status=0 primitive=-128 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=226 status=0 primitive=-128 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=227 status=0 primitive=-128 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=228 status=0 primitive=-128 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=229 status=0 primitive=-128 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=230 status=0 primitive=127 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=231 status=0 primitive=127 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=232 status=0 primitive=127 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=233 status=0 primitive=127 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=234 status=0 primitive=127 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=235 status=0 primitive=127 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=236 status=0 primitive=127 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=237 status=0 primitive=127 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=238 status=0 primitive=127 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=239 status=0 primitive=127 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=240 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=241 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=242 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=243 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=244 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=245 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=246 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=247 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=248 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=249 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=250 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=251 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=252 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=253 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=254 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=255 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=256 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=257 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=258 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=259 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=260 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=261 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=262 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=263 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=264 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=265 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=266 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=267 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=268 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=269 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=270 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=271 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=272 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=273 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=274 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=275 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=276 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=277 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=278 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=279 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=280 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=281 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=282 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=283 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=284 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=285 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=286 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=287 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=288 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=289 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=290 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=291 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=292 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=293 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=294 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=295 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=296 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=297 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=298 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=299 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=300 status=0 primitive=0 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=301 status=0 primitive=0 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=302 status=0 primitive=0 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=303 status=0 primitive=0 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=304 status=0 primitive=0 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=305 status=0 primitive=0 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=306 status=0 primitive=0 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=307 status=0 primitive=0 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=308 status=0 primitive=0 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=309 status=0 primitive=0 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=310 status=0 primitive=0 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=311 status=0 primitive=0 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=312 status=0 primitive=0 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=313 status=0 primitive=0 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=314 status=0 primitive=0 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=315 status=0 primitive=0 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=316 status=0 primitive=0 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=317 status=0 primitive=0 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=318 status=0 primitive=0 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=319 status=0 primitive=0 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=320 status=0 primitive=0 bits=bc80,3dcf,bdc6,bd3a,bd7a,3cf4,bd17,3d3b selected=2,3
+STUDENT_GPU ordinal=321 status=0 primitive=0 bits=3daf,bcd6,3da4,bd55,bdbc,3da7,bd4f,bd16 selected=0,1
+STUDENT_GPU ordinal=322 status=0 primitive=0 bits=3d68,bcbb,bcb0,3cf5,bde0,3dac,3c37,3d8f selected=4,1
+STUDENT_GPU ordinal=323 status=0 primitive=0 bits=bd23,bdcf,3d0f,bdc0,bdc2,3dd4,bd87,bdd9 selected=0,1
+STUDENT_GPU ordinal=324 status=0 primitive=0 bits=3cf1,bbb0,ba9b,bd0c,bbed,3c59,be00,3c8f selected=0,3
+STUDENT_GPU ordinal=325 status=0 primitive=0 bits=3d88,bd35,bb51,bdb4,3d50,3cf7,bd68,3d49 selected=2,4
+STUDENT_GPU ordinal=326 status=0 primitive=0 bits=bde0,3c27,3c15,3d81,bcd4,bcb2,3d19,3d45 selected=4,3
+STUDENT_GPU ordinal=327 status=0 primitive=0 bits=bd00,bdc6,bd6a,bdae,bdd9,3ccc,3c19,bdbc selected=2,4
+STUDENT_GPU ordinal=328 status=0 primitive=0 bits=3ab1,bdb5,3d93,bcf5,bd1c,bdb9,bdb9,bda6 selected=0,4
+STUDENT_GPU ordinal=329 status=0 primitive=0 bits=bde0,3d90,bd07,bd37,3c62,3cb7,3daa,bcc9 selected=4,0
+STUDENT_GPU ordinal=330 status=0 primitive=0 bits=bde0,bd40,bd40,bde0,bda0,be00,3dc0,3da0 selected=
+STUDENT_GPU ordinal=331 status=0 primitive=0 bits=3de0,bd00,3dc0,bd40,bdc0,3dc0,bd80,bd40 selected=
+STUDENT_GPU ordinal=332 status=0 primitive=0 bits=3da0,bc80,0000,3c80,bde0,3d80,3d40,3d80 selected=
+STUDENT_GPU ordinal=333 status=0 primitive=0 bits=3d40,0000,bde0,3dc0,bde0,3d00,bde0,bd80 selected=
+STUDENT_GPU ordinal=334 status=0 primitive=0 bits=3c80,3c80,3d00,bdc0,be00,0000,bc80,3d80 selected=
+STUDENT_GPU ordinal=335 status=0 primitive=0 bits=bc80,3d00,bd80,bd00,3de0,bd00,3dc0,bda0 selected=
+STUDENT_GPU ordinal=336 status=0 primitive=0 bits=bd40,3d40,3da0,3d40,3de0,bd80,bd80,3d40 selected=
+STUDENT_GPU ordinal=337 status=0 primitive=0 bits=bda0,3d80,bc80,3de0,3dc0,bdc0,3d40,bda0 selected=
+STUDENT_GPU ordinal=338 status=0 primitive=0 bits=bde0,3da0,be00,bd80,3da0,be00,bde0,3d40 selected=
+STUDENT_GPU ordinal=339 status=0 primitive=0 bits=3de0,3dc0,3d00,0000,3da0,3dc0,0000,bdc0 selected=
+STUDENT_GPU ordinal=340 status=0 primitive=0 bits=3da3,3d0d,3d2a,3d24,bcbd,3db2,bd52,bcaf selected=
+STUDENT_GPU ordinal=341 status=0 primitive=0 bits=3c90,394e,bd95,3d07,bdab,3cb8,bd39,bdb6 selected=
+STUDENT_GPU ordinal=342 status=0 primitive=0 bits=bd41,3baf,3caa,bc45,bdd6,bd8b,bc8e,3d9c selected=
+STUDENT_GPU ordinal=343 status=0 primitive=0 bits=3cba,bd2d,bda3,bd00,bc1f,bd4b,bd31,3cf6 selected=
+STUDENT_GPU ordinal=344 status=0 primitive=0 bits=bc20,0000,bd10,bbff,bd0c,3c10,bc98,bca0 selected=
+STUDENT_GPU ordinal=345 status=0 primitive=0 bits=3d61,3caf,3d97,bdd6,3d35,3cbb,bd32,bd3a selected=
+STUDENT_GPU ordinal=346 status=0 primitive=0 bits=3db3,3cdf,3d4b,bdb2,bd77,3ce3,3c5d,3d24 selected=
+STUDENT_GPU ordinal=347 status=0 primitive=0 bits=3ac8,3d07,bcc0,3dad,3d26,bc4e,3cd9,bc01 selected=
+STUDENT_GPU ordinal=348 status=0 primitive=0 bits=bdd2,bda4,bdcc,bd91,bdba,bcb9,bda2,bd97 selected=
+STUDENT_GPU ordinal=349 status=0 primitive=0 bits=3dd3,bcb2,bde7,3c3d,bd05,3dcf,3da1,bde0 selected=
+STUDENT_GPU ordinal=350 status=0 primitive=0 bits=3d5b,bd56,bd73,3cee,bd2b,bd13,3c78,3a51 selected=
+STUDENT_GPU ordinal=351 status=0 primitive=0 bits=bdaf,bdaf,bcfd,bd6f,bd24,bcf9,3d59,3daa selected=
+STUDENT_GPU ordinal=352 status=0 primitive=0 bits=3d11,bd13,3d8e,3d2a,bdcb,3d46,bd5f,3db9 selected=
+STUDENT_GPU ordinal=353 status=0 primitive=0 bits=bd4e,bd46,bb15,bccc,bc95,bd01,bd98,bd3c selected=
+STUDENT_GPU ordinal=354 status=0 primitive=0 bits=3bba,bd2c,3d28,3be8,bcee,bd32,bc0f,bc84 selected=
+STUDENT_GPU ordinal=355 status=0 primitive=0 bits=3da1,bd22,3ca3,bd64,3d6b,3ada,3a01,ba1d selected=
+STUDENT_GPU ordinal=356 status=0 primitive=0 bits=bdb3,bd7d,bdc3,bc13,3cf1,bd59,3bc2,bd80 selected=
+STUDENT_GPU ordinal=357 status=0 primitive=0 bits=bc9a,bc95,bce5,3da4,bd2e,bd84,3d60,3d67 selected=
+STUDENT_GPU ordinal=358 status=0 primitive=0 bits=3c7b,bccb,bce2,3d2e,bd2e,badc,3cf9,3cce selected=
+STUDENT_GPU ordinal=359 status=0 primitive=0 bits=bc3c,bb0d,bb80,bd32,3ca2,bc66,3d33,bd18 selected=
+STUDENT_GPU ordinal=360 status=0 primitive=0 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=361 status=0 primitive=0 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=362 status=0 primitive=0 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=363 status=0 primitive=0 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=364 status=0 primitive=0 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=365 status=0 primitive=0 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=366 status=0 primitive=0 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=367 status=0 primitive=0 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=368 status=0 primitive=0 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=369 status=0 primitive=0 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=370 status=0 primitive=0 bits=bd50,bcd2,bc87,bcfb,3c47,bbd6,bb21,bcef selected=
+STUDENT_GPU ordinal=371 status=0 primitive=0 bits=3d0e,3be7,bd8c,3d28,3beb,bc88,bd1a,3cc1 selected=
+STUDENT_GPU ordinal=372 status=0 primitive=0 bits=bce3,3bbf,bce4,bd10,3d4a,bd18,bd9a,bcc8 selected=
+STUDENT_GPU ordinal=373 status=0 primitive=0 bits=3be7,3d49,3d33,bd09,bd94,3ccb,bd86,bd27 selected=
+STUDENT_GPU ordinal=374 status=0 primitive=0 bits=3c62,bcec,bb9d,3c09,bd28,bd15,bcb9,bccb selected=
+STUDENT_GPU ordinal=375 status=0 primitive=0 bits=bb10,3c2c,bb0e,3bf0,bc35,bca7,bd2f,bb01 selected=
+STUDENT_GPU ordinal=376 status=0 primitive=0 bits=3b40,3d7e,3d73,3c66,bd68,3c8b,3c10,3cc1 selected=
+STUDENT_GPU ordinal=377 status=0 primitive=0 bits=bd80,bd3e,bd14,bd65,baa0,3c14,bd05,bd38 selected=
+STUDENT_GPU ordinal=378 status=0 primitive=0 bits=3bc3,bc5f,bce1,3c84,bc74,bd31,3c9b,3c65 selected=
+STUDENT_GPU ordinal=379 status=0 primitive=0 bits=bcbf,bd91,3d5b,bd46,3d2c,bc65,3cc5,bdb1 selected=
+STUDENT_GPU ordinal=380 status=0 primitive=0 bits=3b19,bd13,3cc1,3bc4,3d90,bd10,bdc3,3d4c selected=
+STUDENT_GPU ordinal=381 status=0 primitive=0 bits=bcc4,bda1,3d9e,bb05,bcb6,bc75,3c55,bdb4 selected=
+STUDENT_GPU ordinal=382 status=0 primitive=0 bits=bd0c,3d8b,bd9d,bcd5,bd9f,bb6e,bd43,bd13 selected=
+STUDENT_GPU ordinal=383 status=0 primitive=0 bits=bd12,3cda,bd4c,bd53,3cca,3bfc,3d95,3ccc selected=
+STUDENT_GPU ordinal=384 status=0 primitive=0 bits=bd82,3ab1,bcbc,bd9b,bd2a,3d3b,3c4a,3d47 selected=
+STUDENT_GPU ordinal=385 status=0 primitive=0 bits=3d9e,3c5a,3cbf,bdab,3d80,bd59,bcbf,3cf3 selected=
+STUDENT_GPU ordinal=386 status=0 primitive=0 bits=3cb9,bce5,3cc1,3d0e,bcf8,bd8f,3d2d,bdb6 selected=
+STUDENT_GPU ordinal=387 status=0 primitive=0 bits=bbad,bd5a,3d85,3d7f,3d48,bd03,bc96,bb99 selected=
+STUDENT_GPU ordinal=388 status=0 primitive=0 bits=bbda,bd8b,bd5b,3cf0,bc08,3c75,bd5d,3c9b selected=
+STUDENT_GPU ordinal=389 status=0 primitive=0 bits=bc1e,3d5d,bd5a,3b72,bd4b,3ab1,3cf0,3ce8 selected=
+STUDENT_GPU ordinal=390 status=0 primitive=0 bits=3c80,bd80,3d40,bc80,3dc0,bd40,be00,3da0 selected=
+STUDENT_GPU ordinal=391 status=0 primitive=0 bits=bc80,bdc0,3dc0,bd40,bc80,0000,3d00,bde0 selected=
+STUDENT_GPU ordinal=392 status=0 primitive=0 bits=bd80,3de0,be00,bd80,bde0,3d00,bd80,bd80 selected=
+STUDENT_GPU ordinal=393 status=0 primitive=0 bits=bdc0,3da0,bda0,bda0,3d00,3d80,3de0,0000 selected=
+STUDENT_GPU ordinal=394 status=0 primitive=0 bits=be00,3d00,bd00,bdc0,bda0,3dc0,3c80,3d40 selected=
+STUDENT_GPU ordinal=395 status=0 primitive=0 bits=3dc0,0000,0000,be00,3d80,bde0,bda0,3de0 selected=
+STUDENT_GPU ordinal=396 status=0 primitive=0 bits=3d80,bd00,3d40,3de0,bd40,bda0,3dc0,bdc0 selected=
+STUDENT_GPU ordinal=397 status=0 primitive=0 bits=3d00,bda0,3da0,3dc0,3dc0,bd40,0000,bd00 selected=
+STUDENT_GPU ordinal=398 status=0 primitive=0 bits=0000,bde0,be00,3d80,0000,0000,bdc0,3c80 selected=
+STUDENT_GPU ordinal=399 status=0 primitive=0 bits=bd00,3dc0,bda0,3d40,bde0,3d00,3d80,3da0 selected=
+STUDENT_GPU ordinal=400 status=0 primitive=0 bits=bd50,bcd2,bc87,bcfb,3c47,bbd6,bb21,bcef selected=
+STUDENT_GPU ordinal=401 status=0 primitive=0 bits=3d0e,3be7,bd8c,3d28,3beb,bc88,bd1a,3cc1 selected=
+STUDENT_GPU ordinal=402 status=0 primitive=0 bits=bce3,3bbf,bce4,bd10,3d4a,bd18,bd9a,bcc8 selected=
+STUDENT_GPU ordinal=403 status=0 primitive=0 bits=3be7,3d49,3d33,bd09,bd94,3ccb,bd86,bd27 selected=
+STUDENT_GPU ordinal=404 status=0 primitive=0 bits=3c62,bcec,bb9d,3c09,bd28,bd15,bcb9,bccb selected=
+STUDENT_GPU ordinal=405 status=0 primitive=0 bits=bb10,3c2c,bb0e,3bf0,bc35,bca7,bd2f,bb01 selected=
+STUDENT_GPU ordinal=406 status=0 primitive=0 bits=3b40,3d7e,3d73,3c66,bd68,3c8b,3c10,3cc1 selected=
+STUDENT_GPU ordinal=407 status=0 primitive=0 bits=bd80,bd3e,bd14,bd65,baa0,3c14,bd05,bd38 selected=
+STUDENT_GPU ordinal=408 status=0 primitive=0 bits=3bc3,bc5f,bce1,3c84,bc74,bd31,3c9b,3c65 selected=
+STUDENT_GPU ordinal=409 status=0 primitive=0 bits=bcbf,bd91,3d5b,bd46,3d2c,bc65,3cc5,bdb1 selected=
+STUDENT_GPU ordinal=410 status=0 primitive=0 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=411 status=0 primitive=0 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=412 status=0 primitive=0 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=413 status=0 primitive=0 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=414 status=0 primitive=0 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=415 status=0 primitive=0 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=416 status=0 primitive=0 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=417 status=0 primitive=0 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=418 status=0 primitive=0 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=419 status=0 primitive=0 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=420 status=0 primitive=0 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=421 status=0 primitive=0 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=422 status=0 primitive=0 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=423 status=0 primitive=0 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=424 status=0 primitive=0 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=425 status=0 primitive=0 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=426 status=0 primitive=0 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=427 status=0 primitive=0 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=428 status=0 primitive=0 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=429 status=0 primitive=0 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=430 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=431 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=432 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=433 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=434 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=435 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=436 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=437 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=438 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=439 status=2 primitive=0 bits= selected=
+STUDENT_GPU ordinal=440 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=441 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=442 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=443 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=444 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=445 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=446 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=447 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=448 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=449 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=450 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=451 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=452 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=453 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=454 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=455 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=456 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=457 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=458 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=459 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=460 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=461 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=462 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=463 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=464 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=465 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=466 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=467 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=468 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=469 status=0 primitive=0 bits=c000,c000,c000,c000,c000,c000,c000,c000 selected=
+STUDENT_GPU ordinal=470 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=471 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=472 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=473 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=474 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=475 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=476 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=477 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=478 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=479 status=0 primitive=0 bits=3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe,3ffe selected=
+STUDENT_GPU ordinal=480 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=481 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=482 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=483 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=484 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=485 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=486 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=487 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=488 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=489 status=0 primitive=0 bits=c000,3ffe,c000,3ffe,c000,3ffe,c000,3ffe selected=
+STUDENT_GPU ordinal=490 status=0 primitive=0 bits=b71a,b74d,364d,37cd,384d,b7cd,b88d,37cd selected=
+STUDENT_GPU ordinal=491 status=0 primitive=0 bits=b800,b886,3880,381a,b7e6,b7e6,b64d,b88d selected=
+STUDENT_GPU ordinal=492 status=0 primitive=0 bits=b71a,3800,b80d,36cd,b84d,b80d,b80d,b74d selected=
+STUDENT_GPU ordinal=493 status=0 primitive=0 bits=3780,b79a,b7cd,b7e6,379a,b826,3826,3840 selected=
+STUDENT_GPU ordinal=494 status=0 primitive=0 bits=b71a,b7cd,b780,b873,b71a,364d,371a,384d selected=
+STUDENT_GPU ordinal=495 status=0 primitive=0 bits=3880,37cd,3833,b840,3880,b64d,37cd,b826 selected=
+STUDENT_GPU ordinal=496 status=0 primitive=0 bits=b74d,b7cd,364d,b800,b780,b880,b64d,b8ad selected=
+STUDENT_GPU ordinal=497 status=0 primitive=0 bits=b81a,b800,385a,380d,371a,b79a,b80d,379a selected=
+STUDENT_GPU ordinal=498 status=0 primitive=0 bits=b74d,b800,371a,0000,b780,37e6,b79a,37b3 selected=
+STUDENT_GPU ordinal=499 status=0 primitive=0 bits=371a,379a,b800,b80d,364d,b7cd,0000,b780 selected=
+STUDENT_GPU ordinal=500 status=0 primitive=0 bits=c7c0,c740,c700,4740,4860,c7a0,c8a0,4680 selected=
+STUDENT_GPU ordinal=501 status=0 primitive=0 bits=c890,c820,4840,48a0,0000,c820,c800,c860 selected=
+STUDENT_GPU ordinal=502 status=0 primitive=0 bits=c7c0,48b0,c840,47c0,c8c0,c800,c820,47c0 selected=
+STUDENT_GPU ordinal=503 status=0 primitive=0 bits=4780,47c0,c880,4700,4820,c890,4700,4860 selected=
+STUDENT_GPU ordinal=504 status=0 primitive=0 bits=47a0,c820,c740,c850,4700,c7a0,4700,4850 selected=
+STUDENT_GPU ordinal=505 status=0 primitive=0 bits=48d0,47e0,4830,c810,4860,4740,4680,c820 selected=
+STUDENT_GPU ordinal=506 status=0 primitive=0 bits=c815,c6ab,47ab,0000,c82b,c895,c6ab,c8e0 selected=
+STUDENT_GPU ordinal=507 status=0 primitive=0 bits=c820,c7c0,48b0,48d0,4880,c800,c880,4700 selected=
+STUDENT_GPU ordinal=508 status=0 primitive=0 bits=c815,0000,482b,c6ab,c815,4855,46ab,47ab selected=
+STUDENT_GPU ordinal=509 status=0 primitive=0 bits=0000,4815,c855,c800,0000,c800,0000,c6ab selected=
+STUDENT_GPU ordinal=510 status=0 primitive=2 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=511 status=0 primitive=2 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=512 status=0 primitive=2 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=513 status=0 primitive=2 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=514 status=0 primitive=2 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=515 status=0 primitive=2 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=516 status=0 primitive=2 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=517 status=0 primitive=2 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=518 status=0 primitive=2 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=519 status=0 primitive=2 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=520 status=0 primitive=4 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=521 status=0 primitive=4 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=522 status=0 primitive=4 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=523 status=0 primitive=4 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=524 status=0 primitive=4 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=525 status=0 primitive=4 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=526 status=0 primitive=4 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=527 status=0 primitive=4 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=528 status=0 primitive=4 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=529 status=0 primitive=4 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=530 status=0 primitive=-2 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=531 status=0 primitive=-2 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=532 status=0 primitive=-2 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=533 status=0 primitive=-2 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=534 status=0 primitive=-2 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=535 status=0 primitive=-2 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=536 status=0 primitive=-2 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=537 status=0 primitive=-2 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=538 status=0 primitive=-2 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=539 status=0 primitive=-2 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=540 status=0 primitive=-4 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=541 status=0 primitive=-4 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=542 status=0 primitive=-4 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=543 status=0 primitive=-4 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=544 status=0 primitive=-4 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=545 status=0 primitive=-4 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=546 status=0 primitive=-4 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=547 status=0 primitive=-4 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=548 status=0 primitive=-4 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=549 status=0 primitive=-4 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=550 status=0 primitive=-128 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=551 status=0 primitive=-128 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=552 status=0 primitive=-128 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=553 status=0 primitive=-128 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=554 status=0 primitive=-128 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=555 status=0 primitive=-128 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=556 status=0 primitive=-128 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=557 status=0 primitive=-128 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=558 status=0 primitive=-128 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=559 status=0 primitive=-128 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=560 status=0 primitive=127 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=561 status=0 primitive=127 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=562 status=0 primitive=127 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=563 status=0 primitive=127 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=564 status=0 primitive=127 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=565 status=0 primitive=127 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=566 status=0 primitive=127 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=567 status=0 primitive=127 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=568 status=0 primitive=127 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=569 status=0 primitive=127 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=570 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=571 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=572 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=573 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=574 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=575 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=576 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=577 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=578 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=579 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=580 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=581 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=582 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=583 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=584 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=585 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=586 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=587 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=588 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=589 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=590 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=591 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=592 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=593 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=594 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=595 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=596 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=597 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=598 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=599 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=600 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=601 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=602 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=603 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=604 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=605 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=606 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=607 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=608 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=609 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=610 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=611 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=612 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=613 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=614 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=615 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=616 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=617 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=618 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=619 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=620 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=621 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=622 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=623 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=624 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=625 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=626 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=627 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=628 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=629 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=630 status=0 primitive=0 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=631 status=0 primitive=0 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=632 status=0 primitive=0 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=633 status=0 primitive=0 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=634 status=0 primitive=0 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=635 status=0 primitive=0 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=636 status=0 primitive=0 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=637 status=0 primitive=0 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=638 status=0 primitive=0 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=639 status=0 primitive=0 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=640 status=0 primitive=0 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=641 status=0 primitive=0 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=642 status=0 primitive=0 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=643 status=0 primitive=0 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=644 status=0 primitive=0 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=645 status=0 primitive=0 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=646 status=0 primitive=0 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=647 status=0 primitive=0 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=648 status=0 primitive=0 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=649 status=0 primitive=0 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=650 status=0 primitive=0 bits=bc42,bb83,bc1a,bb22,3d66,3b0f,bd88,3c07 selected=
+STUDENT_GPU ordinal=651 status=0 primitive=0 bits=bd8d,bd81,3d74,3d61,bd40,bbec,bc1e,bd40 selected=
+STUDENT_GPU ordinal=652 status=0 primitive=0 bits=bc8e,3d87,bd0a,3ce7,bdaa,bd0c,bd0b,3cc4 selected=
+STUDENT_GPU ordinal=653 status=0 primitive=0 bits=3c75,b9dc,bd23,3cc9,3d5b,bd37,3d2a,3d45 selected=
+STUDENT_GPU ordinal=654 status=0 primitive=0 bits=3d0d,bcd2,bcc4,bd81,3a50,bbb1,bbb0,3d0a selected=
+STUDENT_GPU ordinal=655 status=0 primitive=0 bits=3db1,3d22,3d4c,bce5,3d4e,3c48,3c8d,bcdb selected=
+STUDENT_GPU ordinal=656 status=0 primitive=0 bits=bcd6,bc2f,3bd7,bcbe,bd1a,bd84,bc91,bdbe selected=
+STUDENT_GPU ordinal=657 status=0 primitive=0 bits=bd02,bd04,3d9f,3da5,3d54,bd00,bd59,3c40 selected=
+STUDENT_GPU ordinal=658 status=0 primitive=0 bits=bcf0,bca3,3cc0,bb5e,bcd3,3d36,bb60,3ca6 selected=
+STUDENT_GPU ordinal=659 status=0 primitive=0 bits=3d0b,3ce3,bca9,bd10,3ccb,bcb3,3ba1,bc43 selected=
+STUDENT_GPU ordinal=660 status=0 primitive=0 bits=be71,bd24,3cb5,3ed6,3e3d,bd53,bec7,beed,3d42,be54,be74,3e61,3dbc,3cb9,bdcb,3e9c selected=
+STUDENT_GPU ordinal=661 status=0 primitive=0 bits=bde4,3d9b,3dec,be7b,bd2e,3e39,bd8e,3b70,bda9,3d98,ba60,bd85,3e32,3dac,3d7e,3ca7 selected=
+STUDENT_GPU ordinal=662 status=0 primitive=0 bits=3d8c,bd10,bdd4,bd79,bdd8,3d67,bc92,3cbc,3d28,3dde,bbd8,bd2d,bd33,3e7e,bc70,3db6 selected=
+STUDENT_GPU ordinal=663 status=0 primitive=0 bits=3cae,bd1c,bd4a,3c5c,3cb6,3d30,3d58,bd66,bd91,3ced,bd58,bcd1,3900,3d08,bd95,3c38 selected=
+STUDENT_GPU ordinal=664 status=0 primitive=0 bits=3cee,3df9,3e81,3c32,bdf6,be81,be8e,3e72,be18,bcf1,3e43,3db8,bd84,be38,be03,be36 selected=
+STUDENT_GPU ordinal=665 status=0 primitive=0 bits=3def,bca1,bd4c,baa0,3d44,3e4a,3e8e,bd10,3e80,bce6,3d74,3e33,be3e,bdb4,be74,3e02 selected=
+STUDENT_GPU ordinal=666 status=0 primitive=0 bits=be39,be8d,3e36,3e11,3c1e,be09,3cdc,be17,be90,3e7a,bcfd,bde9,3e0b,be19,be14,3e4e selected=
+STUDENT_GPU ordinal=667 status=0 primitive=0 bits=3c80,3d1f,3d5e,bd70,bce3,3d20,bd26,bdbc,3ce7,3d93,bd0c,bcd1,bcb0,3c9d,3db0,3df5 selected=
+STUDENT_GPU ordinal=668 status=0 primitive=0 bits=3df8,3d96,bdbe,3d74,3d94,bd86,3c32,bd2e,3c32,be56,3ce8,bb98,3dbf,3dc8,bd51,bccd selected=
+STUDENT_GPU ordinal=669 status=0 primitive=0 bits=bcce,3ccc,bcd4,bdec,be2c,bc3a,3d12,3dca,3d39,3e0b,bdc1,be14,3d50,3da4,bdef,bdc6 selected=
+STUDENT_GPU ordinal=670 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=671 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=672 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=673 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=674 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=675 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=676 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=677 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=678 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=679 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=680 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,ba40,bd8b,bd50,bc9d,3e0a,3d67,3c84,3d3b,3d14,bd06,bd74,bca2,bda6,3d1c,be09,3cfd selected=
+STUDENT_GPU ordinal=681 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3d62,bd7d,3e13,bd0a,be08,be0a,3e0c,3dbb,3db0,3d6c,0000,be2f,bd87,bd2a,bc9b,be22 selected=
+STUDENT_GPU ordinal=682 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,bd36,3c4c,bd52,bda0,bcc6,bc9c,3d34,3d4c,bd54,bc06,3d98,bd4a,bc3e,bc22,bc00,bdb8 selected=
+STUDENT_GPU ordinal=683 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3da0,3d81,3c4e,be2f,3b18,bdf0,3d96,3d73,3e08,3df8,3b20,3e40,bdfd,3e81,bd7e,3e0b selected=
+STUDENT_GPU ordinal=684 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,3d08,3ca8,be16,3d57,3d8a,3cfb,be3f,3d32,3d03,3e3f,bd99,3cad,be1b,3d4c,3d02,3a80 selected=
+STUDENT_GPU ordinal=685 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,be1a,bc99,3db5,be6b,3dce,3c99,3e1f,3d99,3b9c,3dac,3cab,3d48,3d58,be4c,bb38,3dff selected=
+STUDENT_GPU ordinal=686 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,bdb8,3d8b,bca9,bcac,3d8e,3c1e,3d88,be0b,3e19,3e00,bdda,3e0d,bd58,bdf7,3d84,bd94 selected=
+STUDENT_GPU ordinal=687 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,bd16,3dca,be2d,3dde,be2b,bd87,3e11,be08,bd2b,be1f,3e1c,3dd0,be38,bd23,3e06,be6a selected=
+STUDENT_GPU ordinal=688 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be56,be5a,3e4f,3e13,3d26,be13,3cd9,bdcf,3d46,bdc5,bbf8,bd50,bbc0,3d41,3df7,bdb3 selected=
+STUDENT_GPU ordinal=689 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,bddb,3dcd,bddc,3d74,3dd7,3e41,3e2f,3c32,bd6c,3e27,3de5,3dda,3d92,3ba4,bd60,bce6 selected=
+STUDENT_GPU ordinal=690 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,ba40,bd8b,bd50,bc9d,3e0a,3d67,3c84,3d3b,3d14,bd06,bd74,bca2,bda6,3d1c,be09,3cfd selected=
+STUDENT_GPU ordinal=691 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3d62,bd7d,3e13,bd0a,be08,be0a,3e0c,3dbb,3db0,3d6c,0000,be2f,bd87,bd2a,bc9b,be22 selected=
+STUDENT_GPU ordinal=692 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,bd36,3c4c,bd52,bda0,bcc6,bc9c,3d34,3d4c,bd54,bc06,3d98,bd4a,bc3e,bc22,bc00,bdb8 selected=
+STUDENT_GPU ordinal=693 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3da0,3d81,3c4e,be2f,3b18,bdf0,3d96,3d73,3e08,3df8,3b20,3e40,bdfd,3e81,bd7e,3e0b selected=
+STUDENT_GPU ordinal=694 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,3d08,3ca8,be16,3d57,3d8a,3cfb,be3f,3d32,3d03,3e3f,bd99,3cad,be1b,3d4c,3d02,3a80 selected=
+STUDENT_GPU ordinal=695 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,be1a,bc99,3db5,be6b,3dce,3c99,3e1f,3d99,3b9c,3dac,3cab,3d48,3d58,be4c,bb38,3dff selected=
+STUDENT_GPU ordinal=696 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,bdb8,3d8b,bca9,bcac,3d8e,3c1e,3d88,be0b,3e19,3e00,bdda,3e0d,bd58,bdf7,3d84,bd94 selected=
+STUDENT_GPU ordinal=697 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,bd16,3dca,be2d,3dde,be2b,bd87,3e11,be08,bd2b,be1f,3e1c,3dd0,be38,bd23,3e06,be6a selected=
+STUDENT_GPU ordinal=698 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be56,be5a,3e4f,3e13,3d26,be13,3cd9,bdcf,3d46,bdc5,bbf8,bd50,bbc0,3d41,3df7,bdb3 selected=
+STUDENT_GPU ordinal=699 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,bddb,3dcd,bddc,3d74,3dd7,3e41,3e2f,3c32,bd6c,3e27,3de5,3dda,3d92,3ba4,bd60,bce6 selected=
+STUDENT_GPU ordinal=700 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,ba40,bd8b,bd50,bc9d,3e0a,3d67,3c84,3d3b,3d14,bd06,bd74,bca2,bda6,3d1c,be09,3cfd selected=
+STUDENT_GPU ordinal=701 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3d62,bd7d,3e13,bd0a,be08,be0a,3e0c,3dbb,3db0,3d6c,0000,be2f,bd87,bd2a,bc9b,be22 selected=
+STUDENT_GPU ordinal=702 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,bd36,3c4c,bd52,bda0,bcc6,bc9c,3d34,3d4c,bd54,bc06,3d98,bd4a,bc3e,bc22,bc00,bdb8 selected=
+STUDENT_GPU ordinal=703 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3da0,3d81,3c4e,be2f,3b18,bdf0,3d96,3d73,3e08,3df8,3b20,3e40,bdfd,3e81,bd7e,3e0b selected=
+STUDENT_GPU ordinal=704 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,3d08,3ca8,be16,3d57,3d8a,3cfb,be3f,3d32,3d03,3e3f,bd99,3cad,be1b,3d4c,3d02,3a80 selected=
+STUDENT_GPU ordinal=705 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,be1a,bc99,3db5,be6b,3dce,3c99,3e1f,3d99,3b9c,3dac,3cab,3d48,3d58,be4c,bb38,3dff selected=
+STUDENT_GPU ordinal=706 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,bdb8,3d8b,bca9,bcac,3d8e,3c1e,3d88,be0b,3e19,3e00,bdda,3e0d,bd58,bdf7,3d84,bd94 selected=
+STUDENT_GPU ordinal=707 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,bd16,3dca,be2d,3dde,be2b,bd87,3e11,be08,bd2b,be1f,3e1c,3dd0,be38,bd23,3e06,be6a selected=
+STUDENT_GPU ordinal=708 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be56,be5a,3e4f,3e13,3d26,be13,3cd9,bdcf,3d46,bdc5,bbf8,bd50,bbc0,3d41,3df7,bdb3 selected=
+STUDENT_GPU ordinal=709 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,bddb,3dcd,bddc,3d74,3dd7,3e41,3e2f,3c32,bd6c,3e27,3de5,3dda,3d92,3ba4,bd60,bce6 selected=
+STUDENT_GPU ordinal=710 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=711 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=712 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=713 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=714 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=715 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=716 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=717 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=718 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=719 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=720 status=0 primitive=0 bits=3ef8,3ed0,3dc6,3eeb,bf25,bec2,bee5,3db2,3d71,bda2,bdad,be19,3ea8,3e0e,3edc,bee9,bd28,bcbe,bf0e,be3c,3d90,3f16,3ee0,3eb5,be62,3ebd,bde8,3d0f,3e0f,3d86,bdca,3df6 selected=
+STUDENT_GPU ordinal=721 status=0 primitive=0 bits=3dcb,bd35,3ce6,3d4e,3eac,3e2f,3e36,bf01,bdf8,bf15,3e24,be07,beaa,3e9d,bdd0,be24,3ce6,be93,bd0e,3e54,be1c,bd22,3de0,3d55,be8e,bd90,be6c,3d20,be2c,3c04,3d2d,3ec8 selected=
+STUDENT_GPU ordinal=722 status=0 primitive=0 bits=be88,3e7a,3ddd,be96,3d5d,bc60,3e9b,3ebf,be07,bcda,3ebc,3dde,3d1d,be32,be74,3df8,3d21,3e27,be1a,3e0e,bc90,bd7e,be8e,bd5d,3e07,3e7d,3da2,3e11,be60,3e0a,3e0a,bdea selected=
+STUDENT_GPU ordinal=723 status=0 primitive=0 bits=3dca,bd09,bc6c,3bf0,bd46,bd62,3d90,3dc0,3d90,3d44,3c9e,bbd0,bd44,3c70,bd8e,bc8c,3eaa,3e64,be70,be03,3ca0,3ed0,beb6,bf26,bd9c,bec4,3f13,3db3,beb7,bd6f,be9a,3e74 selected=
+STUDENT_GPU ordinal=724 status=0 primitive=0 bits=3e6e,3d70,3cd8,bba8,bd84,3e24,bc8c,be0f,3eee,3ee4,3ef7,bdce,3e02,3d7a,bf23,3e99,bea0,bd96,3e0d,3d24,bcf2,3d65,3bb0,bc04,3d9d,bd7a,be1c,bc8a,3e37,be36,3e4c,bdd1 selected=
+STUDENT_GPU ordinal=725 status=0 primitive=0 bits=3efd,3ea5,bdc8,bed6,bea7,bd14,3ec0,3e02,3fa1,3eb4,3eb5,be74,bf0b,bec3,bed9,3e95,bc7c,be41,3e48,3ca2,bd5c,be5a,3c80,bd87,bdd6,bd2b,3d08,3e29,3ecb,be1a,3cc6,3d8c selected=
+STUDENT_GPU ordinal=726 status=0 primitive=0 bits=3e8a,3ea9,bf0c,be8b,3cd0,bdda,3f0f,3e11,3dc0,3eae,bd66,be07,be47,be8f,3d2d,be6a,3e2a,3e4f,be8e,bea6,3dca,3e6b,3e47,3b60,3dc2,bcb2,3dfe,beae,3e83,bbe0,3e85,be8c selected=
+STUDENT_GPU ordinal=727 status=0 primitive=0 bits=bc4c,bdc5,be0c,3d80,be15,bc92,3d1a,bc54,bc28,bdc0,bc24,bc70,3d16,be45,3d65,bd6f,3f2b,bec3,be94,bf1c,bbf0,3e01,beca,3ed9,3ed0,be45,bc3c,bd94,be7a,3d29,3dfa,bd5c selected=
+STUDENT_GPU ordinal=728 status=0 primitive=0 bits=be7c,be06,bd72,be34,be37,3e58,bdfa,be08,bd15,be1c,bde3,be83,bd1a,3e27,bd24,3d3f,beda,beff,3e2e,be87,bf90,bedd,bea5,be45,bf7b,bf54,3e6d,be6c,be99,be0c,3f24,be75 selected=
+STUDENT_GPU ordinal=729 status=0 primitive=0 bits=3d9c,3e09,3ddf,3e94,bd8e,be78,be87,bd0f,3ba8,becb,3cdc,bc00,bd6a,bdfa,be38,be40,3eaf,be93,3d96,be4d,be8a,3e78,3ed9,3e64,3e73,3d5b,b980,be00,bccc,3e24,3df2,3e5a selected=
+STUDENT_GPU ordinal=730 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=731 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=732 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=733 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=734 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=735 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=736 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=737 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=738 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=739 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=740 status=0 primitive=0 bits=bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76,3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69 selected=
+STUDENT_GPU ordinal=741 status=0 primitive=0 bits=3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48,3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4 selected=
+STUDENT_GPU ordinal=742 status=0 primitive=0 bits=3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a,be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78 selected=
+STUDENT_GPU ordinal=743 status=0 primitive=0 bits=3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4,3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c selected=
+STUDENT_GPU ordinal=744 status=0 primitive=0 bits=be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51,3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19 selected=
+STUDENT_GPU ordinal=745 status=0 primitive=0 bits=bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c,3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15 selected=
+STUDENT_GPU ordinal=746 status=0 primitive=0 bits=3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c,3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea selected=
+STUDENT_GPU ordinal=747 status=0 primitive=0 bits=3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc,bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef selected=
+STUDENT_GPU ordinal=748 status=0 primitive=0 bits=be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5,bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf selected=
+STUDENT_GPU ordinal=749 status=0 primitive=0 bits=3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda,3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0 selected=
+STUDENT_GPU ordinal=750 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=751 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=752 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=753 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=754 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=755 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=756 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=757 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=758 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=759 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=760 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=761 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=762 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=763 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=764 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=765 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=766 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=767 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=768 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=769 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=770 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=771 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=772 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=773 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=774 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=775 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=776 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=777 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=778 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=779 status=1 primitive=0 bits= selected=
+STUDENT_GPU ordinal=780 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=781 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=782 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=783 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=784 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=785 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=786 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=787 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=788 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=789 status=0 primitive=0 bits=0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000,0000 selected=
+STUDENT_GPU ordinal=790 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=791 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=792 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=793 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=794 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=795 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=796 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=797 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=798 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=799 status=0 primitive=0 bits=c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe,c1fe selected=
+STUDENT_GPU ordinal=800 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=801 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=802 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=803 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=804 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=805 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=806 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=807 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=808 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=809 status=0 primitive=0 bits=41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc,41fc selected=
+STUDENT_GPU ordinal=810 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=811 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=812 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=813 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=814 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=815 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=816 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=817 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=818 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=819 status=0 primitive=0 bits=bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe,bdfe selected=
+STUDENT_GPU ordinal=820 status=0 primitive=0 bits=3978,3950,3846,396b,b9a5,b942,b965,3832,37f1,b822,b82d,b899,3928,388e,395c,b969,b7a8,b73e,b98e,b8bc,3810,3996,3960,3935,b8e2,393d,b868,378f,388f,3806,b84a,3876 selected=
+STUDENT_GPU ordinal=821 status=0 primitive=0 bits=384b,b7b5,3766,37ce,392c,38af,38b6,b981,b878,b995,38a4,b887,b92a,391d,b850,b8a4,3766,b913,b78e,38d4,b89c,b7a2,3860,37d5,b90e,b810,b8ec,37a0,b8ac,3684,37ad,3948 selected=
+STUDENT_GPU ordinal=822 status=0 primitive=0 bits=b908,38fa,385d,b916,37dd,b6e0,391b,393f,b887,b75a,393c,385e,379d,b8b2,b8f4,3878,37a1,38a7,b89a,388e,b710,b7fe,b90e,b7dd,3887,38fd,3822,3891,b8e0,388a,388a,b86a selected=
+STUDENT_GPU ordinal=823 status=0 primitive=0 bits=384a,b789,b6ec,3670,b7c6,b7e2,3810,3840,3810,37c4,371e,b650,b7c4,36f0,b80e,b70c,392a,38e4,b8f0,b883,3720,3950,b936,b9a6,b81c,b944,3993,3833,b937,b7ef,b91a,38f4 selected=
+STUDENT_GPU ordinal=824 status=0 primitive=0 bits=38ee,37f0,3758,b628,b804,38a4,b70c,b88f,396e,3964,3977,b84e,3882,37fa,b9a3,3919,b920,b816,388d,37a4,b772,37e5,3630,b684,381d,b7fa,b89c,b70a,38b7,b8b6,38cc,b851 selected=
+STUDENT_GPU ordinal=825 status=0 primitive=0 bits=397d,3925,b848,b956,b927,b794,3940,3882,3a21,3934,3935,b8f4,b98b,b943,b959,3915,b6fc,b8c1,38c8,3722,b7dc,b8da,3700,b807,b856,b7ab,3788,38a9,394b,b89a,3746,380c selected=
+STUDENT_GPU ordinal=826 status=0 primitive=0 bits=390a,3929,b98c,b90b,3750,b85a,398f,3891,3840,392e,b7e6,b887,b8c7,b90f,37ad,b8ea,38aa,38cf,b90e,b926,384a,38eb,38c7,35e0,3842,b732,387e,b92e,3903,b660,3905,b90c selected=
+STUDENT_GPU ordinal=827 status=0 primitive=0 bits=b6cc,b845,b88c,3800,b895,b712,379a,b6d4,b6a8,b840,b6a4,b6f0,3796,b8c5,37e5,b7ef,39ab,b943,b914,b99c,b670,3881,b94a,3959,3950,b8c5,b6bc,b814,b8fa,37a9,387a,b7dc selected=
+STUDENT_GPU ordinal=828 status=0 primitive=0 bits=b8fc,b886,b7f2,b8b4,b8b7,38d8,b87a,b888,b795,b89c,b863,b903,b79a,38a7,b7a4,37bf,b95a,b97f,38ae,b907,ba10,b95d,b925,b8c5,b9fb,b9d4,38ed,b8ec,b919,b88c,39a4,b8f5 selected=
+STUDENT_GPU ordinal=829 status=0 primitive=0 bits=381c,3889,385f,3914,b80e,b8f8,b907,b78f,3628,b94b,375c,b680,b7ea,b87a,b8b8,b8c0,392f,b913,3816,b8cd,b90a,38f8,3959,38e4,38f3,37db,b400,b880,b74c,38a4,3872,38da selected=
+STUDENT_GPU ordinal=830 status=0 primitive=0 bits=4978,4950,4846,496b,c9a5,c942,c965,4832,47f1,c822,c82d,c899,4928,488e,495c,c969,c7a8,c73e,c98e,c8bc,4810,4996,4960,4935,c8e2,493d,c868,478f,488f,4806,c84a,4876 selected=
+STUDENT_GPU ordinal=831 status=0 primitive=0 bits=484b,c7b5,4766,47ce,492c,48af,48b6,c981,c878,c995,48a4,c887,c92a,491d,c850,c8a4,4766,c913,c78e,48d4,c89c,c7a2,4860,47d5,c90e,c810,c8ec,47a0,c8ac,4684,47ad,4948 selected=
+STUDENT_GPU ordinal=832 status=0 primitive=0 bits=c908,48fa,485d,c916,47dd,c6e0,491b,493f,c887,c75a,493c,485e,479d,c8b2,c8f4,4878,47a1,48a7,c89a,488e,c710,c7fe,c90e,c7dd,4887,48fd,4822,4891,c8e0,488a,488a,c86a selected=
+STUDENT_GPU ordinal=833 status=0 primitive=0 bits=484a,c789,c6ec,4670,c7c6,c7e2,4810,4840,4810,47c4,471e,c650,c7c4,46f0,c80e,c70c,492a,48e4,c8f0,c883,4720,4950,c936,c9a6,c81c,c944,4993,4833,c937,c7ef,c91a,48f4 selected=
+STUDENT_GPU ordinal=834 status=0 primitive=0 bits=48ee,47f0,4758,c628,c804,48a4,c70c,c88f,496e,4964,4977,c84e,4882,47fa,c9a3,4919,c920,c816,488d,47a4,c772,47e5,4630,c684,481d,c7fa,c89c,c70a,48b7,c8b6,48cc,c851 selected=
+STUDENT_GPU ordinal=835 status=0 primitive=0 bits=497d,4925,c848,c956,c927,c794,4940,4882,4a21,4934,4935,c8f4,c98b,c943,c959,4915,c6fc,c8c1,48c8,4722,c7dc,c8da,4700,c807,c856,c7ab,4788,48a9,494b,c89a,4746,480c selected=
+STUDENT_GPU ordinal=836 status=0 primitive=0 bits=490a,4929,c98c,c90b,4750,c85a,498f,4891,4840,492e,c7e6,c887,c8c7,c90f,47ad,c8ea,48aa,48cf,c90e,c926,484a,48eb,48c7,45e0,4842,c732,487e,c92e,4903,c660,4905,c90c selected=
+STUDENT_GPU ordinal=837 status=0 primitive=0 bits=c6cc,c845,c88c,4800,c895,c712,479a,c6d4,c6a8,c840,c6a4,c6f0,4796,c8c5,47e5,c7ef,49ab,c943,c914,c99c,c670,4881,c94a,4959,4950,c8c5,c6bc,c814,c8fa,47a9,487a,c7dc selected=
+STUDENT_GPU ordinal=838 status=0 primitive=0 bits=c8fc,c886,c7f2,c8b4,c8b7,48d8,c87a,c888,c795,c89c,c863,c903,c79a,48a7,c7a4,47bf,c95a,c97f,48ae,c907,ca10,c95d,c925,c8c5,c9fb,c9d4,48ed,c8ec,c919,c88c,49a4,c8f5 selected=
+STUDENT_GPU ordinal=839 status=0 primitive=0 bits=481c,4889,485f,4914,c80e,c8f8,c907,c78f,4628,c94b,475c,c680,c7ea,c87a,c8b8,c8c0,492f,c913,4816,c8cd,c90a,48f8,4959,48e4,48f3,47db,c400,c880,c74c,48a4,4872,48da selected=
+STUDENT_GPU ordinal=840 status=0 primitive=2 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=841 status=0 primitive=2 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=842 status=0 primitive=2 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=843 status=0 primitive=2 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=844 status=0 primitive=2 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=845 status=0 primitive=2 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=846 status=0 primitive=2 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=847 status=0 primitive=2 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=848 status=0 primitive=2 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=849 status=0 primitive=2 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=850 status=0 primitive=4 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=851 status=0 primitive=4 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=852 status=0 primitive=4 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=853 status=0 primitive=4 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=854 status=0 primitive=4 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=855 status=0 primitive=4 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=856 status=0 primitive=4 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=857 status=0 primitive=4 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=858 status=0 primitive=4 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=859 status=0 primitive=4 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=860 status=0 primitive=-2 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=861 status=0 primitive=-2 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=862 status=0 primitive=-2 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=863 status=0 primitive=-2 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=864 status=0 primitive=-2 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=865 status=0 primitive=-2 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=866 status=0 primitive=-2 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=867 status=0 primitive=-2 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=868 status=0 primitive=-2 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=869 status=0 primitive=-2 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=870 status=0 primitive=-4 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=871 status=0 primitive=-4 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=872 status=0 primitive=-4 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=873 status=0 primitive=-4 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=874 status=0 primitive=-4 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=875 status=0 primitive=-4 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=876 status=0 primitive=-4 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=877 status=0 primitive=-4 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=878 status=0 primitive=-4 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=879 status=0 primitive=-4 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=880 status=0 primitive=-128 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=881 status=0 primitive=-128 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=882 status=0 primitive=-128 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=883 status=0 primitive=-128 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=884 status=0 primitive=-128 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=885 status=0 primitive=-128 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=886 status=0 primitive=-128 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=887 status=0 primitive=-128 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=888 status=0 primitive=-128 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=889 status=0 primitive=-128 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=890 status=0 primitive=127 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=891 status=0 primitive=127 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=892 status=0 primitive=127 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=893 status=0 primitive=127 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=894 status=0 primitive=127 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=895 status=0 primitive=127 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=896 status=0 primitive=127 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=897 status=0 primitive=127 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=898 status=0 primitive=127 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=899 status=0 primitive=127 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=900 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=901 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=902 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=903 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=904 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=905 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=906 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=907 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=908 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=909 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=910 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=911 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=912 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=913 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=914 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=915 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=916 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=917 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=918 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=919 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=920 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=921 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=922 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=923 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=924 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=925 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=926 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=927 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=928 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=929 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=930 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=931 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=932 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=933 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=934 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=935 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=936 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=937 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=938 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=939 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=940 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=941 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=942 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=943 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=944 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=945 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=946 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=947 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=948 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=949 status=4 primitive=0 bits= selected=
+STUDENT_GPU ordinal=950 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=951 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=952 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=953 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=954 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=955 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=956 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=957 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=958 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=959 status=6 primitive=0 bits= selected=
+STUDENT_GPU ordinal=960 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=961 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=962 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=963 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=964 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=965 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=966 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=967 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=968 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=969 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=970 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=971 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=972 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=973 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=974 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=975 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=976 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=977 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=978 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=979 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=980 status=0 primitive=0 bits=3e78,3e50,3d46,3e6b,bea5,be42,be65,3d32,3cf1,bd22,bd2d,bd99,3e28,3d8e,3e5c,be69,bca8,bc3e,be8e,bdbc,3d10,3e96,3e60,3e35,bde2,3e3d,bd68,3c8f,3d8f,3d06,bd4a,3d76 selected=
+STUDENT_GPU ordinal=981 status=0 primitive=0 bits=3d4b,bcb5,3c66,3cce,3e2c,3daf,3db6,be81,bd78,be95,3da4,bd87,be2a,3e1d,bd50,bda4,3c66,be13,bc8e,3dd4,bd9c,bca2,3d60,3cd5,be0e,bd10,bdec,3ca0,bdac,3b84,3cad,3e48 selected=
+STUDENT_GPU ordinal=982 status=0 primitive=0 bits=be08,3dfa,3d5d,be16,3cdd,bbe0,3e1b,3e3f,bd87,bc5a,3e3c,3d5e,3c9d,bdb2,bdf4,3d78,3ca1,3da7,bd9a,3d8e,bc10,bcfe,be0e,bcdd,3d87,3dfd,3d22,3d91,bde0,3d8a,3d8a,bd6a selected=
+STUDENT_GPU ordinal=983 status=0 primitive=0 bits=3d4a,bc89,bbec,3b70,bcc6,bce2,3d10,3d40,3d10,3cc4,3c1e,bb50,bcc4,3bf0,bd0e,bc0c,3e2a,3de4,bdf0,bd83,3c20,3e50,be36,bea6,bd1c,be44,3e93,3d33,be37,bcef,be1a,3df4 selected=
+STUDENT_GPU ordinal=984 status=0 primitive=0 bits=3dee,3cf0,3c58,bb28,bd04,3da4,bc0c,bd8f,3e6e,3e64,3e77,bd4e,3d82,3cfa,bea3,3e19,be20,bd16,3d8d,3ca4,bc72,3ce5,3b30,bb84,3d1d,bcfa,bd9c,bc0a,3db7,bdb6,3dcc,bd51 selected=
+STUDENT_GPU ordinal=985 status=0 primitive=0 bits=3e7d,3e25,bd48,be56,be27,bc94,3e40,3d82,3f21,3e34,3e35,bdf4,be8b,be43,be59,3e15,bbfc,bdc1,3dc8,3c22,bcdc,bdda,3c00,bd07,bd56,bcab,3c88,3da9,3e4b,bd9a,3c46,3d0c selected=
+STUDENT_GPU ordinal=986 status=0 primitive=0 bits=3e0a,3e29,be8c,be0b,3c50,bd5a,3e8f,3d91,3d40,3e2e,bce6,bd87,bdc7,be0f,3cad,bdea,3daa,3dcf,be0e,be26,3d4a,3deb,3dc7,3ae0,3d42,bc32,3d7e,be2e,3e03,bb60,3e05,be0c selected=
+STUDENT_GPU ordinal=987 status=0 primitive=0 bits=bbcc,bd45,bd8c,3d00,bd95,bc12,3c9a,bbd4,bba8,bd40,bba4,bbf0,3c96,bdc5,3ce5,bcef,3eab,be43,be14,be9c,bb70,3d81,be4a,3e59,3e50,bdc5,bbbc,bd14,bdfa,3ca9,3d7a,bcdc selected=
+STUDENT_GPU ordinal=988 status=0 primitive=0 bits=bdfc,bd86,bcf2,bdb4,bdb7,3dd8,bd7a,bd88,bc95,bd9c,bd63,be03,bc9a,3da7,bca4,3cbf,be5a,be7f,3dae,be07,bf10,be5d,be25,bdc5,befb,bed4,3ded,bdec,be19,bd8c,3ea4,bdf5 selected=
+STUDENT_GPU ordinal=989 status=0 primitive=0 bits=3d1c,3d89,3d5f,3e14,bd0e,bdf8,be07,bc8f,3b28,be4b,3c5c,bb80,bcea,bd7a,bdb8,bdc0,3e2f,be13,3d16,bdcd,be0a,3df8,3e59,3de4,3df3,3cdb,b900,bd80,bc4c,3da4,3d72,3dda selected=
+STUDENT_GPU ordinal=990 status=0 primitive=0 bits=bc14,3c30,bcd7,bc36,bd13,3ce1,3d2c,3a81,bd30,3d1d,bd80,bb9e,bd3c,bd05,3d5e,bce0 selected=
+STUDENT_GPU ordinal=991 status=0 primitive=0 bits=3bfd,bca0,bcf4,3cd7,3c13,bc99,bd22,3ccd,bc8e,bc36,bcdd,bd53,bd7a,3d93,bdc8,3d1e selected=
+STUDENT_GPU ordinal=992 status=0 primitive=0 bits=3d79,bcf4,bda1,bc9e,bccb,bd28,bd05,bcb0,3cbc,bcab,bd4e,3c34,3cd0,bcf8,bd26,bcbb selected=
+STUDENT_GPU ordinal=993 status=0 primitive=0 bits=bd60,3c9e,bd40,bcae,bd4a,3d5a,3c31,bd54,bd91,3c90,3bfb,3d2b,bcd9,3d15,3d05,bd51 selected=
+STUDENT_GPU ordinal=994 status=0 primitive=0 bits=bcde,bd40,bca6,bc6f,bc0a,bcef,3c88,bd36,bc4e,bd88,bcd2,bb5b,bcc5,bcae,bc06,bd3a selected=
+STUDENT_GPU ordinal=995 status=0 primitive=0 bits=bc10,bc8d,bcd3,3c33,3a66,3d21,bab5,bd5d,bd84,3cef,3c8d,3c3e,bcad,3c05,bcb5,bdc2 selected=
+STUDENT_GPU ordinal=996 status=0 primitive=0 bits=bd19,3b8e,bc50,3c4b,bca4,3d0d,3ba3,3d90,bab0,bc38,bd0f,3bd9,bbe4,3c85,bc7b,3d86 selected=
+STUDENT_GPU ordinal=997 status=0 primitive=0 bits=bd35,3d02,bb45,bcb5,bce6,3c90,bd84,3cc8,bc5b,bb9e,3d43,bd68,bcdc,bd27,bd19,bd27 selected=
+STUDENT_GPU ordinal=998 status=0 primitive=0 bits=bd16,bd61,3c77,3c32,3cd1,bc69,bbd6,381b,bcde,bd52,bcfb,bc7a,3cdd,bd34,3b96,3d14 selected=
+STUDENT_GPU ordinal=999 status=0 primitive=0 bits=3d37,3aa6,3d05,bd9d,3a00,bce9,3cb1,3c26,3d59,3d50,3d20,bc9b,baab,bd5a,3c19,bbe3 selected=
+STUDENT_GPU_COMPLETE start=0 count=1000
+CHIP debug [TID 433] [1793973497.600081988] : Uninitializing CHIP...
+PERF: instrs=14436167, cycles=70635867, IPC=0.204

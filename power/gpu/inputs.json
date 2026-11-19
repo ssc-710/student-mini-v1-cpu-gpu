@@ -1,0 +1,305 @@
+{
+  "status": "HOLD",
+  "platform": "gpu",
+  "bindings": {
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/student_mini_gate_power.py": "1aeecfe8a81db883be839e6f4cf5b357209880ad3fe8bcfd3835086b78b30f66",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/tools/gatesim/gatesim.cpp": "40875f50d818024f22535672c8ec7f2e07d9ad37e5341f7efb09283b7d950b27",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/student_mini_gatesim.py": "5ce1582f9eb74ea6a659c1414d05af12726c550e256d67e727b108c73069897a",
+    "/home/soclab/.local/bin/openroad": "1eef6f3a5e442b7321fb1f598a2f232f8baf00499a96f03570554b5fda399037",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib": "ec0e1067a35c8bf20b11e58d1e8ac53326067e4dac84a125cc1b917a3518d0d9",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/collect_openroad_activity_power.py": "51a82d62750d3e576a3e5721aef996dcb3c71c953c1388bef4d106d21b43e7a7",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/scripts/run_student_mini_gpu_gate_power.py": "3a24bb7f89f4216587c9b57daabad6ca6cf4fb7de812cbcf3a92fdce2d69c048",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json": "7dc054692555a0fcdd652d8adeb432f9c2241e217617dabffcd7301f19151872",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/config.mk": "c7744d172141d831ebc137a55c8ab55544ef1b2e375bace7f7919142ac302a6a",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-b7ec62286c946774/6_final.v": "1986b073afda29bed1003432daefb23c2595b6367156281050a462c5b5edde55",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-b7ec62286c946774/6_final.odb": "35f74720a27769b514f575bb82f41bed85bf42796c4308d1967456aa80c92fbf",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-b7ec62286c946774/6_final.sdc": "786307b748e83ada7928d8bfe38f19f483e70b868a798a2cd920d4b6a54496ec",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top/student-mini-gpu-final-b7ec62286c946774/6_final.spef": "937d0d74eb8ec1d5de582cf03561ae79f91155f7f20593d5073df584e6cfe442",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/vortex_physical_top_q0_typ.lib": "b02d2a9a9016708655791cfe2e898efd114eaf08e3caae8dbd656fe3a3dffb84",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/vortex_physical_top_q1_typ.lib": "740e945613b3d45872e1046116a2e1d54ec2c1e2b574b64b25273a3bd63bebb1",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/vortex_physical_top_q2_typ.lib": "491b5c182c99f6f3ec26d83bd8b340314b2bd9c9389f8d517ee183d2158de542",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/vortex_physical_top_q3_typ.lib": "5a1aaed03cfc22f70641d51c53baf55124cd41ff0e71a54e0f6984e3718b87e2",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/completion.json": "7f2cff233a5c4555308d54e0a8c140025418054e19a5f0cbc59616256e493815",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/top.v": "61aa93404b559374660d6a6f7b8a5e09aae4fb87b4430c9b6425f31cdadfa10f",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/summary.json": "763dbd3a5cc8d3369a5be42b87569b298097a836682de66d600320490fab3d37",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/explore/gpu-quad2/config.mk": "7433eb9bb4b19d7e12c4124d86bd92c662a1b4e783d0f72a10c9e33b00b026c2",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-icache-pipeline/8cc2608076c4cd7e5f8ec112aa44b5780ba098e74b8e9b9502fd5564a7592342/completion.json": "4479e04d753a6d56f2fa8e7f39f516f8a4a6e0e5ec86d66ef36c55e764fa79af",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-fullchip-sta/6a98e1be91b33e6eca2b55263483ed11eb7a2dd47b73b162cf779370b1fbefe9/completion.json": "2b52e31f9f1302f3023a38f675d86284c16387b03963b5db093d6450a0697e31",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-activity-rtl/919d1e7bbceda4974c7c1283120bbf97b2b4f13e196873c5d364335e87ba9863/build.json": "b2e01462e4f4c0b5187290f6fc16d1fa64273d1ea8f6bd64e3051d5b59ff1791",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-platform-rtl/357b6e6c6fe0b010c9b458e1e6d2087712cbb063ad41658051eee2bf8615b49b/build.json": "37ec5fa8746c9843ff96d21560f10567dce119490a141f96a695e9970935fbc3",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/grading/evidence/student-mini-v1/golden/ae10e98c1a2167d4281eb8bc6f60d218e8e57d83e5d52f0e48df5bc50d8d6fc1/vectors.jsonl": "b96fc48dc57b6792203c39682dc08c51c65187f03c2e8f54444f32892858b974",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_dp_80x64_w4/vortex_dp_80x64_w4.v": "3667608d9f19fa6ae30172978d3cead54d518444340951ef7c1fcb048a0bbf38",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_128x128_w16/vortex_sp_128x128_w16.v": "d818902f72c73539b8e1dc0f2e457605d07b6a38a88aa1217b7292f29c938e48",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x1024_w4/vortex_sp_32x1024_w4.v": "5ef8cb00a066d5b8219663c55ca2443be72ac47bc61bde732d7f2370e912635d",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x256_w1/vortex_sp_32x256_w1.v": "472f5f48f405993ea7c966e969b927b09633ac04e2f24fb6e8247d872245adce",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x512_w4/vortex_sp_32x512_w4.v": "07da7afe41551d20e8ebca7d1d62bd1bddc29939c8669f9fb2f1d36ca7095af8",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_64x128_w8/vortex_sp_64x128_w8.v": "8a43d363785cc89910f2d9cb0513c9978321806db6a024e42eeeaf2cce4d3f59",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json": "ffd2ad118e9bdf19473f1096a7ec770678ca52f30ed0c7e2e410ca6d7fa65472",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/config.mk": "df6f59aaab59a13eb2751e67842a346e71cd883130d54ff75ace7df343e7df17",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/6_final.v": "e76c47db887ce9b588e0b4c41ff48c4e592396ca98f9a98b6eb2e14183a52ce7",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/6_final.odb": "f2f06cb017251ff0695791b77c6463d49ee48f5861ba1e70cb9c08270cf043f2",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/6_final.sdc": "25b349b095085ebdaa6ed9c9fadcdee9013473b2943d0b8eef66da9b15b12c64",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q0/student-mini-gpu-block-final-1161c4163d2556ad/6_final.spef": "82e2720d8c38a69ffe73372fb87df31b44d014d60aa475448e732324f71207c6",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_dp_80x64_w4/vortex_dp_80x64_w4_TT_1p8V_25C.lib": "f4742fb2e9c42f374b530881b53e96ed7a0f75e9cf9f50ca78f69bd249965886",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x256_w1/vortex_sp_32x256_w1_TT_1p8V_25C.lib": "bec3c12fae51e95a0c0615e3afd6cc12255bfa9db94d02ed2149f88bfcc2bd16",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x512_w4/vortex_sp_32x512_w4_TT_1p8V_25C.lib": "8fde4c93af38d6f39ed947faea8496e4d90ee3c5374e1b7f537d483e1f9d43ad",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_32x1024_w4/vortex_sp_32x1024_w4_TT_1p8V_25C.lib": "05a9685f05b441f680ad062074d647241ca649a3c608e8951e9408a04e53519c",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_64x128_w8/vortex_sp_64x128_w8_TT_1p8V_25C.lib": "993bc3b30374cd2c5aa3cfa3a57ad6a891e9ea197bb3f461daf353278830f7eb",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/openram/vortex-banked/vortex_sp_128x128_w16/vortex_sp_128x128_w16_TT_1p8V_25C.lib": "8b942ab557c8437788dc867f494ba31346ceef1e1182b3efe399018d15d46b5e",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json": "135f87de8f2a5bb5e7953f491e3416ff99cbd8bbf2d1c09312bdf2735ad4726f",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/e9f0cde51ef9dd125edafad8bf0b6614a037891568d03dad53287eef2483748c/config.mk": "82f97c3f3739be5a3646bb723fba250c4cc3936dc60c0caa06faaf2e196168a0",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/6_final.v": "1f6333af107ad1f2b274459ce8a0d5e50c326cbfdd1fa17c3c4b003996e72ea7",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/6_final.odb": "d82fa66ddd0406e06d230f264848b645e75d416953707d80debf09651386cc26",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/6_final.sdc": "be988a2212ccaed4af6701c2b201ecc942bfcab2be87bf91d0be89b718486ce1",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q1/student-mini-gpu-block-final-e9f0cde51ef9dd12/6_final.spef": "94b7c719f385d3a67e97b51a03d27f7e3d62e6224babcfb2614cfd7f53b6250d",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json": "b3e0eeebf6e384eda614764dfd81213c19b6e0ca268bdc9c146638b579710948",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/940bd5533128d2b15c3bae5f2a38d1a1d3013c9fcc0de1045cd7dd06171752bf/config.mk": "3a119ad93c2fef6b12e4a64042719d680e78095a6babab86089c74f3c7e26d61",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/6_final.v": "561f2c306203fc28e59fc55b55c9273f42dcfb4563dd7bb3fee6822716495a31",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/6_final.odb": "86c3bc309babf3898886525225d8fddcfed5f04ceadaafc30a939d1c5f74ae78",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/6_final.sdc": "100ff44fc2ab28c8b49c682f760a91bf53d0de13575c97064665cfc3056c762b",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q2/student-mini-gpu-block-final-940bd5533128d2b1/6_final.spef": "9b70f236608fe6fbca6ac65f313cf3939e34a72724151fdeb3be087088e41f51",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json": "eea7a1ce88f3131689d3373a121827d51ad93827119925b81c5f2fbe3f39a114",
+    "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/config.mk": "6b13f585b5b8426543d961a7ff00a15bf4ca10b44af7c9b0e2f43552df3fbb32",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/6_final.v": "30cee57b8cd74ddffbd6b3e1c35d69c83ab29afd3eda5a798b2c6372211a8fdf",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/6_final.odb": "aa2b8634b46215cdb5cc816970fbf80f974b16f70f8e3858f7e95524505a5ef7",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/6_final.sdc": "e3cd35cb92acebe65399c9222b1df0425b145f95a5729e9b6083a3364e59e227",
+    "/home/soclab/src/orfs-clean-aabf2a/flow/results/sky130hd/vortex_physical_top_q3/student-mini-gpu-block-final-189841ed9ce2e063/6_final.spef": "fb20bef871a4f079e7c84c5d3f0b4604599ea33be0a11bd84772eb7d1b92921c"
+  },
+  "corner": {
+    "process": "sky130hd tt",
+    "voltage_v": 1.8,
+    "temperature_c": 25,
+    "liberty": "sky130_fd_sc_hd__tt_025C_1v80.lib"
+  },
+  "frequency_hz": 100000000,
+  "records": [],
+  "hierarchy": {
+    "top": {
+      "module": "vortex_physical_top",
+      "run": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/b7ec62286c94677474a495782359ff5af3ea7f129b927c507ad3db93a0cc7a51/completion.json"
+    },
+    "blocks": [
+      {
+        "module": "vortex_physical_top_q0",
+        "instance": "vortex_physical_top_q0_inst",
+        "run": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/1161c4163d2556ad3b4ab04dd1226c277e11aef190adcb05f57eefcaf6f20690/completion.json"
+      },
+      {
+        "module": "vortex_physical_top_q1",
+        "instance": "vortex_physical_top_q1_inst",
+        "run": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/454495c6b49f5e4c8dcef8e92901a799207b50c51e71c6a10c91dd2bc65d6f7d/completion.json"
+      },
+      {
+        "module": "vortex_physical_top_q2",
+        "instance": "vortex_physical_top_q2_inst",
+        "run": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/efb4ed2e35b8538df259068764b3350ed501b172f5ba5176759014bf31cdb626/completion.json"
+      },
+      {
+        "module": "vortex_physical_top_q3",
+        "instance": "vortex_physical_top_q3_inst",
+        "run": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/platform-physical/189841ed9ce2e06332eb1633ddbf84552f0807cfb1d96697261404987580d80a/completion.json"
+      }
+    ],
+    "partition": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/completion.json",
+    "signoff": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-fullchip-sta/6a98e1be91b33e6eca2b55263483ed11eb7a2dd47b73b162cf779370b1fbefe9/completion.json"
+  },
+  "lineage": {
+    "traced_boundary": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary",
+    "traced_project": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary/project-banked.v",
+    "traced_project_sha256": "579851a4513af21e53c98b1d90761ae7a41df6142660fb270cc3759c17417fc5",
+    "flat_config": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/explore/gpu-quad2/config.mk",
+    "flat_netlist": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/explore/gpu-quad2/flat_3_place.v",
+    "flat_parent": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-icache-pipeline/8cc2608076c4cd7e5f8ec112aa44b5780ba098e74b8e9b9502fd5564a7592342/completion.json",
+    "flat_parent_status": "GPU_ICACHE_PIPELINE_REPRESENTATIVE_STAGE_PASS",
+    "flat_parent_boundary": "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-icache-pipeline/8cc2608076c4cd7e5f8ec112aa44b5780ba098e74b8e9b9502fd5564a7592342/boundary",
+    "traced_boundary_ancestry": [
+      "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-timing-boundary/13ab94a264ee072d8176ff1f10159f64d1ac7be5af3081c64dec6113cb8a4545/boundary",
+      "/mnt/c/Users/admin/Downloads/open-soc-ai-labs/build/student-mini/gpu-icache-pipeline/8cc2608076c4cd7e5f8ec112aa44b5780ba098e74b8e9b9502fd5564a7592342/boundary"
+    ]
+  },
+  "window": "reset release to end of the one-case command (whole kernel launch sequence)",
+  "boundary": "GPU core die only: top level (std cells, clock/repair buffers) + four quadrant hard blocks (mapped Vortex + command/memory adapters + OpenRAM macros); host, external DRAM and board power excluded",
+  "double_counting": "blocks are measured from their own netlists and SPEF; at the top they are abstract liberty models checked to carry no internal/leakage power groups, so the top part counts only top-level cells and the switching of top-level nets (block pin capacitance as load)",
+  "workloads": [
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 1,
+      "ordinal": 0
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 2,
+      "ordinal": 1
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 3,
+      "ordinal": 2
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 4,
+      "ordinal": 3
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 5,
+      "ordinal": 4
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 6,
+      "ordinal": 5
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 7,
+      "ordinal": 6
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 8,
+      "ordinal": 7
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 9,
+      "ordinal": 8
+    },
+    {
+      "operator": "p1",
+      "case_id": "P1-MINI-01",
+      "seed": 10,
+      "ordinal": 9
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 1,
+      "ordinal": 330
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 2,
+      "ordinal": 331
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 3,
+      "ordinal": 332
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 4,
+      "ordinal": 333
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 5,
+      "ordinal": 334
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 6,
+      "ordinal": 335
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 7,
+      "ordinal": 336
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 8,
+      "ordinal": 337
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 9,
+      "ordinal": 338
+    },
+    {
+      "operator": "p2",
+      "case_id": "P2-MINI-01",
+      "seed": 10,
+      "ordinal": 339
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 1,
+      "ordinal": 660
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 2,
+      "ordinal": 661
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 3,
+      "ordinal": 662
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 4,
+      "ordinal": 663
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 5,
+      "ordinal": 664
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 6,
+      "ordinal": 665
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 7,
+      "ordinal": 666
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 8,
+      "ordinal": 667
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 9,
+      "ordinal": 668
+    },
+    {
+      "operator": "p3",
+      "case_id": "P3-MINI-01",
+      "seed": 10,
+      "ordinal": 669
+    }
+  ]
+}

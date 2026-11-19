@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_platform_physical.py",
+    "--platform",
+    "cpu",
+    "--config",
+    "build/student-mini/cpu-top-physical-config/f6033baf7f88e18d4a056e05dcb1d45bcad229217832d46c5b8195404d8d48c7/config.mk",
+    "--parent",
+    "build/student-mini/cpu-rombanks-replay-launch/ca895382fa391545572ada3735d7a9e15df98491f89436c93b556d4fb468b0b8/completion.json",
+    "--expected-macros",
+    "37",
+    "--timeout",
+    "64000",
+    "--reaudit",
+    "build/student-mini/platform-physical/0642d6fc7ec71d7db9435f32aff16d372b2ab37c3f535b8fa33974d7d3a1439a"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-43",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "created_at": "2026-10-12T22:11:01.228951+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 4572205056,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 112184669\nuser_usec 108606223\nsystem_usec 3578445\nnice_usec 0\nnr_periods 1132\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 113.12255865999998
+}

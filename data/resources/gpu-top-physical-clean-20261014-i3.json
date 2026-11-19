@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "limits_enforced": true,
+  "command": [
+    "python3",
+    "scripts/run_student_mini_platform_physical.py",
+    "--platform",
+    "gpu",
+    "--config",
+    "build/student-mini/gpu-top-config/clean-20261014-i3/config.mk",
+    "--parent",
+    "build/student-mini/gpu-partition/4c30e4a61f2980527f94fc9f1a599533ed743c31a6bf71ebc7626050e5fd727b/completion.json",
+    "--expected-macros",
+    "4",
+    "--timeout",
+    "64000"
+  ],
+  "cgroup": "/sys/fs/cgroup/codex-student-mini-885715",
+  "cpu_limit": 2,
+  "memory_limit_bytes": 8589934592,
+  "swap_limit_bytes": 0,
+  "timeout_seconds": 64800,
+  "created_at": "2026-10-14T20:59:32.670766+00:00",
+  "cpus": [
+    0,
+    1
+  ],
+  "exit_code": 0,
+  "memory_peak_bytes": 4351049728,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "cpu_stat": "usage_usec 467461845\nuser_usec 453077173\nsystem_usec 14384672\nnice_usec 0\nnr_periods 3013\nnr_throttled 65\nthrottled_usec 205194\nnr_bursts 0\nburst_usec 0\n",
+  "elapsed_seconds": 369.69175137399725
+}

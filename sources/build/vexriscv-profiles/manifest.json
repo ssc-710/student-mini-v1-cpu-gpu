@@ -1,0 +1,50 @@
+{
+  "generation_commands": {
+    "16": [
+      "runMain",
+      "vexriscv.GenCoreDefault",
+      "--iCacheSize=16384",
+      "--dCacheSize=16384",
+      "--outputFile=VexRiscv_Full_16k"
+    ],
+    "8": [
+      "runMain",
+      "vexriscv.GenCoreDefault",
+      "--iCacheSize=8192",
+      "--dCacheSize=8192",
+      "--outputFile=VexRiscv_Full_8k"
+    ]
+  },
+  "generator": {
+    "build/pythondata-cpu-vexriscv-2026.04/pythondata_cpu_vexriscv/verilog/build.sbt": "d9eb1eb029f8fb90728510108f82151f610e0b95008ba616450caf608d900294",
+    "build/pythondata-cpu-vexriscv-2026.04/pythondata_cpu_vexriscv/verilog/project/build.properties": "c9eab419acc8e933347b382db2d7642194cfd82421fc3a58930f6c4a8ace4c91",
+    "build/pythondata-cpu-vexriscv-2026.04/pythondata_cpu_vexriscv/verilog/src/main/scala/vexriscv/GenCoreDefault.scala": "41f1d3b41e1407462f0039acbc92010028910988162c0b4320c442153a7dc67a"
+  },
+  "java_sha256": "1977f302375adbb920d41dac65c7e22eb9c2ed8e1e8d6258964154ff16f14406",
+  "java_version": "openjdk version \"17.0.20.1\" 2026-08-18",
+  "profiles": {
+    "16": {
+      "d_cache_bytes": 16384,
+      "i_cache_bytes": 16384,
+      "path": "build/vexriscv-profiles/VexRiscv_Full_16k.v",
+      "sha256": "d13ab5441ae482d1ee9f953a78a34e79d9916cba61c715f5a99a80cb4e1821fa"
+    },
+    "4": {
+      "d_cache_bytes": 4096,
+      "i_cache_bytes": 4096,
+      "path": "build/vexriscv-profiles/VexRiscv_Full_4k.v",
+      "sha256": "1ee38dc4b0f3a2ce08de9df1f8e2bb8fceb628a89adb7f624f38ae44cebe9fcc"
+    },
+    "8": {
+      "d_cache_bytes": 8192,
+      "i_cache_bytes": 8192,
+      "path": "build/vexriscv-profiles/VexRiscv_Full_8k.v",
+      "sha256": "2b47cc0c935a2999e0418f9929f99ef6d1fd88aa1edb885a31f5a3f1785399ed"
+    }
+  },
+  "sbt_launch_sha256": "5244e932db91ea6bd4d1ffb7f9bc7c451c277ed552b94f266a03c09200a56ed4",
+  "schema_version": 2,
+  "source_repository_commit": "056d57f5a3cd0ccd7fef861480c4cc0878e183fa",
+  "vexriscv_submodule_commit": "b6118e5cc2a33323425df6455697139021d50c72",
+  "vexriscv_tracked_tree_clean": true
+}

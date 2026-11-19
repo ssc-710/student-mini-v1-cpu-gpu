@@ -1,0 +1,20 @@
+# Provisional physical primitive declaration, not a signoff or timing model.
+# Real macro: 1 W / 1 R, shared rising clock, byte masks, no power-up contents.
+# No wrtrans property: same-address read/write value is INDETERMINATE.
+# A design requiring defined collision behavior needs Yosys emulation or must
+# remain unmapped. Never claim read-old-data to make mapping easier.
+ram block $__STUDENT_CPU_SRAM32X1024_ {
+    abits 10;
+    width 32;
+    byte 8;
+    cost 128;
+    init none;
+    style "block";
+    port sw "W" {
+        clock posedge "C";
+    }
+    port sr "R" {
+        clock posedge "C";
+        rden;
+    }
+}

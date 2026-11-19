@@ -1,0 +1,311 @@
+INFO:SoC:        __   _ __      _  __  
+INFO:SoC:       / /  (_) /____ | |/_/  
+INFO:SoC:      / /__/ / __/ -_)>  <    
+INFO:SoC:     /____/_/\__/\__/_/|_|  
+INFO:SoC:  Build your hardware, easily!
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:Creating SoC... (2026-11-06 16:56:18)
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:FPGA device : SIM.
+INFO:SoC:System clock: 1.000MHz.
+INFO:SoCBusHandler:Creating Bus Handler...
+INFO:SoCBusHandler:32-bit wishbone Bus, 4.0GiB Address Space.
+INFO:SoCBusHandler:Adding reserved Bus Regions...
+INFO:SoCBusHandler:Bus Handler created.
+INFO:SoCCSRHandler:Creating CSR Handler...
+INFO:SoCCSRHandler:32-bit CSR Bus, 32-bit Aligned, 16.0KiB Address Space, 2048B Paging, big Ordering (Up to 32 Locations).
+INFO:SoCCSRHandler:Adding reserved CSRs...
+INFO:SoCCSRHandler:CSR Handler created.
+INFO:SoCIRQHandler:Creating IRQ Handler...
+INFO:SoCIRQHandler:IRQ Handler (up to 32 Locations).
+INFO:SoCIRQHandler:Adding reserved IRQs...
+INFO:SoCIRQHandler:IRQ Handler created.
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:Initial SoC:
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:32-bit wishbone Bus, 4.0GiB Address Space.
+INFO:SoC:32-bit CSR Bus, 32-bit Aligned, 16.0KiB Address Space, 2048B Paging, big Ordering (Up to 32 Locations).
+INFO:SoC:IRQ Handler (up to 32 Locations).
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:Controller ctrl added.
+INFO:SoC:CPU vexriscv added.
+INFO:SoC:CPU vexriscv adding IO Region 0 at 0x80000000 (Size: 0x80000000).
+INFO:SoCBusHandler:io0 Region added at Origin: 0x80000000, Size: 0x80000000, Mode:  RW, Cached: False, Linker: False.
+INFO:SoC:CPU vexriscv overriding sram mapping from 0x01000000 to 0x10000000.
+INFO:SoC:CPU vexriscv setting reset address to 0x00000000.
+INFO:SoC:CPU vexriscv adding Bus Master(s).
+INFO:SoCBusHandler:cpu_bus0 added as Bus Master.
+INFO:SoCBusHandler:cpu_bus1 added as Bus Master.
+INFO:SoC:CPU vexriscv adding Interrupt(s).
+INFO:SoC:CPU vexriscv adding SoC components.
+INFO:SoCBusHandler:rom Region added at Origin: 0x00000000, Size: 0x00020000, Mode:  RX, Cached:  True, Linker: False.
+INFO:SoCBusHandler:rom added as Bus Slave.
+INFO:SoC:RAM rom added Origin: 0x00000000, Size: 0x00020000, Mode:  RX, Cached:  True, Linker: False.
+INFO:SoCBusHandler:sram Region added at Origin: 0x10000000, Size: 0x00002000, Mode: RWX, Cached:  True, Linker: False.
+INFO:SoCBusHandler:sram added as Bus Slave.
+INFO:SoC:RAM sram added Origin: 0x10000000, Size: 0x00002000, Mode: RWX, Cached:  True, Linker: False.
+INFO:SoCIRQHandler:uart IRQ allocated at Location 0.
+INFO:SoCIRQHandler:timer0 IRQ allocated at Location 1.
+INFO:SoCBusHandler:main_ram Region added at Origin: 0x40000000, Size: 0x10000000, Mode: RWX, Cached:  True, Linker: False.
+INFO:SoCBusHandler:main_ram added as Bus Slave.
+INFO:SoCBusHandler:uncached_dram Region added at Origin: 0xe2000000, Size: 0x02000000, Mode:  RW, Cached: False, Linker: False.
+INFO:SoCBusHandler:uncached_dram added as Bus Slave.
+INFO:SoCBusHandler:accelerator Region added at Origin: 0xe0000000, Size: 0x00001000, Mode:  RW, Cached: False, Linker: False.
+INFO:SoCBusHandler:accelerator added as Bus Slave.
+INFO:SoCIRQHandler:accelerator_irq IRQ allocated at Location 2.
+INFO:SoC:CSR Bridge csr added.
+INFO:SoCBusHandler:csr Region added at Origin: 0xf0000000, Size: 0x00010000, Mode:  RW, Cached: False, Linker: False.
+INFO:SoCBusHandler:csr added as Bus Slave.
+INFO:SoCCSRHandler:csr added as CSR Master.
+INFO:SoCBusHandler:Interconnect: InterconnectShared (2 <-> 6).
+INFO:SoCCSRHandler:accelerator_irq CSR allocated at Location 0.
+INFO:SoCCSRHandler:cpu_traffic CSR allocated at Location 1.
+INFO:SoCCSRHandler:ctrl CSR allocated at Location 2.
+INFO:SoCCSRHandler:identifier_mem CSR allocated at Location 3.
+INFO:SoCCSRHandler:sdram CSR allocated at Location 4.
+INFO:SoCCSRHandler:timer0 CSR allocated at Location 5.
+INFO:SoCCSRHandler:uart CSR allocated at Location 6.
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:Finalized SoC:
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:32-bit wishbone Bus, 4.0GiB Address Space.
+IO Regions: (1)
+io0                 : Origin: 0x80000000, Size: 0x80000000, Mode:  RW, Cached: False, Linker: False
+Bus Regions: (6)
+rom                 : Origin: 0x00000000, Size: 0x00020000, Mode:  RX, Cached:  True, Linker: False
+sram                : Origin: 0x10000000, Size: 0x00002000, Mode: RWX, Cached:  True, Linker: False
+main_ram            : Origin: 0x40000000, Size: 0x10000000, Mode: RWX, Cached:  True, Linker: False
+accelerator         : Origin: 0xe0000000, Size: 0x00001000, Mode:  RW, Cached: False, Linker: False
+uncached_dram       : Origin: 0xe2000000, Size: 0x02000000, Mode:  RW, Cached: False, Linker: False
+csr                 : Origin: 0xf0000000, Size: 0x00010000, Mode:  RW, Cached: False, Linker: False
+Bus Masters: (2)
+- cpu_bus0
+- cpu_bus1
+Bus Slaves: (6)
+- rom
+- sram
+- main_ram
+- uncached_dram
+- accelerator
+- csr
+INFO:SoC:32-bit CSR Bus, 32-bit Aligned, 16.0KiB Address Space, 2048B Paging, big Ordering (Up to 32 Locations).
+CSR Locations: (7)
+- accelerator_irq : 0
+- cpu_traffic     : 1
+- ctrl            : 2
+- identifier_mem  : 3
+- sdram           : 4
+- timer0          : 5
+- uart            : 6
+INFO:SoC:IRQ Handler (up to 32 Locations).
+IRQ Locations: (3)
+- uart            : 0
+- timer0          : 1
+- accelerator_irq : 2
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:SoC Hierarchy:
+INFO:SoC:--------------------------------------------------------------------------------
+INFO:SoC:
+CourseSimSoC
+└─── crg (CRG)
+└─── bus (SoCBusHandler)
+│    └─── _interconnect (InterconnectShared)
+│    │    └─── arbiter (Arbiter)
+│    │    │    └─── rr (RoundRobin)
+│    │    └─── decoder (Decoder)
+│    │    └─── timeout (Timeout)
+│    │    │    └─── waittimer_0* (WaitTimer)
+└─── csr (SoCCSRHandler)
+└─── irq (SoCIRQHandler)
+└─── ctrl (SoCController)
+└─── cpu (VexRiscv)
+│    └─── [VexRiscv]
+└─── rom (SRAM)
+└─── sram (SRAM)
+└─── identifier (Identifier)
+└─── uart_phy (RS232PHYModel)
+└─── uart (UART)
+│    └─── ev (EventManager)
+│    │    └─── eventsourceprocess_0* (EventSourceProcess)
+│    │    └─── eventsourceprocess_1* (EventSourceProcess)
+│    └─── tx_fifo (SyncFIFO)
+│    │    └─── fifo (SyncFIFOBuffered)
+│    │    │    └─── fifo (SyncFIFO)
+│    └─── rx_fifo (SyncFIFO)
+│    │    └─── fifo (SyncFIFOBuffered)
+│    │    │    └─── fifo (SyncFIFO)
+└─── timer0 (Timer)
+│    └─── ev (EventManager)
+│    │    └─── eventsourceprocess_0* (EventSourceProcess)
+└─── sdrphy (SDRAMPHYModel)
+│    └─── dfiphasemodel_0* (DFIPhaseModel)
+│    └─── bankmodel_0* (BankModel)
+│    └─── bankmodel_1* (BankModel)
+│    └─── bankmodel_2* (BankModel)
+│    └─── bankmodel_3* (BankModel)
+└─── sdram (LiteDRAMCore)
+│    └─── dfii (DFIInjector)
+│    │    └─── pi0 (PhaseInjector)
+│    └─── controller (LiteDRAMController)
+│    │    └─── refresher (Refresher)
+│    │    │    └─── timer (RefreshTimer)
+│    │    │    └─── postponer (RefreshPostponer)
+│    │    │    └─── sequencer (RefreshSequencer)
+│    │    │    │    └─── refreshexecuter_0* (RefreshExecuter)
+│    │    │    └─── fsm (FSM)
+│    │    └─── bankmachine_0* (BankMachine)
+│    │    │    └─── syncfifo_0* (SyncFIFO)
+│    │    │    │    └─── fifo (SyncFIFO)
+│    │    │    └─── buffer_0* (Buffer)
+│    │    │    │    └─── pipe_valid (PipeValid)
+│    │    │    │    └─── pipeline (Pipeline)
+│    │    │    └─── twtpcon (tXXDController)
+│    │    │    └─── trccon (tXXDController)
+│    │    │    └─── trascon (tXXDController)
+│    │    │    └─── fsm (FSM)
+│    │    └─── bankmachine_1* (BankMachine)
+│    │    │    └─── syncfifo_0* (SyncFIFO)
+│    │    │    │    └─── fifo (SyncFIFO)
+│    │    │    └─── buffer_0* (Buffer)
+│    │    │    │    └─── pipe_valid (PipeValid)
+│    │    │    │    └─── pipeline (Pipeline)
+│    │    │    └─── twtpcon (tXXDController)
+│    │    │    └─── trccon (tXXDController)
+│    │    │    └─── trascon (tXXDController)
+│    │    │    └─── fsm (FSM)
+│    │    └─── bankmachine_2* (BankMachine)
+│    │    │    └─── syncfifo_0* (SyncFIFO)
+│    │    │    │    └─── fifo (SyncFIFO)
+│    │    │    └─── buffer_0* (Buffer)
+│    │    │    │    └─── pipe_valid (PipeValid)
+│    │    │    │    └─── pipeline (Pipeline)
+│    │    │    └─── twtpcon (tXXDController)
+│    │    │    └─── trccon (tXXDController)
+│    │    │    └─── trascon (tXXDController)
+│    │    │    └─── fsm (FSM)
+│    │    └─── bankmachine_3* (BankMachine)
+│    │    │    └─── syncfifo_0* (SyncFIFO)
+│    │    │    │    └─── fifo (SyncFIFO)
+│    │    │    └─── buffer_0* (Buffer)
+│    │    │    │    └─── pipe_valid (PipeValid)
+│    │    │    │    └─── pipeline (Pipeline)
+│    │    │    └─── twtpcon (tXXDController)
+│    │    │    └─── trccon (tXXDController)
+│    │    │    └─── trascon (tXXDController)
+│    │    │    └─── fsm (FSM)
+│    │    └─── multiplexer (Multiplexer)
+│    │    │    └─── choose_cmd (_CommandChooser)
+│    │    │    │    └─── roundrobin_0* (RoundRobin)
+│    │    │    └─── choose_req (_CommandChooser)
+│    │    │    │    └─── roundrobin_0* (RoundRobin)
+│    │    │    └─── _steerer_0* (_Steerer)
+│    │    │    └─── trrdcon (tXXDController)
+│    │    │    └─── tfawcon (tFAWController)
+│    │    │    └─── tccdcon (tXXDController)
+│    │    │    └─── twtrcon (tXXDController)
+│    │    │    └─── fsm (FSM)
+│    └─── crossbar (LiteDRAMCrossbar)
+│    │    └─── litedramnativeportconverter_0* (LiteDRAMNativePortConverter)
+│    │    │    └─── converter (LiteDRAMNativePortUpConverter)
+│    │    │    │    └─── syncfifo_0* (SyncFIFO)
+│    │    │    │    └─── fsm (FSM)
+│    │    │    │    └─── syncfifo_1* (SyncFIFO)
+│    │    │    │    │    └─── fifo (SyncFIFO)
+│    │    │    │    └─── strideconverter_0* (StrideConverter)
+│    │    │    │    │    └─── converter_0* (Converter)
+│    │    │    │    │    │    └─── _downconverter_0* (_DownConverter)
+│    │    │    │    └─── strideconverter_1* (StrideConverter)
+│    │    │    │    │    └─── converter_0* (Converter)
+│    │    │    │    │    │    └─── _upconverter_0* (_UpConverter)
+│    │    │    │    └─── syncfifo_2* (SyncFIFO)
+│    │    │    │    │    └─── fifo (SyncFIFO)
+│    │    │    │    └─── syncfifo_3* (SyncFIFO)
+│    │    │    │    │    └─── buffer_0* (Buffer)
+│    │    │    │    │    │    └─── pipe_valid (PipeValid)
+│    │    │    │    │    │    └─── pipeline (Pipeline)
+│    │    └─── roundrobin_0* (RoundRobin)
+│    │    └─── roundrobin_1* (RoundRobin)
+│    │    └─── roundrobin_2* (RoundRobin)
+│    │    └─── roundrobin_3* (RoundRobin)
+└─── l2_cache (Cache)
+│    └─── fsm (FSM)
+└─── wishbone_bridge (LiteDRAMWishbone2Native)
+│    └─── fsm (FSM)
+└─── uncached_dram_bridge (LiteDRAMWishbone2Native)
+│    └─── fsm (FSM)
+└─── cpu_traffic (CourseCpuTrafficCounters)
+└─── accelerator_irq (AcceleratorIRQ)
+│    └─── ev (EventManager)
+│    │    └─── eventsourcelevel_0* (EventSourceLevel)
+└─── csr_bridge (Wishbone2CSR)
+│    └─── fsm (FSM)
+└─── csr_bankarray (CSRBankArray)
+│    └─── csrbank_0* (CSRBank)
+│    │    └─── csrstatus_0* (CSRStatus)
+│    │    └─── csrstatus_1* (CSRStatus)
+│    │    └─── csrstorage_0* (CSRStorage)
+│    └─── csrbank_1* (CSRBank)
+│    │    └─── csrstorage_0* (CSRStorage)
+│    │    └─── csrstorage_1* (CSRStorage)
+│    │    └─── csrstatus_0* (CSRStatus)
+│    │    └─── csrstatus_1* (CSRStatus)
+│    │    └─── csrstatus_2* (CSRStatus)
+│    └─── csrbank_2* (CSRBank)
+│    │    └─── csrstorage_0* (CSRStorage)
+│    │    └─── csrstorage_1* (CSRStorage)
+│    │    └─── csrstatus_0* (CSRStatus)
+│    └─── sram_0* (SRAM)
+│    └─── csrbank_3* (CSRBank)
+│    │    └─── csrstorage_0* (CSRStorage)
+│    │    └─── csrstorage_1* (CSRStorage)
+│    │    └─── csrstorage_2* (CSRStorage)
+│    │    └─── csrstorage_3* (CSRStorage)
+│    │    └─── csrstorage_4* (CSRStorage)
+│    │    └─── csrstatus_0* (CSRStatus)
+│    └─── csrbank_4* (CSRBank)
+│    │    └─── csrstorage_0* (CSRStorage)
+│    │    └─── csrstorage_1* (CSRStorage)
+│    │    └─── csrstorage_2* (CSRStorage)
+│    │    └─── csrstorage_3* (CSRStorage)
+│    │    └─── csrstatus_0* (CSRStatus)
+│    │    └─── csrstatus_1* (CSRStatus)
+│    │    └─── csrstatus_2* (CSRStatus)
+│    │    └─── csrstorage_4* (CSRStorage)
+│    │    └─── csrstorage_5* (CSRStorage)
+│    │    └─── csrstatus_3* (CSRStatus)
+│    └─── csrbank_5* (CSRBank)
+│    │    └─── csrstatus_0* (CSRStatus)
+│    │    └─── csrstatus_1* (CSRStatus)
+│    │    └─── csrstatus_2* (CSRStatus)
+│    │    └─── csrstatus_3* (CSRStatus)
+│    │    └─── csrstorage_0* (CSRStorage)
+│    │    └─── csrstatus_4* (CSRStatus)
+│    │    └─── csrstatus_5* (CSRStatus)
+└─── csr_interconnect (InterconnectShared)
+└─── [litex_wishbone_csr_bridge]
+└─── [accelerator_shell]
+└─── [litex_descriptor_engine]
+└─── [student_mini_native_dma_bridge]
+* : Generated name.
+[]: BlackBox.
+
+INFO:SoC:--------------------------------------------------------------------------------
+make: Entering directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu/soc/software/libc'
+ CC       libc.a
+ AR       libc.a
+/usr/lib/gcc/riscv64-unknown-elf/13.2.0/../../../riscv64-unknown-elf/bin/ar: _libc.a: file format not recognized
+make: *** [/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu-venv/lib/python3.12/site-packages/litex/soc/software/libc/Makefile:67: libc.a] Error 1
+make: Leaving directory '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu/soc/software/libc'
+Traceback (most recent call last):
+  File "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/build_cpu.py", line 41, in <module>
+    build_soc(output_dir=work/'soc', run=False, cpu_b0=True, control_smoke=True,
+  File "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/sources/integration/litex/soc.py", line 1632, in build_soc
+    builder.build(sim_config=sim_config, interactive=False, run=False)
+  File "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu-venv/lib/python3.12/site-packages/litex/soc/integration/builder.py", line 395, in build
+    self._generate_rom_software(compile_bios=use_bios)
+  File "/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu-venv/lib/python3.12/site-packages/litex/soc/integration/builder.py", line 329, in _generate_rom_software
+    subprocess.check_call(["make", f"-j{cpu_count}", "-C", dst_dir, "-f", makefile])
+  File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['make', '-j2', '-C', '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu/soc/software/libc', '-f', '/mnt/d/大学/codex/student-mini-v1-cpu-gpu/rerun_sqrt3/cpu-venv/lib/python3.12/site-packages/litex/soc/software/libc/Makefile']' returned non-zero exit status 2.

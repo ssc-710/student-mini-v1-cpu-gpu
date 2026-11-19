@@ -1,0 +1,53 @@
+{
+  "status": "CLEAN_ROOT5_INPUT_ONLY_USER_UTF8_CHANGED_PASS",
+  "question": "根号5等于几？",
+  "prompt": [
+    1,
+    2,
+    5,
+    5,
+    5,
+    92,
+    16,
+    27,
+    111,
+    3
+  ],
+  "allocated_bytes": 24,
+  "valid_utf8_bytes": 19,
+  "changed_bytes": 23,
+  "changed_offsets": [
+    15360,
+    15361,
+    15362,
+    15364,
+    15365,
+    15366,
+    15367,
+    15368,
+    15369,
+    15370,
+    15371,
+    15372,
+    15373,
+    15374,
+    15375,
+    15376,
+    15377,
+    15378,
+    15379,
+    15380,
+    15381,
+    15382,
+    15383
+  ],
+  "bytes": 1066432,
+  "bindings": {
+    "rerun_sqrt5/image/manifest.json": "ab7ba089a1d3a5188435528d269b423b3bf5d8221ee1a08e1d26969cd2b2d233",
+    "rerun_sqrt5/image/image.bin": "5e474b45641353fcbf37b76f930cacf3eb0855f1a9ec5466bc6c6fca14ebf758",
+    "rerun_sqrt5/image/student_mini_native_image.h": "f968ca4af9ac6f7053181c0d4de64a6cbe610c29c376f396a8810ceb6c2dd660",
+    "optimization/p3/inputs/root5-clean-20261114-01/manifest.json": "ca0e25048eca857777dd193b4c1792c4e7b70e56c511d64b7edf928c6df5f3ee",
+    "optimization/p3/inputs/root5-clean-20261114-01/image.bin": "9d30e181ec709efb7c80b17716368bedf724d2d532f1e9e972c1d740c03dc2d7",
+    "optimization/p3/inputs/root5-clean-20261114-01/student_mini_native_image.h": "f968ca4af9ac6f7053181c0d4de64a6cbe610c29c376f396a8810ceb6c2dd660"
+  }
+}

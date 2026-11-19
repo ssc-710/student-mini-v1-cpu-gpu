@@ -1,0 +1,230 @@
+{
+  "segments": {
+    "weight.attention_ckv": {
+      "offset": 0,
+      "size": 128
+    },
+    "weight.attention_index_k": {
+      "offset": 128,
+      "size": 128
+    },
+    "weight.attention_index_q": {
+      "offset": 256,
+      "size": 128
+    },
+    "weight.attention_kpe": {
+      "offset": 384,
+      "size": 64
+    },
+    "weight.attention_norm": {
+      "offset": 448,
+      "size": 16
+    },
+    "weight.attention_out": {
+      "offset": 512,
+      "size": 128
+    },
+    "weight.attention_q_nope": {
+      "offset": 640,
+      "size": 128
+    },
+    "weight.attention_q_pe": {
+      "offset": 768,
+      "size": 64
+    },
+    "weight.down": {
+      "offset": 832,
+      "size": 512
+    },
+    "weight.embedding": {
+      "offset": 1344,
+      "size": 4096
+    },
+    "weight.final_norm": {
+      "offset": 5440,
+      "size": 16
+    },
+    "weight.gate": {
+      "offset": 5504,
+      "size": 512
+    },
+    "weight.lm_head": {
+      "offset": 6016,
+      "size": 4096
+    },
+    "weight.moe_norm": {
+      "offset": 10112,
+      "size": 16
+    },
+    "weight.router": {
+      "offset": 10176,
+      "size": 32
+    },
+    "weight.shared_down": {
+      "offset": 10240,
+      "size": 256
+    },
+    "weight.shared_gate": {
+      "offset": 10496,
+      "size": 256
+    },
+    "weight.shared_up": {
+      "offset": 10752,
+      "size": 256
+    },
+    "weight.up": {
+      "offset": 11008,
+      "size": 512
+    },
+    "rtl.p3.layer0.weights": {
+      "offset": 11520,
+      "size": 2304
+    },
+    "scales.fp32": {
+      "offset": 13824,
+      "size": 76
+    },
+    "tokenizer.offsets.u32": {
+      "offset": 13952,
+      "size": 1028
+    },
+    "tokenizer.bytes": {
+      "offset": 15040,
+      "size": 314
+    },
+    "user.utf8": {
+      "offset": 15360,
+      "size": 21
+    },
+    "prompt.tokens.u32": {
+      "offset": 15424,
+      "size": 40
+    },
+    "generated.tokens.u32": {
+      "offset": 15488,
+      "size": 48
+    },
+    "kv_cache.bf16": {
+      "offset": 15552,
+      "size": 2048
+    },
+    "descriptors": {
+      "offset": 17600,
+      "size": 256
+    },
+    "operator_scratch": {
+      "offset": 17856,
+      "size": 1048576
+    }
+  },
+  "scale_order": [
+    "attention_ckv",
+    "attention_index_k",
+    "attention_index_q",
+    "attention_kpe",
+    "attention_norm",
+    "attention_out",
+    "attention_q_nope",
+    "attention_q_pe",
+    "down",
+    "embedding",
+    "final_norm",
+    "gate",
+    "lm_head",
+    "moe_norm",
+    "router",
+    "shared_down",
+    "shared_gate",
+    "shared_up",
+    "up"
+  ],
+  "scale_index": {
+    "attention_ckv": 0,
+    "attention_index_k": 1,
+    "attention_index_q": 2,
+    "attention_kpe": 3,
+    "attention_norm": 4,
+    "attention_out": 5,
+    "attention_q_nope": 6,
+    "attention_q_pe": 7,
+    "down": 8,
+    "embedding": 9,
+    "final_norm": 10,
+    "gate": 11,
+    "lm_head": 12,
+    "moe_norm": 13,
+    "router": 14,
+    "shared_down": 15,
+    "shared_gate": 16,
+    "shared_up": 17,
+    "up": 18
+  },
+  "prompt_tokens": [
+    1,
+    2,
+    9,
+    29,
+    9,
+    92,
+    16,
+    27,
+    111,
+    3
+  ],
+  "question": "一加一等于几？",
+  "model_config": {
+    "name": "student-mini-v1",
+    "layers": 1,
+    "hidden": 16,
+    "heads": 1,
+    "kv_latent": 12,
+    "experts": 2,
+    "active_experts": 1,
+    "intermediate": 16,
+    "vocab": 256,
+    "context": 32,
+    "max_generated_tokens": 12,
+    "d_nope": 8,
+    "d_rope": 4,
+    "indexer_dim": 8,
+    "value_dim": 8
+  },
+  "max_generated_tokens": 12,
+  "tokenizer_special_tokens": {
+    "PAD": 0,
+    "BOS": 1,
+    "USER": 2,
+    "ASSISTANT": 3,
+    "EOS": 4,
+    "UNK": 5
+  },
+  "contains_expected_tokens": false,
+  "status": "DEVELOPMENT_ONLY",
+  "target_execution": false,
+  "formal_baseline": false,
+  "deployment": {
+    "stage": "ptq_exact",
+    "quantized": "ptq.npz",
+    "quantized_sha256": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74",
+    "source_checkpoint_sha256": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4",
+    "parent_fp32_sha256": "fe4dbb648631a17404dfc12e0e5dd465805a8ad41f38bc5e0bd1350ba8b982b4"
+  },
+  "quality_stage_only": true,
+  "bindings": {
+    "build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1e74ca47572/candidate.json": "f7c5488c4a6958a58ef8c65ec8910c6ee1f29b12f1fdce6bd8fd17e7ba2869e7",
+    "build/student-mini/native-quality/a3d26dbabc6a2d889f79edd07247037d3d59a75ea78bae08221f62aaf3fc9a46/audit.json": "38bda71da022ef044b7c37bc6bd0e42f6f172aaedf4c9d7669b7ae7fa638a800",
+    "build/student-mini/native-quality/a3d26dbabc6a2d889f79edd07247037d3d59a75ea78bae08221f62aaf3fc9a46/validation-selection.json": "7cc6edcdd341f4a0e9df5b1261a6297013329f28b92ab6512fcce529fe9bfbea",
+    "build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1e74ca47572/inputs.json": "1907fbdd67992819acab34f0c0822556a06654fc567e341610b8c80be4ff9be1",
+    "build/student-mini/native-nano/876398eac822028468e275044f350988a847429d5c3a2f3aed2be1e74ca47572/ptq.npz": "809472c0b65cab930dbf05254f23bf6dd4a13f3b6b6ee76f08e4c086a9446b74",
+    "scripts/export_student_mini_selected_image.py": "1685fb9905414ad387e04af22cb62c43764a62683a1618defea9c4e353450e79",
+    "scripts/export_student_mini_native_image.py": "0b7d692367010b4b3b72e723f63917916cea9038b1b3c849a85e7ab05b0f5ed9",
+    "scripts/audit_student_mini_native_quality.py": "213f6afb7329bde9b0e9d33079c44c6e9af130fa8779f4b4c0ad97d7014ea73b",
+    "shared/python/soc_ai_labs/student_mini_nano_runtime.py": "579ef159e3d323375560846c8d429fc30f9ff520d6d29bc24a72a352071bc219"
+  },
+  "quality_audit": {
+    "path": "build/student-mini/native-quality/a3d26dbabc6a2d889f79edd07247037d3d59a75ea78bae08221f62aaf3fc9a46/audit.json",
+    "sha256": "38bda71da022ef044b7c37bc6bd0e42f6f172aaedf4c9d7669b7ae7fa638a800"
+  },
+  "image_sha256": "6c51d6680ed34474bfe9a2267ecddeca2c492724faa857044ab1ee9d6067f5f5",
+  "size_bytes": 1066432
+}

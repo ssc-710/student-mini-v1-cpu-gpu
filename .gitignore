@@ -25,3 +25,5 @@
 !.env.example
 *.pem
 *.key
+/sources/build/student-mini/gpu/
+/sources/build/student-mini/native-gpu/
